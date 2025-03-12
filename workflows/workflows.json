@@ -1,0 +1,10 @@
+{
+    "ExampleWorkflow": {
+        "name": "ExampleWorkflow",
+        "description": "An example workflow",
+        "author": "Edwin Jakobs",
+        "tags": [
+            "example"
+        ]
+    }
+}

@@ -1,1 +1,37 @@
-{"artifacts":{"FileArtifact":{"name":"File"},"DatasetArtifact":{"name":"Dataset"},"TextArtifact":{"name":"Text"},"AudioArtifact":{"name":"Audio"},"SourceCodeArtifact":{"name":"Source code"},"ProcessArtifact":{"name":"Process"},"PrintedArtifact":{"name":"Print"},"VideoArtifact":{"name":"Video"},"Model3DArtifact":{"name":"3d Model"},"VectorGraphicsArtifact":{"name":"Vector graphics"},"ImageArtifact":{"name":"Image"}}}
+{
+    "artifacts": {
+        "FileArtifact": {
+            "name": "File"
+        },
+        "DatasetArtifact": {
+            "name": "Dataset"
+        },
+        "TextArtifact": {
+            "name": "Text"
+        },
+        "AudioArtifact": {
+            "name": "Audio"
+        },
+        "SourceCodeArtifact": {
+            "name": "Source code"
+        },
+        "ProcessArtifact": {
+            "name": "Process"
+        },
+        "PrintedArtifact": {
+            "name": "Print"
+        },
+        "VideoArtifact": {
+            "name": "Video"
+        },
+        "Model3DArtifact": {
+            "name": "3d Model"
+        },
+        "VectorGraphicsArtifact": {
+            "name": "Vector graphics"
+        },
+        "ImageArtifact": {
+            "name": "Image"
+        }
+    }
+}
