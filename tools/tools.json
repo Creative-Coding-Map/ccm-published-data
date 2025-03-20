@@ -271,6 +271,12 @@
                 }
             }
         },
+        "Ruby": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
         "CPP": {
             "tags": [
                 "language"
@@ -311,8 +317,12 @@
                 "shaders"
             ]
         },
-        "Photoshop": {},
-        "Inkscape": {},
+        "OpenProcessing": {
+            "tags": [
+                "creative coding",
+                "platform"
+            ]
+        },
         "Printer": {
             "tags": [
                 "media technology",
@@ -325,7 +335,25 @@
                 }
             }
         },
-        "Figma": {},
+        "ShaderToy": {
+            "tags": [
+                "software",
+                "platform"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
+            "actions": {
+                "runShader": {
+                    "description": "Run Shader"
+                },
+                "publishShader": {
+                    "description": " Publish shader",
+                    "outputType": "SourceCodeArtifact"
+                }
+            }
+        },
         "OPENRNDR": {
             "prototypes": [
                 "_ImageIO",
@@ -701,6 +729,58 @@
                 "OrxTextWriter": {}
             }
         },
+        "Camera": {
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "actions": {
+                "capture": {
+                    "description": "Capture a frame"
+                }
+            }
+        },
+        "_DatasetIO": {
+            "actions": {
+                "saveJson": {
+                    "description": "Save JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadCsv": {
+                    "description": "Load CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                },
+                "saveCsv": {
+                    "description": "Save CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadJson": {
+                    "description": "Load JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                }
+            }
+        },
         "Processing": {
             "prototypes": [
                 "_ImageIO",
@@ -711,7 +791,8 @@
             "tags": [
                 "creative coding",
                 "application",
-                "library"
+                "library",
+                "opensource"
             ],
             "actions": {
                 "loadImageArtifact": {
@@ -1051,59 +1132,6 @@
                 }
             }
         },
-        "Camera": {
-            "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
-                }
-            }
-        },
-        "_DatasetIO": {
-            "actions": {
-                "saveJson": {
-                    "description": "Save JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadCsv": {
-                    "description": "Load CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
-                },
-                "saveCsv": {
-                    "description": "Save CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadJson": {
-                    "description": "Load JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
-                }
-            }
-        },
-        "Blender": {},
         "_ImageIO": {
             "actions": {
                 "loadImageArtifact": {
@@ -1147,7 +1175,6 @@
                 }
             }
         },
-        "Illustrator": {},
         "Python": {
             "tags": [
                 "language"
@@ -1172,6 +1199,16 @@
                 "https://kotlinlang.org/"
             ]
         },
+        "Hydra": {
+            "tags": [
+                "creative coding",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://hydra.ojack.xyz/"
+            ]
+        },
         "OpenFrameworks": {
             "tags": [
                 "creative coding",
@@ -1181,14 +1218,28 @@
                 "https://en.wikipedia.org/wiki/OpenFrameworks"
             ]
         },
-        "Javascript": {
+        "Inkscape": {
             "tags": [
-                "language"
+                "software",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inkscape"
             ]
         },
-        "Ruby": {
+        "Midi": {
             "tags": [
-                "language"
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI"
+            ]
+        },
+        "Figma": {
+            "tags": [
+                "software",
+                "saas"
             ]
         },
         "_Model3DIO": {
@@ -1213,11 +1264,6 @@
                 }
             }
         },
-        "Java": {
-            "tags": [
-                "language"
-            ]
-        },
         "Microphone": {
             "tags": [
                 "media technology",
@@ -1230,16 +1276,17 @@
                 }
             }
         },
-        "OpenProcessing": {
+        "Cinema4D": {
             "tags": [
-                "creative coding",
-                "application",
-                "web"
+                "software"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinema_4D"
             ]
         },
-        "Rust": {
+        "Photoshop": {
             "tags": [
-                "language"
+                "software"
             ]
         },
         "GLSL": {
@@ -1248,90 +1295,11 @@
                 "shaders"
             ]
         },
-        "Hydra": {
-            "references": [
-                "https://hydra.ojack.xyz/"
-            ]
-        },
-        "Nannou": {
-            "tags": [
-                "creative coding",
-                "library"
-            ],
-            "references": [
-                "https://nannou.cc/"
-            ]
-        },
-        "_VideoIO": {
-            "actions": {
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                }
-            }
-        },
-        "CSharp": {
-            "tags": [
-                "language"
-            ]
-        },
-        "MediaPlayer": {
+        "MidiKeyboard": {
             "tags": [
                 "media technology",
                 "hardware"
-            ],
-            "actions": {
-                "play": {
-                    "description": "Play media"
-                },
-                "stop": {
-                    "description": "Stop media"
-                }
-            }
-        },
-        "DepthSensor": {
-            "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
-                }
-            }
-        },
-        "ShaderToy": {
-            "tags": [
-                "software",
-                "web"
-            ],
-            "references": [
-                "https://www.shadertoy.com/",
-                "https://en.wikipedia.org/wiki/Shadertoy"
-            ],
-            "actions": {
-                "runShader": {
-                    "description": "Run Shader"
-                },
-                "publishShader": {
-                    "description": " Publish shader",
-                    "outputType": "SourceCodeArtifact"
-                }
-            }
+            ]
         },
         "P5Js": {
             "prototypes": [
@@ -1344,7 +1312,8 @@
                 "creative coding",
                 "application",
                 "library",
-                "web"
+                "web",
+                "opensource"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Processing#p5.js"
@@ -1692,6 +1661,93 @@
                 }
             }
         },
+        "_VideoIO": {
+            "actions": {
+                "loadVideo": {
+                    "description": "Load Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "VideoArtifact"
+                },
+                "saveVideo": {
+                    "description": "Save Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                }
+            }
+        },
+        "Javascript": {
+            "tags": [
+                "language",
+                "web"
+            ]
+        },
+        "Illustrator": {
+            "tags": [
+                "software"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            ]
+        },
+        "CSharp": {
+            "tags": [
+                "language"
+            ]
+        },
+        "MidiController": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ]
+        },
+        "MediaPlayer": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "actions": {
+                "play": {
+                    "description": "Play media"
+                },
+                "stop": {
+                    "description": "Stop media"
+                }
+            }
+        },
+        "OSC": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ]
+        },
+        "DepthSensor": {
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "actions": {
+                "capture": {
+                    "description": "Capture a frame"
+                }
+            }
+        },
+        "Gimp": {
+            "tags": [
+                "software",
+                "opensource"
+            ]
+        },
         "Projector": {
             "tags": [
                 "media technology",
@@ -1710,7 +1766,28 @@
                 }
             }
         },
-        "Gimp": {},
+        "Java": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Nannou": {
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://nannou.cc/"
+            ]
+        },
+        "Rust": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
         "_LibraryIO": {
             "actions": {
                 "importLibrary": {
@@ -1723,6 +1800,24 @@
                     "outputType": "SourceCodeArtifact"
                 }
             }
+        },
+        "DMX": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/DMX"
+            ]
+        },
+        "Blender": {
+            "tags": [
+                "software",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Blender_(software)"
+            ]
         }
     }
 }
