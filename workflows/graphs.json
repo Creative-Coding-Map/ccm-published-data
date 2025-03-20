@@ -38,8 +38,8 @@
                 "index": 5
             },
             {
-                "label": "Perlin noise",
-                "type": "action",
+                "label": "Artifact",
+                "type": "artifact",
                 "subType": null,
                 "index": 6
             },
@@ -50,7 +50,7 @@
                 "index": 7
             },
             {
-                "label": "Perlin noise",
+                "label": "Run sketch",
                 "type": "action",
                 "subType": null,
                 "index": 8
@@ -62,7 +62,7 @@
                 "index": 9
             },
             {
-                "label": "Run sketch",
+                "label": "Import library",
                 "type": "action",
                 "subType": null,
                 "index": 10
@@ -74,8 +74,8 @@
                 "index": 11
             },
             {
-                "label": "Import library",
-                "type": "action",
+                "label": "Artifact",
+                "type": "artifact",
                 "subType": null,
                 "index": 12
             },
@@ -86,8 +86,8 @@
                 "index": 13
             },
             {
-                "label": "Artifact",
-                "type": "artifact",
+                "label": "P5Js",
+                "type": "tool",
                 "subType": null,
                 "index": 14
             },
@@ -98,26 +98,26 @@
                 "index": 15
             },
             {
-                "label": "P5Js",
-                "type": "tool",
-                "subType": null,
-                "index": 16
-            },
-            {
-                "label": "Save Image",
+                "label": "Load image artifact",
                 "type": "action",
                 "subType": null,
-                "index": 17
+                "index": 16
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
+                "index": 17
+            },
+            {
+                "label": "Run sketch",
+                "type": "action",
+                "subType": null,
                 "index": 18
             },
             {
-                "label": "Load image artifact",
-                "type": "action",
+                "label": "Artifact",
+                "type": "artifact",
                 "subType": null,
                 "index": 19
             },
@@ -126,30 +126,6 @@
                 "type": "artifact",
                 "subType": null,
                 "index": 20
-            },
-            {
-                "label": "Run sketch",
-                "type": "action",
-                "subType": null,
-                "index": 21
-            },
-            {
-                "label": "Artifact",
-                "type": "artifact",
-                "subType": null,
-                "index": 22
-            },
-            {
-                "label": "Import library",
-                "type": "action",
-                "subType": null,
-                "index": 23
-            },
-            {
-                "label": "Artifact",
-                "type": "artifact",
-                "subType": null,
-                "index": 24
             }
         ],
         "links": [
@@ -203,25 +179,49 @@
             },
             {
                 "source": 5,
-                "target": 6,
+                "target": 4,
                 "label": null,
                 "type": null
             },
             {
-                "source": 7,
-                "target": 6,
+                "source": 6,
+                "target": 4,
                 "label": null,
                 "type": null
             },
             {
                 "source": 1,
-                "target": 6,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 5,
+                "label": "Perlin noise",
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 4,
                 "label": null,
                 "type": null
             },
             {
                 "source": 7,
-                "target": 5,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 7,
+                "target": 6,
                 "label": "Perlin noise",
                 "type": null
             },
@@ -246,7 +246,7 @@
             {
                 "source": 9,
                 "target": 7,
-                "label": "Perlin noise",
+                "label": "Run sketch",
                 "type": null
             },
             {
@@ -270,162 +270,138 @@
             {
                 "source": 11,
                 "target": 9,
-                "label": "Run sketch",
+                "label": "Import library",
                 "type": null
             },
             {
                 "source": 11,
-                "target": 12,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
-                "source": 13,
-                "target": 12,
+                "source": 12,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
                 "source": 1,
-                "target": 12,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
-                "source": 13,
+                "source": 12,
                 "target": 11,
                 "label": "Import library",
                 "type": null
             },
             {
                 "source": 13,
-                "target": 12,
+                "target": 2,
                 "label": null,
-                "type": null
-            },
-            {
-                "source": 14,
-                "target": 12,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 1,
-                "target": 12,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 14,
-                "target": 13,
-                "label": "Import library",
                 "type": null
             },
             {
                 "source": 15,
-                "target": 17,
+                "target": 2,
                 "label": null,
                 "type": null
             },
             {
-                "source": 18,
-                "target": 17,
+                "source": 14,
+                "target": 2,
                 "label": null,
                 "type": null
             },
             {
-                "source": 16,
-                "target": 17,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 18,
-                "target": 15,
+                "source": 15,
+                "target": 13,
                 "label": "Save Image",
                 "type": null
             },
             {
-                "source": 18,
-                "target": 19,
+                "source": 15,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 20,
-                "target": 19,
+                "source": 17,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 16,
-                "target": 19,
+                "source": 14,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 20,
-                "target": 18,
+                "source": 17,
+                "target": 15,
                 "label": "Load image artifact",
                 "type": null
             },
             {
-                "source": 18,
+                "source": 15,
                 "target": 0,
                 "label": null,
                 "type": null
             },
             {
-                "source": 16,
+                "source": 14,
                 "target": 0,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 17,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 19,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 19,
+                "target": 17,
+                "label": "Run sketch",
+                "type": null
+            },
+            {
+                "source": 19,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
                 "source": 20,
-                "target": 21,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
-                "source": 22,
-                "target": 21,
+                "source": 14,
+                "target": 10,
                 "label": null,
                 "type": null
             },
             {
-                "source": 16,
-                "target": 21,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 22,
-                "target": 20,
-                "label": "Run sketch",
-                "type": null
-            },
-            {
-                "source": 22,
-                "target": 23,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 24,
-                "target": 23,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 16,
-                "target": 23,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 24,
-                "target": 22,
+                "source": 20,
+                "target": 19,
                 "label": "Import library",
                 "type": null
             }

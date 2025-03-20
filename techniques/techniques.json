@@ -97,6 +97,12 @@
                 "photography"
             ]
         },
+        "Umap": {
+            "name": "UMAP",
+            "tags": [
+                "Machine learning"
+            ]
+        },
         "DomainWarping": {
             "name": "Domain warping",
             "tags": [
@@ -132,6 +138,15 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
+            ]
+        },
+        "MonocularDepthEstimation": {
+            "name": "Monocular depth estimation",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/DepthAnything/Depth-Anything-V2"
             ]
         },
         "KDTree": {
@@ -192,6 +207,15 @@
         "HalfEdgeMesh": {
             "name": "Half-edge mesh"
         },
+        "Clustering": {
+            "name": "Clustering",
+            "tags": [
+                "Machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
         "RayMarching": {
             "name": "Ray Marching",
             "tags": [
@@ -199,6 +223,15 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Ray_marching"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
             ]
         },
         "DiffusionLimitedAggregation": {
@@ -246,6 +279,15 @@
                 "https://en.wikipedia.org/wiki/L-system"
             ]
         },
+        "CellularAutomata": {
+            "name": "Cellular automata",
+            "tags": [
+                "Cellular automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
+            ]
+        },
         "PerlinNoise": {
             "name": "Perlin noise",
             "tags": [
@@ -291,6 +333,25 @@
                 "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
             ]
         },
+        "tSNE": {
+            "name": "t-SNE",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "CannyEdgeDetection": {
+            "name": "Canny edge detection",
+            "tags": [
+                "image processing",
+                "edge detection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Canny_edge_detector"
+            ]
+        },
         "Blur": {
             "name": "Blur",
             "tags": [
@@ -304,6 +365,15 @@
             "name": "Dithering",
             "tags": [
                 "image processing"
+            ]
+        },
+        "RegularExpressions": {
+            "name": "Regular expressions",
+            "tags": [
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Regular_expression"
             ]
         },
         "ConwaysGameOfLife": {
