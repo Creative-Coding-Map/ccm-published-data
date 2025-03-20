@@ -271,9 +271,21 @@
                 }
             }
         },
-        "CPP": {},
-        "C": {},
+        "CPP": {
+            "tags": [
+                "language"
+            ]
+        },
+        "C": {
+            "tags": [
+                "language"
+            ]
+        },
         "PenPlotter": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
             "actions": {
                 "plot": {
                     "description": "Plot on paper",
@@ -287,11 +299,25 @@
                 }
             }
         },
-        "Display": {},
-        "HLSL": {},
+        "Display": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ]
+        },
+        "HLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ]
+        },
         "Photoshop": {},
         "Inkscape": {},
         "Printer": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
             "actions": {
                 "print": {
                     "description": "Print on paper",
@@ -306,6 +332,13 @@
                 "_VideoIO",
                 "_LibraryIO",
                 "_Drawing"
+            ],
+            "tags": [
+                "creative coding",
+                "opensource"
+            ],
+            "references": [
+                "https://openrndr.org"
             ],
             "actions": {
                 "loadImageArtifact": {
@@ -675,6 +708,11 @@
                 "_LibraryIO",
                 "_Drawing"
             ],
+            "tags": [
+                "creative coding",
+                "application",
+                "library"
+            ],
             "actions": {
                 "loadImageArtifact": {
                     "description": "Load image artifact",
@@ -1014,6 +1052,11 @@
             }
         },
         "Camera": {
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
             "actions": {
                 "capture": {
                     "description": "Capture a frame"
@@ -1106,14 +1149,48 @@
         },
         "Illustrator": {},
         "Python": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ],
             "libraries": {
-                "Pandas": {}
+                "Pandas": {
+                    "references": [
+                        "https://en.wikipedia.org/wiki/Pandas_(software)"
+                    ]
+                }
             }
         },
-        "Kotlin": {},
-        "OpenFrameworks": {},
-        "Javascript": {},
-        "Ruby": {},
+        "Kotlin": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://kotlinlang.org/"
+            ]
+        },
+        "OpenFrameworks": {
+            "tags": [
+                "creative coding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenFrameworks"
+            ]
+        },
+        "Javascript": {
+            "tags": [
+                "language"
+            ]
+        },
+        "Ruby": {
+            "tags": [
+                "language"
+            ]
+        },
         "_Model3DIO": {
             "actions": {
                 "saveModel3D": {
@@ -1136,8 +1213,16 @@
                 }
             }
         },
-        "Java": {},
+        "Java": {
+            "tags": [
+                "language"
+            ]
+        },
         "Microphone": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
             "actions": {
                 "capture": {
                     "description": "Capture sound",
@@ -1145,11 +1230,38 @@
                 }
             }
         },
-        "OpenProcessing": {},
-        "Rust": {},
-        "GLSL": {},
-        "Hydra": {},
-        "Nannou": {},
+        "OpenProcessing": {
+            "tags": [
+                "creative coding",
+                "application",
+                "web"
+            ]
+        },
+        "Rust": {
+            "tags": [
+                "language"
+            ]
+        },
+        "GLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ]
+        },
+        "Hydra": {
+            "references": [
+                "https://hydra.ojack.xyz/"
+            ]
+        },
+        "Nannou": {
+            "tags": [
+                "creative coding",
+                "library"
+            ],
+            "references": [
+                "https://nannou.cc/"
+            ]
+        },
         "_VideoIO": {
             "actions": {
                 "loadVideo": {
@@ -1171,8 +1283,16 @@
                 }
             }
         },
-        "CSharp": {},
+        "CSharp": {
+            "tags": [
+                "language"
+            ]
+        },
         "MediaPlayer": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
             "actions": {
                 "play": {
                     "description": "Play media"
@@ -1183,6 +1303,11 @@
             }
         },
         "DepthSensor": {
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
             "actions": {
                 "capture": {
                     "description": "Capture a frame"
@@ -1190,6 +1315,14 @@
             }
         },
         "ShaderToy": {
+            "tags": [
+                "software",
+                "web"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
             "actions": {
                 "runShader": {
                     "description": "Run Shader"
@@ -1206,6 +1339,15 @@
                 "_VideoIO",
                 "_LibraryIO",
                 "_Drawing"
+            ],
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing#p5.js"
             ],
             "actions": {
                 "loadImageArtifact": {
@@ -1551,6 +1693,10 @@
             }
         },
         "Projector": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
             "actions": {
                 "display": {
                     "description": "Project on surface",
