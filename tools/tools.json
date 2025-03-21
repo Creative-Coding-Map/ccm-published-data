@@ -1,5 +1,14 @@
 {
     "tools": {
+        "Illustrator": {
+            "tags": [
+                "application",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            ]
+        },
         "_Drawing": {
             "actions": {
                 "clearBackground": {
@@ -271,39 +280,10 @@
                 }
             }
         },
-        "Ruby": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
         "CPP": {
             "tags": [
                 "language"
             ]
-        },
-        "C": {
-            "tags": [
-                "language"
-            ]
-        },
-        "PenPlotter": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "actions": {
-                "plot": {
-                    "description": "Plot on paper",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
-                }
-            }
         },
         "Display": {
             "tags": [
@@ -311,48 +291,11 @@
                 "hardware"
             ]
         },
-        "HLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ]
-        },
         "OpenProcessing": {
             "tags": [
                 "creative coding",
                 "platform"
             ]
-        },
-        "Printer": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "actions": {
-                "print": {
-                    "description": "Print on paper",
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "ShaderToy": {
-            "tags": [
-                "software",
-                "platform"
-            ],
-            "references": [
-                "https://www.shadertoy.com/",
-                "https://en.wikipedia.org/wiki/Shadertoy"
-            ],
-            "actions": {
-                "runShader": {
-                    "description": "Run Shader"
-                },
-                "publishShader": {
-                    "description": " Publish shader",
-                    "outputType": "SourceCodeArtifact"
-                }
-            }
         },
         "OPENRNDR": {
             "prototypes": [
@@ -363,7 +306,7 @@
             ],
             "tags": [
                 "creative coding",
-                "opensource"
+                "library opensource"
             ],
             "references": [
                 "https://openrndr.org"
@@ -729,6 +672,13 @@
                 "OrxTextWriter": {}
             }
         },
+        "SuperCollider": {
+            "tags": [
+                "application",
+                "opensource",
+                "audio"
+            ]
+        },
         "Camera": {
             "tags": [
                 "media technology",
@@ -738,46 +688,6 @@
             "actions": {
                 "capture": {
                     "description": "Capture a frame"
-                }
-            }
-        },
-        "_DatasetIO": {
-            "actions": {
-                "saveJson": {
-                    "description": "Save JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadCsv": {
-                    "description": "Load CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
-                },
-                "saveCsv": {
-                    "description": "Save CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadJson": {
-                    "description": "Load JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
                 }
             }
         },
@@ -1199,6 +1109,211 @@
                 "https://kotlinlang.org/"
             ]
         },
+        "Photoshop": {
+            "tags": [
+                "application",
+                "raster graphics"
+            ]
+        },
+        "MaxMsp": {
+            "tags": [
+                "application",
+                "node-based"
+            ]
+        },
+        "Inkscape": {
+            "tags": [
+                "application",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inkscape"
+            ]
+        },
+        "Cinema4D": {
+            "tags": [
+                "application",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinema_4D"
+            ]
+        },
+        "Blender": {
+            "tags": [
+                "application",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Blender_(software)"
+            ]
+        },
+        "MidiController": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ]
+        },
+        "MediaPlayer": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "actions": {
+                "play": {
+                    "description": "Play media"
+                },
+                "stop": {
+                    "description": "Stop media"
+                }
+            }
+        },
+        "DepthSensor": {
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "actions": {
+                "capture": {
+                    "description": "Capture a frame"
+                }
+            }
+        },
+        "ThreeJS": {
+            "tags": [
+                "creative coding",
+                "library",
+                "web",
+                "opensource"
+            ]
+        },
+        "Projector": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "actions": {
+                "display": {
+                    "description": "Project on surface",
+                    "arguments": [
+                        {
+                            "name": "artifact",
+                            "type": "IArtifact"
+                        }
+                    ],
+                    "outputType": "PrintedArtifact"
+                }
+            }
+        },
+        "Rust": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Ruby": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Gimp": {
+            "tags": [
+                "application",
+                "opensource",
+                "raster graphics"
+            ]
+        },
+        "PenPlotter": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "actions": {
+                "plot": {
+                    "description": "Plot on paper",
+                    "arguments": [
+                        {
+                            "name": "artifact",
+                            "type": "IArtifact"
+                        }
+                    ],
+                    "outputType": "PrintedArtifact"
+                }
+            }
+        },
+        "C": {
+            "tags": [
+                "language"
+            ]
+        },
+        "HLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ]
+        },
+        "Printer": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "actions": {
+                "print": {
+                    "description": "Print on paper",
+                    "outputType": "PrintedArtifact"
+                }
+            }
+        },
+        "Figma": {
+            "tags": [
+                "application",
+                "saas"
+            ]
+        },
+        "_DatasetIO": {
+            "actions": {
+                "saveJson": {
+                    "description": "Save JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadCsv": {
+                    "description": "Load CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                },
+                "saveCsv": {
+                    "description": "Save CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadJson": {
+                    "description": "Load JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                }
+            }
+        },
         "Hydra": {
             "tags": [
                 "creative coding",
@@ -1218,13 +1333,11 @@
                 "https://en.wikipedia.org/wiki/OpenFrameworks"
             ]
         },
-        "Inkscape": {
+        "Cinder": {
             "tags": [
-                "software",
+                "creative coding",
+                "library",
                 "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inkscape"
             ]
         },
         "Midi": {
@@ -1234,12 +1347,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/MIDI"
-            ]
-        },
-        "Figma": {
-            "tags": [
-                "software",
-                "saas"
             ]
         },
         "_Model3DIO": {
@@ -1264,6 +1371,13 @@
                 }
             }
         },
+        "Nodebox": {
+            "tags": [
+                "application",
+                "opensource",
+                "node-based"
+            ]
+        },
         "Microphone": {
             "tags": [
                 "media technology",
@@ -1276,17 +1390,46 @@
                 }
             }
         },
-        "Cinema4D": {
+        "PureData": {
             "tags": [
-                "software"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cinema_4D"
+                "application",
+                "opensource",
+                "node-based"
             ]
         },
-        "Photoshop": {
+        "ShaderToy": {
             "tags": [
-                "software"
+                "software",
+                "platform",
+                "web",
+                "shaders"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
+            "actions": {
+                "runShader": {
+                    "description": "Run Shader"
+                },
+                "publishShader": {
+                    "description": " Publish shader",
+                    "outputType": "SourceCodeArtifact"
+                }
+            }
+        },
+        "PaperJs": {
+            "tags": [
+                "web",
+                "library",
+                "opensource"
+            ]
+        },
+        "D3JS": {
+            "tags": [
+                "library",
+                "web",
+                "opensource"
             ]
         },
         "GLSL": {
@@ -1661,6 +1804,12 @@
                 }
             }
         },
+        "Javascript": {
+            "tags": [
+                "language",
+                "web"
+            ]
+        },
         "_VideoIO": {
             "actions": {
                 "loadVideo": {
@@ -1682,44 +1831,10 @@
                 }
             }
         },
-        "Javascript": {
-            "tags": [
-                "language",
-                "web"
-            ]
-        },
-        "Illustrator": {
-            "tags": [
-                "software"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
-            ]
-        },
         "CSharp": {
             "tags": [
                 "language"
             ]
-        },
-        "MidiController": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ]
-        },
-        "MediaPlayer": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "actions": {
-                "play": {
-                    "description": "Play media"
-                },
-                "stop": {
-                    "description": "Stop media"
-                }
-            }
         },
         "OSC": {
             "tags": [
@@ -1730,41 +1845,17 @@
                 "https://en.wikipedia.org/wiki/Open_Sound_Control"
             ]
         },
-        "DepthSensor": {
+        "Audacity": {
             "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
-                }
-            }
-        },
-        "Gimp": {
-            "tags": [
-                "software",
-                "opensource"
+                "application",
+                "audio"
             ]
         },
-        "Projector": {
+        "TouchDesigner": {
             "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "actions": {
-                "display": {
-                    "description": "Project on surface",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
-                }
-            }
+                "application",
+                "node-based"
+            ]
         },
         "Java": {
             "tags": [
@@ -1780,12 +1871,6 @@
             ],
             "references": [
                 "https://nannou.cc/"
-            ]
-        },
-        "Rust": {
-            "tags": [
-                "language",
-                "opensource"
             ]
         },
         "_LibraryIO": {
@@ -1808,15 +1893,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/DMX"
-            ]
-        },
-        "Blender": {
-            "tags": [
-                "software",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Blender_(software)"
             ]
         }
     }
