@@ -396,6 +396,17 @@
                 }
             }
         },
+        "Pico8": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PICO-8"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
         "Antlr": {
             "tags": [
                 "library",
@@ -602,6 +613,26 @@
                     "description": "Capture a frame"
                 }
             }
+        },
+        "Picotron": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Picotron",
+                "https://www.lexaloffle.com/picotron.php"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
+        "Lua": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lua_(programming_language)"
+            ]
         },
         "Python": {
             "tags": [
@@ -2194,6 +2225,17 @@
                     "outputType": "SourceCodeArtifact"
                 }
             }
+        },
+        "Tic80": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/TIC-80"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
         },
         "DMX": {
             "tags": [
