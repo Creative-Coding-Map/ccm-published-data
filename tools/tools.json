@@ -308,11 +308,37 @@
                 "hardware"
             ]
         },
+        "Hydra": {
+            "tags": [
+                "creative coding",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://hydra.ojack.xyz/"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ]
+        },
         "SuperCollider": {
             "tags": [
                 "application",
                 "opensource",
                 "audio"
+            ]
+        },
+        "Lwjgl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
             ]
         },
         "Camera": {
@@ -370,6 +396,18 @@
                 }
             }
         },
+        "Antlr": {
+            "tags": [
+                "library",
+                "parsing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
         "OpenGL": {
             "tags": [
                 "library",
@@ -396,23 +434,6 @@
                 "application",
                 "raster graphics"
             ]
-        },
-        "Python": {
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ],
-            "libraries": {
-                "Pandas": {
-                    "references": [
-                        "https://en.wikipedia.org/wiki/Pandas_(software)"
-                    ]
-                }
-            }
         },
         "MaxMsp": {
             "tags": [
@@ -456,6 +477,19 @@
                 "https://en.wikipedia.org/wiki/Cinema_4D"
             ]
         },
+        "ScikitLearn": {
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
         "Arduino": {
             "tags": [
                 "hardware",
@@ -497,6 +531,19 @@
                 "Javascript",
                 "WebGL",
                 "WebGPU"
+            ]
+        },
+        "PyTorch": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
             ]
         },
         "Metal": {
@@ -556,6 +603,16 @@
                 }
             }
         },
+        "Python": {
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ]
+        },
         "Projector": {
             "tags": [
                 "media technology",
@@ -573,6 +630,18 @@
                     "outputType": "PrintedArtifact"
                 }
             }
+        },
+        "Jogl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
         },
         "MidiKeyboard": {
             "tags": [
@@ -607,6 +676,18 @@
                 "language"
             ]
         },
+        "Pandas": {
+            "tags": [
+                "library",
+                "data science"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
         "OpenFrameworks": {
             "tags": [
                 "creative coding",
@@ -617,12 +698,6 @@
             ],
             "dependsOn": [
                 "CPP"
-            ]
-        },
-        "Figma": {
-            "tags": [
-                "application",
-                "saas"
             ]
         },
         "_DatasetIO": {
@@ -722,20 +797,6 @@
             ],
             "dependsOn": [
                 "Rust"
-            ]
-        },
-        "Hydra": {
-            "tags": [
-                "creative coding",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://hydra.ojack.xyz/"
-            ],
-            "dependsOn": [
-                "Javscript",
-                "WebGL"
             ]
         },
         "Blender": {
@@ -1554,6 +1615,14 @@
                 }
             }
         },
+        "Figma": {
+            "tags": [
+                "application",
+                "saas",
+                "vector graphics",
+                "raster graphics"
+            ]
+        },
         "MidiController": {
             "tags": [
                 "media technology",
@@ -1605,6 +1674,16 @@
                 "node-based"
             ]
         },
+        "VSCode": {
+            "tags": [
+                "application",
+                "ide",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+            ]
+        },
         "Direct3D": {
             "tags": [
                 "library",
@@ -1638,6 +1717,15 @@
                 "Javascript",
                 "WebGL",
                 "GLSL"
+            ]
+        },
+        "IntelliJ": {
+            "tags": [
+                "application",
+                "ide"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
             ]
         },
         "P5Js": {
@@ -2029,6 +2117,11 @@
                     ]
                 }
             }
+        },
+        "Ktor": {
+            "dependsOn": [
+                "Kotlin"
+            ]
         },
         "CPP": {
             "tags": [
