@@ -9,277 +9,6 @@
                 "https://en.wikipedia.org/wiki/Adobe_Illustrator"
             ]
         },
-        "_Drawing": {
-            "actions": {
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                }
-            }
-        },
         "Vulkan": {
             "tags": [
                 "library",
@@ -302,10 +31,28 @@
                 "https://imagemagick.org/"
             ]
         },
+        "Mp4": {
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
         "Display": {
             "tags": [
                 "media technology",
                 "hardware"
+            ]
+        },
+        "Mp3": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
             ]
         },
         "Hydra": {
@@ -322,25 +69,6 @@
                 "WebGL"
             ]
         },
-        "SuperCollider": {
-            "tags": [
-                "application",
-                "opensource",
-                "audio"
-            ]
-        },
-        "Lwjgl": {
-            "tags": [
-                "library",
-                "binding"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
         "Camera": {
             "tags": [
                 "media technology",
@@ -352,60 +80,6 @@
                     "description": "Capture a frame"
                 }
             }
-        },
-        "_ImageIO": {
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                }
-            }
-        },
-        "Pico8": {
-            "tags": [
-                "fantasy console"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PICO-8"
-            ],
-            "dependsOn": [
-                "Lua"
-            ]
         },
         "Antlr": {
             "tags": [
@@ -419,37 +93,19 @@
                 "Java"
             ]
         },
-        "OpenGL": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL"
-            ]
-        },
-        "HLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
-            ],
-            "dependsOn": [
-                "Direct3D"
-            ]
-        },
         "Photoshop": {
             "tags": [
                 "application",
                 "raster graphics"
             ]
         },
-        "MaxMsp": {
+        "Xml": {
             "tags": [
-                "application",
-                "node-based"
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
             ]
         },
         "Inkscape": {
@@ -469,36 +125,13 @@
                 "opensource"
             ]
         },
-        "WebGPU": {
+        "Gif": {
             "tags": [
-                "library",
-                "graphics api",
-                "web"
+                "file format",
+                "raster graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/WebGPU"
-            ]
-        },
-        "Cinema4D": {
-            "tags": [
-                "application",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cinema_4D"
-            ]
-        },
-        "ScikitLearn": {
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
+                "https://en.wikipedia.org/wiki/GIF"
             ]
         },
         "Arduino": {
@@ -524,6 +157,18 @@
                 "https://en.wikipedia.org/wiki/SoX"
             ]
         },
+        "Godot": {
+            "tags": [
+                "game development"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+            ],
+            "dependsOn": [
+                "CSharp",
+                "CPP"
+            ]
+        },
         "CircuitPython": {
             "tags": [
                 "language",
@@ -544,28 +189,6 @@
                 "WebGPU"
             ]
         },
-        "PyTorch": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "Metal": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Metal_(API)"
-            ]
-        },
         "Cinder": {
             "tags": [
                 "creative coding",
@@ -577,15 +200,6 @@
             ],
             "dependsOn": [
                 "CPP"
-            ]
-        },
-        "OpenProcessing": {
-            "tags": [
-                "creative coding",
-                "platform"
-            ],
-            "dependsOn": [
-                "P5Js"
             ]
         },
         "MediaPlayer": {
@@ -644,6 +258,27 @@
                 "https://en.wikipedia.org/wiki/Python_(programming_language)"
             ]
         },
+        "Ogg": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Jogl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
         "Projector": {
             "tags": [
                 "media technology",
@@ -662,33 +297,6 @@
                 }
             }
         },
-        "Jogl": {
-            "tags": [
-                "library",
-                "binding"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "MidiKeyboard": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "dependsOn": [
-                "Midi"
-            ]
-        },
-        "Rust": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
         "Ruby": {
             "tags": [
                 "language",
@@ -701,75 +309,6 @@
                 "opensource",
                 "raster graphics"
             ]
-        },
-        "C": {
-            "tags": [
-                "language"
-            ]
-        },
-        "Pandas": {
-            "tags": [
-                "library",
-                "data science"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "OpenFrameworks": {
-            "tags": [
-                "creative coding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenFrameworks"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "_DatasetIO": {
-            "actions": {
-                "saveJson": {
-                    "description": "Save JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadCsv": {
-                    "description": "Load CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
-                },
-                "saveCsv": {
-                    "description": "Save CSV file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadJson": {
-                    "description": "Load JSON file",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "DatasetArtifact"
-                }
-            }
         },
         "Kotlin": {
             "tags": [
@@ -817,19 +356,6 @@
                 "C"
             ]
         },
-        "Nannou": {
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://nannou.cc/"
-            ],
-            "dependsOn": [
-                "Rust"
-            ]
-        },
         "Blender": {
             "tags": [
                 "application",
@@ -844,389 +370,13 @@
                 "Python"
             ]
         },
-        "Processing": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
-            ],
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "opensource"
-            ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "runSketch": {
-                    "description": "Run sketch"
-                }
-            },
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "WebGL": {
+        "OpenGL_ES": {
             "tags": [
                 "library",
-                "graphics api",
-                "web"
+                "graphics api"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/WebGL"
-            ]
-        },
-        "GLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
-            ],
-            "dependsOn": [
-                "OpenGL"
-            ]
-        },
-        "Midi": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MIDI"
+                "https://en.wikipedia.org/wiki/OpenGL_ES"
             ]
         },
         "OPENRNDR": {
@@ -1611,19 +761,6 @@
                 "Ffmpeg"
             ]
         },
-        "Printer": {
-            "tags": [
-                "media technology",
-                "hardware",
-                "print"
-            ],
-            "actions": {
-                "print": {
-                    "description": "Print on paper",
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
         "_Model3DIO": {
             "actions": {
                 "saveModel3D": {
@@ -1646,23 +783,6 @@
                 }
             }
         },
-        "Figma": {
-            "tags": [
-                "application",
-                "saas",
-                "vector graphics",
-                "raster graphics"
-            ]
-        },
-        "MidiController": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "dependsOn": [
-                "Midi"
-            ]
-        },
         "MicroPython": {
             "tags": [
                 "language",
@@ -1671,19 +791,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/MicroPython"
-            ]
-        },
-        "PaperJs": {
-            "tags": [
-                "web",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "http://paperjs.org/"
-            ],
-            "dependsOn": [
-                "Javascript"
             ]
         },
         "Microphone": {
@@ -1705,16 +812,6 @@
                 "node-based"
             ]
         },
-        "VSCode": {
-            "tags": [
-                "application",
-                "ide",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
-            ]
-        },
         "Direct3D": {
             "tags": [
                 "library",
@@ -1724,30 +821,16 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
-        "ShaderToy": {
+        "Unity": {
             "tags": [
-                "software",
-                "platform",
-                "web",
-                "shaders"
+                "game development"
             ],
             "references": [
-                "https://www.shadertoy.com/",
-                "https://en.wikipedia.org/wiki/Shadertoy"
+                "https://en.wikipedia.org/wiki/Unity_(game_engine)"
             ],
-            "actions": {
-                "runShader": {
-                    "description": "Run Shader"
-                },
-                "publishShader": {
-                    "description": " Publish shader",
-                    "outputType": "SourceCodeArtifact"
-                }
-            },
             "dependsOn": [
-                "Javascript",
-                "WebGL",
-                "GLSL"
+                "CSharp",
+                "CPP"
             ]
         },
         "IntelliJ": {
@@ -2122,10 +1205,13 @@
                 "Javascript"
             ]
         },
-        "Javascript": {
+        "Opus": {
             "tags": [
-                "language",
-                "web"
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
             ]
         },
         "_VideoIO": {
@@ -2149,46 +1235,12 @@
                 }
             }
         },
-        "Ktor": {
-            "dependsOn": [
-                "Kotlin"
-            ]
-        },
         "CPP": {
             "tags": [
                 "language"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/C%2B%2B"
-            ]
-        },
-        "Esp32": {
-            "tags": [
-                "hardware",
-                "microcontroller"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ESP32"
-            ]
-        },
-        "CSharp": {
-            "tags": [
-                "language"
-            ]
-        },
-        "OSC": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ]
-        },
-        "Audacity": {
-            "tags": [
-                "application",
-                "audio"
             ]
         },
         "Nodebox": {
@@ -2206,25 +1258,6 @@
                 "application",
                 "node-based"
             ]
-        },
-        "Java": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "_LibraryIO": {
-            "actions": {
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                }
-            }
         },
         "Tic80": {
             "tags": [
@@ -2245,6 +1278,1159 @@
             "references": [
                 "https://en.wikipedia.org/wiki/DMX"
             ]
+        },
+        "_Drawing": {
+            "actions": {
+                "clearBackground": {
+                    "description": "Clear the background",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawEllipse": {
+                    "description": "Draw an ellipse",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "xRadius",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "yRadius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCircle": {
+                    "description": "Draw a circle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "radius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawLine": {
+                    "description": "Draw a line",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCubicBezier": {
+                    "description": "Draw a cubic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x3",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y3",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawQuadraticBezier": {
+                    "description": "Draw a quadratic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setStroke": {
+                    "description": "Set the stroke color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFill": {
+                    "description": "Set the fill color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawRectangle": {
+                    "description": "Draw a rectangle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawImage": {
+                    "description": "Draw an image",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFont": {
+                    "description": "Set the active font",
+                    "arguments": [
+                        {
+                            "name": "font"
+                        },
+                        {
+                            "name": "size",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawText": {
+                    "description": "Draw a text",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "text"
+                        }
+                    ]
+                },
+                "drawPoint": {
+                    "description": "Draw a point",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        }
+                    ]
+                }
+            }
+        },
+        "SuperCollider": {
+            "tags": [
+                "application",
+                "opensource",
+                "audio"
+            ]
+        },
+        "Collada": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Lwjgl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "_ImageIO": {
+            "actions": {
+                "loadImageArtifact": {
+                    "description": "Load image artifact",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "IArtifact"
+                        }
+                    ]
+                },
+                "saveImage": {
+                    "description": "Save Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadImage": {
+                    "description": "Load Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "createImage": {
+                    "description": "Create an image",
+                    "arguments": [
+                        {
+                            "name": "width",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Int"
+                        }
+                    ]
+                }
+            }
+        },
+        "Pico8": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PICO-8"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
+        "OpenGL": {
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL"
+            ]
+        },
+        "HLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
+            ],
+            "dependsOn": [
+                "Direct3D"
+            ]
+        },
+        "MaxMsp": {
+            "tags": [
+                "application",
+                "node-based"
+            ]
+        },
+        "Json": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Angle": {
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANGLE_(software)"
+            ]
+        },
+        "WebGPU": {
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGPU"
+            ]
+        },
+        "Cinema4D": {
+            "tags": [
+                "application",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinema_4D"
+            ]
+        },
+        "ScikitLearn": {
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Mov": {
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "PyTorch": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
+            ]
+        },
+        "Metal": {
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Metal_(API)"
+            ]
+        },
+        "OpenProcessing": {
+            "tags": [
+                "creative coding",
+                "platform"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "MidiKeyboard": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "Rust": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "C": {
+            "tags": [
+                "language"
+            ]
+        },
+        "Pandas": {
+            "tags": [
+                "library",
+                "data science"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "OpenFrameworks": {
+            "tags": [
+                "creative coding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenFrameworks"
+            ],
+            "dependsOn": [
+                "CPP"
+            ]
+        },
+        "_DatasetIO": {
+            "actions": {
+                "saveJson": {
+                    "description": "Save JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadCsv": {
+                    "description": "Load CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                },
+                "saveCsv": {
+                    "description": "Save CSV file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadJson": {
+                    "description": "Load JSON file",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "DatasetArtifact"
+                }
+            }
+        },
+        "Nannou": {
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://nannou.cc/"
+            ],
+            "dependsOn": [
+                "Rust"
+            ]
+        },
+        "Obj": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Processing": {
+            "prototypes": [
+                "_ImageIO",
+                "_VideoIO",
+                "_LibraryIO",
+                "_Drawing"
+            ],
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "actions": {
+                "loadImageArtifact": {
+                    "description": "Load image artifact",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "IArtifact"
+                        }
+                    ]
+                },
+                "saveImage": {
+                    "description": "Save Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadImage": {
+                    "description": "Load Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "createImage": {
+                    "description": "Create an image",
+                    "arguments": [
+                        {
+                            "name": "width",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Int"
+                        }
+                    ]
+                },
+                "loadVideo": {
+                    "description": "Load Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "VideoArtifact"
+                },
+                "saveVideo": {
+                    "description": "Save Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "importLibrary": {
+                    "description": "Import library",
+                    "arguments": [
+                        {
+                            "name": "libraryName"
+                        }
+                    ],
+                    "outputType": "SourceCodeArtifact"
+                },
+                "clearBackground": {
+                    "description": "Clear the background",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawEllipse": {
+                    "description": "Draw an ellipse",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "xRadius",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "yRadius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCircle": {
+                    "description": "Draw a circle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "radius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawLine": {
+                    "description": "Draw a line",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCubicBezier": {
+                    "description": "Draw a cubic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x3",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y3",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawQuadraticBezier": {
+                    "description": "Draw a quadratic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setStroke": {
+                    "description": "Set the stroke color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFill": {
+                    "description": "Set the fill color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawRectangle": {
+                    "description": "Draw a rectangle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawImage": {
+                    "description": "Draw an image",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFont": {
+                    "description": "Set the active font",
+                    "arguments": [
+                        {
+                            "name": "font"
+                        },
+                        {
+                            "name": "size",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawText": {
+                    "description": "Draw a text",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "text"
+                        }
+                    ]
+                },
+                "drawPoint": {
+                    "description": "Draw a point",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "runSketch": {
+                    "description": "Run sketch"
+                }
+            },
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "WebGL": {
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGL"
+            ]
+        },
+        "Midi": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI"
+            ]
+        },
+        "GLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+            ],
+            "dependsOn": [
+                "OpenGL"
+            ]
+        },
+        "Printer": {
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "actions": {
+                "print": {
+                    "description": "Print on paper",
+                    "outputType": "PrintedArtifact"
+                }
+            }
+        },
+        "Figma": {
+            "tags": [
+                "application",
+                "saas",
+                "vector graphics",
+                "raster graphics"
+            ]
+        },
+        "Gltf": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "MidiController": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "PaperJs": {
+            "tags": [
+                "web",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://paperjs.org/"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "VSCode": {
+            "tags": [
+                "application",
+                "ide",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+            ]
+        },
+        "ShaderToy": {
+            "tags": [
+                "software",
+                "platform",
+                "web",
+                "shaders"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
+            "actions": {
+                "runShader": {
+                    "description": "Run Shader"
+                },
+                "publishShader": {
+                    "description": " Publish shader",
+                    "outputType": "SourceCodeArtifact"
+                }
+            },
+            "dependsOn": [
+                "Javascript",
+                "WebGL",
+                "GLSL"
+            ]
+        },
+        "Svg": {
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Png": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "Yaml": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Javascript": {
+            "tags": [
+                "language",
+                "web"
+            ]
+        },
+        "Ktor": {
+            "dependsOn": [
+                "Kotlin"
+            ]
+        },
+        "Esp32": {
+            "tags": [
+                "hardware",
+                "microcontroller"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ESP32"
+            ]
+        },
+        "CSharp": {
+            "tags": [
+                "language"
+            ]
+        },
+        "Csv": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "OSC": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ]
+        },
+        "Jpg": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Audacity": {
+            "tags": [
+                "application",
+                "audio"
+            ]
+        },
+        "Java": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "_LibraryIO": {
+            "actions": {
+                "importLibrary": {
+                    "description": "Import library",
+                    "arguments": [
+                        {
+                            "name": "libraryName"
+                        }
+                    ],
+                    "outputType": "SourceCodeArtifact"
+                }
+            }
         }
     }
 }
