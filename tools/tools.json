@@ -1,5 +1,395 @@
 {
     "tools": {
+        "ProcessingGeometrySuite": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "dependsOn": [
+                "Processing",
+                "Jts"
+            ]
+        },
+        "ComputationalGeometry": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "actions": {
+                "plotIsoContour": {
+                    "description": "Plot isocontour in 2D",
+                    "techniques": [
+                        "MarchingSquares"
+                    ]
+                },
+                "plotIsoSurface": {
+                    "description": "Plot isosurface in 3D",
+                    "techniques": [
+                        "MarchingCubes"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Processing": {
+            "prototypes": [
+                "_ImageIO",
+                "_VideoIO",
+                "_LibraryIO",
+                "_Drawing"
+            ],
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "actions": {
+                "loadImageArtifact": {
+                    "description": "Load image artifact",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "IArtifact"
+                        }
+                    ]
+                },
+                "saveImage": {
+                    "description": "Save Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadImage": {
+                    "description": "Load Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "createImage": {
+                    "description": "Create an image",
+                    "arguments": [
+                        {
+                            "name": "width",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Int"
+                        }
+                    ]
+                },
+                "loadVideo": {
+                    "description": "Load Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "VideoArtifact"
+                },
+                "saveVideo": {
+                    "description": "Save Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "importLibrary": {
+                    "description": "Import library",
+                    "arguments": [
+                        {
+                            "name": "libraryName"
+                        }
+                    ],
+                    "outputType": "SourceCodeArtifact"
+                },
+                "clearBackground": {
+                    "description": "Clear the background",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawEllipse": {
+                    "description": "Draw an ellipse",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "xRadius",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "yRadius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCircle": {
+                    "description": "Draw a circle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "radius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawLine": {
+                    "description": "Draw a line",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCubicBezier": {
+                    "description": "Draw a cubic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x3",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y3",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawQuadraticBezier": {
+                    "description": "Draw a quadratic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setStroke": {
+                    "description": "Set the stroke color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFill": {
+                    "description": "Set the fill color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawRectangle": {
+                    "description": "Draw a rectangle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawImage": {
+                    "description": "Draw an image",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFont": {
+                    "description": "Set the active font",
+                    "arguments": [
+                        {
+                            "name": "font"
+                        },
+                        {
+                            "name": "size",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawText": {
+                    "description": "Draw a text",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "text"
+                        }
+                    ]
+                },
+                "drawPoint": {
+                    "description": "Draw a point",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "runSketch": {
+                    "description": "Run sketch"
+                }
+            },
+            "dependsOn": [
+                "Java",
+                "Jogl",
+                "Antlr",
+                "Swing"
+            ]
+        },
         "Illustrator": {
             "tags": [
                 "application",
@@ -80,18 +470,6 @@
                     "description": "Capture a frame"
                 }
             }
-        },
-        "Antlr": {
-            "tags": [
-                "library",
-                "parsing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
         },
         "Photoshop": {
             "tags": [
@@ -265,18 +643,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Jogl": {
-            "tags": [
-                "library",
-                "binding"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
             ]
         },
         "Projector": {
@@ -870,18 +1236,6 @@
                 "https://en.wikipedia.org/wiki/COLLADA"
             ]
         },
-        "Lwjgl": {
-            "tags": [
-                "library",
-                "binding"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
         "Pico8": {
             "tags": [
                 "fantasy console"
@@ -1085,360 +1439,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Processing": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
-            ],
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "opensource"
-            ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "runSketch": {
-                    "description": "Run sketch"
-                }
-            },
-            "dependsOn": [
-                "Java"
             ]
         },
         "WebGL": {
@@ -1645,12 +1645,6 @@
                 "audio"
             ]
         },
-        "Java": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
         "NumPy": {
             "tags": [
                 "library"
@@ -1660,6 +1654,98 @@
             ],
             "dependsOn": [
                 "Python"
+            ]
+        },
+        "Antlr": {
+            "tags": [
+                "library",
+                "parsing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Lwjgl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Awt": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jts": {
+            "tags": [
+                "library",
+                "geometry",
+                "gis"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JSerialComm": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "Java": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Swing": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jogl": {
+            "tags": [
+                "library",
+                "binding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
             ]
         },
         "OPENRNDR": {
@@ -2021,30 +2107,29 @@
                 "Ffmpeg"
             ]
         },
-        "OrxShadeStyles": {},
-        "OpenrndrVideo": {},
-        "OrxShapes": {
-            "actions": {
-                "findDelaunayTriangulation": {
-                    "description": "Find Delaunay triangulation",
-                    "techniques": [
-                        "DelaunayTriangulation"
-                    ]
-                },
-                "fitHobbyCurve": {
-                    "description": "Fit Hobby curve",
-                    "techniques": [
-                        "HobbyCurve"
-                    ]
-                }
-            },
+        "OrxShadeStyles": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
             "dependsOn": [
                 "OPENRNDR"
             ]
         },
-        "OrxNoise": {},
-        "OrxTextWriter": {},
+        "OrxNoise": {
+            "tags": [
+                "library",
+                "noise"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
         "OrxFx": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
             "actions": {
                 "applyCannyEdgeDetector": {
                     "description": "Apply Canny edge detector",
@@ -2094,7 +2179,51 @@
                         "Bloom"
                     ]
                 }
-            }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextWriter": {
+            "tags": [
+                "library",
+                "text"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OpenrndrVideo": {
+            "tags": [
+                "library",
+                "video"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShapes": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "actions": {
+                "findDelaunayTriangulation": {
+                    "description": "Find Delaunay triangulation",
+                    "techniques": [
+                        "DelaunayTriangulation"
+                    ]
+                },
+                "fitHobbyCurve": {
+                    "description": "Fit Hobby curve",
+                    "techniques": [
+                        "HobbyCurve"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
         }
     }
 }
