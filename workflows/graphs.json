@@ -50,7 +50,7 @@
                 "index": 7
             },
             {
-                "label": "Run sketch",
+                "label": "Clear the background",
                 "type": "action",
                 "subType": null,
                 "index": 8
@@ -62,7 +62,7 @@
                 "index": 9
             },
             {
-                "label": "Import library",
+                "label": "Draw a rectangle",
                 "type": "action",
                 "subType": null,
                 "index": 10
@@ -74,8 +74,8 @@
                 "index": 11
             },
             {
-                "label": "Artifact",
-                "type": "artifact",
+                "label": "Create an image",
+                "type": "action",
                 "subType": null,
                 "index": 12
             },
@@ -86,8 +86,8 @@
                 "index": 13
             },
             {
-                "label": "P5Js",
-                "type": "tool",
+                "label": "Run sketch",
+                "type": "action",
                 "subType": null,
                 "index": 14
             },
@@ -98,7 +98,7 @@
                 "index": 15
             },
             {
-                "label": "Load image artifact",
+                "label": "Import library",
                 "type": "action",
                 "subType": null,
                 "index": 16
@@ -110,8 +110,8 @@
                 "index": 17
             },
             {
-                "label": "Run sketch",
-                "type": "action",
+                "label": "Artifact",
+                "type": "artifact",
                 "subType": null,
                 "index": 18
             },
@@ -122,10 +122,46 @@
                 "index": 19
             },
             {
+                "label": "P5Js",
+                "type": "tool",
+                "subType": null,
+                "index": 20
+            },
+            {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 20
+                "index": 21
+            },
+            {
+                "label": "Load image artifact",
+                "type": "action",
+                "subType": null,
+                "index": 22
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "index": 23
+            },
+            {
+                "label": "Run sketch",
+                "type": "action",
+                "subType": null,
+                "index": 24
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "index": 25
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "index": 26
             }
         ],
         "links": [
@@ -246,7 +282,7 @@
             {
                 "source": 9,
                 "target": 7,
-                "label": "Run sketch",
+                "label": "Clear the background",
                 "type": null
             },
             {
@@ -270,55 +306,55 @@
             {
                 "source": 11,
                 "target": 9,
-                "label": "Import library",
+                "label": "Draw a rectangle",
                 "type": null
             },
             {
                 "source": 11,
-                "target": 10,
+                "target": 12,
                 "label": null,
                 "type": null
             },
             {
-                "source": 12,
-                "target": 10,
+                "source": 13,
+                "target": 12,
                 "label": null,
                 "type": null
             },
             {
                 "source": 1,
-                "target": 10,
+                "target": 12,
                 "label": null,
                 "type": null
             },
             {
-                "source": 12,
+                "source": 13,
                 "target": 11,
-                "label": "Import library",
+                "label": "Create an image",
                 "type": null
             },
             {
                 "source": 13,
-                "target": 2,
+                "target": 14,
                 "label": null,
                 "type": null
             },
             {
                 "source": 15,
-                "target": 2,
+                "target": 14,
                 "label": null,
                 "type": null
             },
             {
-                "source": 14,
-                "target": 2,
+                "source": 1,
+                "target": 14,
                 "label": null,
                 "type": null
             },
             {
                 "source": 15,
                 "target": 13,
-                "label": "Save Image",
+                "label": "Run sketch",
                 "type": null
             },
             {
@@ -334,7 +370,7 @@
                 "type": null
             },
             {
-                "source": 14,
+                "source": 1,
                 "target": 16,
                 "label": null,
                 "type": null
@@ -342,66 +378,138 @@
             {
                 "source": 17,
                 "target": 15,
-                "label": "Load image artifact",
-                "type": null
-            },
-            {
-                "source": 15,
-                "target": 0,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 14,
-                "target": 0,
-                "label": null,
+                "label": "Import library",
                 "type": null
             },
             {
                 "source": 17,
-                "target": 18,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 19,
-                "target": 18,
+                "source": 18,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 14,
-                "target": 18,
+                "source": 1,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 19,
+                "source": 18,
                 "target": 17,
+                "label": "Import library",
+                "type": null
+            },
+            {
+                "source": 19,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 21,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 20,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 21,
+                "target": 19,
+                "label": "Save Image",
+                "type": null
+            },
+            {
+                "source": 21,
+                "target": 22,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 23,
+                "target": 22,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 20,
+                "target": 22,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 23,
+                "target": 21,
+                "label": "Load image artifact",
+                "type": null
+            },
+            {
+                "source": 21,
+                "target": 0,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 20,
+                "target": 0,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 23,
+                "target": 24,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 25,
+                "target": 24,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 20,
+                "target": 24,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 25,
+                "target": 23,
                 "label": "Run sketch",
                 "type": null
             },
             {
-                "source": 19,
-                "target": 10,
+                "source": 25,
+                "target": 16,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 26,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
                 "source": 20,
-                "target": 10,
+                "target": 16,
                 "label": null,
                 "type": null
             },
             {
-                "source": 14,
-                "target": 10,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 20,
-                "target": 19,
+                "source": 26,
+                "target": 25,
                 "label": "Import library",
                 "type": null
             }

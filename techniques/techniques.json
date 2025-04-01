@@ -1,5 +1,14 @@
 {
     "techniques": {
+        "Heightfield": {
+            "name": "Heightfield",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Heightmap"
+            ]
+        },
         "SphericalHarmonics": {
             "name": "Spherical Harmonics",
             "tags": [
@@ -10,70 +19,69 @@
                 "https://paulbourke.net/geometry/sphericalh/"
             ]
         },
-        "Flocking": {
-            "name": "Flocking",
+        "FlowField": {
+            "name": "Flow field",
             "tags": [
-                "simulation"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Flocking"
+                "https://en.wikipedia.org/wiki/Vector_field"
             ]
         },
-        "ValueNoise": {
-            "name": "Value noise",
+        "PolygonClipping": {
+            "name": "Polygon clipping",
             "tags": [
-                "noise"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
+                "https://en.wikipedia.org/wiki/Clipping_(computer_graphics)",
+                "https://en.wikipedia.org/wiki/Boolean_operations_on_polygons"
             ]
         },
-        "HilbertCurve": {
-            "name": "Hilbert Curve",
+        "MarchingTetrahedra": {
+            "name": "Marching tetrahedra",
             "tags": [
-                "curves"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Hilbert_curve"
+                "https://en.wikipedia.org/wiki/Marching_tetrahedra"
             ]
         },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
+        "Octree": {
+            "name": "Octree",
             "tags": [
-                "noise"
+                "computer graphics",
+                "space partitioning",
+                "data structure"
+            ]
+        },
+        "HobbyCurve": {
+            "name": "Hobby Curve",
+            "tags": [
+                "curves",
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
+                "https://www.jakelow.com/blog/hobby-curves"
             ]
         },
-        "DifferentialGrowth": {
-            "name": "Differential growth",
+        "MarchingCubes": {
+            "name": "Marching cubes",
             "tags": [
-                "simulation"
-            ]
-        },
-        "EdgeDetection": {
-            "name": "Edge detection",
-            "tags": [
-                "image processing"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Edge_detection"
+                "https://en.wikipedia.org/wiki/Marching_cubes"
             ]
         },
-        "ZOrderCurve": {
-            "name": "Z-order curve",
+        "PolygonTriangulation": {
+            "name": "Polygon triangulation",
             "tags": [
-                "curves"
+                "computer graphics",
+                "triangulation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Z-order_curve"
-            ]
-        },
-        "Halftoning": {
-            "name": "Halftoning",
-            "tags": [
-                "image processing"
+                "https://en.wikipedia.org/wiki/Polygon_triangulation"
             ]
         },
         "PathTracing": {
@@ -85,22 +93,25 @@
                 "https://en.wikipedia.org/wiki/Path_tracing"
             ]
         },
-        "FlowField": {
-            "name": "Flow field",
+        "RamerDouglasPeucker": {
+            "name": "Ramer-Douglas-Peucker Algorithm",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
             "references": [
-                "https://en.wikipedia.org/wiki/Vector_field"
+                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
             ]
         },
-        "SlitScanning": {
-            "name": "Slit-scanning",
+        "KDTree": {
+            "name": "Kd-tree",
             "tags": [
-                "photography"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "tags": [
-                "Machine learning"
+                "space partitioning",
+                "computer graphics",
+                "data structure"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/K-d_tree"
             ]
         },
         "DomainWarping": {
@@ -112,13 +123,14 @@
                 "https://iquilezles.org/articles/warp/"
             ]
         },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
+        "BezierCurve": {
+            "name": "Bézier curve",
             "tags": [
-                "noise"
+                "curves",
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
             ]
         },
         "Turtle": {
@@ -131,49 +143,31 @@
                 "https://en.wikipedia.org/wiki/Turtle_graphics"
             ]
         },
-        "BezierCurve": {
-            "name": "Bézier curve",
+        "ConvexHull": {
+            "name": "Convex hull",
             "tags": [
-                "curves"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
+                "https://en.wikipedia.org/wiki/Convex_hull"
             ]
         },
-        "MonocularDepthEstimation": {
-            "name": "Monocular depth estimation",
+        "GaussianSplatting": {
+            "name": "Gaussian splatting",
             "tags": [
-                "image processing"
+                "computer graphics"
             ],
             "references": [
-                "https://github.com/DepthAnything/Depth-Anything-V2"
+                "https://en.wikipedia.org/wiki/Heightmap"
             ]
         },
-        "KDTree": {
-            "name": "Kd-tree",
+        "MarchingSquares": {
+            "name": "Marching squares",
             "tags": [
-                "space partitioning"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/K-d_tree"
-            ]
-        },
-        "ReactionDiffusion": {
-            "name": "Reaction Diffusion",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
-            ]
-        },
-        "DCT": {
-            "name": "DCT (Discrete Cosine Transform)",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+                "https://en.wikipedia.org/wiki/Marching_squares"
             ]
         },
         "QuadTree": {
@@ -186,15 +180,6 @@
                 "https://en.wikipedia.org/wiki/Quadtree"
             ]
         },
-        "HobbyCurve": {
-            "name": "Hobby Curve",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://www.jakelow.com/blog/hobby-curves"
-            ]
-        },
         "SignedDistanceFunctions": {
             "name": "Signed Distance Functions",
             "tags": [
@@ -205,15 +190,20 @@
             ]
         },
         "HalfEdgeMesh": {
-            "name": "Half-edge mesh"
-        },
-        "Clustering": {
-            "name": "Clustering",
+            "name": "Half-edge mesh",
             "tags": [
-                "Machine learning"
+                "computer graphics",
+                "data structure"
+            ]
+        },
+        "DelaunayTriangulation": {
+            "name": "Delaunay triangulation",
+            "tags": [
+                "computer graphics",
+                "triangulation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
+                "https://en.wikipedia.org/wiki/Delaunay_triangulation"
             ]
         },
         "RayMarching": {
@@ -225,49 +215,13 @@
                 "https://en.wikipedia.org/wiki/Ray_marching"
             ]
         },
-        "PredictiveText": {
-            "name": "Predictive text",
+        "Bloom": {
+            "name": "Bloom",
             "tags": [
-                "machine learning"
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "DiffusionLimitedAggregation": {
-            "name": "Diffusion limited aggregation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
-            ]
-        },
-        "GaussianBlur": {
-            "name": "GaussianBlur",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gaussian_blur"
-            ]
-        },
-        "FluidSimulation": {
-            "name": "Fluid simulation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
-            ]
-        },
-        "PixelSorting": {
-            "name": "Pixel Sorting",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://satyarth.me/articles/pixel-sorting/"
+                "https://en.wikipedia.org/wiki/Bloom_(shader_effect)"
             ]
         },
         "LSystems": {
@@ -279,33 +233,6 @@
                 "https://en.wikipedia.org/wiki/L-system"
             ]
         },
-        "CellularAutomata": {
-            "name": "Cellular automata",
-            "tags": [
-                "Cellular automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cellular_automaton"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
-            ]
-        },
-        "DistanceTransform": {
-            "name": "Distance transform",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Distance_transform"
-            ]
-        },
         "RayTracing": {
             "name": "Ray Trarching",
             "tags": [
@@ -313,6 +240,263 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
+            ]
+        },
+        "FFT": {
+            "name": "Fast fourier transform",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            ]
+        },
+        "PinwheelTiling": {
+            "name": "Pinwheel tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
+            ]
+        },
+        "WangTiling": {
+            "name": "Wang tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wang_tile"
+            ]
+        },
+        "PenroseTiling": {
+            "name": "Penrose tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Penrose_tiling"
+            ]
+        },
+        "SubstitutionTiling": {
+            "name": "Substitution tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Substitution_tiling"
+            ]
+        },
+        "Photogrammetry": {
+            "name": "Photogrammetry",
+            "tags": [
+                "photography",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Photogrammetry"
+            ]
+        },
+        "SlitScanning": {
+            "name": "Slit-scanning",
+            "tags": [
+                "photography"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+            ]
+        },
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "tags": [
+                "photography",
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Tone_mapping"
+            ]
+        },
+        "GrayCode": {
+            "name": "Gray code",
+            "tags": [
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gray_code"
+            ]
+        },
+        "Clustering": {
+            "name": "Clustering",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
+            ]
+        },
+        "Umap": {
+            "name": "UMAP",
+            "tags": [
+                "machine learning"
+            ]
+        },
+        "tSNE": {
+            "name": "t-SNE",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "HilbertCurve": {
+            "name": "Hilbert Curve",
+            "tags": [
+                "curves",
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Hilbert_curve"
+            ]
+        },
+        "RoseCurves": {
+            "name": "Rose curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
+            ]
+        },
+        "ZOrderCurve": {
+            "name": "Z-order curve",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Z-order_curve"
+            ]
+        },
+        "LissajousCurves": {
+            "name": "Lissajous curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lissajous_curve"
+            ]
+        },
+        "ValueNoise": {
+            "name": "Value noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Value_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "PoissonFill": {
+            "name": "Poisson fill",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "HistogramEqualization": {
+            "name": "Histogram equalization",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Histogram_equalization"
+            ]
+        },
+        "DCT": {
+            "name": "DCT (Discrete Cosine Transform)",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "EdgeDetection": {
+            "name": "Edge detection",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edge_detection"
+            ]
+        },
+        "Halftoning": {
+            "name": "Halftoning",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "GaussianBlur": {
+            "name": "GaussianBlur",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gaussian_blur"
+            ]
+        },
+        "ImageQuantization": {
+            "name": "Image quantization",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
+                "https://en.wikipedia.org/wiki/Color_quantization"
+            ]
+        },
+        "PixelSorting": {
+            "name": "Pixel Sorting",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://satyarth.me/articles/pixel-sorting/"
             ]
         },
         "IDCT": {
@@ -324,22 +508,13 @@
                 "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
             ]
         },
-        "RamerDouglasPeucker": {
-            "name": "Ramer-Douglas-Peucker Algorithm",
+        "DistanceTransform": {
+            "name": "Distance transform",
             "tags": [
-                "curves"
+                "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
-            ]
-        },
-        "tSNE": {
-            "name": "t-SNE",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+                "https://en.wikipedia.org/wiki/Distance_transform"
             ]
         },
         "CannyEdgeDetection": {
@@ -361,10 +536,39 @@
                 "https://en.wikipedia.org/wiki/Box_blur"
             ]
         },
+        "MonocularDepthEstimation": {
+            "name": "Monocular depth estimation",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/DepthAnything/Depth-Anything-V2"
+            ]
+        },
         "Dithering": {
             "name": "Dithering",
             "tags": [
                 "image processing"
+            ]
+        },
+        "CellularAutomata": {
+            "name": "Cellular automata",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
+            ]
+        },
+        "ConwaysGameOfLife": {
+            "name": "Conway's Game of Life",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
             ]
         },
         "RegularExpressions": {
@@ -376,22 +580,73 @@
                 "https://en.wikipedia.org/wiki/Regular_expression"
             ]
         },
-        "ConwaysGameOfLife": {
-            "name": "Conway's Game of Life",
+        "EditDistance": {
+            "name": "Edit distance",
             "tags": [
-                "Cellular automata"
+                "text"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                "https://en.wikipedia.org/wiki/Edit_distance"
             ]
         },
-        "FFT": {
-            "name": "Fast fourier transform",
+        "LevenshteinDistance": {
+            "name": "Levenshtein distance",
             "tags": [
-                "signal processing"
+                "text"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+                "https://en.wikipedia.org/wiki/Levenshtein_distance"
+            ]
+        },
+        "Guilloche": {
+            "name": "Guilloché patterns",
+            "tags": [
+                "patterns"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
+            ]
+        },
+        "Flocking": {
+            "name": "Flocking",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Flocking"
+            ]
+        },
+        "ReactionDiffusion": {
+            "name": "Reaction Diffusion",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
+            ]
+        },
+        "DiffusionLimitedAggregation": {
+            "name": "Diffusion limited aggregation",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
+            ]
+        },
+        "FluidSimulation": {
+            "name": "Fluid simulation",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
+            ]
+        },
+        "DifferentialGrowth": {
+            "name": "Differential growth",
+            "tags": [
+                "simulation"
             ]
         }
     }
