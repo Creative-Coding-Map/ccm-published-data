@@ -388,15 +388,12 @@
                 "Jogl",
                 "Antlr",
                 "Swing"
-            ]
-        },
-        "Illustrator": {
-            "tags": [
-                "application",
-                "vector graphics"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            "supports": [
+                "Json",
+                "Csv",
+                "Png",
+                "Jpg"
             ]
         },
         "Vulkan": {
@@ -406,19 +403,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Vulkan"
-            ]
-        },
-        "ImageMagick": {
-            "tags": [
-                "application",
-                "raster graphics",
-                "vector graphics",
-                "command-line",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ImageMagick",
-                "https://imagemagick.org/"
             ]
         },
         "Mp4": {
@@ -459,6 +443,35 @@
                 "WebGL"
             ]
         },
+        "Figma": {
+            "tags": [
+                "application",
+                "saas",
+                "vector graphics",
+                "raster graphics"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Json"
+            ]
+        },
+        "SuperCollider": {
+            "tags": [
+                "application",
+                "opensource",
+                "audio"
+            ]
+        },
+        "Collada": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
         "Camera": {
             "tags": [
                 "media technology",
@@ -471,10 +484,65 @@
                 }
             }
         },
-        "Photoshop": {
+        "Pico8": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PICO-8"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
+        "Ffmpeg": {
             "tags": [
                 "application",
-                "raster graphics"
+                "library",
+                "video",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FFmpeg"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OpenGL": {
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL"
+            ]
+        },
+        "HLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
+            ],
+            "dependsOn": [
+                "Direct3D"
+            ]
+        },
+        "Audacity": {
+            "tags": [
+                "application",
+                "audio"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg"
             ]
         },
         "Xml": {
@@ -486,21 +554,56 @@
                 "https://en.wikipedia.org/wiki/XML"
             ]
         },
-        "Inkscape": {
+        "MaxMsp": {
             "tags": [
                 "application",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inkscape"
+                "node-based"
             ]
         },
-        "D3JS": {
+        "Json": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "WebGPU": {
             "tags": [
                 "library",
-                "web",
-                "opensource"
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGPU"
+            ]
+        },
+        "Cinema4D": {
+            "tags": [
+                "application",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinema_4D"
+            ]
+        },
+        "Angle": {
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANGLE_(software)"
+            ],
+            "dependsOn": [
+                "OpenGL_ES"
+            ],
+            "supports": [
+                "Metal",
+                "Vulkan",
+                "Direct3D",
+                "OpenGL"
             ]
         },
         "Gif": {
@@ -524,15 +627,20 @@
                 "https://www.arduino.cc/"
             ]
         },
-        "Sox": {
+        "Mov": {
             "tags": [
-                "application",
-                "audio",
-                "command-line",
-                "opensource"
+                "file format",
+                "video"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/SoX"
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "CircuitPython": {
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
             ]
         },
         "Godot": {
@@ -547,24 +655,13 @@
                 "CPP"
             ]
         },
-        "CircuitPython": {
+        "Metal": {
             "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ]
-        },
-        "ThreeJS": {
-            "tags": [
-                "creative coding",
                 "library",
-                "web",
-                "opensource"
+                "graphics api"
             ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL",
-                "WebGPU"
+            "references": [
+                "https://en.wikipedia.org/wiki/Metal_(API)"
             ]
         },
         "Cinder": {
@@ -578,6 +675,28 @@
             ],
             "dependsOn": [
                 "CPP"
+            ]
+        },
+        "Inkscape": {
+            "tags": [
+                "application",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inkscape"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "OpenProcessing": {
+            "tags": [
+                "creative coding",
+                "platform"
+            ],
+            "dependsOn": [
+                "P5Js"
             ]
         },
         "MediaPlayer": {
@@ -626,16 +745,6 @@
                 "https://en.wikipedia.org/wiki/Lua_(programming_language)"
             ]
         },
-        "Python": {
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ]
-        },
         "Ogg": {
             "tags": [
                 "file format",
@@ -663,17 +772,93 @@
                 }
             }
         },
+        "MidiKeyboard": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "Rust": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Photoshop": {
+            "tags": [
+                "application",
+                "raster graphics"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
+            ]
+        },
         "Ruby": {
             "tags": [
                 "language",
                 "opensource"
             ]
         },
-        "Gimp": {
+        "C": {
             "tags": [
-                "application",
-                "opensource",
-                "raster graphics"
+                "language"
+            ]
+        },
+        "D3JS": {
+            "tags": [
+                "library",
+                "web",
+                "opensource"
+            ],
+            "supports": [
+                "Csv",
+                "Json",
+                "Svg"
+            ]
+        },
+        "ShaderToy": {
+            "tags": [
+                "software",
+                "platform",
+                "web",
+                "shaders"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
+            "actions": {
+                "runShader": {
+                    "description": "Run Shader"
+                },
+                "publishShader": {
+                    "description": " Publish shader",
+                    "outputType": "SourceCodeArtifact"
+                }
+            },
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OpenFrameworks": {
+            "tags": [
+                "creative coding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenFrameworks"
+            ],
+            "dependsOn": [
+                "CPP"
             ]
         },
         "PenPlotter": {
@@ -695,33 +880,26 @@
                 }
             }
         },
-        "Ffmpeg": {
+        "Nannou": {
             "tags": [
-                "application",
+                "creative coding",
                 "library",
-                "video",
-                "command-line",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/FFmpeg"
+                "https://nannou.cc/"
             ],
             "dependsOn": [
-                "C"
+                "Rust"
             ]
         },
-        "Blender": {
+        "Obj": {
             "tags": [
-                "application",
-                "opensource",
+                "file format",
                 "3d graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Blender_(software)"
-            ],
-            "dependsOn": [
-                "C",
-                "Python"
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
             ]
         },
         "OpenGL_ES": {
@@ -733,6 +911,92 @@
                 "https://en.wikipedia.org/wiki/OpenGL_ES"
             ]
         },
+        "WebGL": {
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGL"
+            ]
+        },
+        "GLSL": {
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+            ],
+            "dependsOn": [
+                "OpenGL"
+            ]
+        },
+        "Midi": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI"
+            ]
+        },
+        "Gimp": {
+            "tags": [
+                "application",
+                "opensource",
+                "raster graphics"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
+            ]
+        },
+        "Printer": {
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "actions": {
+                "print": {
+                    "description": "Print on paper",
+                    "outputType": "PrintedArtifact"
+                }
+            }
+        },
+        "Gltf": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Illustrator": {
+            "tags": [
+                "application",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "MidiController": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
         "MicroPython": {
             "tags": [
                 "language",
@@ -741,6 +1005,19 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/MicroPython"
+            ]
+        },
+        "PaperJs": {
+            "tags": [
+                "web",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://paperjs.org/"
+            ],
+            "dependsOn": [
+                "Javascript"
             ]
         },
         "Microphone": {
@@ -762,6 +1039,16 @@
                 "node-based"
             ]
         },
+        "VSCode": {
+            "tags": [
+                "application",
+                "ide",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+            ]
+        },
         "Direct3D": {
             "tags": [
                 "library",
@@ -769,6 +1056,21 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Direct3D"
+            ]
+        },
+        "Sox": {
+            "tags": [
+                "application",
+                "audio",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SoX"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg"
             ]
         },
         "Unity": {
@@ -781,6 +1083,15 @@
             "dependsOn": [
                 "CSharp",
                 "CPP"
+            ]
+        },
+        "Svg": {
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
             ]
         },
         "Kotlin": {
@@ -1176,399 +1487,6 @@
                 "https://en.wikipedia.org/wiki/Opus_(audio_format)"
             ]
         },
-        "CPP": {
-            "tags": [
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/C%2B%2B"
-            ]
-        },
-        "Nodebox": {
-            "tags": [
-                "application",
-                "opensource",
-                "node-based"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "TouchDesigner": {
-            "tags": [
-                "application",
-                "node-based"
-            ]
-        },
-        "Tic80": {
-            "tags": [
-                "fantasy console"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/TIC-80"
-            ],
-            "dependsOn": [
-                "Lua"
-            ]
-        },
-        "DMX": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/DMX"
-            ]
-        },
-        "SuperCollider": {
-            "tags": [
-                "application",
-                "opensource",
-                "audio"
-            ]
-        },
-        "Collada": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Pico8": {
-            "tags": [
-                "fantasy console"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PICO-8"
-            ],
-            "dependsOn": [
-                "Lua"
-            ]
-        },
-        "OpenGL": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL"
-            ]
-        },
-        "HLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
-            ],
-            "dependsOn": [
-                "Direct3D"
-            ]
-        },
-        "MaxMsp": {
-            "tags": [
-                "application",
-                "node-based"
-            ]
-        },
-        "Json": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
-        "Angle": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANGLE_(software)"
-            ]
-        },
-        "WebGPU": {
-            "tags": [
-                "library",
-                "graphics api",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebGPU"
-            ]
-        },
-        "Cinema4D": {
-            "tags": [
-                "application",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cinema_4D"
-            ]
-        },
-        "ScikitLearn": {
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Mov": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "PyTorch": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "Metal": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Metal_(API)"
-            ]
-        },
-        "Transformers": {
-            "references": [
-                "https://github.com/huggingface/transformers"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "PyTorch"
-            ]
-        },
-        "OpenProcessing": {
-            "tags": [
-                "creative coding",
-                "platform"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "MidiKeyboard": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "dependsOn": [
-                "Midi"
-            ]
-        },
-        "Rust": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "C": {
-            "tags": [
-                "language"
-            ]
-        },
-        "Pandas": {
-            "tags": [
-                "library",
-                "data science"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "OpenFrameworks": {
-            "tags": [
-                "creative coding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenFrameworks"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "Nannou": {
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://nannou.cc/"
-            ],
-            "dependsOn": [
-                "Rust"
-            ]
-        },
-        "Obj": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "WebGL": {
-            "tags": [
-                "library",
-                "graphics api",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebGL"
-            ]
-        },
-        "Midi": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MIDI"
-            ]
-        },
-        "GLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
-            ],
-            "dependsOn": [
-                "OpenGL"
-            ]
-        },
-        "Printer": {
-            "tags": [
-                "media technology",
-                "hardware",
-                "print"
-            ],
-            "actions": {
-                "print": {
-                    "description": "Print on paper",
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "Figma": {
-            "tags": [
-                "application",
-                "saas",
-                "vector graphics",
-                "raster graphics"
-            ]
-        },
-        "Gltf": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
-            ]
-        },
-        "MidiController": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "dependsOn": [
-                "Midi"
-            ]
-        },
-        "PaperJs": {
-            "tags": [
-                "web",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "http://paperjs.org/"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "VSCode": {
-            "tags": [
-                "application",
-                "ide",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
-            ]
-        },
-        "ShaderToy": {
-            "tags": [
-                "software",
-                "platform",
-                "web",
-                "shaders"
-            ],
-            "references": [
-                "https://www.shadertoy.com/",
-                "https://en.wikipedia.org/wiki/Shadertoy"
-            ],
-            "actions": {
-                "runShader": {
-                    "description": "Run Shader"
-                },
-                "publishShader": {
-                    "description": " Publish shader",
-                    "outputType": "SourceCodeArtifact"
-                }
-            },
-            "dependsOn": [
-                "Javascript",
-                "WebGL",
-                "GLSL"
-            ]
-        },
-        "Svg": {
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
         "Png": {
             "tags": [
                 "file format",
@@ -1598,6 +1516,14 @@
                 "Kotlin"
             ]
         },
+        "CPP": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/C%2B%2B"
+            ]
+        },
         "Esp32": {
             "tags": [
                 "hardware",
@@ -1621,6 +1547,25 @@
                 "https://en.wikipedia.org/wiki/Comma-separated_values"
             ]
         },
+        "ImageMagick": {
+            "tags": [
+                "application",
+                "raster graphics",
+                "vector graphics",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ImageMagick",
+                "https://imagemagick.org/"
+            ],
+            "supports": [
+                "Png",
+                "Svg",
+                "Jpg",
+                "Gif"
+            ]
+        },
         "OSC": {
             "tags": [
                 "standard",
@@ -1639,10 +1584,142 @@
                 "https://en.wikipedia.org/wiki/JPEG"
             ]
         },
-        "Audacity": {
+        "Nodebox": {
             "tags": [
                 "application",
-                "audio"
+                "opensource",
+                "node-based"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "TouchDesigner": {
+            "tags": [
+                "application",
+                "node-based"
+            ]
+        },
+        "Blender": {
+            "tags": [
+                "application",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Blender_(software)"
+            ],
+            "dependsOn": [
+                "C",
+                "Python"
+            ],
+            "supports": [
+                "Gltf",
+                "Obj"
+            ]
+        },
+        "ThreeJS": {
+            "tags": [
+                "creative coding",
+                "library",
+                "web",
+                "opensource"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL",
+                "WebGPU"
+            ],
+            "supports": [
+                "GLSL",
+                "Gltf"
+            ]
+        },
+        "Tic80": {
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/TIC-80"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
+        "DMX": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/DMX"
+            ]
+        },
+        "PyTorch": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
+            ]
+        },
+        "Pandas": {
+            "tags": [
+                "library",
+                "data science"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "Json",
+                "Csv"
+            ]
+        },
+        "ScikitLearn": {
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Python": {
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ]
+        },
+        "Transformers": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/huggingface/transformers"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "PyTorch"
             ]
         },
         "NumPy": {
@@ -1746,6 +1823,83 @@
             ],
             "dependsOn": [
                 "Java"
+            ]
+        },
+        "OrxShadeStyles": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxNoise": {
+            "tags": [
+                "library",
+                "noise"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFx": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "actions": {
+                "applyCannyEdgeDetector": {
+                    "description": "Apply Canny edge detector",
+                    "arguments": [
+                        {
+                            "name": "treshold0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "treshold1",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "CannyEdgeDetection"
+                    ]
+                },
+                "applyGaussianBlur": {
+                    "description": "Apply Gaussian blur",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "GaussianBlur"
+                    ]
+                },
+                "applyBloom": {
+                    "description": "Apply bloom",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "Bloom"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "OPENRNDR": {
@@ -2105,83 +2259,11 @@
                 "OpenGL",
                 "WebGL",
                 "Ffmpeg"
-            ]
-        },
-        "OrxShadeStyles": {
-            "tags": [
-                "library",
-                "shaders"
             ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxNoise": {
-            "tags": [
-                "library",
-                "noise"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "actions": {
-                "applyCannyEdgeDetector": {
-                    "description": "Apply Canny edge detector",
-                    "arguments": [
-                        {
-                            "name": "treshold0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "treshold1",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "CannyEdgeDetection"
-                    ]
-                },
-                "applyGaussianBlur": {
-                    "description": "Apply Gaussian blur",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "GaussianBlur"
-                    ]
-                },
-                "applyBloom": {
-                    "description": "Apply bloom",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "Bloom"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
+            "supports": [
+                "Png",
+                "Svg",
+                "Jpg"
             ]
         },
         "OrxTextWriter": {
