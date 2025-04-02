@@ -1566,15 +1566,6 @@
                 "Gif"
             ]
         },
-        "OSC": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ]
-        },
         "Jpg": {
             "tags": [
                 "file format",
@@ -1655,6 +1646,38 @@
                 "https://en.wikipedia.org/wiki/DMX"
             ]
         },
+        "SDL": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "Glfw": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GLFW"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
         "PyTorch": {
             "tags": [
                 "library",
@@ -1733,28 +1756,32 @@
                 "Python"
             ]
         },
-        "Antlr": {
+        "JavaOsc": {
             "tags": [
                 "library",
-                "parsing"
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
+                "https://github.com/hoijui/JavaOSC"
             ],
             "dependsOn": [
                 "Java"
+            ],
+            "supports": [
+                "Osc"
             ]
         },
-        "Lwjgl": {
+        "JSerialComm": {
             "tags": [
                 "library",
-                "binding"
+                "binding",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
+                "https://github.com/Fazecast/jSerialComm"
             ],
             "dependsOn": [
-                "Java"
+                "java"
             ]
         },
         "Awt": {
@@ -1769,30 +1796,34 @@
                 "Java"
             ]
         },
-        "Jts": {
+        "Antlr": {
             "tags": [
                 "library",
-                "geometry",
-                "gis"
+                "parsing",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
+                "https://en.wikipedia.org/wiki/ANTLR"
             ],
             "dependsOn": [
                 "Java"
             ]
         },
-        "JSerialComm": {
+        "Lwjgl": {
             "tags": [
                 "library",
-                "binding"
+                "binding",
+                "opensource"
             ],
             "references": [
-                "https://github.com/Fazecast/jSerialComm"
+                "https://en.wikipedia.org/wiki/LWJGL"
             ],
             "dependsOn": [
-                "java"
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl"
             ]
         },
         "Java": {
@@ -1816,7 +1847,8 @@
         "Jogl": {
             "tags": [
                 "library",
-                "binding"
+                "binding",
+                "opensource"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Java_OpenGL"
@@ -1825,13 +1857,32 @@
                 "Java"
             ]
         },
-        "OrxShadeStyles": {
+        "Artnet4J": {
             "tags": [
                 "library",
-                "shaders"
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
             ],
             "dependsOn": [
-                "OPENRNDR"
+                "Java"
+            ]
+        },
+        "Jts": {
+            "tags": [
+                "library",
+                "geometry",
+                "gis",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
             ]
         },
         "OrxNoise": {
@@ -1839,62 +1890,59 @@
                 "library",
                 "noise"
             ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "tags": [
-                "library",
-                "shaders"
-            ],
             "actions": {
-                "applyCannyEdgeDetector": {
-                    "description": "Apply Canny edge detector",
-                    "arguments": [
-                        {
-                            "name": "treshold0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "treshold1",
-                            "type": "Number"
-                        }
-                    ],
+                "generatePerlinNoise1D": {
+                    "description": "Generate 1D Perlin noise",
                     "techniques": [
-                        "CannyEdgeDetection"
+                        "PerlinNoise"
                     ]
                 },
-                "applyGaussianBlur": {
-                    "description": "Apply Gaussian blur",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
+                "generatePerlinNoise3D": {
+                    "description": "Generate 3D Perlin noise",
                     "techniques": [
-                        "GaussianBlur"
+                        "PerlinNoise"
                     ]
                 },
-                "applyBloom": {
-                    "description": "Apply bloom",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
+                "generatePerlinNoise2D": {
+                    "description": "Generate 2D Perlin noise",
                     "techniques": [
-                        "Bloom"
+                        "PerlinNoise"
+                    ]
+                },
+                "generateSimplexNoise1D": {
+                    "description": "Generate 1D simplex noise",
+                    "techniques": [
+                        "SimplexNoise"
+                    ]
+                },
+                "generateSimplexNoise3D": {
+                    "description": "Generate 3D simplex noise",
+                    "techniques": [
+                        "SimplexNoise"
+                    ]
+                },
+                "generateSimplexNoise4D": {
+                    "description": "Generate 4D simplex noise",
+                    "techniques": [
+                        "SimplexNoise"
+                    ]
+                },
+                "generateSimplexNoise2D": {
+                    "description": "Generate 2D simplex noise",
+                    "techniques": [
+                        "SimplexNoise"
+                    ]
+                },
+                "generatePerlinNoise4D": {
+                    "description": "Generate 4D Perlin noise",
+                    "techniques": [
+                        "PerlinNoise"
+                    ]
+                },
+                "generateFBM": {
+                    "description": "Generate FBM noise",
+                    "techniques": [
+                        "FBMNoise"
                     ]
                 }
             },
@@ -2256,14 +2304,80 @@
             },
             "dependsOn": [
                 "Kotlin",
-                "OpenGL",
-                "WebGL",
-                "Ffmpeg"
+                "Lwjgl"
             ],
             "supports": [
                 "Png",
                 "Svg",
                 "Jpg"
+            ]
+        },
+        "OrxShadeStyles": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFx": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "actions": {
+                "applyCannyEdgeDetector": {
+                    "description": "Apply Canny edge detector",
+                    "arguments": [
+                        {
+                            "name": "treshold0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "treshold1",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "CannyEdgeDetection"
+                    ]
+                },
+                "applyGaussianBlur": {
+                    "description": "Apply Gaussian blur",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "GaussianBlur"
+                    ]
+                },
+                "applyBloom": {
+                    "description": "Apply bloom",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "Bloom"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "OrxTextWriter": {
@@ -2275,13 +2389,15 @@
                 "OPENRNDR"
             ]
         },
-        "OpenrndrVideo": {
+        "OrxOsc": {
             "tags": [
-                "library",
-                "video"
+                "library"
             ],
             "dependsOn": [
                 "OPENRNDR"
+            ],
+            "supports": [
+                "Osc"
             ]
         },
         "OrxShapes": {
@@ -2305,6 +2421,95 @@
             },
             "dependsOn": [
                 "OPENRNDR"
+            ]
+        },
+        "OpenrndrVideo": {
+            "tags": [
+                "library",
+                "video"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "Ffmpeg"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "actions": {
+                "extractIsoContour": {
+                    "description": "Extract iso contour",
+                    "techniques": [
+                        "MarchingSquares"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "Http": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "ArtNet": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "Https": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "Tcp": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "Udp": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "OSC": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
             ]
         }
     }
