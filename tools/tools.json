@@ -405,42 +405,10 @@
                 "https://en.wikipedia.org/wiki/Vulkan"
             ]
         },
-        "Mp4": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
         "Display": {
             "tags": [
                 "media technology",
                 "hardware"
-            ]
-        },
-        "Mp3": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Hydra": {
-            "tags": [
-                "creative coding",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://hydra.ojack.xyz/"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL"
             ]
         },
         "Figma": {
@@ -461,15 +429,6 @@
                 "application",
                 "opensource",
                 "audio"
-            ]
-        },
-        "Collada": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
             ]
         },
         "Camera": {
@@ -493,25 +452,6 @@
             ],
             "dependsOn": [
                 "Lua"
-            ]
-        },
-        "Ffmpeg": {
-            "tags": [
-                "application",
-                "library",
-                "video",
-                "command-line",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FFmpeg"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "Mp4",
-                "Mov"
             ]
         },
         "OpenGL": {
@@ -545,28 +485,26 @@
                 "Ogg"
             ]
         },
-        "Xml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/XML"
-            ]
-        },
         "MaxMsp": {
             "tags": [
                 "application",
                 "node-based"
             ]
         },
-        "Json": {
+        "Sox": {
             "tags": [
-                "file format",
-                "structured data"
+                "application",
+                "audio",
+                "command-line",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/JSON"
+                "https://en.wikipedia.org/wiki/SoX"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg",
+                "Wav"
             ]
         },
         "WebGPU": {
@@ -606,15 +544,6 @@
                 "OpenGL"
             ]
         },
-        "Gif": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
         "Arduino": {
             "tags": [
                 "hardware",
@@ -625,15 +554,6 @@
             "references": [
                 "https://en.wikipedia.org/wiki/Arduino",
                 "https://www.arduino.cc/"
-            ]
-        },
-        "Mov": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
             ]
         },
         "CircuitPython": {
@@ -745,15 +665,6 @@
                 "https://en.wikipedia.org/wiki/Lua_(programming_language)"
             ]
         },
-        "Ogg": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
         "Projector": {
             "tags": [
                 "media technology",
@@ -861,6 +772,16 @@
                 "CPP"
             ]
         },
+        "Ktor": {
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Http",
+                "Https",
+                "WebSocket"
+            ]
+        },
         "PenPlotter": {
             "tags": [
                 "media technology",
@@ -893,15 +814,6 @@
                 "Rust"
             ]
         },
-        "Obj": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
         "OpenGL_ES": {
             "tags": [
                 "library",
@@ -909,6 +821,19 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/OpenGL_ES"
+            ]
+        },
+        "Hydra": {
+            "tags": [
+                "creative coding",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://hydra.ojack.xyz/"
+            ],
+            "dependsOn": [
+                "Browser"
             ]
         },
         "WebGL": {
@@ -967,13 +892,22 @@
                 }
             }
         },
-        "Gltf": {
+        "Browser": {
             "tags": [
-                "file format",
-                "3d graphics"
+                "application",
+                "web"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
+            "supports": [
+                "Http",
+                "Https",
+                "WebGL",
+                "Javascript",
+                "WebSocket",
+                "Gif",
+                "Jpg",
+                "Html",
+                "Svg",
+                "Wav"
             ]
         },
         "Illustrator": {
@@ -1058,21 +992,6 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
-        "Sox": {
-            "tags": [
-                "application",
-                "audio",
-                "command-line",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SoX"
-            ],
-            "supports": [
-                "Mp3",
-                "Ogg"
-            ]
-        },
         "Unity": {
             "tags": [
                 "game development"
@@ -1083,15 +1002,6 @@
             "dependsOn": [
                 "CSharp",
                 "CPP"
-            ]
-        },
-        "Svg": {
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
             ]
         },
         "Kotlin": {
@@ -1478,42 +1388,10 @@
                 "Javascript"
             ]
         },
-        "Opus": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
-        "Png": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "Yaml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
-            ]
-        },
         "Javascript": {
             "tags": [
                 "language",
                 "web"
-            ]
-        },
-        "Ktor": {
-            "dependsOn": [
-                "Kotlin"
             ]
         },
         "CPP": {
@@ -1538,13 +1416,26 @@
                 "language"
             ]
         },
-        "Csv": {
+        "Ffmpeg": {
             "tags": [
-                "file format",
-                "structured data"
+                "application",
+                "library",
+                "video",
+                "command-line",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
+                "https://en.wikipedia.org/wiki/FFmpeg"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov",
+                "Mp3",
+                "Ogg",
+                "Wav"
             ]
         },
         "ImageMagick": {
@@ -1564,15 +1455,6 @@
                 "Svg",
                 "Jpg",
                 "Gif"
-            ]
-        },
-        "Jpg": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
             ]
         },
         "Nodebox": {
@@ -1756,19 +1638,184 @@
                 "Python"
             ]
         },
-        "JavaOsc": {
+        "Mp4": {
             "tags": [
-                "library",
-                "opensource"
+                "file format",
+                "video"
             ],
             "references": [
-                "https://github.com/hoijui/JavaOSC"
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Mp3": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Css": {
+            "tags": [
+                "file format",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
+            ]
+        },
+        "Collada": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Svg": {
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Gif": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Mov": {
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Opus": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Png": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "Yaml": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Csv": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "Obj": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Jpg": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Xml": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
+            ]
+        },
+        "Html": {
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Ogg": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Json": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Wav": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Gltf": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "JavaCv": {
+            "tags": [
+                "library"
             ],
             "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
+                "Java",
+                "OpenCv"
             ]
         },
         "JSerialComm": {
@@ -1796,6 +1843,21 @@
                 "Java"
             ]
         },
+        "BoofCV": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
         "Antlr": {
             "tags": [
                 "library",
@@ -1809,29 +1871,6 @@
                 "Java"
             ]
         },
-        "Lwjgl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl"
-            ]
-        },
-        "Java": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
         "Swing": {
             "tags": [
                 "library",
@@ -1839,19 +1878,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jogl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
             ],
             "dependsOn": [
                 "Java"
@@ -1880,6 +1906,79 @@
             "references": [
                 "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
                 "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaOsc": {
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/hoijui/JavaOSC"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "Lwjgl": {
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl"
+            ]
+        },
+        "JavaxSound": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "JavaxMidi": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "Java": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Jogl": {
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
             ],
             "dependsOn": [
                 "Java"
@@ -1948,6 +2047,149 @@
             },
             "dependsOn": [
                 "OPENRNDR"
+            ]
+        },
+        "OrxFx": {
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "actions": {
+                "applyCannyEdgeDetector": {
+                    "description": "Apply Canny edge detector",
+                    "arguments": [
+                        {
+                            "name": "treshold0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "treshold1",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "CannyEdgeDetection"
+                    ]
+                },
+                "applyGaussianBlur": {
+                    "description": "Apply Gaussian blur",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "GaussianBlur"
+                    ]
+                },
+                "applyBloom": {
+                    "description": "Apply bloom",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "sigma",
+                            "type": "Number"
+                        }
+                    ],
+                    "techniques": [
+                        "Bloom"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextWriter": {
+            "tags": [
+                "library",
+                "text"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxBoofCv": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "BoofCV"
+            ]
+        },
+        "OrxShapes": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "actions": {
+                "findDelaunayTriangulation": {
+                    "description": "Find Delaunay triangulation",
+                    "techniques": [
+                        "DelaunayTriangulation"
+                    ]
+                },
+                "fitHobbyCurve": {
+                    "description": "Fit Hobby curve",
+                    "techniques": [
+                        "HobbyCurve"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OpenrndrVideo": {
+            "tags": [
+                "library",
+                "video"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "Ffmpeg"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "actions": {
+                "extractIsoContour": {
+                    "description": "Extract iso contour",
+                    "techniques": [
+                        "MarchingSquares"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMidi": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaxMidi"
+            ],
+            "supports": [
+                "Midi"
             ]
         },
         "OPENRNDR": {
@@ -2312,84 +2554,7 @@
                 "Jpg"
             ]
         },
-        "OrxShadeStyles": {
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "actions": {
-                "applyCannyEdgeDetector": {
-                    "description": "Apply Canny edge detector",
-                    "arguments": [
-                        {
-                            "name": "treshold0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "treshold1",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "CannyEdgeDetection"
-                    ]
-                },
-                "applyGaussianBlur": {
-                    "description": "Apply Gaussian blur",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "GaussianBlur"
-                    ]
-                },
-                "applyBloom": {
-                    "description": "Apply bloom",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "Bloom"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextWriter": {
-            "tags": [
-                "library",
-                "text"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxOsc": {
+        "OrxSvg": {
             "tags": [
                 "library"
             ],
@@ -2397,61 +2562,43 @@
                 "OPENRNDR"
             ],
             "supports": [
-                "Osc"
+                "Svg"
             ]
         },
-        "OrxShapes": {
+        "OrxDnky": {
             "tags": [
-                "library",
-                "geometry"
+                "library"
             ],
-            "actions": {
-                "findDelaunayTriangulation": {
-                    "description": "Find Delaunay triangulation",
-                    "techniques": [
-                        "DelaunayTriangulation"
-                    ]
-                },
-                "fitHobbyCurve": {
-                    "description": "Fit Hobby curve",
-                    "techniques": [
-                        "HobbyCurve"
-                    ]
-                }
-            },
             "dependsOn": [
                 "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL",
+                "Gltf"
             ]
         },
-        "OpenrndrVideo": {
+        "OrxOsc": {
             "tags": [
-                "library",
-                "video"
+                "library"
             ],
             "dependsOn": [
                 "OPENRNDR",
-                "Ffmpeg"
+                "JavaOsc"
             ],
             "supports": [
-                "Mp4",
-                "Mov"
+                "Osc"
             ]
         },
-        "OrxMarchingSquares": {
+        "OrxShadeStyles": {
             "tags": [
                 "library",
-                "geometry"
+                "shaders"
             ],
-            "actions": {
-                "extractIsoContour": {
-                    "description": "Extract iso contour",
-                    "techniques": [
-                        "MarchingSquares"
-                    ]
-                }
-            },
             "dependsOn": [
                 "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
             ]
         },
         "Http": {
@@ -2482,6 +2629,14 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "WebSocket": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
             ]
         },
         "Tcp": {
