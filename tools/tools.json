@@ -1528,6 +1528,36 @@
                 "https://en.wikipedia.org/wiki/DMX"
             ]
         },
+        "KotlinxSerialization": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/Kotlin/kotlinx.serialization"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Json",
+                "Yaml",
+                "Xml"
+            ]
+        },
+        "KotlinCsv": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/jsoizo/kotlin-csv"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Csv"
+            ]
+        },
         "SDL": {
             "tags": [
                 "library"
@@ -1809,6 +1839,22 @@
                 "https://en.wikipedia.org/wiki/GlTF"
             ]
         },
+        "Artnet4J": {
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
         "JavaCv": {
             "tags": [
                 "library"
@@ -1878,19 +1924,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Artnet4J": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
             ],
             "dependsOn": [
                 "Java"
@@ -2575,6 +2608,22 @@
             "supports": [
                 "GLSL",
                 "Gltf"
+            ]
+        },
+        "OrxFft": {
+            "tags": [
+                "library"
+            ],
+            "actions": {
+                "forwardFft": {
+                    "description": "apply forward fft",
+                    "techniques": [
+                        "FFT"
+                    ]
+                }
+            },
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "OrxOsc": {
