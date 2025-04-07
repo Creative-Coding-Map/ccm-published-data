@@ -405,30 +405,14 @@
                 "https://en.wikipedia.org/wiki/Vulkan"
             ]
         },
-        "Display": {
+        "CircuitPython": {
             "tags": [
-                "media technology",
-                "hardware"
-            ]
-        },
-        "Figma": {
-            "tags": [
-                "application",
-                "saas",
-                "vector graphics",
-                "raster graphics"
+                "language",
+                "microcontroller",
+                "opensource"
             ],
-            "supports": [
-                "Png",
-                "Jpg",
-                "Json"
-            ]
-        },
-        "SuperCollider": {
-            "tags": [
-                "application",
-                "opensource",
-                "audio"
+            "references": [
+                "https://en.wikipedia.org/wiki/CircuitPython"
             ]
         },
         "Camera": {
@@ -443,6 +427,15 @@
                 }
             }
         },
+        "Ruby": {
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ruby_(programming_language)"
+            ]
+        },
         "Pico8": {
             "tags": [
                 "fantasy console"
@@ -452,6 +445,15 @@
             ],
             "dependsOn": [
                 "Lua"
+            ]
+        },
+        "TouchDesigner": {
+            "tags": [
+                "application",
+                "node-based"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/TouchDesigner"
             ]
         },
         "OpenGL": {
@@ -475,20 +477,50 @@
                 "Direct3D"
             ]
         },
-        "Audacity": {
+        "Rust": {
             "tags": [
-                "application",
-                "audio"
+                "language",
+                "opensource"
             ],
-            "supports": [
-                "Mp3",
-                "Ogg"
+            "references": [
+                "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
-        "MaxMsp": {
+        "Ktor": {
+            "references": [
+                "https://ktor.io/"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Http",
+                "Https",
+                "WebSocket"
+            ]
+        },
+        "Browser": {
             "tags": [
                 "application",
-                "node-based"
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Web_browser"
+            ],
+            "supports": [
+                "Http",
+                "Https",
+                "WebGL",
+                "Javascript",
+                "WebSocket",
+                "Gif",
+                "Jpg",
+                "Html",
+                "Svg",
+                "Wav",
+                "Mp3",
+                "Ogg",
+                "Mp4"
             ]
         },
         "Sox": {
@@ -517,6 +549,15 @@
                 "https://en.wikipedia.org/wiki/WebGPU"
             ]
         },
+        "Display": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Display_device"
+            ]
+        },
         "Cinema4D": {
             "tags": [
                 "application",
@@ -524,6 +565,26 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Cinema_4D"
+            ]
+        },
+        "ThreeJS": {
+            "tags": [
+                "creative coding",
+                "library",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Three.js"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL",
+                "WebGPU"
+            ],
+            "supports": [
+                "GLSL",
+                "Gltf"
             ]
         },
         "Angle": {
@@ -544,6 +605,50 @@
                 "OpenGL"
             ]
         },
+        "D3JS": {
+            "tags": [
+                "library",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/D3.js"
+            ],
+            "supports": [
+                "Csv",
+                "Json",
+                "Svg"
+            ]
+        },
+        "Nodebox": {
+            "tags": [
+                "application",
+                "opensource",
+                "node-based"
+            ],
+            "references": [
+                "https://www.nodebox.net/"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Figma": {
+            "tags": [
+                "application",
+                "saas",
+                "vector graphics",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Figma"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Json"
+            ]
+        },
         "Arduino": {
             "tags": [
                 "hardware",
@@ -554,13 +659,6 @@
             "references": [
                 "https://en.wikipedia.org/wiki/Arduino",
                 "https://www.arduino.cc/"
-            ]
-        },
-        "CircuitPython": {
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
             ]
         },
         "Godot": {
@@ -574,6 +672,39 @@
                 "CSharp",
                 "CPP"
             ]
+        },
+        "MidiController": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI_controller"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "LaserLightingDisplay": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Laser_lighting_display"
+            ],
+            "actions": {
+                "display": {
+                    "description": "Project on air",
+                    "arguments": [
+                        {
+                            "name": "artifact",
+                            "type": "IArtifact"
+                        }
+                    ],
+                    "outputType": "LightArtifact"
+                }
+            }
         },
         "Metal": {
             "tags": [
@@ -610,15 +741,6 @@
                 "Svg"
             ]
         },
-        "OpenProcessing": {
-            "tags": [
-                "creative coding",
-                "platform"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
         "MediaPlayer": {
             "tags": [
                 "media technology",
@@ -630,18 +752,6 @@
                 },
                 "stop": {
                     "description": "Stop media"
-                }
-            }
-        },
-        "DepthSensor": {
-            "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
                 }
             }
         },
@@ -665,71 +775,26 @@
                 "https://en.wikipedia.org/wiki/Lua_(programming_language)"
             ]
         },
-        "Projector": {
+        "OpenProcessing": {
             "tags": [
-                "media technology",
-                "hardware"
+                "creative coding",
+                "platform"
             ],
-            "actions": {
-                "display": {
-                    "description": "Project on surface",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "MidiKeyboard": {
-            "tags": [
-                "media technology",
-                "hardware"
+            "references": [
+                "https://openprocessing.org/"
             ],
             "dependsOn": [
-                "Midi"
+                "P5Js"
             ]
         },
-        "Rust": {
+        "Javascript": {
             "tags": [
                 "language",
-                "opensource"
-            ]
-        },
-        "Photoshop": {
-            "tags": [
-                "application",
-                "raster graphics"
-            ],
-            "supports": [
-                "Png",
-                "Jpg",
-                "Gif"
-            ]
-        },
-        "Ruby": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "C": {
-            "tags": [
-                "language"
-            ]
-        },
-        "D3JS": {
-            "tags": [
-                "library",
                 "web",
                 "opensource"
             ],
-            "supports": [
-                "Csv",
-                "Json",
-                "Svg"
+            "references": [
+                "https://en.wikipedia.org/wiki/JavaScript"
             ]
         },
         "ShaderToy": {
@@ -772,34 +837,68 @@
                 "CPP"
             ]
         },
-        "Ktor": {
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Http",
-                "Https",
-                "WebSocket"
-            ]
-        },
-        "PenPlotter": {
+        "Microphone": {
             "tags": [
                 "media technology",
-                "hardware",
-                "print"
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Microphone"
             ],
             "actions": {
-                "plot": {
-                    "description": "Plot on paper",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
+                "capture": {
+                    "description": "Capture sound",
+                    "outputType": "AudioArtifact"
                 }
             }
+        },
+        "C": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/C_(programming_language)"
+            ]
+        },
+        "SuperCollider": {
+            "tags": [
+                "application",
+                "opensource",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SuperCollider"
+            ]
+        },
+        "Photoshop": {
+            "tags": [
+                "application",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Adobe_Photoshop"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
+            ]
+        },
+        "SonicVisualiser": {
+            "tags": [
+                "application",
+                "audio",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Sonic_Visualiser"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg",
+                "Wav",
+                "csv"
+            ]
         },
         "Nannou": {
             "tags": [
@@ -813,6 +912,22 @@
             "dependsOn": [
                 "Rust"
             ]
+        },
+        "Printer": {
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Printer_(computing)"
+            ],
+            "actions": {
+                "print": {
+                    "description": "Print on paper",
+                    "outputType": "PrintedArtifact"
+                }
+            }
         },
         "OpenGL_ES": {
             "tags": [
@@ -846,6 +961,19 @@
                 "https://en.wikipedia.org/wiki/WebGL"
             ]
         },
+        "Kotlin": {
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://kotlinlang.org/"
+            ],
+            "supports": [
+                "Java",
+                "Javascript"
+            ]
+        },
         "GLSL": {
             "tags": [
                 "language",
@@ -867,47 +995,39 @@
                 "https://en.wikipedia.org/wiki/MIDI"
             ]
         },
-        "Gimp": {
-            "tags": [
-                "application",
-                "opensource",
-                "raster graphics"
-            ],
-            "supports": [
-                "Png",
-                "Jpg",
-                "Gif"
-            ]
-        },
-        "Printer": {
+        "PenPlotter": {
             "tags": [
                 "media technology",
                 "hardware",
                 "print"
             ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Plotter"
+            ],
             "actions": {
-                "print": {
-                    "description": "Print on paper",
+                "plot": {
+                    "description": "Plot on paper",
+                    "arguments": [
+                        {
+                            "name": "artifact",
+                            "type": "IArtifact"
+                        }
+                    ],
                     "outputType": "PrintedArtifact"
                 }
             }
         },
-        "Browser": {
+        "Audacity": {
             "tags": [
                 "application",
-                "web"
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
             ],
             "supports": [
-                "Http",
-                "Https",
-                "WebGL",
-                "Javascript",
-                "WebSocket",
-                "Gif",
-                "Jpg",
-                "Html",
-                "Svg",
-                "Wav"
+                "Mp3",
+                "Ogg"
             ]
         },
         "Illustrator": {
@@ -920,15 +1040,6 @@
             ],
             "supports": [
                 "Svg"
-            ]
-        },
-        "MidiController": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "dependsOn": [
-                "Midi"
             ]
         },
         "MicroPython": {
@@ -954,15 +1065,56 @@
                 "Javascript"
             ]
         },
-        "Microphone": {
+        "CSharp": {
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+            ]
+        },
+        "Ffmpeg": {
+            "tags": [
+                "application",
+                "library",
+                "video",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FFmpeg"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov",
+                "Mp3",
+                "Ogg",
+                "Wav",
+                "Jpg",
+                "Gif"
+            ]
+        },
+        "Projector": {
             "tags": [
                 "media technology",
                 "hardware"
             ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Projector"
+            ],
             "actions": {
-                "capture": {
-                    "description": "Capture sound",
-                    "outputType": "AudioArtifact"
+                "display": {
+                    "description": "Project on surface",
+                    "arguments": [
+                        {
+                            "name": "artifact",
+                            "type": "IArtifact"
+                        }
+                    ],
+                    "outputType": "PrintedArtifact"
                 }
             }
         },
@@ -971,6 +1123,9 @@
                 "application",
                 "opensource",
                 "node-based"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pure_Data"
             ]
         },
         "VSCode": {
@@ -1004,16 +1159,13 @@
                 "CPP"
             ]
         },
-        "Kotlin": {
+        "MaxMsp": {
             "tags": [
-                "language"
+                "application",
+                "node-based"
             ],
             "references": [
-                "https://kotlinlang.org/"
-            ],
-            "supports": [
-                "Java",
-                "Javascript"
+                "https://en.wikipedia.org/wiki/Max_(software)"
             ]
         },
         "IntelliJ": {
@@ -1388,12 +1540,6 @@
                 "Javascript"
             ]
         },
-        "Javascript": {
-            "tags": [
-                "language",
-                "web"
-            ]
-        },
         "CPP": {
             "tags": [
                 "language"
@@ -1409,33 +1555,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/ESP32"
-            ]
-        },
-        "CSharp": {
-            "tags": [
-                "language"
-            ]
-        },
-        "Ffmpeg": {
-            "tags": [
-                "application",
-                "library",
-                "video",
-                "command-line",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FFmpeg"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "Mp4",
-                "Mov",
-                "Mp3",
-                "Ogg",
-                "Wav"
             ]
         },
         "ImageMagick": {
@@ -1457,20 +1576,31 @@
                 "Gif"
             ]
         },
-        "Nodebox": {
+        "MidiKeyboard": {
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI_keyboard"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "Gimp": {
             "tags": [
                 "application",
                 "opensource",
-                "node-based"
+                "raster graphics"
             ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "TouchDesigner": {
-            "tags": [
-                "application",
-                "node-based"
+            "references": [
+                "https://en.wikipedia.org/wiki/GIMP"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
             ]
         },
         "Blender": {
@@ -1491,22 +1621,20 @@
                 "Obj"
             ]
         },
-        "ThreeJS": {
+        "DepthSensor": {
             "tags": [
-                "creative coding",
-                "library",
-                "web",
-                "opensource"
+                "media technology",
+                "sensor",
+                "hardware"
             ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL",
-                "WebGPU"
+            "references": [
+                "https://en.wikipedia.org/wiki/Range_imaging"
             ],
-            "supports": [
-                "GLSL",
-                "Gltf"
-            ]
+            "actions": {
+                "capture": {
+                    "description": "Capture a frame"
+                }
+            }
         },
         "Tic80": {
             "tags": [

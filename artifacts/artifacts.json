@@ -27,6 +27,9 @@
         "Model3DArtifact": {
             "name": "3d Model"
         },
+        "LightArtifact": {
+            "name": "Light"
+        },
         "VectorGraphicsArtifact": {
             "name": "Vector graphics"
         },

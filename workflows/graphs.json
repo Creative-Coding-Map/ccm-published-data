@@ -5,163 +5,163 @@
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 0
+                "id": 0
             },
             {
                 "label": "Processing",
                 "type": "tool",
                 "subType": null,
-                "index": 1
+                "id": 1
             },
             {
                 "label": "Save Image",
                 "type": "action",
                 "subType": null,
-                "index": 2
+                "id": 2
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 3
+                "id": 3
             },
             {
                 "label": "Perlin noise",
                 "type": "action",
                 "subType": null,
-                "index": 4
+                "id": 4
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 5
+                "id": 5
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 6
+                "id": 6
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 7
+                "id": 7
             },
             {
                 "label": "Clear the background",
                 "type": "action",
                 "subType": null,
-                "index": 8
+                "id": 8
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 9
+                "id": 9
             },
             {
                 "label": "Draw a rectangle",
                 "type": "action",
                 "subType": null,
-                "index": 10
+                "id": 10
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 11
+                "id": 11
             },
             {
                 "label": "Create an image",
                 "type": "action",
                 "subType": null,
-                "index": 12
+                "id": 12
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 13
+                "id": 13
             },
             {
                 "label": "Run sketch",
                 "type": "action",
                 "subType": null,
-                "index": 14
+                "id": 14
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 15
+                "id": 15
             },
             {
                 "label": "Import library",
                 "type": "action",
                 "subType": null,
-                "index": 16
+                "id": 16
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 17
+                "id": 17
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 18
+                "id": 18
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 19
+                "id": 19
             },
             {
                 "label": "P5Js",
                 "type": "tool",
                 "subType": null,
-                "index": 20
+                "id": 20
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 21
+                "id": 21
             },
             {
                 "label": "Load image artifact",
                 "type": "action",
                 "subType": null,
-                "index": 22
+                "id": 22
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 23
+                "id": 23
             },
             {
                 "label": "Run sketch",
                 "type": "action",
                 "subType": null,
-                "index": 24
+                "id": 24
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 25
+                "id": 25
             },
             {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "index": 26
+                "id": 26
             }
         ],
         "links": [
