@@ -62,7 +62,7 @@
                 "id": 9
             },
             {
-                "label": "Draw a rectangle",
+                "label": "loop",
                 "type": "action",
                 "subType": null,
                 "id": 10
@@ -74,7 +74,7 @@
                 "id": 11
             },
             {
-                "label": "Create an image",
+                "label": "Draw a rectangle",
                 "type": "action",
                 "subType": null,
                 "id": 12
@@ -86,7 +86,7 @@
                 "id": 13
             },
             {
-                "label": "Run sketch",
+                "label": "Create an image",
                 "type": "action",
                 "subType": null,
                 "id": 14
@@ -98,7 +98,7 @@
                 "id": 15
             },
             {
-                "label": "Import library",
+                "label": "Run sketch",
                 "type": "action",
                 "subType": null,
                 "id": 16
@@ -110,8 +110,8 @@
                 "id": 17
             },
             {
-                "label": "Artifact",
-                "type": "artifact",
+                "label": "Import library",
+                "type": "action",
                 "subType": null,
                 "id": 18
             },
@@ -122,8 +122,8 @@
                 "id": 19
             },
             {
-                "label": "P5Js",
-                "type": "tool",
+                "label": "Artifact",
+                "type": "artifact",
                 "subType": null,
                 "id": 20
             },
@@ -134,8 +134,8 @@
                 "id": 21
             },
             {
-                "label": "Load image artifact",
-                "type": "action",
+                "label": "P5Js",
+                "type": "tool",
                 "subType": null,
                 "id": 22
             },
@@ -146,7 +146,7 @@
                 "id": 23
             },
             {
-                "label": "Run sketch",
+                "label": "Load image artifact",
                 "type": "action",
                 "subType": null,
                 "id": 24
@@ -158,10 +158,22 @@
                 "id": 25
             },
             {
+                "label": "Run sketch",
+                "type": "action",
+                "subType": null,
+                "id": 26
+            },
+            {
                 "label": "Artifact",
                 "type": "artifact",
                 "subType": null,
-                "id": 26
+                "id": 27
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "id": 28
             }
         ],
         "links": [
@@ -306,7 +318,7 @@
             {
                 "source": 11,
                 "target": 9,
-                "label": "Draw a rectangle",
+                "label": "loop",
                 "type": null
             },
             {
@@ -330,7 +342,7 @@
             {
                 "source": 13,
                 "target": 11,
-                "label": "Create an image",
+                "label": "Draw a rectangle",
                 "type": null
             },
             {
@@ -354,7 +366,7 @@
             {
                 "source": 15,
                 "target": 13,
-                "label": "Run sketch",
+                "label": "Create an image",
                 "type": null
             },
             {
@@ -378,91 +390,79 @@
             {
                 "source": 17,
                 "target": 15,
-                "label": "Import library",
+                "label": "Run sketch",
                 "type": null
             },
             {
                 "source": 17,
-                "target": 16,
+                "target": 18,
                 "label": null,
                 "type": null
             },
             {
-                "source": 18,
-                "target": 16,
+                "source": 19,
+                "target": 18,
                 "label": null,
                 "type": null
             },
             {
                 "source": 1,
-                "target": 16,
+                "target": 18,
                 "label": null,
                 "type": null
             },
             {
-                "source": 18,
+                "source": 19,
                 "target": 17,
                 "label": "Import library",
                 "type": null
             },
             {
                 "source": 19,
-                "target": 2,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 21,
-                "target": 2,
+                "target": 18,
                 "label": null,
                 "type": null
             },
             {
                 "source": 20,
-                "target": 2,
+                "target": 18,
                 "label": null,
                 "type": null
             },
             {
-                "source": 21,
+                "source": 1,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 20,
                 "target": 19,
-                "label": "Save Image",
+                "label": "Import library",
                 "type": null
             },
             {
                 "source": 21,
-                "target": 22,
+                "target": 2,
                 "label": null,
                 "type": null
             },
             {
                 "source": 23,
-                "target": 22,
+                "target": 2,
                 "label": null,
                 "type": null
             },
             {
-                "source": 20,
-                "target": 22,
+                "source": 22,
+                "target": 2,
                 "label": null,
                 "type": null
             },
             {
                 "source": 23,
                 "target": 21,
-                "label": "Load image artifact",
-                "type": null
-            },
-            {
-                "source": 21,
-                "target": 0,
-                "label": null,
-                "type": null
-            },
-            {
-                "source": 20,
-                "target": 0,
-                "label": null,
+                "label": "Save Image",
                 "type": null
             },
             {
@@ -478,7 +478,7 @@
                 "type": null
             },
             {
-                "source": 20,
+                "source": 22,
                 "target": 24,
                 "label": null,
                 "type": null
@@ -486,30 +486,66 @@
             {
                 "source": 25,
                 "target": 23,
-                "label": "Run sketch",
+                "label": "Load image artifact",
+                "type": null
+            },
+            {
+                "source": 23,
+                "target": 0,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 22,
+                "target": 0,
+                "label": null,
                 "type": null
             },
             {
                 "source": 25,
-                "target": 16,
+                "target": 26,
                 "label": null,
                 "type": null
             },
             {
-                "source": 26,
-                "target": 16,
+                "source": 27,
+                "target": 26,
                 "label": null,
                 "type": null
             },
             {
-                "source": 20,
-                "target": 16,
+                "source": 22,
+                "target": 26,
                 "label": null,
                 "type": null
             },
             {
-                "source": 26,
+                "source": 27,
                 "target": 25,
+                "label": "Run sketch",
+                "type": null
+            },
+            {
+                "source": 27,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 28,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 22,
+                "target": 18,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 28,
+                "target": 27,
                 "label": "Import library",
                 "type": null
             }
