@@ -475,6 +475,1394 @@
                 "Gif"
             ]
         },
+        "PyTorch": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
+            ]
+        },
+        "Pandas": {
+            "tags": [
+                "library",
+                "data science"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "Json",
+                "Csv"
+            ]
+        },
+        "ScikitLearn": {
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Python": {
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ]
+        },
+        "Transformers": {
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/huggingface/transformers"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "PyTorch"
+            ]
+        },
+        "NumPy": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/NumPy"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Zip": {
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ZIP_  (file_format)"
+            ]
+        },
+        "Mp4": {
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Gzip": {
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gzip"
+            ]
+        },
+        "Mp3": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Collada": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Stl": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Obj": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Usd": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
+            ]
+        },
+        "Xml": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
+            ]
+        },
+        "Ply": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PLY_(file_format)"
+            ]
+        },
+        "Json": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Gltf": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Css": {
+            "tags": [
+                "file format",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
+            ]
+        },
+        "Svg": {
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Gif": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Mov": {
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Opus": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Png": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "Yaml": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Csv": {
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "Jpg": {
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Fbx": {
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Html": {
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Ogg": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Wav": {
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "KotlinxSerialization": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/Kotlin/kotlinx.serialization"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Json",
+                "Yaml",
+                "Xml"
+            ]
+        },
+        "KotlinCsv": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/jsoizo/kotlin-csv"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Csv"
+            ]
+        },
+        "Http": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "ArtNet": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "Https": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "WebSocket": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "Tcp": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "Udp": {
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "OSC": {
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
+            ]
+        },
+        "Artnet4J": {
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
+        "JavaCv": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java",
+                "OpenCv"
+            ]
+        },
+        "JSerialComm": {
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "Awt": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "BoofCV": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "Antlr": {
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Swing": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jts": {
+            "tags": [
+                "library",
+                "geometry",
+                "gis",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaOsc": {
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/hoijui/JavaOSC"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "Lwjgl": {
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl"
+            ]
+        },
+        "JavaxSound": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "JavaxMidi": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "Java": {
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Jogl": {
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "BasicEcsJs": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/BasicECSJs/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "Numero": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://mcintyre.io/numero/",
+                "https://github.com/nickmcintyre/numero"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TotalSerialism": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/tmhglnd/total-serialism"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Marching": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/marching"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "AnimatorJs": {
+            "tags": [
+                "library",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/AnimatorJs/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGFX": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/CodeGuppyPrograms/TurtleGFX"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "canvasGUI": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/canvasgui/index.html",
+                "https://github.com/quarks/canvasGUI"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5TouchGui": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://github.com/L05/p5.touchgui"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "MatrixJs": {
+            "references": [
+                "https://github.com/RandomGamingDev/MatrixJs"
+            ]
+        },
+        "P5_5": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://github.com/eltapir/p5.5"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "C2Js": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ],
+            "supports": [
+                "P5Js"
+            ]
+        },
+        "P5Brush": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/acamposuribe/p5.brush"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grid": {
+            "tags": [
+                "library",
+                "grids"
+            ],
+            "references": [
+                "https://github.com/aahdee/p5grid"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Bezier": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/peilingjiang/p5.bezier"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5VideoKit": {
+            "tags": [
+                "library",
+                "video"
+            ],
+            "references": [
+                "https://github.com/molab-itp/p5videoKit"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Dom": {
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Sound": {
+            "tags": [
+                "library",
+                "sound"
+            ],
+            "references": [
+                "https://p5js.org/reference/p5.sound/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5CMyK": {
+            "tags": [
+                "library",
+                "color"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/p5.cmyk.js"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "WebGL2FBO": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/WebGL2FBO"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "VecJs": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/VecJs"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Palette": {
+            "tags": [
+                "library",
+                "color"
+            ],
+            "references": [
+                "https://www.remistura.com/p5.palette/",
+                "https://github.com/remistura/p5.palette"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FillGradient": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/alterebro/p5.fillGradient"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Csg": {
+            "tags": [
+                "library",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.csg"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grain": {
+            "tags": [
+                "library",
+                "noise"
+            ],
+            "references": [
+                "https://github.com/meezwhite/p5.grain"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Polar": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/liz-peng/p5.Polar"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Js": {
+            "prototypes": [
+                "_ImageIO",
+                "_VideoIO",
+                "_LibraryIO",
+                "_Drawing"
+            ],
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing#p5.js"
+            ],
+            "actions": {
+                "loadImageArtifact": {
+                    "description": "Load image artifact",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "IArtifact"
+                        }
+                    ]
+                },
+                "saveImage": {
+                    "description": "Save Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "FileArtifact"
+                },
+                "loadImage": {
+                    "description": "Load Image",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "createImage": {
+                    "description": "Create an image",
+                    "arguments": [
+                        {
+                            "name": "width",
+                            "type": "Int"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Int"
+                        }
+                    ]
+                },
+                "loadVideo": {
+                    "description": "Load Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ],
+                    "outputType": "VideoArtifact"
+                },
+                "saveVideo": {
+                    "description": "Save Video",
+                    "arguments": [
+                        {
+                            "name": "name"
+                        }
+                    ]
+                },
+                "importLibrary": {
+                    "description": "Import library",
+                    "arguments": [
+                        {
+                            "name": "libraryName"
+                        }
+                    ],
+                    "outputType": "SourceCodeArtifact"
+                },
+                "clearBackground": {
+                    "description": "Clear the background",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawEllipse": {
+                    "description": "Draw an ellipse",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "xRadius",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "yRadius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCircle": {
+                    "description": "Draw a circle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "radius",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawLine": {
+                    "description": "Draw a line",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawCubicBezier": {
+                    "description": "Draw a cubic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x3",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y3",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawQuadraticBezier": {
+                    "description": "Draw a quadratic bezier curve",
+                    "arguments": [
+                        {
+                            "name": "x0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y0",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setStroke": {
+                    "description": "Set the stroke color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFill": {
+                    "description": "Set the fill color",
+                    "arguments": [
+                        {
+                            "name": "red",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "green",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "blue",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawRectangle": {
+                    "description": "Draw a rectangle",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawImage": {
+                    "description": "Draw an image",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "width",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "height",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "setFont": {
+                    "description": "Set the active font",
+                    "arguments": [
+                        {
+                            "name": "font"
+                        },
+                        {
+                            "name": "size",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "drawText": {
+                    "description": "Draw a text",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "text"
+                        }
+                    ]
+                },
+                "drawPoint": {
+                    "description": "Draw a point",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "y",
+                            "type": "Number"
+                        }
+                    ]
+                },
+                "runSketch": {
+                    "description": "Run sketch",
+                    "outputType": "ProcessArtifact"
+                },
+                "publishSketch": {
+                    "description": "Publish sketch",
+                    "outputType": "SourceCodeArtifact"
+                }
+            },
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Sprite": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/p5.Sprite/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGraphicsP5Js": {
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/tg/index.html",
+                "https://github.com/quarks/turtle-graphics/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TilemapP5Js": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/Tilemapp5js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "PixyP5Js": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/Pixyp5js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "ZoomP5Js": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/Zoomp5js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5UiRenderer": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "XYScopeJs": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://teddavis.org/xyscopejs/",
+                "https://github.com/ffd8/xyscopejs"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Quadrille": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://objetos.github.io/p5.quadrille.js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ModButton": {
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://github.com/yetyeeter1337/p5.Modbuttons"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Play": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/quinton-ashley/p5play"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Anaglyph": {
+            "tags": [
+                "library",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.anaglyph"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "WebGL2Tex": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/RandomGamingDev/WebGL2Tex"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Mapper": {
+            "tags": [
+                "library",
+                "projection mapping"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.mapper"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ColorGenerator": {
+            "tags": [
+                "library",
+                "color"
+            ],
+            "references": [
+                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
+                "https://github.com/alexandru-postolache/p5.colorGenerator"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
         "Vulkan": {
             "tags": [
                 "library",
@@ -1372,1371 +2760,6 @@
                 "https://en.wikipedia.org/wiki/DMX"
             ]
         },
-        "KotlinxSerialization": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/Kotlin/kotlinx.serialization"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Json",
-                "Yaml",
-                "Xml"
-            ]
-        },
-        "KotlinCsv": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/jsoizo/kotlin-csv"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Csv"
-            ]
-        },
-        "BasicEcsJs": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/BasicECSJs/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Numero": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://mcintyre.io/numero/",
-                "https://github.com/nickmcintyre/numero"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TotalSerialism": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/tmhglnd/total-serialism"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "P5Marching": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/marching"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "AnimatorJs": {
-            "tags": [
-                "library",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/AnimatorJs/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGFX": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/CodeGuppyPrograms/TurtleGFX"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "canvasGUI": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/canvasgui/index.html",
-                "https://github.com/quarks/canvasGUI"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5TouchGui": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://github.com/L05/p5.touchgui"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "MatrixJs": {
-            "references": [
-                "https://github.com/RandomGamingDev/MatrixJs"
-            ]
-        },
-        "P5_5": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://github.com/eltapir/p5.5"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "C2Js": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ],
-            "supports": [
-                "P5Js"
-            ]
-        },
-        "P5Brush": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/acamposuribe/p5.brush"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grid": {
-            "tags": [
-                "library",
-                "grids"
-            ],
-            "references": [
-                "https://github.com/aahdee/p5grid"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Bezier": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/peilingjiang/p5.bezier"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5VideoKit": {
-            "tags": [
-                "library",
-                "video"
-            ],
-            "references": [
-                "https://github.com/molab-itp/p5videoKit"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Dom": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Sound": {
-            "tags": [
-                "library",
-                "sound"
-            ],
-            "references": [
-                "https://p5js.org/reference/p5.sound/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5CMyK": {
-            "tags": [
-                "library",
-                "color"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/p5.cmyk.js"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "WebGL2FBO": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/WebGL2FBO"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "VecJs": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/VecJs"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Palette": {
-            "tags": [
-                "library",
-                "color"
-            ],
-            "references": [
-                "https://www.remistura.com/p5.palette/",
-                "https://github.com/remistura/p5.palette"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FillGradient": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/alterebro/p5.fillGradient"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Csg": {
-            "tags": [
-                "library",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.csg"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grain": {
-            "tags": [
-                "library",
-                "noise"
-            ],
-            "references": [
-                "https://github.com/meezwhite/p5.grain"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Polar": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/liz-peng/p5.Polar"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Js": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
-            ],
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "web",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Processing#p5.js"
-            ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "runSketch": {
-                    "description": "Run sketch",
-                    "outputType": "ProcessArtifact"
-                },
-                "publishSketch": {
-                    "description": "Publish sketch",
-                    "outputType": "SourceCodeArtifact"
-                }
-            },
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "P5Sprite": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/p5.Sprite/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGraphicsP5Js": {
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/tg/index.html",
-                "https://github.com/quarks/turtle-graphics/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TilemapP5Js": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/Tilemapp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "PixyP5Js": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/Pixyp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "ZoomP5Js": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/Zoomp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5UiRenderer": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "XYScopeJs": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://teddavis.org/xyscopejs/",
-                "https://github.com/ffd8/xyscopejs"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Quadrille": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://objetos.github.io/p5.quadrille.js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ModButton": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://github.com/yetyeeter1337/p5.Modbuttons"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Play": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/quinton-ashley/p5play"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Anaglyph": {
-            "tags": [
-                "library",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.anaglyph"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "WebGL2Tex": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/WebGL2Tex"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Mapper": {
-            "tags": [
-                "library",
-                "projection mapping"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.mapper"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ColorGenerator": {
-            "tags": [
-                "library",
-                "color"
-            ],
-            "references": [
-                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
-                "https://github.com/alexandru-postolache/p5.colorGenerator"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Assimp": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/assimp/assimp"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "SDL": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Glfw": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "PyTorch": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "Pandas": {
-            "tags": [
-                "library",
-                "data science"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "Json",
-                "Csv"
-            ]
-        },
-        "ScikitLearn": {
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Python": {
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ]
-        },
-        "Transformers": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/huggingface/transformers"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "PyTorch"
-            ]
-        },
-        "NumPy": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/NumPy"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Zip": {
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ZIP_  (file_format)"
-            ]
-        },
-        "Mp4": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
-        "Gzip": {
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gzip"
-            ]
-        },
-        "Mp3": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Collada": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Stl": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
-            ]
-        },
-        "Obj": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Usd": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
-            ]
-        },
-        "Xml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/XML"
-            ]
-        },
-        "Ply": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PLY_(file_format)"
-            ]
-        },
-        "Json": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
-        "Gltf": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
-            ]
-        },
-        "Css": {
-            "tags": [
-                "file format",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Svg": {
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Gif": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
-        "Mov": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Opus": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
-        "Png": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "Yaml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
-            ]
-        },
-        "Csv": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
-            ]
-        },
-        "Jpg": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
-            ]
-        },
-        "Fbx": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Html": {
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Ogg": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Wav": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
-        "Artnet4J": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "ArtNet"
-            ]
-        },
-        "JavaCv": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "JSerialComm": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "Awt": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "BoofCV": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://boofcv.org/"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Png",
-                "Jpg"
-            ]
-        },
-        "Antlr": {
-            "tags": [
-                "library",
-                "parsing",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Swing": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jts": {
-            "tags": [
-                "library",
-                "geometry",
-                "gis",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JavaOsc": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/hoijui/JavaOSC"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "Lwjgl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl"
-            ]
-        },
-        "JavaxSound": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "JavaxMidi": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "Java": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "Jogl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
         "OrxNoise": {
             "tags": [
                 "library",
@@ -3370,70 +3393,47 @@
                 "GLSL"
             ]
         },
-        "Http": {
+        "Assimp": {
             "tags": [
-                "protocol"
+                "library"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/HTTP"
-            ]
-        },
-        "ArtNet": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Art-Net"
+                "https://github.com/assimp/assimp"
             ],
             "dependsOn": [
-                "Udp"
+                "CPP"
+            ]
+        },
+        "SDL": {
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
+            ],
+            "dependsOn": [
+                "C"
             ],
             "supports": [
-                "DMX"
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         },
-        "Https": {
+        "Glfw": {
             "tags": [
-                "protocol"
+                "library"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/HTTPS"
-            ]
-        },
-        "WebSocket": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
-            ]
-        },
-        "Tcp": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
-        "Udp": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
-            ]
-        },
-        "OSC": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+                "https://en.wikipedia.org/wiki/GLFW"
             ],
             "dependsOn": [
-                "Udp"
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         }
     }

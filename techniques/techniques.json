@@ -1,5 +1,52 @@
 {
     "techniques": {
+        "EditDistance": {
+            "name": "Edit distance",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edit_distance"
+            ]
+        },
+        "LevenshteinDistance": {
+            "name": "Levenshtein distance",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Levenshtein_distance"
+            ]
+        },
+        "Photogrammetry": {
+            "name": "Photogrammetry",
+            "tags": [
+                "photography",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Photogrammetry"
+            ]
+        },
+        "SlitScanning": {
+            "name": "Slit-scanning",
+            "tags": [
+                "photography"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+            ]
+        },
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "tags": [
+                "photography",
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Tone_mapping"
+            ]
+        },
         "Heightfield": {
             "name": "Heightfield",
             "tags": [
@@ -242,122 +289,6 @@
                 "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
             ]
         },
-        "FFT": {
-            "name": "Fast fourier transform",
-            "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
-            ]
-        },
-        "PinwheelTiling": {
-            "name": "Pinwheel tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
-            ]
-        },
-        "WangTiling": {
-            "name": "Wang tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wang_tile"
-            ]
-        },
-        "PenroseTiling": {
-            "name": "Penrose tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Penrose_tiling"
-            ]
-        },
-        "SubstitutionTiling": {
-            "name": "Substitution tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Substitution_tiling"
-            ]
-        },
-        "Photogrammetry": {
-            "name": "Photogrammetry",
-            "tags": [
-                "photography",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Photogrammetry"
-            ]
-        },
-        "SlitScanning": {
-            "name": "Slit-scanning",
-            "tags": [
-                "photography"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Slit-scan_photography"
-            ]
-        },
-        "ToneMapping": {
-            "name": "Tone mapping",
-            "tags": [
-                "photography",
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
-            ]
-        },
-        "GrayCode": {
-            "name": "Gray code",
-            "tags": [
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
-            ]
-        },
-        "Clustering": {
-            "name": "Clustering",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
-            ]
-        },
-        "PredictiveText": {
-            "name": "Predictive text",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "tags": [
-                "machine learning"
-            ]
-        },
-        "tSNE": {
-            "name": "t-SNE",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
-            ]
-        },
         "HilbertCurve": {
             "name": "Hilbert Curve",
             "tags": [
@@ -393,43 +324,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Lissajous_curve"
-            ]
-        },
-        "ValueNoise": {
-            "name": "Value noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
-            ]
-        },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
-            ]
-        },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
             ]
         },
         "PoissonFill": {
@@ -551,6 +445,97 @@
                 "image processing"
             ]
         },
+        "PinwheelTiling": {
+            "name": "Pinwheel tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
+            ]
+        },
+        "WangTiling": {
+            "name": "Wang tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wang_tile"
+            ]
+        },
+        "PenroseTiling": {
+            "name": "Penrose tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Penrose_tiling"
+            ]
+        },
+        "SubstitutionTiling": {
+            "name": "Substitution tiling",
+            "tags": [
+                "tiling"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Substitution_tiling"
+            ]
+        },
+        "Guilloche": {
+            "name": "Guilloché patterns",
+            "tags": [
+                "patterns"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
+            ]
+        },
+        "ValueNoise": {
+            "name": "Value noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Value_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "FFT": {
+            "name": "Fast fourier transform",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            ]
+        },
         "CellularAutomata": {
             "name": "Cellular automata",
             "tags": [
@@ -578,33 +563,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Regular_expression"
-            ]
-        },
-        "EditDistance": {
-            "name": "Edit distance",
-            "tags": [
-                "text"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Edit_distance"
-            ]
-        },
-        "LevenshteinDistance": {
-            "name": "Levenshtein distance",
-            "tags": [
-                "text"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Levenshtein_distance"
-            ]
-        },
-        "Guilloche": {
-            "name": "Guilloché patterns",
-            "tags": [
-                "patterns"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
             ]
         },
         "Flocking": {
@@ -647,6 +605,48 @@
             "name": "Differential growth",
             "tags": [
                 "simulation"
+            ]
+        },
+        "GrayCode": {
+            "name": "Gray code",
+            "tags": [
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gray_code"
+            ]
+        },
+        "Clustering": {
+            "name": "Clustering",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
+            ]
+        },
+        "Umap": {
+            "name": "UMAP",
+            "tags": [
+                "machine learning"
+            ]
+        },
+        "tSNE": {
+            "name": "t-SNE",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
             ]
         }
     }
