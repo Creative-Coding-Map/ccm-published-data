@@ -736,5 +736,609 @@
                 "type": null
             }
         ]
+    },
+    "ExampleWorkflow03": {
+        "nodes": [
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 0
+            },
+            {
+                "label": "OrxMarchingSquares",
+                "type": "tool",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 16,
+                "id": 1
+            },
+            {
+                "label": "Extract iso contour",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 16,
+                "id": 2
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 3
+            },
+            {
+                "label": "Use library",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 15,
+                "id": 4
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 5
+            },
+            {
+                "label": "OPENRNDR",
+                "type": "tool",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 12,
+                "id": 6
+            },
+            {
+                "label": "Clear the background",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 12,
+                "id": 7
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 8
+            },
+            {
+                "label": "loop",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 10,
+                "id": 9
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 10
+            },
+            {
+                "label": "Draw a rectangle",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 8,
+                "id": 11
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 12
+            },
+            {
+                "label": "Create an image",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow03.kt",
+                "lineNumber": 7,
+                "id": 13
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 14
+            }
+        ],
+        "links": [
+            {
+                "source": 0,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 0,
+                "label": "Extract iso contour",
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 4,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 3,
+                "label": "Use library",
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 7,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 7,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 7,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 5,
+                "label": "Clear the background",
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 8,
+                "label": "loop",
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 10,
+                "label": "Draw a rectangle",
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 6,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 12,
+                "label": "Create an image",
+                "type": null
+            }
+        ]
+    },
+    "ExampleWorkflow02": {
+        "nodes": [
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 0
+            },
+            {
+                "label": "OrxNoise",
+                "type": "tool",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 17,
+                "id": 1
+            },
+            {
+                "label": "Generate 2D Perlin noise",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 17,
+                "id": 2
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 3
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 4
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 5
+            },
+            {
+                "label": "Use library",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 15,
+                "id": 6
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 7
+            },
+            {
+                "label": "OPENRNDR",
+                "type": "tool",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 12,
+                "id": 8
+            },
+            {
+                "label": "Clear the background",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 12,
+                "id": 9
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 10
+            },
+            {
+                "label": "loop",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 10,
+                "id": 11
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 12
+            },
+            {
+                "label": "Draw a rectangle",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 8,
+                "id": 13
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 14
+            },
+            {
+                "label": "Create an image",
+                "type": "action",
+                "subType": null,
+                "filename": "ExampleWorkflow02.kt",
+                "lineNumber": 7,
+                "id": 15
+            },
+            {
+                "label": "Artifact",
+                "type": "artifact",
+                "subType": null,
+                "filename": null,
+                "lineNumber": null,
+                "id": 16
+            }
+        ],
+        "links": [
+            {
+                "source": 0,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 0,
+                "label": "Generate 2D Perlin noise",
+                "type": null
+            },
+            {
+                "source": 3,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 4,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 4,
+                "target": 3,
+                "label": "Generate 2D Perlin noise",
+                "type": null
+            },
+            {
+                "source": 4,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 4,
+                "label": "Generate 2D Perlin noise",
+                "type": null
+            },
+            {
+                "source": 5,
+                "target": 6,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 7,
+                "target": 6,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 1,
+                "target": 6,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 7,
+                "target": 5,
+                "label": "Use library",
+                "type": null
+            },
+            {
+                "source": 7,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 9,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 7,
+                "label": "Clear the background",
+                "type": null
+            },
+            {
+                "source": 10,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 11,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 10,
+                "label": "loop",
+                "type": null
+            },
+            {
+                "source": 12,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 13,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 12,
+                "label": "Draw a rectangle",
+                "type": null
+            },
+            {
+                "source": 14,
+                "target": 15,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 16,
+                "target": 15,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 8,
+                "target": 15,
+                "label": null,
+                "type": null
+            },
+            {
+                "source": 16,
+                "target": 14,
+                "label": "Create an image",
+                "type": null
+            }
+        ]
     }
 }
