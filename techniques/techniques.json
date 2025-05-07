@@ -1,5 +1,263 @@
 {
     "techniques": {
+        "Guilloche": {
+            "name": "Guilloché patterns",
+            "tags": [
+                "patterns"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
+            ]
+        },
+        "GrayCode": {
+            "name": "Gray code",
+            "tags": [
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gray_code"
+            ]
+        },
+        "ValueNoise": {
+            "name": "Value noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Value_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "FFT": {
+            "name": "Fast fourier transform",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            ]
+        },
+        "Clustering": {
+            "name": "Clustering",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
+            ]
+        },
+        "Umap": {
+            "name": "UMAP",
+            "tags": [
+                "machine learning"
+            ]
+        },
+        "tSNE": {
+            "name": "t-SNE",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "PoissonFill": {
+            "name": "Poisson fill",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "HistogramEqualization": {
+            "name": "Histogram equalization",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Histogram_equalization"
+            ]
+        },
+        "DCT": {
+            "name": "DCT (Discrete Cosine Transform)",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "EdgeDetection": {
+            "name": "Edge detection",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edge_detection"
+            ]
+        },
+        "Halftoning": {
+            "name": "Halftoning",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "GaussianBlur": {
+            "name": "GaussianBlur",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gaussian_blur"
+            ]
+        },
+        "ImageQuantization": {
+            "name": "Image quantization",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
+                "https://en.wikipedia.org/wiki/Color_quantization"
+            ]
+        },
+        "PixelSorting": {
+            "name": "Pixel Sorting",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://satyarth.me/articles/pixel-sorting/"
+            ]
+        },
+        "IDCT": {
+            "name": "Inverse DCT (Discrete Cosine Transform)",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "DistanceTransform": {
+            "name": "Distance transform",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Distance_transform"
+            ]
+        },
+        "CannyEdgeDetection": {
+            "name": "Canny edge detection",
+            "tags": [
+                "image processing",
+                "edge detection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Canny_edge_detector"
+            ]
+        },
+        "Blur": {
+            "name": "Blur",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Box_blur"
+            ]
+        },
+        "MonocularDepthEstimation": {
+            "name": "Monocular depth estimation",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/DepthAnything/Depth-Anything-V2"
+            ]
+        },
+        "Dithering": {
+            "name": "Dithering",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "Flocking": {
+            "name": "Flocking",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Flocking"
+            ]
+        },
+        "ReactionDiffusion": {
+            "name": "Reaction Diffusion",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
+            ]
+        },
+        "DiffusionLimitedAggregation": {
+            "name": "Diffusion limited aggregation",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
+            ]
+        },
+        "FluidSimulation": {
+            "name": "Fluid simulation",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
+            ]
+        },
+        "DifferentialGrowth": {
+            "name": "Differential growth",
+            "tags": [
+                "simulation"
+            ]
+        },
         "EditDistance": {
             "name": "Edit distance",
             "tags": [
@@ -16,35 +274,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Levenshtein_distance"
-            ]
-        },
-        "Photogrammetry": {
-            "name": "Photogrammetry",
-            "tags": [
-                "photography",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Photogrammetry"
-            ]
-        },
-        "SlitScanning": {
-            "name": "Slit-scanning",
-            "tags": [
-                "photography"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Slit-scan_photography"
-            ]
-        },
-        "ToneMapping": {
-            "name": "Tone mapping",
-            "tags": [
-                "photography",
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         },
         "Heightfield": {
@@ -326,123 +555,62 @@
                 "https://en.wikipedia.org/wiki/Lissajous_curve"
             ]
         },
-        "PoissonFill": {
-            "name": "Poisson fill",
+        "CellularAutomata": {
+            "name": "Cellular automata",
             "tags": [
-                "image processing"
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
             ]
         },
-        "HistogramEqualization": {
-            "name": "Histogram equalization",
+        "ConwaysGameOfLife": {
+            "name": "Conway's Game of Life",
             "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            ]
+        },
+        "RegularExpressions": {
+            "name": "Regular expressions",
+            "tags": [
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Regular_expression"
+            ]
+        },
+        "Photogrammetry": {
+            "name": "Photogrammetry",
+            "tags": [
+                "photography",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Photogrammetry"
+            ]
+        },
+        "SlitScanning": {
+            "name": "Slit-scanning",
+            "tags": [
+                "photography"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+            ]
+        },
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "tags": [
+                "photography",
                 "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Histogram_equalization"
-            ]
-        },
-        "DCT": {
-            "name": "DCT (Discrete Cosine Transform)",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "EdgeDetection": {
-            "name": "Edge detection",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Edge_detection"
-            ]
-        },
-        "Halftoning": {
-            "name": "Halftoning",
-            "tags": [
-                "image processing"
-            ]
-        },
-        "GaussianBlur": {
-            "name": "GaussianBlur",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gaussian_blur"
-            ]
-        },
-        "ImageQuantization": {
-            "name": "Image quantization",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
-                "https://en.wikipedia.org/wiki/Color_quantization"
-            ]
-        },
-        "PixelSorting": {
-            "name": "Pixel Sorting",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://satyarth.me/articles/pixel-sorting/"
-            ]
-        },
-        "IDCT": {
-            "name": "Inverse DCT (Discrete Cosine Transform)",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "DistanceTransform": {
-            "name": "Distance transform",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Distance_transform"
-            ]
-        },
-        "CannyEdgeDetection": {
-            "name": "Canny edge detection",
-            "tags": [
-                "image processing",
-                "edge detection"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Canny_edge_detector"
-            ]
-        },
-        "Blur": {
-            "name": "Blur",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Box_blur"
-            ]
-        },
-        "MonocularDepthEstimation": {
-            "name": "Monocular depth estimation",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/DepthAnything/Depth-Anything-V2"
-            ]
-        },
-        "Dithering": {
-            "name": "Dithering",
-            "tags": [
-                "image processing"
+                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         },
         "PinwheelTiling": {
@@ -479,174 +647,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Substitution_tiling"
-            ]
-        },
-        "Guilloche": {
-            "name": "Guilloché patterns",
-            "tags": [
-                "patterns"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
-            ]
-        },
-        "ValueNoise": {
-            "name": "Value noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
-            ]
-        },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
-            ]
-        },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
-            ]
-        },
-        "FFT": {
-            "name": "Fast fourier transform",
-            "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
-            ]
-        },
-        "CellularAutomata": {
-            "name": "Cellular automata",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cellular_automaton"
-            ]
-        },
-        "ConwaysGameOfLife": {
-            "name": "Conway's Game of Life",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
-            ]
-        },
-        "RegularExpressions": {
-            "name": "Regular expressions",
-            "tags": [
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Regular_expression"
-            ]
-        },
-        "Flocking": {
-            "name": "Flocking",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Flocking"
-            ]
-        },
-        "ReactionDiffusion": {
-            "name": "Reaction Diffusion",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
-            ]
-        },
-        "DiffusionLimitedAggregation": {
-            "name": "Diffusion limited aggregation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
-            ]
-        },
-        "FluidSimulation": {
-            "name": "Fluid simulation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
-            ]
-        },
-        "DifferentialGrowth": {
-            "name": "Differential growth",
-            "tags": [
-                "simulation"
-            ]
-        },
-        "GrayCode": {
-            "name": "Gray code",
-            "tags": [
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
-            ]
-        },
-        "Clustering": {
-            "name": "Clustering",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
-            ]
-        },
-        "PredictiveText": {
-            "name": "Predictive text",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "tags": [
-                "machine learning"
-            ]
-        },
-        "tSNE": {
-            "name": "t-SNE",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
             ]
         }
     }

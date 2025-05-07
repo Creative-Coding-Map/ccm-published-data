@@ -1,4 +1,12 @@
 {
+    "ExampleWorkflow02": {
+        "name": "ExampleWorkflow02",
+        "description": "A second example workflow",
+        "author": "Edwin Jakobs",
+        "tags": [
+            "example"
+        ]
+    },
     "ExampleWorkflow": {
         "name": "ExampleWorkflow",
         "description": "An example workflow",
@@ -10,14 +18,6 @@
     "ExampleWorkflow03": {
         "name": "ExampleWorkflow03",
         "description": "A third example workflow",
-        "author": "Edwin Jakobs",
-        "tags": [
-            "example"
-        ]
-    },
-    "ExampleWorkflow02": {
-        "name": "ExampleWorkflow02",
-        "description": "A second example workflow",
         "author": "Edwin Jakobs",
         "tags": [
             "example"
