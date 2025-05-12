@@ -108,6 +108,17 @@
                 "https://en.wikipedia.org/wiki/GlTF"
             ]
         },
+        "Onnx": {
+            "tags": [
+                "file format",
+                "standard",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/onnx/onnx",
+                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
+            ]
+        },
         "Css": {
             "tags": [
                 "file format",
@@ -233,6 +244,19 @@
             ],
             "references": [
                 "https://github.com/tensorflow"
+            ]
+        },
+        "OnnxRuntime": {
+            "tags": [
+                "library",
+                "machine learning",
+                "open source"
+            ],
+            "supports": [
+                "Onnx",
+                "Java",
+                "Python",
+                "C"
             ]
         },
         "Assimp": {

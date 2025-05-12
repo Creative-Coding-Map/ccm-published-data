@@ -1,5 +1,15 @@
 {
     "techniques": {
+        "VoronoiDiagram": {
+            "name": "Voronoi diagram",
+            "tags": [
+                "graph",
+                "tessellation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Voronoi_diagram"
+            ]
+        },
         "Guilloche": {
             "name": "Guilloché patterns",
             "tags": [
@@ -45,6 +55,15 @@
                 "https://en.wikipedia.org/wiki/Simplex_noise"
             ]
         },
+        "WorleyNoise": {
+            "name": "Worley noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Worley_noise"
+            ]
+        },
         "PerlinNoise": {
             "name": "Perlin noise",
             "tags": [
@@ -53,6 +72,15 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "KeyframeInterpolation": {
+            "name": "Keyframe interpolation",
+            "tags": [
+                "animation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Key_frame"
             ]
         },
         "FFT": {
@@ -243,6 +271,15 @@
                 "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
             ]
         },
+        "InverseKinematics": {
+            "name": "Inverse kinematics",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inverse_kinematics"
+            ]
+        },
         "FluidSimulation": {
             "name": "Fluid simulation",
             "tags": [
@@ -250,6 +287,16 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
+            ]
+        },
+        "GradientDescent": {
+            "name": "Gradient descent",
+            "tags": [
+                "simulation",
+                "optimization"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gradient_descent"
             ]
         },
         "DifferentialGrowth": {
@@ -399,16 +446,6 @@
                 "https://iquilezles.org/articles/warp/"
             ]
         },
-        "BezierCurve": {
-            "name": "Bézier curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
-            ]
-        },
         "Turtle": {
             "name": "Turtle graphics",
             "tags": [
@@ -419,13 +456,13 @@
                 "https://en.wikipedia.org/wiki/Turtle_graphics"
             ]
         },
-        "ConvexHull": {
-            "name": "Convex hull",
+        "BumpMapping": {
+            "name": "Bump mapping",
             "tags": [
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Convex_hull"
+                "https://en.wikipedia.org/wiki/Bump_mapping"
             ]
         },
         "GaussianSplatting": {
@@ -482,6 +519,15 @@
                 "https://en.wikipedia.org/wiki/Delaunay_triangulation"
             ]
         },
+        "CirclePacking": {
+            "name": "Circle packing",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Circle_packing"
+            ]
+        },
         "RayMarching": {
             "name": "Ray Marching",
             "tags": [
@@ -509,6 +555,15 @@
                 "https://en.wikipedia.org/wiki/L-system"
             ]
         },
+        "ChromaticAberration": {
+            "name": "Chromatic aberration",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Chromatic_aberration"
+            ]
+        },
         "RayTracing": {
             "name": "Ray Trarching",
             "tags": [
@@ -516,6 +571,45 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
+            ]
+        },
+        "Duotone": {
+            "name": "Duotone",
+            "tags": [
+                "print",
+                "halftone"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Duotone"
+            ]
+        },
+        "BezierSurface": {
+            "name": "Bézier surface",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
+            ]
+        },
+        "Nurbs": {
+            "name": "NURBS",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
+            ]
+        },
+        "Smoothstep": {
+            "name": "Smoothstep function",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Smoothstep"
             ]
         },
         "HilbertCurve": {
@@ -526,6 +620,46 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Hilbert_curve"
+            ]
+        },
+        "CatmullRomSpline": {
+            "name": "Catmull-Rom spline",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
+            ]
+        },
+        "BezierCurve": {
+            "name": "Bézier curve",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
+            ]
+        },
+        "Clamp": {
+            "name": "Clamp",
+            "tags": [
+                "functions"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Clamp_(function)"
+            ]
+        },
+        "BezierTriangle": {
+            "name": "Bézier triangle",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
             ]
         },
         "RoseCurves": {
@@ -647,6 +781,65 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Substitution_tiling"
+            ]
+        },
+        "Attractor": {
+            "name": "Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Attractor"
+            ]
+        },
+        "CliffordAttractor": {
+            "name": "Clifford attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/clifford/"
+            ]
+        },
+        "DeJongAttractor": {
+            "name": "De Jong Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/peterdejong/"
+            ]
+        },
+        "JuliaSet": {
+            "name": "Julia set",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Julia_set"
+            ]
+        },
+        "ConvexHull": {
+            "name": "Convex hull",
+            "tags": [
+                "geometry",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Convex_hull"
+            ]
+        },
+        "AlphaShape": {
+            "name": "Alpha shape",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Alpha_shape"
             ]
         }
     }
