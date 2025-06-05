@@ -1,0 +1,29 @@
+{
+    "___template": {
+        "tools": [
+            "MultiChannelSpeakerArray"
+        ],
+        "techniques": [
+            "AudioSynthesis"
+        ],
+        "tags": [
+            "audio"
+        ],
+        "metadata": {
+            "authors": [
+                "John Doe",
+                "RNDR"
+            ],
+            "tags": [
+                "interactive",
+                "immersive"
+            ],
+            "references": [
+                "https://github.com/creative-coding-map"
+            ],
+            "title": [
+                "The breakdown"
+            ]
+        }
+    }
+}

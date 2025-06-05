@@ -1,5 +1,14 @@
 {
     "techniques": {
+        "FFT": {
+            "name": "Fast fourier transform",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            ]
+        },
         "KeyframeInterpolation": {
             "name": "Keyframe interpolation",
             "tags": [
@@ -7,419 +16,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Key_frame"
-            ]
-        },
-        "EditDistance": {
-            "name": "Edit distance",
-            "tags": [
-                "text"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Edit_distance"
-            ]
-        },
-        "LevenshteinDistance": {
-            "name": "Levenshtein distance",
-            "tags": [
-                "text"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Levenshtein_distance"
-            ]
-        },
-        "Photogrammetry": {
-            "name": "Photogrammetry",
-            "tags": [
-                "photography",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Photogrammetry"
-            ]
-        },
-        "SlitScanning": {
-            "name": "Slit-scanning",
-            "tags": [
-                "photography"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Slit-scan_photography"
-            ]
-        },
-        "ToneMapping": {
-            "name": "Tone mapping",
-            "tags": [
-                "photography",
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
-            ]
-        },
-        "Heightfield": {
-            "name": "Heightfield",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Heightmap"
-            ]
-        },
-        "SphericalHarmonics": {
-            "name": "Spherical Harmonics",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Spherical_harmonics",
-                "https://paulbourke.net/geometry/sphericalh/"
-            ]
-        },
-        "FlowField": {
-            "name": "Flow field",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Vector_field"
-            ]
-        },
-        "PolygonClipping": {
-            "name": "Polygon clipping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Clipping_(computer_graphics)",
-                "https://en.wikipedia.org/wiki/Boolean_operations_on_polygons"
-            ]
-        },
-        "MarchingTetrahedra": {
-            "name": "Marching tetrahedra",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Marching_tetrahedra"
-            ]
-        },
-        "Octree": {
-            "name": "Octree",
-            "tags": [
-                "computer graphics",
-                "space partitioning",
-                "data structure"
-            ]
-        },
-        "HobbyCurve": {
-            "name": "Hobby Curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://www.jakelow.com/blog/hobby-curves"
-            ]
-        },
-        "MarchingCubes": {
-            "name": "Marching cubes",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Marching_cubes"
-            ]
-        },
-        "PolygonTriangulation": {
-            "name": "Polygon triangulation",
-            "tags": [
-                "computer graphics",
-                "triangulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Polygon_triangulation"
-            ]
-        },
-        "PathTracing": {
-            "name": "Path Tracing",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Path_tracing"
-            ]
-        },
-        "RamerDouglasPeucker": {
-            "name": "Ramer-Douglas-Peucker Algorithm",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
-            ]
-        },
-        "KDTree": {
-            "name": "Kd-tree",
-            "tags": [
-                "space partitioning",
-                "computer graphics",
-                "data structure"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/K-d_tree"
-            ]
-        },
-        "DomainWarping": {
-            "name": "Domain warping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://iquilezles.org/articles/warp/"
-            ]
-        },
-        "Turtle": {
-            "name": "Turtle graphics",
-            "tags": [
-                "computer graphics",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
-            ]
-        },
-        "BumpMapping": {
-            "name": "Bump mapping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Bump_mapping"
-            ]
-        },
-        "GaussianSplatting": {
-            "name": "Gaussian splatting",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Heightmap"
-            ]
-        },
-        "MarchingSquares": {
-            "name": "Marching squares",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Marching_squares"
-            ]
-        },
-        "QuadTree": {
-            "name": "Quad tree",
-            "tags": [
-                "computer graphics",
-                "space partitioning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Quadtree"
-            ]
-        },
-        "SignedDistanceFunctions": {
-            "name": "Signed Distance Functions",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Signed_distance_function"
-            ]
-        },
-        "HalfEdgeMesh": {
-            "name": "Half-edge mesh",
-            "tags": [
-                "computer graphics",
-                "data structure"
-            ]
-        },
-        "DelaunayTriangulation": {
-            "name": "Delaunay triangulation",
-            "tags": [
-                "computer graphics",
-                "triangulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Delaunay_triangulation"
-            ]
-        },
-        "CirclePacking": {
-            "name": "Circle packing",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Circle_packing"
-            ]
-        },
-        "RayMarching": {
-            "name": "Ray Marching",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ray_marching"
-            ]
-        },
-        "Bloom": {
-            "name": "Bloom",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Bloom_(shader_effect)"
-            ]
-        },
-        "LSystems": {
-            "name": "L-systems",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/L-system"
-            ]
-        },
-        "ChromaticAberration": {
-            "name": "Chromatic aberration",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Chromatic_aberration"
-            ]
-        },
-        "RayTracing": {
-            "name": "Ray Trarching",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
-            ]
-        },
-        "Duotone": {
-            "name": "Duotone",
-            "tags": [
-                "print",
-                "halftone"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Duotone"
-            ]
-        },
-        "BezierSurface": {
-            "name": "Bézier surface",
-            "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
-            ]
-        },
-        "Nurbs": {
-            "name": "NURBS",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
-            ]
-        },
-        "Smoothstep": {
-            "name": "Smoothstep function",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Smoothstep"
-            ]
-        },
-        "HilbertCurve": {
-            "name": "Hilbert Curve",
-            "tags": [
-                "curves",
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Hilbert_curve"
-            ]
-        },
-        "CatmullRomSpline": {
-            "name": "Catmull-Rom spline",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
-            ]
-        },
-        "BezierCurve": {
-            "name": "Bézier curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
-            ]
-        },
-        "Clamp": {
-            "name": "Clamp",
-            "tags": [
-                "functions"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Clamp_(function)"
-            ]
-        },
-        "BezierTriangle": {
-            "name": "Bézier triangle",
-            "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
-            ]
-        },
-        "RoseCurves": {
-            "name": "Rose curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
-            ]
-        },
-        "ZOrderCurve": {
-            "name": "Z-order curve",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Z-order_curve"
-            ]
-        },
-        "LissajousCurves": {
-            "name": "Lissajous curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Lissajous_curve"
             ]
         },
         "PoissonFill": {
@@ -541,6 +137,458 @@
                 "image processing"
             ]
         },
+        "BezierSurface": {
+            "name": "Bézier surface",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
+            ]
+        },
+        "Nurbs": {
+            "name": "NURBS",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
+            ]
+        },
+        "Smoothstep": {
+            "name": "Smoothstep function",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Smoothstep"
+            ]
+        },
+        "HilbertCurve": {
+            "name": "Hilbert Curve",
+            "tags": [
+                "curves",
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Hilbert_curve"
+            ]
+        },
+        "CatmullRomSpline": {
+            "name": "Catmull-Rom spline",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
+            ]
+        },
+        "BezierCurve": {
+            "name": "Bézier curve",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
+            ]
+        },
+        "Clamp": {
+            "name": "Clamp",
+            "tags": [
+                "functions"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Clamp_(function)"
+            ]
+        },
+        "BezierTriangle": {
+            "name": "Bézier triangle",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
+            ]
+        },
+        "RoseCurves": {
+            "name": "Rose curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
+            ]
+        },
+        "ZOrderCurve": {
+            "name": "Z-order curve",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Z-order_curve"
+            ]
+        },
+        "LissajousCurves": {
+            "name": "Lissajous curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lissajous_curve"
+            ]
+        },
+        "Attractor": {
+            "name": "Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Attractor"
+            ]
+        },
+        "CliffordAttractor": {
+            "name": "Clifford attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/clifford/"
+            ]
+        },
+        "DeJongAttractor": {
+            "name": "De Jong Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/peterdejong/"
+            ]
+        },
+        "JuliaSet": {
+            "name": "Julia set",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Julia_set"
+            ]
+        },
+        "GrayCode": {
+            "name": "Gray code",
+            "tags": [
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gray_code"
+            ]
+        },
+        "Heightfield": {
+            "name": "Heightfield",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Heightmap"
+            ]
+        },
+        "SphericalHarmonics": {
+            "name": "Spherical Harmonics",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Spherical_harmonics",
+                "https://paulbourke.net/geometry/sphericalh/"
+            ]
+        },
+        "FlowField": {
+            "name": "Flow field",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Vector_field"
+            ]
+        },
+        "PolygonClipping": {
+            "name": "Polygon clipping",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Clipping_(computer_graphics)",
+                "https://en.wikipedia.org/wiki/Boolean_operations_on_polygons"
+            ]
+        },
+        "MarchingTetrahedra": {
+            "name": "Marching tetrahedra",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_tetrahedra"
+            ]
+        },
+        "IsometricProjection": {
+            "name": "Isometric projection",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Isometric_projection"
+            ]
+        },
+        "Octree": {
+            "name": "Octree",
+            "tags": [
+                "computer graphics",
+                "space partitioning",
+                "data structure"
+            ]
+        },
+        "StereographicProjection": {
+            "name": "Stereographic Projection",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Stereographic_projection"
+            ]
+        },
+        "HobbyCurve": {
+            "name": "Hobby Curve",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://www.jakelow.com/blog/hobby-curves"
+            ]
+        },
+        "MarchingCubes": {
+            "name": "Marching cubes",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_cubes"
+            ]
+        },
+        "OrthogonalProjection": {
+            "name": "Orthogonal projection",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ]
+        },
+        "PolygonTriangulation": {
+            "name": "Polygon triangulation",
+            "tags": [
+                "computer graphics",
+                "triangulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Polygon_triangulation"
+            ]
+        },
+        "PathTracing": {
+            "name": "Path Tracing",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Path_tracing"
+            ]
+        },
+        "RamerDouglasPeucker": {
+            "name": "Ramer-Douglas-Peucker Algorithm",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
+            ]
+        },
+        "KDTree": {
+            "name": "Kd-tree",
+            "tags": [
+                "space partitioning",
+                "computer graphics",
+                "data structure"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/K-d_tree"
+            ]
+        },
+        "DomainWarping": {
+            "name": "Domain warping",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://iquilezles.org/articles/warp/"
+            ]
+        },
+        "Turtle": {
+            "name": "Turtle graphics",
+            "tags": [
+                "computer graphics",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
+            ]
+        },
+        "BumpMapping": {
+            "name": "Bump mapping",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Bump_mapping"
+            ]
+        },
+        "PerspectiveProjection": {
+            "name": "Perspective projection",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Perspective_(graphical)"
+            ]
+        },
+        "GaussianSplatting": {
+            "name": "Gaussian splatting",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Heightmap"
+            ]
+        },
+        "MarchingSquares": {
+            "name": "Marching squares",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_squares"
+            ]
+        },
+        "QuadTree": {
+            "name": "Quad tree",
+            "tags": [
+                "computer graphics",
+                "space partitioning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Quadtree"
+            ]
+        },
+        "SignedDistanceFunctions": {
+            "name": "Signed Distance Functions",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Signed_distance_function"
+            ]
+        },
+        "HalfEdgeMesh": {
+            "name": "Half-edge mesh",
+            "tags": [
+                "computer graphics",
+                "data structure"
+            ]
+        },
+        "DelaunayTriangulation": {
+            "name": "Delaunay triangulation",
+            "tags": [
+                "computer graphics",
+                "triangulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Delaunay_triangulation"
+            ]
+        },
+        "CirclePacking": {
+            "name": "Circle packing",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Circle_packing"
+            ]
+        },
+        "RayMarching": {
+            "name": "Ray Marching",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ray_marching"
+            ]
+        },
+        "Bloom": {
+            "name": "Bloom",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Bloom_(shader_effect)"
+            ]
+        },
+        "LSystems": {
+            "name": "L-systems",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/L-system"
+            ]
+        },
+        "ChromaticAberration": {
+            "name": "Chromatic aberration",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Chromatic_aberration"
+            ]
+        },
+        "RayTracing": {
+            "name": "Ray Trarching",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
+            ]
+        },
+        "Duotone": {
+            "name": "Duotone",
+            "tags": [
+                "print",
+                "halftone"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Duotone"
+            ]
+        },
         "PinwheelTiling": {
             "name": "Pinwheel tiling",
             "tags": [
@@ -577,126 +625,37 @@
                 "https://en.wikipedia.org/wiki/Substitution_tiling"
             ]
         },
-        "Guilloche": {
-            "name": "Guilloché patterns",
+        "Clustering": {
+            "name": "Clustering",
             "tags": [
-                "patterns"
+                "machine learning"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
             ]
         },
-        "ValueNoise": {
-            "name": "Value noise",
+        "PredictiveText": {
+            "name": "Predictive text",
             "tags": [
-                "noise"
+                "machine learning"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
+                "https://en.wikipedia.org/wiki/Predictive_text"
             ]
         },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
+        "Umap": {
+            "name": "UMAP",
             "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
+                "machine learning"
             ]
         },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
+        "tSNE": {
+            "name": "t-SNE",
             "tags": [
-                "noise"
+                "machine learning"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
-            ]
-        },
-        "WorleyNoise": {
-            "name": "Worley noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Worley_noise"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
-            ]
-        },
-        "VoronoiDiagram": {
-            "name": "Voronoi diagram",
-            "tags": [
-                "graph",
-                "tessellation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Voronoi_diagram"
-            ]
-        },
-        "FFT": {
-            "name": "Fast fourier transform",
-            "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
-            ]
-        },
-        "ConvexHull": {
-            "name": "Convex hull",
-            "tags": [
-                "geometry",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Convex_hull"
-            ]
-        },
-        "AlphaShape": {
-            "name": "Alpha shape",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Alpha_shape"
-            ]
-        },
-        "CellularAutomata": {
-            "name": "Cellular automata",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cellular_automaton"
-            ]
-        },
-        "ConwaysGameOfLife": {
-            "name": "Conway's Game of Life",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
-            ]
-        },
-        "RegularExpressions": {
-            "name": "Regular expressions",
-            "tags": [
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Regular_expression"
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
             ]
         },
         "Flocking": {
@@ -760,86 +719,193 @@
                 "simulation"
             ]
         },
-        "GrayCode": {
-            "name": "Gray code",
+        "VoronoiDiagram": {
+            "name": "Voronoi diagram",
             "tags": [
-                "codes"
+                "graph",
+                "tessellation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
+                "https://en.wikipedia.org/wiki/Voronoi_diagram"
             ]
         },
-        "Clustering": {
-            "name": "Clustering",
+        "ForceDirectedGraphDrawing": {
+            "name": "Force-directed graph drawing",
             "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
-            ]
-        },
-        "PredictiveText": {
-            "name": "Predictive text",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "tags": [
-                "machine learning"
-            ]
-        },
-        "tSNE": {
-            "name": "t-SNE",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
-            ]
-        },
-        "Attractor": {
-            "name": "Attractor",
-            "tags": [
-                "fractal",
+                "graph",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Attractor"
+                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
             ]
         },
-        "CliffordAttractor": {
-            "name": "Clifford attractor",
+        "CellularAutomata": {
+            "name": "Cellular automata",
             "tags": [
-                "fractal",
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
+            ]
+        },
+        "ConwaysGameOfLife": {
+            "name": "Conway's Game of Life",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            ]
+        },
+        "RegularExpressions": {
+            "name": "Regular expressions",
+            "tags": [
+                "automata",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Regular_expression"
+            ]
+        },
+        "ConvexHull": {
+            "name": "Convex hull",
+            "tags": [
+                "geometry",
                 "computer graphics"
             ],
             "references": [
-                "https://paulbourke.net/fractals/clifford/"
+                "https://en.wikipedia.org/wiki/Convex_hull"
             ]
         },
-        "DeJongAttractor": {
-            "name": "De Jong Attractor",
+        "AlphaShape": {
+            "name": "Alpha shape",
             "tags": [
-                "fractal",
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Alpha_shape"
+            ]
+        },
+        "CircleInversion": {
+            "name": "Circle inversion",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inversive_geometry"
+            ]
+        },
+        "TurtleGraphics": {
+            "name": "Turtle graphics",
+            "tags": [
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
+            ]
+        },
+        "Photogrammetry": {
+            "name": "Photogrammetry",
+            "tags": [
+                "photography",
                 "computer graphics"
             ],
             "references": [
-                "https://paulbourke.net/fractals/peterdejong/"
+                "https://en.wikipedia.org/wiki/Photogrammetry"
             ]
         },
-        "JuliaSet": {
-            "name": "Julia set",
+        "SlitScanning": {
+            "name": "Slit-scanning",
             "tags": [
-                "fractal",
+                "photography"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+            ]
+        },
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "tags": [
+                "photography",
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Tone_mapping"
+            ]
+        },
+        "ValueNoise": {
+            "name": "Value noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Value_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "WorleyNoise": {
+            "name": "Worley noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Worley_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Julia_set"
+                "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "EditDistance": {
+            "name": "Edit distance",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edit_distance"
+            ]
+        },
+        "LevenshteinDistance": {
+            "name": "Levenshtein distance",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Levenshtein_distance"
+            ]
+        },
+        "Guilloche": {
+            "name": "Guilloché patterns",
+            "tags": [
+                "patterns"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
             ]
         }
     }

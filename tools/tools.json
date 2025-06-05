@@ -1,662 +1,801 @@
 {
     "tools": {
-        "ProcessingGeometrySuite": {
+        "OrxBoofCv": {
+            "name": "orx-boofcv",
             "tags": [
-                "library",
-                "geometry"
-            ],
-            "dependsOn": [
-                "Processing",
-                "Jts"
-            ]
-        },
-        "ControlP5": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Tramontana": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "CreativeMachine": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/jjeongin/creative-machine"
-            ]
-        },
-        "Nub": {
-            "tags": [
-                "library",
-                "3d graphics",
-                "open source"
-            ],
-            "references": [
-                "https://github.com/VisualComputing/nub"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Processing": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
-            ],
-            "tags": [
-                "creative coding",
-                "application",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Processing",
-                "https://processing.org/",
-                "https://github.com/processing/processing4"
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
             ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "runSketch": {
-                    "description": "Run sketch"
-                }
-            },
+            "partOf": [
+                "OPENRNDR"
+            ],
             "dependsOn": [
-                "Java",
-                "Jogl",
-                "Antlr",
-                "Swing"
+                "OPENRNDR",
+                "BoofCV"
+            ]
+        },
+        "OrxCamera": {
+            "name": "orx-camera",
+            "tags": [
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "OrthogonalProjection",
+                "PerspectiveProjection"
+            ]
+        },
+        "OrxIntervalTree": {
+            "name": "orx-interval-tree",
+            "tags": [
+                "library",
+                "opensource",
+                "data structure"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPropertyWatchers": {
+            "name": "orx-property-watchers",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-property-watchers"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPalette": {
+            "name": "orx-palette",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-palette"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextOnContour": {
+            "name": "orx-text-on-contour",
+            "tags": [
+                "library",
+                "opensource",
+                "typography"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMidi": {
+            "name": "orx-midi",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaxMidi"
             ],
             "supports": [
-                "Json",
-                "Csv",
-                "Png",
-                "Jpg"
+                "Midi"
             ]
         },
-        "ComputationalGeometry": {
+        "OrxMesh": {
+            "name": "orx-mesh",
             "tags": [
                 "library",
-                "geometry"
+                "opensource",
+                "3d graphics"
             ],
-            "actions": {
-                "plotIsoContour": {
-                    "description": "Plot isocontour in 2D",
-                    "techniques": [
-                        "MarchingSquares"
-                    ]
-                },
-                "plotIsoSurface": {
-                    "description": "Plot isosurface in 3D",
-                    "techniques": [
-                        "MarchingCubes"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Queasycam": {
-            "tags": [
-                "library"
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Processing"
+                "OPENRNDR"
             ]
         },
-        "VideoExport": {
+        "OrxDnky": {
+            "name": "orx-dnky",
             "tags": [
                 "library",
-                "video"
+                "3d graphics",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Processing"
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL",
+                "Gltf"
             ]
         },
-        "OscP5": {
+        "OrxMath": {
+            "name": "orx-math",
             "tags": [
-                "library"
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Processing"
+                "OPENRNDR"
+            ]
+        },
+        "OrxComposition": {
+            "name": "orx-composition",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-composition"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxIntegralImage": {
+            "name": "orx-integral-image",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxNoise": {
+            "name": "orx-noise",
+            "tags": [
+                "library",
+                "opensource",
+                "noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PerlinNoise",
+                "SimplexNoise",
+                "FBMNoise",
+                "WorleyNoise",
+                "ValueNoise"
+            ]
+        },
+        "OrxJumpflood": {
+            "name": "orx-jumpflood",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "DistanceTransform"
+            ]
+        },
+        "OrxEnvelopes": {
+            "name": "orx-envelopes",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "name": "orx-marching-squares",
+            "tags": [
+                "library",
+                "geometry",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxKdtree": {
+            "name": "orx-kdtree",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "KDTree"
+            ]
+        },
+        "OrxShadeStyles": {
+            "name": "orx-shade-styles",
+            "tags": [
+                "library",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OrxFcurve": {
+            "name": "orx-fcurve",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "OrxExpressionEvaluator"
+            ],
+            "techniques": [
+                "KeyframeInterpolation",
+                "RegularExpressions"
+            ]
+        },
+        "OrxQuadTree": {
+            "name": "orx-quadtree",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxDepthCamera": {
+            "name": "orx-depth-camera",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-depth-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxSvg": {
+            "name": "orx-svg",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-svg"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "OrxOsc": {
+            "name": "orx-osc",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-osc"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaOsc"
             ],
             "supports": [
                 "Osc"
             ]
         },
-        "Ani": {
+        "OrxImageFit": {
+            "name": "orx-image-fit",
             "tags": [
                 "library",
-                "animation"
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Processing"
+                "OPENRNDR"
             ]
         },
-        "Geomerative": {
+        "OrxTemporalBlur": {
+            "name": "orx-temporal-blur",
             "tags": [
                 "library",
-                "vector graphics"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "GifAnimation": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "supports": [
-                "Gif"
-            ]
-        },
-        "PyTorch": {
-            "tags": [
-                "library",
-                "machine learning"
+                "opensource",
+                "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
+                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Python",
-                "CPP"
+                "OPENRNDR"
             ]
         },
-        "Pandas": {
+        "OrxTextWriter": {
+            "name": "orx-text-writer",
             "tags": [
                 "library",
-                "data science"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "Json",
-                "Csv"
-            ]
-        },
-        "ScikitLearn": {
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Python": {
-            "tags": [
-                "language",
+                "text",
                 "opensource"
             ],
             "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ]
-        },
-        "Transformers": {
-            "tags": [
-                "library",
-                "machine learning"
+                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
             ],
-            "references": [
-                "https://github.com/huggingface/transformers"
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "PyTorch"
+                "OPENRNDR"
             ]
         },
-        "NumPy": {
+        "OpenrndrVideo": {
+            "name": "openrndr-video",
+            "tags": [
+                "library",
+                "video",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "Ffmpeg"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OrxObjLoader": {
+            "name": "orx-obj-loader",
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Obj"
+            ]
+        },
+        "OrxGradientDescent": {
+            "name": "orx-gradient-descent",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GradientDescent"
+            ]
+        },
+        "OrxColor": {
+            "name": "orx-color",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-color"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxParameters": {
+            "name": "orx-parameters",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-parameters"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshGenerators": {
+            "name": "orx-mesh-generators",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTurtle": {
+            "name": "orx-turtle",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-turtle"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "TurtleGraphics"
+            ]
+        },
+        "OrxShapes": {
+            "name": "orx-shapes",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shapes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "HobbyCurve",
+                "DelaunayTriangulation",
+                "AlphaShape"
+            ]
+        },
+        "OrxHashGrid": {
+            "name": "orx-hash-grid",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxCompositor": {
+            "name": "orx-compositor",
+            "tags": [
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-compositor"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTriangulation": {
+            "name": "orx-triangulation",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OPENRNDR": {
+            "name": "OPENRNDR",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://openrndr.org"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Lwjgl"
+            ],
+            "supports": [
+                "Png",
+                "Svg",
+                "Jpg"
+            ]
+        },
+        "OrxFx": {
+            "name": "orx-fx",
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GaussianBlur",
+                "CannyEdgeDetection",
+                "Halftoning",
+                "Dithering",
+                "EdgeDetection",
+                "Blur",
+                "ImageQuantization"
+            ]
+        },
+        "OrxOlive": {
+            "name": "orx-olive",
+            "tags": [
+                "library",
+                "opensource",
+                "live coding"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPoissonFill": {
+            "name": "orx-poisson-fill",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxExpressionEvaluator": {
+            "name": "orx-expression-evaluator",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshNoise": {
+            "name": "orx-mesh-noise",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics",
+                "noise"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFft": {
+            "name": "orx-fft",
             "tags": [
                 "library"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/NumPy"
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Python"
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "FFT"
             ]
         },
-        "Zip": {
+        "OrxShaderPhrases": {
+            "name": "orx-shader-phrases",
             "tags": [
-                "file format",
-                "compression"
+                "library",
+                "shaders",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/ZIP_  (file_format)"
+                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
             ]
         },
-        "Mp4": {
+        "OrxEasing": {
+            "name": "orx-easing",
             "tags": [
-                "file format",
-                "video"
+                "library",
+                "opensource",
+                "animation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
-        "Gzip": {
-            "tags": [
-                "file format",
-                "compression"
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gzip"
-            ]
-        },
-        "Mp3": {
-            "tags": [
-                "file format",
-                "audio"
+            "partOf": [
+                "OPENRNDR"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Collada": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Stl": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
-            ]
-        },
-        "Obj": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Usd": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
-            ]
-        },
-        "Xml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/XML"
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "Ply": {
+            "name": "PLY",
             "tags": [
                 "file format",
                 "3d graphics"
@@ -665,16 +804,8 @@
                 "https://en.wikipedia.org/wiki/PLY_(file_format)"
             ]
         },
-        "Json": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
         "Gltf": {
+            "name": "GLTF",
             "tags": [
                 "file format",
                 "3d graphics"
@@ -683,7 +814,228 @@
                 "https://en.wikipedia.org/wiki/GlTF"
             ]
         },
+        "Usd": {
+            "name": "USD",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
+            ]
+        },
+        "Gzip": {
+            "name": "gzip",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gzip"
+            ]
+        },
+        "Css": {
+            "name": "CSS",
+            "tags": [
+                "file format",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
+            ]
+        },
+        "Csv": {
+            "name": "CSV",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "Json": {
+            "name": "JSON",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Ogg": {
+            "name": "OGG",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Yaml": {
+            "name": "YAML",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Stl": {
+            "name": "STL",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Collada": {
+            "name": "Collada",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Jpg": {
+            "name": "JPEG",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Obj": {
+            "name": "Wavefront OBJ",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Mp3": {
+            "name": "MP3",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Mov": {
+            "name": "Quicktime MOV",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Gif": {
+            "name": "GIF",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Html": {
+            "name": "HTML",
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Opus": {
+            "name": "Opus",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Svg": {
+            "name": "SVG",
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Fbx": {
+            "name": "Filmbox",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Wav": {
+            "name": "WAV",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Xml": {
+            "name": "XML",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
+            ]
+        },
+        "Zip": {
+            "name": "zip",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
+            ]
+        },
+        "Mp4": {
+            "name": "MP4",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
         "Onnx": {
+            "name": "ONNX",
             "tags": [
                 "file format",
                 "standard",
@@ -694,52 +1046,8 @@
                 "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
             ]
         },
-        "Css": {
-            "tags": [
-                "file format",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Svg": {
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Gif": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
-        "Mov": {
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Opus": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
         "Png": {
+            "name": "PNG",
             "tags": [
                 "file format",
                 "raster graphics"
@@ -748,97 +1056,8 @@
                 "https://en.wikipedia.org/wiki/PNG"
             ]
         },
-        "Yaml": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
-            ]
-        },
-        "Csv": {
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
-            ]
-        },
-        "Jpg": {
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
-            ]
-        },
-        "Fbx": {
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Html": {
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Ogg": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Wav": {
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
-        "TensorflowJs": {
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/tensorflow/tfjs"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL"
-            ],
-            "supports": [
-                "Browser"
-            ]
-        },
-        "Ml5Js": {
-            "tags": [
-                "library",
-                "machine learning",
-                "open source"
-            ],
-            "references": [
-                "https://ml5js.org/",
-                "https://github.com/ml5js/ml5-next-gen"
-            ]
-        },
         "KotlinxSerialization": {
+            "name": "kotlinx.serialization",
             "tags": [
                 "library"
             ],
@@ -855,6 +1074,7 @@
             ]
         },
         "KotlinCsv": {
+            "name": "kotlin-csv",
             "tags": [
                 "library"
             ],
@@ -868,1189 +1088,159 @@
                 "Csv"
             ]
         },
-        "Http": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTP"
-            ]
-        },
-        "ArtNet": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Art-Net"
-            ],
-            "dependsOn": [
-                "Udp"
-            ],
-            "supports": [
-                "DMX"
-            ]
-        },
-        "Https": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTPS"
-            ]
-        },
-        "WebSocket": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
-            ]
-        },
-        "Tcp": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
-        "Udp": {
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
-            ]
-        },
-        "OSC": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ],
-            "dependsOn": [
-                "Udp"
-            ]
-        },
-        "TensorFlowJava": {
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
-            ]
-        },
-        "Artnet4J": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "ArtNet"
-            ]
-        },
-        "JavaCv": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "JSerialComm": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "Awt": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "BoofCV": {
+        "SDL": {
+            "name": "SDL",
             "tags": [
                 "library"
             ],
             "references": [
-                "https://boofcv.org/"
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
             ],
             "dependsOn": [
-                "Java"
+                "C"
             ],
             "supports": [
-                "Png",
-                "Jpg"
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         },
-        "Antlr": {
-            "tags": [
-                "library",
-                "parsing",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "DeepJavaLibrary": {
-            "references": [
-                "https://djl.ai/",
-                "https://github.com/deepjavalibrary/djl"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Swing": {
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jts": {
-            "tags": [
-                "library",
-                "geometry",
-                "gis",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JavaOsc": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/hoijui/JavaOSC"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "Lwjgl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl"
-            ]
-        },
-        "JavaxSound": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "JavaxMidi": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "Java": {
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "Jogl": {
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "TotalSerialism": {
+        "Assimp": {
+            "name": "Assimp",
+            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
             "tags": [
                 "library"
             ],
             "references": [
-                "https://github.com/tmhglnd/total-serialism"
+                "https://github.com/assimp/assimp"
             ],
             "dependsOn": [
-                "Javascript"
+                "CPP"
             ]
         },
-        "P5Sprite": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/p5.Sprite/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ModButton": {
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/yetyeeter1337/p5.Modbuttons"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Warp": {
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.warp"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5UiRenderer": {
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Bezier": {
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/peilingjiang/p5.bezier"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Mapper": {
-            "tags": [
-                "library",
-                "projection mapping",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.mapper"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5_5": {
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/eltapir/p5.5"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grain": {
-            "tags": [
-                "library",
-                "noise",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/meezwhite/p5.grain"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5TouchGui": {
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/L05/p5.touchgui"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5CMyK": {
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/p5.cmyk.js"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Quadrille": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://objetos.github.io/p5.quadrille.js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Dom": {
+        "Glfw": {
+            "name": "GLFW",
             "tags": [
                 "library"
             ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Sound": {
-            "tags": [
-                "library",
-                "sound"
-            ],
             "references": [
-                "https://p5js.org/reference/p5.sound/"
+                "https://en.wikipedia.org/wiki/GLFW"
             ],
             "dependsOn": [
-                "P5Js"
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         },
-        "TurtleGFX": {
+        "D3Color": {
+            "name": "d3-color",
             "tags": [
                 "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/CodeGuppyPrograms/TurtleGFX"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGraphicsP5Js": {
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/tg/index.html",
-                "https://github.com/quarks/turtle-graphics/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grid": {
-            "tags": [
-                "library",
-                "grids",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/aahdee/p5grid"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Numero": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://mcintyre.io/numero/",
-                "https://github.com/nickmcintyre/numero"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Palette": {
-            "tags": [
-                "library",
+                "opensource",
                 "color"
             ],
             "references": [
-                "https://www.remistura.com/p5.palette/",
-                "https://github.com/remistura/p5.palette"
+                "https://github.com/d3/d3-color"
+            ],
+            "partOf": [
+                "D3JS"
             ],
             "dependsOn": [
-                "P5Js"
+                "D3JS"
             ]
         },
-        "C2Js": {
+        "D3Contour": {
+            "name": "d3-contour",
             "tags": [
                 "library",
-                "opensource"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "e"
-            ],
-            "supports": [
-                "P5Js"
-            ]
-        },
-        "P5Anaglyph": {
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
+                "opensource",
+                "geometry"
             ],
             "references": [
-                "https://github.com/jdeboi/p5.anaglyph"
+                "https://github.com/d3/d3-contour"
+            ],
+            "partOf": [
+                "D3JS"
             ],
             "dependsOn": [
-                "P5Js"
+                "D3JS"
+            ],
+            "techniques": [
+                "MarchingSquares"
             ]
         },
-        "P5Csg": {
+        "D3Ease": {
+            "name": "d3-ease",
             "tags": [
                 "library",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.csg"
-            ],
-            "dependsOn": [
-                "P5Js"
+                "opensource",
+                "animation"
             ]
         },
-        "P5FilterRenderer": {
+        "D3JS": {
+            "name": "d3",
             "tags": [
-                "library",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.filterRenderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Brush": {
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/acamposuribe/p5.brush"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Polar": {
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/liz-peng/p5.Polar"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Xr": {
-            "tags": [
-                "library",
-                "augmented reality",
-                "virtual reality",
-                "opensource"
-            ],
-            "references": [
-                "https://p5xr.org/",
-                "https://github.com/stalgiag/p5.xr"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Transparency": {
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.transparency"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Js": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
-            ],
-            "tags": [
-                "creative coding",
-                "application",
                 "library",
                 "web",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Processing#p5.js"
+                "https://en.wikipedia.org/wiki/D3.js"
             ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "runSketch": {
-                    "description": "Run sketch",
-                    "outputType": "ProcessArtifact"
-                },
-                "publishSketch": {
-                    "description": "Publish sketch",
-                    "outputType": "SourceCodeArtifact"
-                }
-            },
             "dependsOn": [
                 "Javascript"
+            ],
+            "supports": [
+                "Csv",
+                "Json",
+                "Svg"
             ]
         },
-        "P5simpleAR": {
+        "D3Force": {
+            "name": "d3-force",
             "tags": [
                 "library",
-                "augmented reality"
+                "opensource",
+                "simulation"
             ],
             "references": [
-                "https://github.com/tetunori/p5.simpleAR"
+                "https://github.com/d3/d3-force"
+            ],
+            "partOf": [
+                "D3JS"
             ],
             "dependsOn": [
-                "P5Js"
+                "D3JS"
+            ],
+            "techniques": [
+                "ForceDirectedGraphDrawing"
             ]
         },
-        "P5VideoKit": {
+        "D3QuadTree": {
+            "name": "d3-quadtree",
             "tags": [
                 "library",
-                "video",
-                "opensource"
+                "opensource",
+                "space partitioning"
             ],
             "references": [
-                "https://github.com/molab-itp/p5videoKit"
+                "https://github.com/d3/d3-contour"
+            ],
+            "partOf": [
+                "D3JS"
             ],
             "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "PixyP5Js": {
-            "tags": [
-                "library",
-                "opensource"
+                "D3JS"
             ],
-            "references": [
-                "https://github.com/RandomGamingDev/Pixyp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ColorGenerator": {
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
-                "https://github.com/alexandru-postolache/p5.colorGenerator"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "AnimatorJs": {
-            "tags": [
-                "library",
-                "animation",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/AnimatorJs/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "XYScopeJs": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://teddavis.org/xyscopejs/",
-                "https://github.com/ffd8/xyscopejs"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "ZoomP5Js": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/Zoomp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "canvasGUI": {
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/canvasgui/index.html",
-                "https://github.com/quarks/canvasGUI"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Marching": {
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/marching"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Play": {
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/quinton-ashley/p5play"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "WebGL2Tex": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/WebGL2Tex"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FillGradient": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/alterebro/p5.fillGradient"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "WebGL2FBO": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/WebGL2FBO"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TilemapP5Js": {
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/RandomGamingDev/Tilemapp5js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Vulkan": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Vulkan"
-            ]
-        },
-        "CircuitPython": {
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CircuitPython"
-            ]
-        },
-        "Camera": {
-            "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
-                }
-            }
-        },
-        "Ruby": {
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ruby_(programming_language)"
+            "techniques": [
+                "QuadTree"
             ]
         },
         "Pico8": {
+            "name": "Pico-8",
             "tags": [
                 "fantasy console"
             ],
@@ -2061,46 +1251,32 @@
                 "Lua"
             ]
         },
-        "TouchDesigner": {
+        "Unity": {
+            "name": "Unit",
             "tags": [
-                "application",
-                "node-based"
+                "game development"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/TouchDesigner"
-            ]
-        },
-        "OpenGL": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL"
-            ]
-        },
-        "HLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
+                "https://en.wikipedia.org/wiki/Unity_(game_engine)"
             ],
             "dependsOn": [
-                "Direct3D"
+                "CSharp",
+                "CPP"
             ]
         },
-        "Rust": {
+        "WebGPU": {
+            "name": "WebGPU",
             "tags": [
-                "language",
-                "opensource"
+                "library",
+                "graphics api",
+                "web"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+                "https://en.wikipedia.org/wiki/WebGPU"
             ]
         },
         "Ktor": {
+            "name": "Ktor",
             "references": [
                 "https://ktor.io/"
             ],
@@ -2113,75 +1289,197 @@
                 "WebSocket"
             ]
         },
-        "Browser": {
+        "Esp32": {
+            "name": "ESP32",
             "tags": [
-                "application",
-                "web"
+                "hardware",
+                "microcontroller"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Web_browser"
-            ],
-            "supports": [
-                "Http",
-                "Https",
-                "WebGL",
-                "Javascript",
-                "WebSocket",
-                "Gif",
-                "Jpg",
-                "Html",
-                "Svg",
-                "Wav",
-                "Mp3",
-                "Ogg",
-                "Mp4"
+                "https://en.wikipedia.org/wiki/ESP32"
             ]
         },
-        "Sox": {
+        "Nannou": {
+            "name": "Nannou",
             "tags": [
-                "application",
-                "audio",
-                "command-line",
+                "creative coding",
+                "library",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/SoX"
+                "https://nannou.cc/"
             ],
-            "supports": [
-                "Mp3",
-                "Ogg",
-                "Wav"
+            "dependsOn": [
+                "Rust"
             ]
         },
-        "WebGPU": {
+        "IntelliJ": {
+            "name": "IntelliJ IDEA",
             "tags": [
-                "library",
-                "graphics api",
-                "web"
+                "application",
+                "ide"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/WebGPU"
+                "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
             ]
         },
-        "Display": {
+        "DepthSensor": {
+            "name": "Depth sensor",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Range_imaging"
+            ]
+        },
+        "SuperCollider": {
+            "name": "SuperCollider",
+            "tags": [
+                "application",
+                "opensource",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SuperCollider"
+            ]
+        },
+        "VSCode": {
+            "name": "Visual Studio Code",
+            "tags": [
+                "application",
+                "ide",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+            ]
+        },
+        "Blender": {
+            "name": "Blender",
+            "tags": [
+                "application",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Blender_(software)"
+            ],
+            "dependsOn": [
+                "C",
+                "Python"
+            ],
+            "supports": [
+                "Gltf",
+                "Obj"
+            ]
+        },
+        "Picotron": {
+            "name": "Picotron",
+            "tags": [
+                "fantasy console"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Picotron",
+                "https://www.lexaloffle.com/picotron.php"
+            ],
+            "dependsOn": [
+                "Lua"
+            ]
+        },
+        "Kotlin": {
+            "name": "Kotlin",
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://kotlinlang.org/"
+            ],
+            "supports": [
+                "Java",
+                "Javascript"
+            ]
+        },
+        "LaserLightingDisplay": {
+            "name": "Laser lighting display",
             "tags": [
                 "media technology",
                 "hardware"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Display_device"
+                "https://en.wikipedia.org/wiki/Laser_lighting_display"
             ]
         },
-        "Cinema4D": {
+        "OpenProcessing": {
+            "name": "OpenProcessing",
             "tags": [
-                "application",
-                "3d graphics"
+                "creative coding",
+                "platform"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Cinema_4D"
+                "https://openprocessing.org/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "Audacity": {
+            "name": "Audacity",
+            "tags": [
+                "application",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg"
+            ]
+        },
+        "MidiKeyboard": {
+            "name": "MIDI Keyboard",
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI_keyboard"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "Midi": {
+            "name": "MIDI",
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI"
+            ]
+        },
+        "Gimp": {
+            "name": "Gimp",
+            "tags": [
+                "application",
+                "opensource",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIMP"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
             ]
         },
         "ThreeJS": {
+            "name": "Three.js",
             "tags": [
                 "creative coding",
                 "library",
@@ -2201,7 +1499,92 @@
                 "Gltf"
             ]
         },
+        "GLSL": {
+            "name": "GLSL",
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+            ],
+            "dependsOn": [
+                "OpenGL"
+            ]
+        },
+        "Printer": {
+            "name": "Printer",
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Printer_(computing)"
+            ]
+        },
+        "OpenGL": {
+            "name": "OpenGL",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL"
+            ]
+        },
+        "MicroPython": {
+            "name": "MicroPython",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MicroPython"
+            ]
+        },
+        "Display": {
+            "name": "Display",
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Display_device"
+            ]
+        },
+        "Camera": {
+            "name": "Photo camera",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ]
+        },
+        "PureData": {
+            "name": "PureData",
+            "tags": [
+                "application",
+                "opensource",
+                "node-based"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pure_Data"
+            ]
+        },
+        "Cinema4D": {
+            "name": "Cinema 4D",
+            "tags": [
+                "application",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinema_4D"
+            ]
+        },
         "Angle": {
+            "name": "Angle",
             "tags": [
                 "library",
                 "graphics api"
@@ -2219,22 +1602,18 @@
                 "OpenGL"
             ]
         },
-        "D3JS": {
+        "Ruby": {
+            "name": "Ruby",
             "tags": [
-                "library",
-                "web",
+                "language",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/D3.js"
-            ],
-            "supports": [
-                "Csv",
-                "Json",
-                "Svg"
+                "https://en.wikipedia.org/wiki/Ruby_(programming_language)"
             ]
         },
         "Nodebox": {
+            "name": "Nodebox",
             "tags": [
                 "application",
                 "opensource",
@@ -2247,7 +1626,186 @@
                 "Python"
             ]
         },
+        "MediaPlayer": {
+            "name": "Media player",
+            "tags": [
+                "media technology",
+                "hardware"
+            ]
+        },
+        "Lua": {
+            "name": "Lua",
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lua_(programming_language)"
+            ]
+        },
+        "PaperJs": {
+            "name": "Paper.js",
+            "tags": [
+                "web",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://paperjs.org/"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "Hydra": {
+            "name": "Hydra",
+            "tags": [
+                "creative coding",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://hydra.ojack.xyz/"
+            ],
+            "dependsOn": [
+                "Browser"
+            ]
+        },
+        "Metal": {
+            "name": "Metal",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Metal_(API)"
+            ]
+        },
+        "WebGL": {
+            "name": "WebGL",
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGL"
+            ]
+        },
+        "CircuitPython": {
+            "name": "CircuitPython",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CircuitPython"
+            ]
+        },
+        "Max": {
+            "name": "Max",
+            "tags": [
+                "application",
+                "node-based"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Max_(software)"
+            ]
+        },
+        "Illustrator": {
+            "name": "Adobe Illustrator",
+            "tags": [
+                "application",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "MidiController": {
+            "name": "MIDI Controller",
+            "tags": [
+                "media technology",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MIDI_controller"
+            ],
+            "dependsOn": [
+                "Midi"
+            ]
+        },
+        "ShaderToy": {
+            "name": "ShaderToy",
+            "tags": [
+                "software",
+                "platform",
+                "web",
+                "shaders"
+            ],
+            "references": [
+                "https://www.shadertoy.com/",
+                "https://en.wikipedia.org/wiki/Shadertoy"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "Cinder": {
+            "name": "Cinder",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinder_(programming_library)"
+            ],
+            "dependsOn": [
+                "CPP"
+            ]
+        },
+        "Arduino": {
+            "name": "Arduino",
+            "tags": [
+                "hardware",
+                "microcontroller",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Arduino",
+                "https://www.arduino.cc/"
+            ]
+        },
+        "TouchDesigner": {
+            "name": "TouchDesigner",
+            "tags": [
+                "application",
+                "node-based"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/TouchDesigner"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "tags": [
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/C_(programming_language)"
+            ]
+        },
         "Figma": {
+            "name": "Figma",
             "tags": [
                 "application",
                 "saas",
@@ -2263,19 +1821,8 @@
                 "Json"
             ]
         },
-        "Arduino": {
-            "tags": [
-                "hardware",
-                "microcontroller",
-                "application",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Arduino",
-                "https://www.arduino.cc/"
-            ]
-        },
         "Godot": {
+            "name": "Godot",
             "tags": [
                 "game development"
             ],
@@ -2287,159 +1834,38 @@
                 "CPP"
             ]
         },
-        "MidiController": {
+        "CPP": {
+            "name": "C++",
             "tags": [
-                "media technology",
-                "hardware"
+                "language"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/MIDI_controller"
-            ],
-            "dependsOn": [
-                "Midi"
+                "https://en.wikipedia.org/wiki/C%2B%2B"
             ]
         },
-        "LaserLightingDisplay": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Laser_lighting_display"
-            ],
-            "actions": {
-                "display": {
-                    "description": "Project on air",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "LightArtifact"
-                }
-            }
-        },
-        "Metal": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Metal_(API)"
-            ]
-        },
-        "Cinder": {
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cinder_(programming_library)"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "Inkscape": {
-            "tags": [
-                "application",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inkscape"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "MediaPlayer": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "actions": {
-                "play": {
-                    "description": "Play media"
-                },
-                "stop": {
-                    "description": "Stop media"
-                }
-            }
-        },
-        "Picotron": {
+        "Tic80": {
+            "name": "TIC-80",
             "tags": [
                 "fantasy console"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Picotron",
-                "https://www.lexaloffle.com/picotron.php"
+                "https://en.wikipedia.org/wiki/TIC-80"
             ],
             "dependsOn": [
                 "Lua"
             ]
         },
-        "Lua": {
+        "CSharp": {
+            "name": "C#",
             "tags": [
                 "language"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Lua_(programming_language)"
-            ]
-        },
-        "OpenProcessing": {
-            "tags": [
-                "creative coding",
-                "platform"
-            ],
-            "references": [
-                "https://openprocessing.org/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Javascript": {
-            "tags": [
-                "language",
-                "web",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JavaScript"
-            ]
-        },
-        "ShaderToy": {
-            "tags": [
-                "software",
-                "platform",
-                "web",
-                "shaders"
-            ],
-            "references": [
-                "https://www.shadertoy.com/",
-                "https://en.wikipedia.org/wiki/Shadertoy"
-            ],
-            "actions": {
-                "runShader": {
-                    "description": "Run Shader"
-                },
-                "publishShader": {
-                    "description": " Publish shader",
-                    "outputType": "SourceCodeArtifact"
-                }
-            },
-            "dependsOn": [
-                "Javascript",
-                "WebGL"
-            ],
-            "supports": [
-                "GLSL"
+                "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
             ]
         },
         "OpenFrameworks": {
+            "name": "OpenFrameworks",
             "tags": [
                 "creative coding",
                 "opensource"
@@ -2451,243 +1877,8 @@
                 "CPP"
             ]
         },
-        "Microphone": {
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Microphone"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture sound",
-                    "outputType": "AudioArtifact"
-                }
-            }
-        },
-        "C": {
-            "tags": [
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/C_(programming_language)"
-            ]
-        },
-        "SuperCollider": {
-            "tags": [
-                "application",
-                "opensource",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SuperCollider"
-            ]
-        },
-        "Photoshop": {
-            "tags": [
-                "application",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Adobe_Photoshop"
-            ],
-            "supports": [
-                "Png",
-                "Jpg",
-                "Gif"
-            ]
-        },
-        "SonicVisualiser": {
-            "tags": [
-                "application",
-                "audio",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Sonic_Visualiser"
-            ],
-            "supports": [
-                "Mp3",
-                "Ogg",
-                "Wav",
-                "csv"
-            ]
-        },
-        "Nannou": {
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://nannou.cc/"
-            ],
-            "dependsOn": [
-                "Rust"
-            ]
-        },
-        "Printer": {
-            "tags": [
-                "media technology",
-                "hardware",
-                "print"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Printer_(computing)"
-            ],
-            "actions": {
-                "print": {
-                    "description": "Print on paper",
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "OpenGL_ES": {
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_ES"
-            ]
-        },
-        "Hydra": {
-            "tags": [
-                "creative coding",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://hydra.ojack.xyz/"
-            ],
-            "dependsOn": [
-                "Browser"
-            ]
-        },
-        "WebGL": {
-            "tags": [
-                "library",
-                "graphics api",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebGL"
-            ]
-        },
-        "Kotlin": {
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://kotlinlang.org/"
-            ],
-            "supports": [
-                "Java",
-                "Javascript"
-            ]
-        },
-        "GLSL": {
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
-            ],
-            "dependsOn": [
-                "OpenGL"
-            ]
-        },
-        "Midi": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MIDI"
-            ]
-        },
-        "PenPlotter": {
-            "tags": [
-                "media technology",
-                "hardware",
-                "print"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Plotter"
-            ],
-            "actions": {
-                "plot": {
-                    "description": "Plot on paper",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "Audacity": {
-            "tags": [
-                "application",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
-            ],
-            "supports": [
-                "Mp3",
-                "Ogg"
-            ]
-        },
-        "Illustrator": {
-            "tags": [
-                "application",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Adobe_Illustrator"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "MicroPython": {
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MicroPython"
-            ]
-        },
-        "PaperJs": {
-            "tags": [
-                "web",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "http://paperjs.org/"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "CSharp": {
-            "tags": [
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-            ]
-        },
         "Ffmpeg": {
+            "name": "FFmpeg",
             "tags": [
                 "application",
                 "library",
@@ -2711,48 +1902,102 @@
                 "Gif"
             ]
         },
-        "Projector": {
+        "Microphone": {
+            "name": "Microphone",
             "tags": [
                 "media technology",
                 "hardware"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Projector"
-            ],
-            "actions": {
-                "display": {
-                    "description": "Project on surface",
-                    "arguments": [
-                        {
-                            "name": "artifact",
-                            "type": "IArtifact"
-                        }
-                    ],
-                    "outputType": "PrintedArtifact"
-                }
-            }
-        },
-        "PureData": {
-            "tags": [
-                "application",
-                "opensource",
-                "node-based"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pure_Data"
+                "https://en.wikipedia.org/wiki/Microphone"
             ]
         },
-        "VSCode": {
+        "SonicVisualiser": {
+            "name": "Sonic Visualizer",
             "tags": [
                 "application",
-                "ide",
+                "audio",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+                "https://en.wikipedia.org/wiki/Sonic_Visualiser"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg",
+                "Wav",
+                "csv"
+            ]
+        },
+        "Javascript": {
+            "name": "Javascript",
+            "tags": [
+                "language",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JavaScript"
+            ]
+        },
+        "Sox": {
+            "name": "Sox",
+            "tags": [
+                "application",
+                "audio",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SoX"
+            ],
+            "supports": [
+                "Mp3",
+                "Ogg",
+                "Wav"
+            ]
+        },
+        "Browser": {
+            "name": "Browser",
+            "tags": [
+                "application",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Web_browser"
+            ],
+            "supports": [
+                "Http",
+                "Https",
+                "WebGL",
+                "Javascript",
+                "WebSocket",
+                "Gif",
+                "Jpg",
+                "Html",
+                "Svg",
+                "Wav",
+                "Mp3",
+                "Ogg",
+                "Mp4"
+            ]
+        },
+        "Inkscape": {
+            "name": "Inkscape",
+            "tags": [
+                "application",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inkscape"
+            ],
+            "supports": [
+                "Svg"
             ]
         },
         "Direct3D": {
+            "name": "Direct3D",
             "tags": [
                 "library",
                 "graphics api"
@@ -2761,54 +2006,38 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
-        "Unity": {
+        "DMX": {
+            "name": "DMX",
             "tags": [
-                "game development"
+                "standard",
+                "device interface"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Unity_(game_engine)"
-            ],
-            "dependsOn": [
-                "CSharp",
-                "CPP"
+                "https://en.wikipedia.org/wiki/DMX"
             ]
         },
-        "MaxMsp": {
+        "OpenGL_ES": {
+            "name": "OpenGL ES",
             "tags": [
-                "application",
-                "node-based"
+                "library",
+                "graphics api"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Max_(software)"
+                "https://en.wikipedia.org/wiki/OpenGL_ES"
             ]
         },
-        "IntelliJ": {
+        "Vulkan": {
+            "name": "Vulkan",
             "tags": [
-                "application",
-                "ide"
+                "library",
+                "graphics api"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
-            ]
-        },
-        "CPP": {
-            "tags": [
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/C%2B%2B"
-            ]
-        },
-        "Esp32": {
-            "tags": [
-                "hardware",
-                "microcontroller"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ESP32"
+                "https://en.wikipedia.org/wiki/Vulkan"
             ]
         },
         "ImageMagick": {
+            "name": "ImageMagick",
             "tags": [
                 "application",
                 "raster graphics",
@@ -2827,26 +2056,35 @@
                 "Gif"
             ]
         },
-        "MidiKeyboard": {
+        "Projector": {
+            "name": "Projector",
             "tags": [
                 "media technology",
                 "hardware"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/MIDI_keyboard"
-            ],
-            "dependsOn": [
-                "Midi"
+                "https://en.wikipedia.org/wiki/Projector"
             ]
         },
-        "Gimp": {
+        "PenPlotter": {
+            "name": "Pen plotter",
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Plotter"
+            ]
+        },
+        "Photoshop": {
+            "name": "Adobe Photoshop",
             "tags": [
                 "application",
-                "opensource",
                 "raster graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/GIMP"
+                "https://en.wikipedia.org/wiki/Adobe_Photoshop"
             ],
             "supports": [
                 "Png",
@@ -2854,736 +2092,1086 @@
                 "Gif"
             ]
         },
-        "Blender": {
+        "HLSL": {
+            "name": "HLSL",
             "tags": [
-                "application",
-                "opensource",
-                "3d graphics"
+                "language",
+                "shaders"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Blender_(software)"
+                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
             ],
             "dependsOn": [
-                "C",
+                "Direct3D"
+            ]
+        },
+        "Rust": {
+            "name": "Rust",
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+            ]
+        },
+        "NumPy": {
+            "name": "NumPy",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/NumPy"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Python": {
+            "name": "Python",
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ]
+        },
+        "PyTorch": {
+            "name": "PyTorch",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
+            ]
+        },
+        "ScikitLearn": {
+            "name": "Scikit-learn",
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Pandas": {
+            "name": "Pandas",
+            "tags": [
+                "library",
+                "data science",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
                 "Python"
             ],
             "supports": [
-                "Gltf",
-                "Obj"
+                "Json",
+                "Csv"
             ]
         },
-        "DepthSensor": {
+        "Transformers": {
+            "name": "Transformers",
             "tags": [
-                "media technology",
-                "sensor",
-                "hardware"
+                "library",
+                "machine learning"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Range_imaging"
-            ],
-            "actions": {
-                "capture": {
-                    "description": "Capture a frame"
-                }
-            }
-        },
-        "Tic80": {
-            "tags": [
-                "fantasy console"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/TIC-80"
+                "https://github.com/huggingface/transformers"
             ],
             "dependsOn": [
-                "Lua"
-            ]
-        },
-        "DMX": {
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/DMX"
-            ]
-        },
-        "OrxNoise": {
-            "tags": [
-                "library",
-                "noise"
-            ],
-            "actions": {
-                "generatePerlinNoise1D": {
-                    "description": "Generate 1D Perlin noise",
-                    "techniques": [
-                        "PerlinNoise"
-                    ]
-                },
-                "generatePerlinNoise3D": {
-                    "description": "Generate 3D Perlin noise",
-                    "techniques": [
-                        "PerlinNoise"
-                    ]
-                },
-                "generatePerlinNoise2D": {
-                    "description": "Generate 2D Perlin noise",
-                    "techniques": [
-                        "PerlinNoise"
-                    ]
-                },
-                "generateSimplexNoise1D": {
-                    "description": "Generate 1D simplex noise",
-                    "techniques": [
-                        "SimplexNoise"
-                    ]
-                },
-                "generateSimplexNoise3D": {
-                    "description": "Generate 3D simplex noise",
-                    "techniques": [
-                        "SimplexNoise"
-                    ]
-                },
-                "generateSimplexNoise4D": {
-                    "description": "Generate 4D simplex noise",
-                    "techniques": [
-                        "SimplexNoise"
-                    ]
-                },
-                "generateSimplexNoise2D": {
-                    "description": "Generate 2D simplex noise",
-                    "techniques": [
-                        "SimplexNoise"
-                    ]
-                },
-                "generatePerlinNoise4D": {
-                    "description": "Generate 4D Perlin noise",
-                    "techniques": [
-                        "PerlinNoise"
-                    ]
-                },
-                "generateFBM": {
-                    "description": "Generate FBM noise",
-                    "techniques": [
-                        "FBMNoise"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "actions": {
-                "applyCannyEdgeDetector": {
-                    "description": "Apply Canny edge detector",
-                    "arguments": [
-                        {
-                            "name": "treshold0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "treshold1",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "CannyEdgeDetection"
-                    ]
-                },
-                "applyGaussianBlur": {
-                    "description": "Apply Gaussian blur",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "GaussianBlur"
-                    ]
-                },
-                "applyBloom": {
-                    "description": "Apply bloom",
-                    "arguments": [
-                        {
-                            "name": "window",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "sigma",
-                            "type": "Number"
-                        }
-                    ],
-                    "techniques": [
-                        "Bloom"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextWriter": {
-            "tags": [
-                "library",
-                "text"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxBoofCv": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "BoofCV"
-            ]
-        },
-        "OrxShapes": {
-            "tags": [
-                "library",
-                "geometry"
-            ],
-            "actions": {
-                "findDelaunayTriangulation": {
-                    "description": "Find Delaunay triangulation",
-                    "techniques": [
-                        "DelaunayTriangulation"
-                    ]
-                },
-                "fitHobbyCurve": {
-                    "description": "Fit Hobby curve",
-                    "techniques": [
-                        "HobbyCurve"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OpenrndrVideo": {
-            "tags": [
-                "library",
-                "video"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "Ffmpeg"
+                "Python"
             ],
             "supports": [
-                "Mp4",
-                "Mov"
+                "PyTorch"
             ]
         },
-        "OrxMarchingSquares": {
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
+            ]
+        },
+        "Awt": {
+            "name": "AWT",
             "tags": [
                 "library",
-                "geometry"
+                "ui"
             ],
-            "actions": {
-                "extractIsoContour": {
-                    "description": "Extract iso contour",
-                    "techniques": [
-                        "MarchingSquares"
-                    ]
-                }
-            },
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
             "dependsOn": [
-                "OPENRNDR"
+                "Java"
             ]
         },
-        "OrxMidi": {
+        "Swing": {
+            "name": "Swing",
             "tags": [
-                "library"
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
             ],
             "dependsOn": [
-                "OPENRNDR",
-                "JavaxMidi"
+                "Java"
+            ]
+        },
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "tags": [
+                "library",
+                "geometry",
+                "gis",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jogl": {
+            "name": "JOGL",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Lwjgl": {
+            "name": "Lightweight Java Game library",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
             ],
             "supports": [
-                "Midi"
+                "Glfw",
+                "Sdl"
             ]
         },
-        "OPENRNDR": {
-            "prototypes": [
-                "_ImageIO",
-                "_VideoIO",
-                "_LibraryIO",
-                "_Drawing"
+        "DeepJavaLibrary": {
+            "name": "Deep Java Library",
+            "references": [
+                "https://djl.ai/",
+                "https://github.com/deepjavalibrary/djl"
             ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Java": {
+            "name": "Java",
             "tags": [
-                "creative coding",
+                "language",
+                "opensource"
+            ]
+        },
+        "JavaOsc": {
+            "name": "JavaOsc",
+            "tags": [
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://openrndr.org"
-            ],
-            "actions": {
-                "loadImageArtifact": {
-                    "description": "Load image artifact",
-                    "arguments": [
-                        {
-                            "name": "name",
-                            "type": "IArtifact"
-                        }
-                    ]
-                },
-                "saveImage": {
-                    "description": "Save Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "FileArtifact"
-                },
-                "loadImage": {
-                    "description": "Load Image",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "createImage": {
-                    "description": "Create an image",
-                    "arguments": [
-                        {
-                            "name": "width",
-                            "type": "Int"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Int"
-                        }
-                    ]
-                },
-                "loadVideo": {
-                    "description": "Load Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ],
-                    "outputType": "VideoArtifact"
-                },
-                "saveVideo": {
-                    "description": "Save Video",
-                    "arguments": [
-                        {
-                            "name": "name"
-                        }
-                    ]
-                },
-                "importLibrary": {
-                    "description": "Import library",
-                    "arguments": [
-                        {
-                            "name": "libraryName"
-                        }
-                    ],
-                    "outputType": "SourceCodeArtifact"
-                },
-                "clearBackground": {
-                    "description": "Clear the background",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawEllipse": {
-                    "description": "Draw an ellipse",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "xRadius",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "yRadius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCircle": {
-                    "description": "Draw a circle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "radius",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawLine": {
-                    "description": "Draw a line",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawCubicBezier": {
-                    "description": "Draw a cubic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x3",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y3",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawQuadraticBezier": {
-                    "description": "Draw a quadratic bezier curve",
-                    "arguments": [
-                        {
-                            "name": "x0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y0",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y1",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "x2",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y2",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setStroke": {
-                    "description": "Set the stroke color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFill": {
-                    "description": "Set the fill color",
-                    "arguments": [
-                        {
-                            "name": "red",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "green",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "blue",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "alpha",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawRectangle": {
-                    "description": "Draw a rectangle",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawImage": {
-                    "description": "Draw an image",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "width",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "height",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "setFont": {
-                    "description": "Set the active font",
-                    "arguments": [
-                        {
-                            "name": "font"
-                        },
-                        {
-                            "name": "size",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "drawText": {
-                    "description": "Draw a text",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ]
-                },
-                "drawPoint": {
-                    "description": "Draw a point",
-                    "arguments": [
-                        {
-                            "name": "x",
-                            "type": "Number"
-                        },
-                        {
-                            "name": "y",
-                            "type": "Number"
-                        }
-                    ]
-                },
-                "exportApplication": {
-                    "description": "Export Application"
-                }
-            },
-            "dependsOn": [
-                "Kotlin",
-                "Lwjgl"
-            ],
-            "supports": [
-                "Png",
-                "Svg",
-                "Jpg"
-            ]
-        },
-        "OrxSvg": {
-            "tags": [
-                "library"
+                "https://github.com/hoijui/JavaOSC"
             ],
             "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "OrxDnky": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL",
-                "Gltf"
-            ]
-        },
-        "OrxFft": {
-            "tags": [
-                "library"
-            ],
-            "actions": {
-                "forwardFft": {
-                    "description": "apply forward fft",
-                    "techniques": [
-                        "FFT"
-                    ]
-                }
-            },
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxOsc": {
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaOsc"
+                "Java"
             ],
             "supports": [
                 "Osc"
             ]
         },
-        "OrxShadeStyles": {
+        "JavaxMidi": {
+            "name": "javax.midi",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "JavaCv": {
+            "name": "JavaCV",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java",
+                "OpenCv"
+            ]
+        },
+        "JavaxSound": {
+            "name": "javax.sound",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
             "tags": [
                 "library",
-                "shaders"
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
             ],
             "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
+                "java"
             ]
         },
-        "Assimp": {
+        "Antlr": {
+            "name": "Antlr",
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Artnet4J": {
+            "name": "Artnet4J",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
+        "P5Play": {
+            "name": "p5play",
             "tags": [
                 "library"
             ],
             "references": [
-                "https://github.com/assimp/assimp"
+                "https://github.com/quinton-ashley/p5play"
             ],
             "dependsOn": [
-                "CPP"
+                "P5Js"
             ]
         },
-        "SDL": {
+        "P5Warp": {
+            "name": "p5.warp",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.warp"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Js": {
+            "name": "p5.js",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing#p5.js"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Bezier": {
+            "name": "p5.bezier",
+            "description": "a p5.js library engineered to assist you in creating Bézier curves. It is an enhancement of the original p5.js bezier() function, extending its capabilities beyond the limitation of four control points.",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/peilingjiang/p5.bezier"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Mapper": {
+            "name": "p5.mapper",
+            "tags": [
+                "library",
+                "projection mapping",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.mapper"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Anaglyph": {
+            "name": "p5.anaglyph",
+            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.anaglyph"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5UiRenderer": {
+            "name": "P5UIRenderer",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grain": {
+            "name": "p5.grain",
+            "description": "a p5.js addon for conveniently applying grain and texture overlays to artworks.",
+            "tags": [
+                "library",
+                "noise",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/meezwhite/p5.grain"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Quadrille": {
+            "name": "p5.quadrille.js",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://objetos.github.io/p5.quadrille.js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Dom": {
+            "name": "p5.dom",
+            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
             "tags": [
                 "library"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
-            ],
             "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
+                "P5Js"
             ]
         },
-        "Glfw": {
+        "P5Sound": {
+            "name": "p5.sound",
+            "description": "Adds sound synthesis and audio analysis capabilities to p5.js sketches.",
+            "tags": [
+                "library",
+                "sound"
+            ],
+            "references": [
+                "https://p5js.org/reference/p5.sound/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grid": {
+            "name": "p5Grid",
+            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
+            "tags": [
+                "library",
+                "grids",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/aahdee/p5grid"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TotalSerialism": {
+            "name": "Total Serialism",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tmhglnd/total-serialism"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "Numero": {
+            "name": "Número",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://mcintyre.io/numero/",
+                "https://github.com/nickmcintyre/numero"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "C2Js": {
+            "name": "c2.js",
+            "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "e"
+            ],
+            "supports": [
+                "P5Js"
+            ]
+        },
+        "P5Brush": {
+            "name": "p5.brush",
+            "description": "extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/acamposuribe/p5.brush"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ModButton": {
+            "name": "p5.ModButton",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/yetyeeter1337/p5.Modbuttons"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGraphicsP5Js": {
+            "name": "turtle-graphics",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/tg/index.html",
+                "https://github.com/quarks/turtle-graphics/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5_5": {
+            "name": "p5.5",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/eltapir/p5.5"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Polar": {
+            "name": "p5.polar",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/liz-peng/p5.Polar"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5VideoKit": {
+            "name": "p5videoKit",
+            "tags": [
+                "library",
+                "video",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/molab-itp/p5videoKit"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FilterRenderer": {
+            "name": "p5.filterRenderer",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.filterRenderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGFX": {
+            "name": "TurtleGFX",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/CodeGuppyPrograms/TurtleGFX"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Xr": {
+            "name": "p5.xr",
+            "tags": [
+                "library",
+                "augmented reality",
+                "virtual reality",
+                "opensource"
+            ],
+            "references": [
+                "https://p5xr.org/",
+                "https://github.com/stalgiag/p5.xr"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Transparency": {
+            "name": "p5.transparency",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.transparency"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5simpleAR": {
+            "name": "p5.simpleAR",
+            "tags": [
+                "library",
+                "augmented reality"
+            ],
+            "references": [
+                "https://github.com/tetunori/p5.simpleAR"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Csg": {
+            "name": "p5.csg",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.csg"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5CMyK": {
+            "name": "p5.cmyk.js",
+            "tags": [
+                "library",
+                "color",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/p5.cmyk.js"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ColorGenerator": {
+            "name": "p5.colorGenerator",
+            "tags": [
+                "library",
+                "color",
+                "opensource"
+            ],
+            "references": [
+                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
+                "https://github.com/alexandru-postolache/p5.colorGenerator"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Marching": {
+            "name": "p5.marching",
+            "description": "marching squares for p5.js",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/marching"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Palette": {
+            "name": "p5.palette",
+            "tags": [
+                "library",
+                "color"
+            ],
+            "references": [
+                "https://www.remistura.com/p5.palette/",
+                "https://github.com/remistura/p5.palette"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5TouchGui": {
+            "name": "p5.touchgui",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/L05/p5.touchgui"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FillGradient": {
+            "name": "p5.fillGradient",
+            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/alterebro/p5.fillGradient"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "XYScopeJs": {
+            "name": "XYScope.js",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://teddavis.org/xyscopejs/",
+                "https://github.com/ffd8/xyscopejs"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "canvasGUI": {
+            "name": "CanvasGUI",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/canvasgui/index.html",
+                "https://github.com/quarks/canvasGUI"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "VideoExport": {
+            "name": "VideoExport",
+            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
+            "tags": [
+                "library",
+                "video"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Geomerative": {
+            "name": "Geomerative",
+            "description": "Accesses vertex points of vector graphics or text for manipulation.",
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Ani": {
+            "name": "Ani",
+            "description": "A library for animating parameters in sketches.",
+            "tags": [
+                "library",
+                "animation"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "dependsOn": [
+                "Processing",
+                "Jts"
+            ]
+        },
+        "Queasycam": {
+            "name": "Queasycame",
+            "description": "Provides first-person camera controls in 3D spaces.",
             "tags": [
                 "library"
             ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
             "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
+                "https://github.com/jjeongin/creative-machine"
+            ]
+        },
+        "Nub": {
+            "name": "nub",
+            "tags": [
+                "library",
+                "3d graphics",
+                "open source"
+            ],
+            "references": [
+                "https://github.com/VisualComputing/nub"
             ],
             "dependsOn": [
-                "C"
+                "Processing"
+            ]
+        },
+        "OscP5": {
+            "name": "OscP5",
+            "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Processing"
             ],
             "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
+                "Osc"
+            ]
+        },
+        "ComputationalGeometry": {
+            "name": "Computational Geometry",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "GifAnimation": {
+            "name": "GifAnimation",
+            "description": "Enables exporting animated GIFs from sketches.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Gif"
+            ]
+        },
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Processing": {
+            "name": "Processing",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing",
+                "https://processing.org/",
+                "https://github.com/processing/processing4"
+            ],
+            "dependsOn": [
+                "Java",
+                "Jogl",
+                "Antlr",
+                "Swing"
+            ],
+            "supports": [
+                "Json",
+                "Csv",
+                "Png",
+                "Jpg"
+            ]
+        },
+        "Udp": {
+            "name": "UDP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "Http": {
+            "name": "HTTP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "Tcp": {
+            "name": "TCP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "Https": {
+            "name": "HTTPS",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "ArtNet": {
+            "name": "ArtNet",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "OSC": {
+            "name": "OSC",
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
+            ]
+        },
+        "WebSocket": {
+            "name": "WebSocket",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "Ml5Js": {
+            "name": "ml5.js",
+            "tags": [
+                "library",
+                "machine learning",
+                "open source"
+            ],
+            "references": [
+                "https://ml5js.org/",
+                "https://github.com/ml5js/ml5-next-gen"
+            ]
+        },
+        "TensorflowJs": {
+            "name": "tensorflow.js",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/tensorflow/tfjs"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "Browser"
             ]
         },
         "TensorFlow": {
+            "name": "TensorFlow",
             "tags": [
                 "library",
                 "machine learning",
@@ -3594,6 +3182,7 @@
             ]
         },
         "OnnxRuntime": {
+            "name": "ONNX Runtime",
             "tags": [
                 "library",
                 "machine learning",
