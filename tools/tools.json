@@ -1,1140 +1,5 @@
 {
     "tools": {
-        "OrxBoofCv": {
-            "name": "orx-boofcv",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "BoofCV"
-            ]
-        },
-        "OrxCamera": {
-            "name": "orx-camera",
-            "tags": [
-                "library",
-                "opensource",
-                "computer graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-camera"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "OrthogonalProjection",
-                "PerspectiveProjection"
-            ]
-        },
-        "OrxIntervalTree": {
-            "name": "orx-interval-tree",
-            "tags": [
-                "library",
-                "opensource",
-                "data structure"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxPropertyWatchers": {
-            "name": "orx-property-watchers",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-property-watchers"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxPalette": {
-            "name": "orx-palette",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-palette"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextOnContour": {
-            "name": "orx-text-on-contour",
-            "tags": [
-                "library",
-                "opensource",
-                "typography"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMidi": {
-            "name": "orx-midi",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaxMidi"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "OrxMesh": {
-            "name": "orx-mesh",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxDnky": {
-            "name": "orx-dnky",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL",
-                "Gltf"
-            ]
-        },
-        "OrxMath": {
-            "name": "orx-math",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxComposition": {
-            "name": "orx-composition",
-            "tags": [
-                "library",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-composition"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxIntegralImage": {
-            "name": "orx-integral-image",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxNoise": {
-            "name": "orx-noise",
-            "tags": [
-                "library",
-                "opensource",
-                "noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "PerlinNoise",
-                "SimplexNoise",
-                "FBMNoise",
-                "WorleyNoise",
-                "ValueNoise"
-            ]
-        },
-        "OrxJumpflood": {
-            "name": "orx-jumpflood",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "DistanceTransform"
-            ]
-        },
-        "OrxEnvelopes": {
-            "name": "orx-envelopes",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMarchingSquares": {
-            "name": "orx-marching-squares",
-            "tags": [
-                "library",
-                "geometry",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxKdtree": {
-            "name": "orx-kdtree",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "KDTree"
-            ]
-        },
-        "OrxShadeStyles": {
-            "name": "orx-shade-styles",
-            "tags": [
-                "library",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxFcurve": {
-            "name": "orx-fcurve",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "OrxExpressionEvaluator"
-            ],
-            "techniques": [
-                "KeyframeInterpolation",
-                "RegularExpressions"
-            ]
-        },
-        "OrxQuadTree": {
-            "name": "orx-quadtree",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxDepthCamera": {
-            "name": "orx-depth-camera",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-depth-camera"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxSvg": {
-            "name": "orx-svg",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-svg"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "OrxOsc": {
-            "name": "orx-osc",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-osc"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaOsc"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "OrxImageFit": {
-            "name": "orx-image-fit",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTemporalBlur": {
-            "name": "orx-temporal-blur",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextWriter": {
-            "name": "orx-text-writer",
-            "tags": [
-                "library",
-                "text",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OpenrndrVideo": {
-            "name": "openrndr-video",
-            "tags": [
-                "library",
-                "video",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "Ffmpeg"
-            ],
-            "supports": [
-                "Mp4",
-                "Mov"
-            ]
-        },
-        "OrxObjLoader": {
-            "name": "orx-obj-loader",
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Obj"
-            ]
-        },
-        "OrxGradientDescent": {
-            "name": "orx-gradient-descent",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GradientDescent"
-            ]
-        },
-        "OrxColor": {
-            "name": "orx-color",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-color"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxParameters": {
-            "name": "orx-parameters",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-parameters"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMeshGenerators": {
-            "name": "orx-mesh-generators",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTurtle": {
-            "name": "orx-turtle",
-            "tags": [
-                "library",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-turtle"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "TurtleGraphics"
-            ]
-        },
-        "OrxShapes": {
-            "name": "orx-shapes",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shapes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "HobbyCurve",
-                "DelaunayTriangulation",
-                "AlphaShape"
-            ]
-        },
-        "OrxHashGrid": {
-            "name": "orx-hash-grid",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxCompositor": {
-            "name": "orx-compositor",
-            "tags": [
-                "library",
-                "opensource",
-                "computer graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-compositor"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTriangulation": {
-            "name": "orx-triangulation",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OPENRNDR": {
-            "name": "OPENRNDR",
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://openrndr.org"
-            ],
-            "dependsOn": [
-                "Kotlin",
-                "Lwjgl"
-            ],
-            "supports": [
-                "Png",
-                "Svg",
-                "Jpg"
-            ]
-        },
-        "OrxFx": {
-            "name": "orx-fx",
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GaussianBlur",
-                "CannyEdgeDetection",
-                "Halftoning",
-                "Dithering",
-                "EdgeDetection",
-                "Blur",
-                "ImageQuantization"
-            ]
-        },
-        "OrxOlive": {
-            "name": "orx-olive",
-            "tags": [
-                "library",
-                "opensource",
-                "live coding"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxPoissonFill": {
-            "name": "orx-poisson-fill",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxExpressionEvaluator": {
-            "name": "orx-expression-evaluator",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMeshNoise": {
-            "name": "orx-mesh-noise",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics",
-                "noise"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFft": {
-            "name": "orx-fft",
-            "tags": [
-                "library"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "FFT"
-            ]
-        },
-        "OrxShaderPhrases": {
-            "name": "orx-shader-phrases",
-            "tags": [
-                "library",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxEasing": {
-            "name": "orx-easing",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-easing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "Ply": {
-            "name": "PLY",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PLY_(file_format)"
-            ]
-        },
-        "Gltf": {
-            "name": "GLTF",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
-            ]
-        },
-        "Usd": {
-            "name": "USD",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
-            ]
-        },
-        "Gzip": {
-            "name": "gzip",
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gzip"
-            ]
-        },
-        "Css": {
-            "name": "CSS",
-            "tags": [
-                "file format",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Csv": {
-            "name": "CSV",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
-            ]
-        },
-        "Json": {
-            "name": "JSON",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
-        "Ogg": {
-            "name": "OGG",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Yaml": {
-            "name": "YAML",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
-            ]
-        },
-        "Stl": {
-            "name": "STL",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
-            ]
-        },
-        "Collada": {
-            "name": "Collada",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Jpg": {
-            "name": "JPEG",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
-            ]
-        },
-        "Obj": {
-            "name": "Wavefront OBJ",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Mp3": {
-            "name": "MP3",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Mov": {
-            "name": "Quicktime MOV",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Gif": {
-            "name": "GIF",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
-        "Html": {
-            "name": "HTML",
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Opus": {
-            "name": "Opus",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
-        "Svg": {
-            "name": "SVG",
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Fbx": {
-            "name": "Filmbox",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Wav": {
-            "name": "WAV",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
-        "Xml": {
-            "name": "XML",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/XML"
-            ]
-        },
-        "Zip": {
-            "name": "zip",
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
-            ]
-        },
-        "Mp4": {
-            "name": "MP4",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
-        "Onnx": {
-            "name": "ONNX",
-            "tags": [
-                "file format",
-                "standard",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/onnx/onnx",
-                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
-            ]
-        },
-        "Png": {
-            "name": "PNG",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "KotlinxSerialization": {
-            "name": "kotlinx.serialization",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/Kotlin/kotlinx.serialization"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Json",
-                "Yaml",
-                "Xml"
-            ]
-        },
-        "KotlinCsv": {
-            "name": "kotlin-csv",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/jsoizo/kotlin-csv"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Csv"
-            ]
-        },
-        "SDL": {
-            "name": "SDL",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Assimp": {
-            "name": "Assimp",
-            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/assimp/assimp"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "Glfw": {
-            "name": "GLFW",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
         "D3Color": {
             "name": "d3-color",
             "tags": [
@@ -2115,301 +980,827 @@
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
-        "NumPy": {
-            "name": "NumPy",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/NumPy"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Python": {
-            "name": "Python",
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ]
-        },
-        "PyTorch": {
-            "name": "PyTorch",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "ScikitLearn": {
-            "name": "Scikit-learn",
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Pandas": {
-            "name": "Pandas",
-            "tags": [
-                "library",
-                "data science",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "Json",
-                "Csv"
-            ]
-        },
-        "Transformers": {
-            "name": "Transformers",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/huggingface/transformers"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "PyTorch"
-            ]
-        },
-        "TensorFlowJava": {
-            "name": "TensorFlow for Java",
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
-            ]
-        },
-        "Awt": {
-            "name": "AWT",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Swing": {
-            "name": "Swing",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jts": {
-            "name": "JTS Topology Suite",
-            "tags": [
-                "library",
-                "geometry",
-                "gis",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jogl": {
-            "name": "JOGL",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Lwjgl": {
-            "name": "Lightweight Java Game library",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl"
-            ]
-        },
-        "DeepJavaLibrary": {
-            "name": "Deep Java Library",
-            "references": [
-                "https://djl.ai/",
-                "https://github.com/deepjavalibrary/djl"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Java": {
-            "name": "Java",
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "JavaOsc": {
-            "name": "JavaOsc",
+        "OrxBoofCv": {
+            "name": "orx-boofcv",
             "tags": [
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/hoijui/JavaOSC"
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
+                "OPENRNDR",
+                "BoofCV"
             ]
         },
-        "JavaxMidi": {
-            "name": "javax.midi",
+        "OrxCamera": {
+            "name": "orx-camera",
             "tags": [
-                "library"
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Java"
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "OrthogonalProjection",
+                "PerspectiveProjection"
+            ]
+        },
+        "OrxIntervalTree": {
+            "name": "orx-interval-tree",
+            "tags": [
+                "library",
+                "opensource",
+                "data structure"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPropertyWatchers": {
+            "name": "orx-property-watchers",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-property-watchers"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPalette": {
+            "name": "orx-palette",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-palette"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextOnContour": {
+            "name": "orx-text-on-contour",
+            "tags": [
+                "library",
+                "opensource",
+                "typography"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMidi": {
+            "name": "orx-midi",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaxMidi"
             ],
             "supports": [
                 "Midi"
             ]
         },
-        "JavaCv": {
-            "name": "JavaCV",
+        "OrxMesh": {
+            "name": "orx-mesh",
             "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "JavaxSound": {
-            "name": "javax.sound",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "BoofCV": {
-            "name": "BoofCV",
-            "tags": [
-                "library"
+                "library",
+                "opensource",
+                "3d graphics"
             ],
             "references": [
-                "https://boofcv.org/"
+                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Java"
+                "OPENRNDR"
+            ]
+        },
+        "OrxDnky": {
+            "name": "orx-dnky",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL",
+                "Gltf"
+            ]
+        },
+        "OrxMath": {
+            "name": "orx-math",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxComposition": {
+            "name": "orx-composition",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-composition"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxIntegralImage": {
+            "name": "orx-integral-image",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxNoise": {
+            "name": "orx-noise",
+            "tags": [
+                "library",
+                "opensource",
+                "noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PerlinNoise",
+                "SimplexNoise",
+                "FBMNoise",
+                "WorleyNoise",
+                "ValueNoise"
+            ]
+        },
+        "OrxJumpflood": {
+            "name": "orx-jumpflood",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "DistanceTransform"
+            ]
+        },
+        "OrxEnvelopes": {
+            "name": "orx-envelopes",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "name": "orx-marching-squares",
+            "tags": [
+                "library",
+                "geometry",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxKdtree": {
+            "name": "orx-kdtree",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "KDTree"
+            ]
+        },
+        "OrxShadeStyles": {
+            "name": "orx-shade-styles",
+            "tags": [
+                "library",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OrxFcurve": {
+            "name": "orx-fcurve",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "OrxExpressionEvaluator"
+            ],
+            "techniques": [
+                "KeyframeInterpolation",
+                "RegularExpressions"
+            ]
+        },
+        "OrxQuadTree": {
+            "name": "orx-quadtree",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxDepthCamera": {
+            "name": "orx-depth-camera",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-depth-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxSvg": {
+            "name": "orx-svg",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-svg"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "OrxOsc": {
+            "name": "orx-osc",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-osc"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaOsc"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "OrxImageFit": {
+            "name": "orx-image-fit",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTemporalBlur": {
+            "name": "orx-temporal-blur",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextWriter": {
+            "name": "orx-text-writer",
+            "tags": [
+                "library",
+                "text",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OpenrndrVideo": {
+            "name": "openrndr-video",
+            "tags": [
+                "library",
+                "video",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "Ffmpeg"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OrxObjLoader": {
+            "name": "orx-obj-loader",
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Obj"
+            ]
+        },
+        "OrxGradientDescent": {
+            "name": "orx-gradient-descent",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GradientDescent"
+            ]
+        },
+        "OrxColor": {
+            "name": "orx-color",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-color"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxParameters": {
+            "name": "orx-parameters",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-parameters"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshGenerators": {
+            "name": "orx-mesh-generators",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTurtle": {
+            "name": "orx-turtle",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-turtle"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "TurtleGraphics"
+            ]
+        },
+        "OrxShapes": {
+            "name": "orx-shapes",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shapes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "HobbyCurve",
+                "DelaunayTriangulation",
+                "AlphaShape"
+            ]
+        },
+        "OrxHashGrid": {
+            "name": "orx-hash-grid",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxCompositor": {
+            "name": "orx-compositor",
+            "tags": [
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-compositor"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTriangulation": {
+            "name": "orx-triangulation",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OPENRNDR": {
+            "name": "OPENRNDR",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://openrndr.org"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Lwjgl"
             ],
             "supports": [
                 "Png",
+                "Svg",
                 "Jpg"
             ]
         },
-        "JSerialComm": {
-            "name": "JSerialComm",
+        "OrxFx": {
+            "name": "orx-fx",
             "tags": [
                 "library",
-                "binding",
-                "opensource"
+                "shaders"
             ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "java"
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GaussianBlur",
+                "CannyEdgeDetection",
+                "Halftoning",
+                "Dithering",
+                "EdgeDetection",
+                "Blur",
+                "ImageQuantization"
             ]
         },
-        "Antlr": {
-            "name": "Antlr",
+        "OrxOlive": {
+            "name": "orx-olive",
             "tags": [
                 "library",
-                "parsing",
-                "opensource"
+                "opensource",
+                "live coding"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Java"
+                "OPENRNDR"
             ]
         },
-        "Artnet4J": {
-            "name": "Artnet4J",
+        "OrxPoissonFill": {
+            "name": "orx-poisson-fill",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxExpressionEvaluator": {
+            "name": "orx-expression-evaluator",
             "tags": [
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
+                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "Java"
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshNoise": {
+            "name": "orx-mesh-noise",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics",
+                "noise"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFft": {
+            "name": "orx-fft",
+            "tags": [
+                "library"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "FFT"
+            ]
+        },
+        "OrxShaderPhrases": {
+            "name": "orx-shader-phrases",
+            "tags": [
+                "library",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
             ],
             "supports": [
-                "ArtNet"
+                "GLSL"
+            ]
+        },
+        "OrxEasing": {
+            "name": "orx-easing",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "Ml5Js": {
+            "name": "ml5.js",
+            "tags": [
+                "library",
+                "machine learning",
+                "open source"
+            ],
+            "references": [
+                "https://ml5js.org/",
+                "https://github.com/ml5js/ml5-next-gen"
+            ]
+        },
+        "TensorflowJs": {
+            "name": "tensorflow.js",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/tensorflow/tfjs"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "Browser"
             ]
         },
         "P5Play": {
@@ -2907,6 +2298,291 @@
                 "P5Js"
             ]
         },
+        "Udp": {
+            "name": "UDP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "Http": {
+            "name": "HTTP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "Tcp": {
+            "name": "TCP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "Https": {
+            "name": "HTTPS",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "ArtNet": {
+            "name": "ArtNet",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "OSC": {
+            "name": "OSC",
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
+            ]
+        },
+        "WebSocket": {
+            "name": "WebSocket",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
+            ]
+        },
+        "Awt": {
+            "name": "AWT",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Swing": {
+            "name": "Swing",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "tags": [
+                "library",
+                "geometry",
+                "gis",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jogl": {
+            "name": "JOGL",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Lwjgl": {
+            "name": "Lightweight Java Game library",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl"
+            ]
+        },
+        "DeepJavaLibrary": {
+            "name": "Deep Java Library",
+            "references": [
+                "https://djl.ai/",
+                "https://github.com/deepjavalibrary/djl"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Java": {
+            "name": "Java",
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "JavaOsc": {
+            "name": "JavaOsc",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/hoijui/JavaOSC"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "JavaxMidi": {
+            "name": "javax.midi",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "JavaCv": {
+            "name": "JavaCV",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java",
+                "OpenCv"
+            ]
+        },
+        "JavaxSound": {
+            "name": "javax.sound",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "Antlr": {
+            "name": "Antlr",
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Artnet4J": {
+            "name": "Artnet4J",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
         "VideoExport": {
             "name": "VideoExport",
             "description": "Allows exporting videos from Processing sketches using FFMPEG.",
@@ -3068,106 +2744,136 @@
                 "Jpg"
             ]
         },
-        "Udp": {
-            "name": "UDP",
+        "NumPy": {
+            "name": "NumPy",
             "tags": [
-                "protocol"
+                "library"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
-            ]
-        },
-        "Http": {
-            "name": "HTTP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTP"
-            ]
-        },
-        "Tcp": {
-            "name": "TCP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
-        "Https": {
-            "name": "HTTPS",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTPS"
-            ]
-        },
-        "ArtNet": {
-            "name": "ArtNet",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Art-Net"
+                "https://en.wikipedia.org/wiki/NumPy"
             ],
             "dependsOn": [
-                "Udp"
-            ],
-            "supports": [
-                "DMX"
+                "Python"
             ]
         },
-        "OSC": {
-            "name": "OSC",
+        "Python": {
+            "name": "Python",
             "tags": [
-                "standard",
-                "device interface"
+                "language",
+                "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ],
-            "dependsOn": [
-                "Udp"
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
             ]
         },
-        "WebSocket": {
-            "name": "WebSocket",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
-            ]
-        },
-        "Ml5Js": {
-            "name": "ml5.js",
-            "tags": [
-                "library",
-                "machine learning",
-                "open source"
-            ],
-            "references": [
-                "https://ml5js.org/",
-                "https://github.com/ml5js/ml5-next-gen"
-            ]
-        },
-        "TensorflowJs": {
-            "name": "tensorflow.js",
+        "PyTorch": {
+            "name": "PyTorch",
             "tags": [
                 "library",
                 "machine learning"
             ],
             "references": [
-                "https://github.com/tensorflow/tfjs"
+                "https://en.wikipedia.org/wiki/PyTorch"
             ],
             "dependsOn": [
-                "Javascript",
-                "WebGL"
+                "Python",
+                "CPP"
+            ]
+        },
+        "ScikitLearn": {
+            "name": "Scikit-learn",
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Pandas": {
+            "name": "Pandas",
+            "tags": [
+                "library",
+                "data science",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
             ],
             "supports": [
-                "Browser"
+                "Json",
+                "Csv"
+            ]
+        },
+        "Transformers": {
+            "name": "Transformers",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/huggingface/transformers"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "PyTorch"
+            ]
+        },
+        "SDL": {
+            "name": "SDL",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "Assimp": {
+            "name": "Assimp",
+            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/assimp/assimp"
+            ],
+            "dependsOn": [
+                "CPP"
+            ]
+        },
+        "Glfw": {
+            "name": "GLFW",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GLFW"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         },
         "TensorFlow": {
@@ -3193,6 +2899,300 @@
                 "Java",
                 "Python",
                 "C"
+            ]
+        },
+        "Ply": {
+            "name": "PLY",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PLY_(file_format)"
+            ]
+        },
+        "Gltf": {
+            "name": "GLTF",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Usd": {
+            "name": "USD",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
+            ]
+        },
+        "Gzip": {
+            "name": "gzip",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gzip"
+            ]
+        },
+        "Css": {
+            "name": "CSS",
+            "tags": [
+                "file format",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
+            ]
+        },
+        "Csv": {
+            "name": "CSV",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "Json": {
+            "name": "JSON",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Ogg": {
+            "name": "OGG",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Yaml": {
+            "name": "YAML",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Stl": {
+            "name": "STL",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Collada": {
+            "name": "Collada",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Jpg": {
+            "name": "JPEG",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Obj": {
+            "name": "Wavefront OBJ",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Mp3": {
+            "name": "MP3",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Mov": {
+            "name": "Quicktime MOV",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Gif": {
+            "name": "GIF",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Html": {
+            "name": "HTML",
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Opus": {
+            "name": "Opus",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Svg": {
+            "name": "SVG",
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Fbx": {
+            "name": "Filmbox",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Wav": {
+            "name": "WAV",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Xml": {
+            "name": "XML",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
+            ]
+        },
+        "Zip": {
+            "name": "zip",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
+            ]
+        },
+        "Mp4": {
+            "name": "MP4",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Onnx": {
+            "name": "ONNX",
+            "tags": [
+                "file format",
+                "standard",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/onnx/onnx",
+                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
+            ]
+        },
+        "Png": {
+            "name": "PNG",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "KotlinxSerialization": {
+            "name": "kotlinx.serialization",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/Kotlin/kotlinx.serialization"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Json",
+                "Yaml",
+                "Xml"
+            ]
+        },
+        "KotlinCsv": {
+            "name": "kotlin-csv",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/jsoizo/kotlin-csv"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Csv"
             ]
         }
     }
