@@ -1,5 +1,91 @@
 {
     "techniques": {
+        "ValueNoise": {
+            "name": "Value noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Value_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "WorleyNoise": {
+            "name": "Worley noise",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Worley_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Perlin_noise"
+            ]
+        },
+        "Attractor": {
+            "name": "Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Attractor"
+            ]
+        },
+        "CliffordAttractor": {
+            "name": "Clifford attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/clifford/"
+            ]
+        },
+        "DeJongAttractor": {
+            "name": "De Jong Attractor",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/peterdejong/"
+            ]
+        },
+        "JuliaSet": {
+            "name": "Julia set",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Julia_set"
+            ]
+        },
         "PinwheelTiling": {
             "name": "Pinwheel tiling",
             "tags": [
@@ -34,6 +120,43 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Substitution_tiling"
+            ]
+        },
+        "ConvexHull": {
+            "name": "Convex hull",
+            "tags": [
+                "geometry",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Convex_hull"
+            ]
+        },
+        "AlphaShape": {
+            "name": "Alpha shape",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Alpha_shape"
+            ]
+        },
+        "CircleInversion": {
+            "name": "Circle inversion",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inversive_geometry"
+            ]
+        },
+        "TurtleGraphics": {
+            "name": "Turtle graphics",
+            "tags": [
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
             ]
         },
         "Flocking": {
@@ -97,79 +220,128 @@
                 "simulation"
             ]
         },
-        "ValueNoise": {
-            "name": "Value noise",
+        "GrayCode": {
+            "name": "Gray code",
             "tags": [
-                "noise"
+                "codes"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
+                "https://en.wikipedia.org/wiki/Gray_code"
             ]
         },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
+        "Guilloche": {
+            "name": "Guilloché patterns",
             "tags": [
-                "noise"
+                "patterns"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
             ]
         },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
+        "BezierSurface": {
+            "name": "Bézier surface",
             "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
-            ]
-        },
-        "WorleyNoise": {
-            "name": "Worley noise",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Worley_noise"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise",
+                "curves",
+                "surfaces",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
             ]
         },
-        "Photogrammetry": {
-            "name": "Photogrammetry",
+        "Nurbs": {
+            "name": "NURBS",
             "tags": [
-                "photography",
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
+            ]
+        },
+        "Smoothstep": {
+            "name": "Smoothstep function",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Smoothstep"
+            ]
+        },
+        "HilbertCurve": {
+            "name": "Hilbert Curve",
+            "tags": [
+                "curves",
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Hilbert_curve"
+            ]
+        },
+        "CatmullRomSpline": {
+            "name": "Catmull-Rom spline",
+            "tags": [
+                "curves",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Photogrammetry"
+                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
             ]
         },
-        "SlitScanning": {
-            "name": "Slit-scanning",
+        "BezierCurve": {
+            "name": "Bézier curve",
             "tags": [
-                "photography"
+                "curves",
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
             ]
         },
-        "ToneMapping": {
-            "name": "Tone mapping",
+        "Clamp": {
+            "name": "Clamp",
             "tags": [
-                "photography",
-                "image processing"
+                "functions"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
+                "https://en.wikipedia.org/wiki/Clamp_(function)"
+            ]
+        },
+        "BezierTriangle": {
+            "name": "Bézier triangle",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
+            ]
+        },
+        "RoseCurves": {
+            "name": "Rose curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
+            ]
+        },
+        "ZOrderCurve": {
+            "name": "Z-order curve",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Z-order_curve"
+            ]
+        },
+        "LissajousCurves": {
+            "name": "Lissajous curves",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lissajous_curve"
             ]
         },
         "EditDistance": {
@@ -188,24 +360,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Levenshtein_distance"
-            ]
-        },
-        "Guilloche": {
-            "name": "Guilloché patterns",
-            "tags": [
-                "patterns"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
-            ]
-        },
-        "GrayCode": {
-            "name": "Gray code",
-            "tags": [
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
             ]
         },
         "Clustering": {
@@ -239,6 +393,36 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "CellularAutomata": {
+            "name": "Cellular automata",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
+            ]
+        },
+        "ConwaysGameOfLife": {
+            "name": "Conway's Game of Life",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            ]
+        },
+        "RegularExpressions": {
+            "name": "Regular expressions",
+            "tags": [
+                "automata",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Regular_expression"
             ]
         },
         "Heightfield": {
@@ -538,40 +722,77 @@
                 "https://en.wikipedia.org/wiki/Duotone"
             ]
         },
-        "CellularAutomata": {
-            "name": "Cellular automata",
+        "InfiniteImpulseResponse": {
+            "name": "Finite impulse response",
             "tags": [
-                "cellular automata",
-                "automata"
+                "signal processing",
+                "feedback"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Cellular_automaton"
+                "https://en.wikipedia.org/wiki/Finite_impulse_response"
             ]
         },
-        "ConwaysGameOfLife": {
-            "name": "Conway's Game of Life",
+        "FiniteImpulseResponse": {
+            "name": "Finite impulse response",
             "tags": [
-                "cellular automata",
-                "automata"
+                "signal processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                "https://en.wikipedia.org/wiki/Finite_impulse_response"
             ]
         },
-        "RegularExpressions": {
-            "name": "Regular expressions",
+        "FFT": {
+            "name": "Fast fourier transform",
             "tags": [
-                "automata",
-                "language"
+                "signal processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Regular_expression"
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
             ]
         },
-        "PoissonFill": {
-            "name": "Poisson fill",
+        "GraphSignalProcessing": {
+            "name": "Graph signal processing",
             "tags": [
-                "image processing"
+                "graph",
+                "signal processing"
+            ]
+        },
+        "VoronoiDiagram": {
+            "name": "Voronoi diagram",
+            "tags": [
+                "graph",
+                "tessellation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Voronoi_diagram"
+            ]
+        },
+        "ForceDirectedGraphDrawing": {
+            "name": "Force-directed graph drawing",
+            "tags": [
+                "graph",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+            ]
+        },
+        "Easing": {
+            "name": "Easing",
+            "tags": [
+                "animation"
+            ],
+            "references": [
+                "https://easings.net/"
+            ]
+        },
+        "KeyframeInterpolation": {
+            "name": "Keyframe interpolation",
+            "tags": [
+                "animation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Key_frame"
             ]
         },
         "HistogramEqualization": {
@@ -687,225 +908,42 @@
                 "image processing"
             ]
         },
-        "FFT": {
-            "name": "Fast fourier transform",
+        "PoissonFill": {
+            "name": "Poisson fill",
             "tags": [
-                "signal processing"
+                "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+                "https://en.wikipedia.org/wiki/Discrete_Poisson_equation"
             ]
         },
-        "VoronoiDiagram": {
-            "name": "Voronoi diagram",
+        "Photogrammetry": {
+            "name": "Photogrammetry",
             "tags": [
-                "graph",
-                "tessellation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Voronoi_diagram"
-            ]
-        },
-        "ForceDirectedGraphDrawing": {
-            "name": "Force-directed graph drawing",
-            "tags": [
-                "graph",
+                "photography",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+                "https://en.wikipedia.org/wiki/Photogrammetry"
             ]
         },
-        "BezierSurface": {
-            "name": "Bézier surface",
+        "SlitScanning": {
+            "name": "Slit-scanning",
             "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
+                "photography"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
             ]
         },
-        "Nurbs": {
-            "name": "NURBS",
+        "ToneMapping": {
+            "name": "Tone mapping",
             "tags": [
-                "curves"
+                "photography",
+                "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
-            ]
-        },
-        "Smoothstep": {
-            "name": "Smoothstep function",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Smoothstep"
-            ]
-        },
-        "HilbertCurve": {
-            "name": "Hilbert Curve",
-            "tags": [
-                "curves",
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Hilbert_curve"
-            ]
-        },
-        "CatmullRomSpline": {
-            "name": "Catmull-Rom spline",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
-            ]
-        },
-        "BezierCurve": {
-            "name": "Bézier curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
-            ]
-        },
-        "Clamp": {
-            "name": "Clamp",
-            "tags": [
-                "functions"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Clamp_(function)"
-            ]
-        },
-        "BezierTriangle": {
-            "name": "Bézier triangle",
-            "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
-            ]
-        },
-        "RoseCurves": {
-            "name": "Rose curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
-            ]
-        },
-        "ZOrderCurve": {
-            "name": "Z-order curve",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Z-order_curve"
-            ]
-        },
-        "LissajousCurves": {
-            "name": "Lissajous curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Lissajous_curve"
-            ]
-        },
-        "Attractor": {
-            "name": "Attractor",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Attractor"
-            ]
-        },
-        "CliffordAttractor": {
-            "name": "Clifford attractor",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/clifford/"
-            ]
-        },
-        "DeJongAttractor": {
-            "name": "De Jong Attractor",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/peterdejong/"
-            ]
-        },
-        "JuliaSet": {
-            "name": "Julia set",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Julia_set"
-            ]
-        },
-        "KeyframeInterpolation": {
-            "name": "Keyframe interpolation",
-            "tags": [
-                "animation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Key_frame"
-            ]
-        },
-        "ConvexHull": {
-            "name": "Convex hull",
-            "tags": [
-                "geometry",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Convex_hull"
-            ]
-        },
-        "AlphaShape": {
-            "name": "Alpha shape",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Alpha_shape"
-            ]
-        },
-        "CircleInversion": {
-            "name": "Circle inversion",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inversive_geometry"
-            ]
-        },
-        "TurtleGraphics": {
-            "name": "Turtle graphics",
-            "tags": [
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
+                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         }
     }

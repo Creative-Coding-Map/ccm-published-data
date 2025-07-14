@@ -1,5 +1,500 @@
 {
     "tools": {
+        "P5Play": {
+            "name": "p5play",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/quinton-ashley/p5play"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Warp": {
+            "name": "p5.warp",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.warp"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Js": {
+            "name": "p5.js",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing#p5.js"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Bezier": {
+            "name": "p5.bezier",
+            "description": "a p5.js library engineered to assist you in creating Bézier curves. It is an enhancement of the original p5.js bezier() function, extending its capabilities beyond the limitation of four control points.",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/peilingjiang/p5.bezier"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Mapper": {
+            "name": "p5.mapper",
+            "tags": [
+                "library",
+                "projection mapping",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.mapper"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Anaglyph": {
+            "name": "p5.anaglyph",
+            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.anaglyph"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5UiRenderer": {
+            "name": "P5UIRenderer",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grain": {
+            "name": "p5.grain",
+            "description": "a p5.js addon for conveniently applying grain and texture overlays to artworks.",
+            "tags": [
+                "library",
+                "noise",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/meezwhite/p5.grain"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Quadrille": {
+            "name": "p5.quadrille.js",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://objetos.github.io/p5.quadrille.js/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Dom": {
+            "name": "p5.dom",
+            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Sound": {
+            "name": "p5.sound",
+            "description": "Adds sound synthesis and audio analysis capabilities to p5.js sketches.",
+            "tags": [
+                "library",
+                "sound"
+            ],
+            "references": [
+                "https://p5js.org/reference/p5.sound/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grid": {
+            "name": "p5Grid",
+            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
+            "tags": [
+                "library",
+                "grids",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/aahdee/p5grid"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TotalSerialism": {
+            "name": "Total Serialism",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tmhglnd/total-serialism"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "Numero": {
+            "name": "Número",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://mcintyre.io/numero/",
+                "https://github.com/nickmcintyre/numero"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "C2Js": {
+            "name": "c2.js",
+            "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "e"
+            ],
+            "supports": [
+                "P5Js"
+            ]
+        },
+        "P5Brush": {
+            "name": "p5.brush",
+            "description": "extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/acamposuribe/p5.brush"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ModButton": {
+            "name": "p5.ModButton",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/yetyeeter1337/p5.Modbuttons"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGraphicsP5Js": {
+            "name": "turtle-graphics",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/tg/index.html",
+                "https://github.com/quarks/turtle-graphics/"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5_5": {
+            "name": "p5.5",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/eltapir/p5.5"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Polar": {
+            "name": "p5.polar",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/liz-peng/p5.Polar"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5VideoKit": {
+            "name": "p5videoKit",
+            "tags": [
+                "library",
+                "video",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/molab-itp/p5videoKit"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FilterRenderer": {
+            "name": "p5.filterRenderer",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.filterRenderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGFX": {
+            "name": "TurtleGFX",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/CodeGuppyPrograms/TurtleGFX"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Xr": {
+            "name": "p5.xr",
+            "tags": [
+                "library",
+                "augmented reality",
+                "virtual reality",
+                "opensource"
+            ],
+            "references": [
+                "https://p5xr.org/",
+                "https://github.com/stalgiag/p5.xr"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Transparency": {
+            "name": "p5.transparency",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.transparency"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5simpleAR": {
+            "name": "p5.simpleAR",
+            "tags": [
+                "library",
+                "augmented reality"
+            ],
+            "references": [
+                "https://github.com/tetunori/p5.simpleAR"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Csg": {
+            "name": "p5.csg",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.csg"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5CMyK": {
+            "name": "p5.cmyk.js",
+            "tags": [
+                "library",
+                "color",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/p5.cmyk.js"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ColorGenerator": {
+            "name": "p5.colorGenerator",
+            "tags": [
+                "library",
+                "color",
+                "opensource"
+            ],
+            "references": [
+                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
+                "https://github.com/alexandru-postolache/p5.colorGenerator"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Marching": {
+            "name": "p5.marching",
+            "description": "marching squares for p5.js",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/marching"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Palette": {
+            "name": "p5.palette",
+            "tags": [
+                "library",
+                "color"
+            ],
+            "references": [
+                "https://www.remistura.com/p5.palette/",
+                "https://github.com/remistura/p5.palette"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5TouchGui": {
+            "name": "p5.touchgui",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/L05/p5.touchgui"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FillGradient": {
+            "name": "p5.fillGradient",
+            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/alterebro/p5.fillGradient"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "XYScopeJs": {
+            "name": "XYScope.js",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://teddavis.org/xyscopejs/",
+                "https://github.com/ffd8/xyscopejs"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "canvasGUI": {
+            "name": "CanvasGUI",
+            "tags": [
+                "library",
+                "ui",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/canvasgui/index.html",
+                "https://github.com/quarks/canvasGUI"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
         "D3Color": {
             "name": "d3-color",
             "tags": [
@@ -102,6 +597,435 @@
             ],
             "techniques": [
                 "QuadTree"
+            ]
+        },
+        "Udp": {
+            "name": "UDP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "Http": {
+            "name": "HTTP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "Tcp": {
+            "name": "TCP",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "Https": {
+            "name": "HTTPS",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "ArtNet": {
+            "name": "ArtNet",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "OSC": {
+            "name": "OSC",
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
+            ]
+        },
+        "WebSocket": {
+            "name": "WebSocket",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "SDL": {
+            "name": "SDL",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "Assimp": {
+            "name": "Assimp",
+            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/assimp/assimp"
+            ],
+            "dependsOn": [
+                "CPP"
+            ]
+        },
+        "Glfw": {
+            "name": "GLFW",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GLFW"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "NumPy": {
+            "name": "NumPy",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/NumPy"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Python": {
+            "name": "Python",
+            "tags": [
+                "language",
+                "opensource"
+            ],
+            "references": [
+                "https://www.python.org/",
+                "https://en.wikipedia.org/wiki/Python_(programming_language)"
+            ]
+        },
+        "PyTorch": {
+            "name": "PyTorch",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
+            ]
+        },
+        "ScikitLearn": {
+            "name": "Scikit-learn",
+            "tags": [
+                "library",
+                "data science",
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Pandas": {
+            "name": "Pandas",
+            "tags": [
+                "library",
+                "data science",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "Json",
+                "Csv"
+            ]
+        },
+        "Transformers": {
+            "name": "Transformers",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/huggingface/transformers"
+            ],
+            "dependsOn": [
+                "Python"
+            ],
+            "supports": [
+                "PyTorch"
+            ]
+        },
+        "VideoExport": {
+            "name": "VideoExport",
+            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
+            "tags": [
+                "library",
+                "video"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Geomerative": {
+            "name": "Geomerative",
+            "description": "Accesses vertex points of vector graphics or text for manipulation.",
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "dependsOn": [
+                "Processing",
+                "Jts"
+            ]
+        },
+        "Ani": {
+            "name": "Ani",
+            "description": "A library for animating parameters in sketches.",
+            "tags": [
+                "library",
+                "animation"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "techniques": [
+                "Easing"
+            ]
+        },
+        "Queasycam": {
+            "name": "Queasycame",
+            "description": "Provides first-person camera controls in 3D spaces.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/jjeongin/creative-machine"
+            ]
+        },
+        "Nub": {
+            "name": "nub",
+            "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/VisualComputing/nub"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ComputationalGeometry": {
+            "name": "Computational Geometry",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "GifAnimation": {
+            "name": "GifAnimation",
+            "description": "Enables exporting animated GIFs from sketches.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Gif"
+            ]
+        },
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Processing": {
+            "name": "Processing",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing",
+                "https://processing.org/",
+                "https://github.com/processing/processing4"
+            ],
+            "dependsOn": [
+                "Java",
+                "Jogl",
+                "Antlr",
+                "Swing"
+            ],
+            "supports": [
+                "Json",
+                "Csv",
+                "Png",
+                "Jpg"
+            ]
+        },
+        "OscP5": {
+            "name": "OscP5",
+            "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://www.sojamo.de/libraries/oscP5/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "TensorFlow": {
+            "name": "TensorFlow",
+            "tags": [
+                "library",
+                "machine learning",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tensorflow"
+            ]
+        },
+        "OnnxRuntime": {
+            "name": "ONNX Runtime",
+            "tags": [
+                "library",
+                "machine learning",
+                "opensource"
+            ],
+            "supports": [
+                "Onnx",
+                "Java",
+                "Python",
+                "C"
+            ]
+        },
+        "Ml5Js": {
+            "name": "ml5.js",
+            "tags": [
+                "library",
+                "machine learning",
+                "opensource"
+            ],
+            "references": [
+                "https://ml5js.org/",
+                "https://github.com/ml5js/ml5-next-gen"
+            ]
+        },
+        "TensorflowJs": {
+            "name": "tensorflow.js",
+            "tags": [
+                "library",
+                "machine learning",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tensorflow/tfjs"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "Browser"
             ]
         },
         "Pico8": {
@@ -980,6 +1904,268 @@
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
+        "Lwjgl": {
+            "name": "Lightweight Java Game library",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl",
+                "Vulkan"
+            ]
+        },
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
+            ]
+        },
+        "Awt": {
+            "name": "AWT",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Swing": {
+            "name": "Swing",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "tags": [
+                "library",
+                "geometry",
+                "gis",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Jogl": {
+            "name": "JOGL",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "DeepJavaLibrary": {
+            "name": "Deep Java Library",
+            "references": [
+                "https://djl.ai/",
+                "https://github.com/deepjavalibrary/djl"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Java": {
+            "name": "Java",
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "JavaOsc": {
+            "name": "JavaOsc",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/hoijui/JavaOSC"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "JavaxMidi": {
+            "name": "javax.midi",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "JavaCv": {
+            "name": "JavaCV",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java",
+                "OpenCv"
+            ]
+        },
+        "JavaxSound": {
+            "name": "javax.sound",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "Antlr": {
+            "name": "Antlr",
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Artnet4J": {
+            "name": "Artnet4J",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
+        "KotlinxSerialization": {
+            "name": "kotlinx.serialization",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Kotlin/kotlinx.serialization"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Json",
+                "Yaml",
+                "Xml"
+            ]
+        },
+        "KotlinCsv": {
+            "name": "kotlin-csv",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jsoizo/kotlin-csv"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Csv"
+            ]
+        },
+        "AntlrKotlin": {
+            "name": "antlr-kotlin",
+            "tags": [
+                "library",
+                "opensource",
+                "parsing"
+            ],
+            "references": [
+                "https://github.com/Strumenta/antlr-kotlin"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Antlr"
+            ]
+        },
         "OrxBoofCv": {
             "name": "orx-boofcv",
             "tags": [
@@ -1701,7 +2887,8 @@
                 "OPENRNDR"
             ],
             "dependsOn": [
-                "OPENRNDR"
+                "OPENRNDR",
+                "AntlrKotlin"
             ]
         },
         "OrxMeshNoise": {
@@ -1772,1133 +2959,6 @@
             ],
             "dependsOn": [
                 "OPENRNDR"
-            ]
-        },
-        "Ml5Js": {
-            "name": "ml5.js",
-            "tags": [
-                "library",
-                "machine learning",
-                "open source"
-            ],
-            "references": [
-                "https://ml5js.org/",
-                "https://github.com/ml5js/ml5-next-gen"
-            ]
-        },
-        "TensorflowJs": {
-            "name": "tensorflow.js",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/tensorflow/tfjs"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL"
-            ],
-            "supports": [
-                "Browser"
-            ]
-        },
-        "P5Play": {
-            "name": "p5play",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/quinton-ashley/p5play"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Warp": {
-            "name": "p5.warp",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.warp"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Js": {
-            "name": "p5.js",
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "web",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Processing#p5.js"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "P5Bezier": {
-            "name": "p5.bezier",
-            "description": "a p5.js library engineered to assist you in creating Bézier curves. It is an enhancement of the original p5.js bezier() function, extending its capabilities beyond the limitation of four control points.",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/peilingjiang/p5.bezier"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Mapper": {
-            "name": "p5.mapper",
-            "tags": [
-                "library",
-                "projection mapping",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.mapper"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Anaglyph": {
-            "name": "p5.anaglyph",
-            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.anaglyph"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5UiRenderer": {
-            "name": "P5UIRenderer",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grain": {
-            "name": "p5.grain",
-            "description": "a p5.js addon for conveniently applying grain and texture overlays to artworks.",
-            "tags": [
-                "library",
-                "noise",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/meezwhite/p5.grain"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Quadrille": {
-            "name": "p5.quadrille.js",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://objetos.github.io/p5.quadrille.js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Dom": {
-            "name": "p5.dom",
-            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Sound": {
-            "name": "p5.sound",
-            "description": "Adds sound synthesis and audio analysis capabilities to p5.js sketches.",
-            "tags": [
-                "library",
-                "sound"
-            ],
-            "references": [
-                "https://p5js.org/reference/p5.sound/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grid": {
-            "name": "p5Grid",
-            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
-            "tags": [
-                "library",
-                "grids",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/aahdee/p5grid"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TotalSerialism": {
-            "name": "Total Serialism",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/tmhglnd/total-serialism"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "Numero": {
-            "name": "Número",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://mcintyre.io/numero/",
-                "https://github.com/nickmcintyre/numero"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "C2Js": {
-            "name": "c2.js",
-            "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "e"
-            ],
-            "supports": [
-                "P5Js"
-            ]
-        },
-        "P5Brush": {
-            "name": "p5.brush",
-            "description": "extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/acamposuribe/p5.brush"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ModButton": {
-            "name": "p5.ModButton",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/yetyeeter1337/p5.Modbuttons"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGraphicsP5Js": {
-            "name": "turtle-graphics",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/tg/index.html",
-                "https://github.com/quarks/turtle-graphics/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5_5": {
-            "name": "p5.5",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/eltapir/p5.5"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Polar": {
-            "name": "p5.polar",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/liz-peng/p5.Polar"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5VideoKit": {
-            "name": "p5videoKit",
-            "tags": [
-                "library",
-                "video",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/molab-itp/p5videoKit"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FilterRenderer": {
-            "name": "p5.filterRenderer",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.filterRenderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGFX": {
-            "name": "TurtleGFX",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/CodeGuppyPrograms/TurtleGFX"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Xr": {
-            "name": "p5.xr",
-            "tags": [
-                "library",
-                "augmented reality",
-                "virtual reality",
-                "opensource"
-            ],
-            "references": [
-                "https://p5xr.org/",
-                "https://github.com/stalgiag/p5.xr"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Transparency": {
-            "name": "p5.transparency",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.transparency"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5simpleAR": {
-            "name": "p5.simpleAR",
-            "tags": [
-                "library",
-                "augmented reality"
-            ],
-            "references": [
-                "https://github.com/tetunori/p5.simpleAR"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Csg": {
-            "name": "p5.csg",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.csg"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5CMyK": {
-            "name": "p5.cmyk.js",
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/p5.cmyk.js"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ColorGenerator": {
-            "name": "p5.colorGenerator",
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
-                "https://github.com/alexandru-postolache/p5.colorGenerator"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Marching": {
-            "name": "p5.marching",
-            "description": "marching squares for p5.js",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/marching"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Palette": {
-            "name": "p5.palette",
-            "tags": [
-                "library",
-                "color"
-            ],
-            "references": [
-                "https://www.remistura.com/p5.palette/",
-                "https://github.com/remistura/p5.palette"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5TouchGui": {
-            "name": "p5.touchgui",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/L05/p5.touchgui"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FillGradient": {
-            "name": "p5.fillGradient",
-            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/alterebro/p5.fillGradient"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "XYScopeJs": {
-            "name": "XYScope.js",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://teddavis.org/xyscopejs/",
-                "https://github.com/ffd8/xyscopejs"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "canvasGUI": {
-            "name": "CanvasGUI",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/canvasgui/index.html",
-                "https://github.com/quarks/canvasGUI"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Udp": {
-            "name": "UDP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
-            ]
-        },
-        "Http": {
-            "name": "HTTP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTP"
-            ]
-        },
-        "Tcp": {
-            "name": "TCP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
-        "Https": {
-            "name": "HTTPS",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTPS"
-            ]
-        },
-        "ArtNet": {
-            "name": "ArtNet",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Art-Net"
-            ],
-            "dependsOn": [
-                "Udp"
-            ],
-            "supports": [
-                "DMX"
-            ]
-        },
-        "OSC": {
-            "name": "OSC",
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ],
-            "dependsOn": [
-                "Udp"
-            ]
-        },
-        "WebSocket": {
-            "name": "WebSocket",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
-            ]
-        },
-        "TensorFlowJava": {
-            "name": "TensorFlow for Java",
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
-            ]
-        },
-        "Awt": {
-            "name": "AWT",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Swing": {
-            "name": "Swing",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jts": {
-            "name": "JTS Topology Suite",
-            "tags": [
-                "library",
-                "geometry",
-                "gis",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jogl": {
-            "name": "JOGL",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Lwjgl": {
-            "name": "Lightweight Java Game library",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl"
-            ]
-        },
-        "DeepJavaLibrary": {
-            "name": "Deep Java Library",
-            "references": [
-                "https://djl.ai/",
-                "https://github.com/deepjavalibrary/djl"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Java": {
-            "name": "Java",
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "JavaOsc": {
-            "name": "JavaOsc",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/hoijui/JavaOSC"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "JavaxMidi": {
-            "name": "javax.midi",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "JavaCv": {
-            "name": "JavaCV",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "JavaxSound": {
-            "name": "javax.sound",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "BoofCV": {
-            "name": "BoofCV",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://boofcv.org/"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Png",
-                "Jpg"
-            ]
-        },
-        "JSerialComm": {
-            "name": "JSerialComm",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "Antlr": {
-            "name": "Antlr",
-            "tags": [
-                "library",
-                "parsing",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Artnet4J": {
-            "name": "Artnet4J",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "ArtNet"
-            ]
-        },
-        "VideoExport": {
-            "name": "VideoExport",
-            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
-            "tags": [
-                "library",
-                "video"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Geomerative": {
-            "name": "Geomerative",
-            "description": "Accesses vertex points of vector graphics or text for manipulation.",
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Ani": {
-            "name": "Ani",
-            "description": "A library for animating parameters in sketches.",
-            "tags": [
-                "library",
-                "animation"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ProcessingGeometrySuite": {
-            "name": "Processing Geometry Suite",
-            "tags": [
-                "library",
-                "geometry"
-            ],
-            "dependsOn": [
-                "Processing",
-                "Jts"
-            ]
-        },
-        "Queasycam": {
-            "name": "Queasycame",
-            "description": "Provides first-person camera controls in 3D spaces.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "CreativeMachine": {
-            "name": "Creative Machine",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/jjeongin/creative-machine"
-            ]
-        },
-        "Nub": {
-            "name": "nub",
-            "tags": [
-                "library",
-                "3d graphics",
-                "open source"
-            ],
-            "references": [
-                "https://github.com/VisualComputing/nub"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "OscP5": {
-            "name": "OscP5",
-            "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "ComputationalGeometry": {
-            "name": "Computational Geometry",
-            "tags": [
-                "library",
-                "geometry"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ControlP5": {
-            "name": "ControlP5",
-            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "GifAnimation": {
-            "name": "GifAnimation",
-            "description": "Enables exporting animated GIFs from sketches.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "supports": [
-                "Gif"
-            ]
-        },
-        "Tramontana": {
-            "name": "Tramontana",
-            "description": "Provides access to phone sensors for AR/VR-like interactions.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Processing": {
-            "name": "Processing",
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Processing",
-                "https://processing.org/",
-                "https://github.com/processing/processing4"
-            ],
-            "dependsOn": [
-                "Java",
-                "Jogl",
-                "Antlr",
-                "Swing"
-            ],
-            "supports": [
-                "Json",
-                "Csv",
-                "Png",
-                "Jpg"
-            ]
-        },
-        "NumPy": {
-            "name": "NumPy",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/NumPy"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Python": {
-            "name": "Python",
-            "tags": [
-                "language",
-                "opensource"
-            ],
-            "references": [
-                "https://www.python.org/",
-                "https://en.wikipedia.org/wiki/Python_(programming_language)"
-            ]
-        },
-        "PyTorch": {
-            "name": "PyTorch",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "ScikitLearn": {
-            "name": "Scikit-learn",
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
-            ]
-        },
-        "Pandas": {
-            "name": "Pandas",
-            "tags": [
-                "library",
-                "data science",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "Json",
-                "Csv"
-            ]
-        },
-        "Transformers": {
-            "name": "Transformers",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/huggingface/transformers"
-            ],
-            "dependsOn": [
-                "Python"
-            ],
-            "supports": [
-                "PyTorch"
-            ]
-        },
-        "SDL": {
-            "name": "SDL",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Assimp": {
-            "name": "Assimp",
-            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/assimp/assimp"
-            ],
-            "dependsOn": [
-                "CPP"
-            ]
-        },
-        "Glfw": {
-            "name": "GLFW",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "TensorFlow": {
-            "name": "TensorFlow",
-            "tags": [
-                "library",
-                "machine learning",
-                "open source"
-            ],
-            "references": [
-                "https://github.com/tensorflow"
-            ]
-        },
-        "OnnxRuntime": {
-            "name": "ONNX Runtime",
-            "tags": [
-                "library",
-                "machine learning",
-                "open source"
-            ],
-            "supports": [
-                "Onnx",
-                "Java",
-                "Python",
-                "C"
             ]
         },
         "Ply": {
@@ -3161,38 +3221,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "KotlinxSerialization": {
-            "name": "kotlinx.serialization",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/Kotlin/kotlinx.serialization"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Json",
-                "Yaml",
-                "Xml"
-            ]
-        },
-        "KotlinCsv": {
-            "name": "kotlin-csv",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/jsoizo/kotlin-csv"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Csv"
             ]
         }
     }
