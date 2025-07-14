@@ -86,40 +86,44 @@
                 "https://en.wikipedia.org/wiki/Julia_set"
             ]
         },
-        "PinwheelTiling": {
-            "name": "Pinwheel tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
-            ]
-        },
         "WangTiling": {
             "name": "Wang tiling",
             "tags": [
-                "tiling"
+                "tiling",
+                "computer graphics"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Wang_tile"
             ]
         },
-        "PenroseTiling": {
-            "name": "Penrose tiling",
-            "tags": [
-                "tiling"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Penrose_tiling"
-            ]
-        },
         "SubstitutionTiling": {
             "name": "Substitution tiling",
             "tags": [
-                "tiling"
+                "tiling",
+                "computer graphics"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Substitution_tiling"
+            ]
+        },
+        "PinwheelTiling": {
+            "name": "Pinwheel tiling",
+            "tags": [
+                "tiling",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
+            ]
+        },
+        "PenroseTiling": {
+            "name": "Penrose tiling",
+            "tags": [
+                "tiling",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Penrose_tiling"
             ]
         },
         "ConvexHull": {
@@ -232,7 +236,8 @@
         "Guilloche": {
             "name": "Guilloché patterns",
             "tags": [
-                "patterns"
+                "patterns",
+                "computer graphics"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
