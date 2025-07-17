@@ -1028,6 +1028,27 @@
                 "Browser"
             ]
         },
+        "SonicPi": {
+            "name": "Sonic Pi",
+            "description": "free code-based music creation and performance tool",
+            "tags": [
+                "live coding",
+                "audio",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://sonic-pi.net/",
+                "https://github.com/sonic-pi-net/sonic-pi"
+            ],
+            "dependsOn": [
+                "Ruby"
+            ],
+            "supports": [
+                "Midi",
+                "Osc"
+            ]
+        },
         "Pico8": {
             "name": "Pico-8",
             "tags": [
@@ -1112,6 +1133,17 @@
                 "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
             ]
         },
+        "VVVV": {
+            "name": "VVVV",
+            "tags": [
+                "node-based",
+                "application"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Vvvv",
+                "https://vvvv.org/"
+            ]
+        },
         "DepthSensor": {
             "name": "Depth sensor",
             "tags": [
@@ -1121,17 +1153,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Range_imaging"
-            ]
-        },
-        "SuperCollider": {
-            "name": "SuperCollider",
-            "tags": [
-                "application",
-                "opensource",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SuperCollider"
             ]
         },
         "VSCode": {
@@ -1286,6 +1307,22 @@
             "supports": [
                 "GLSL",
                 "Gltf"
+            ]
+        },
+        "FoxDot": {
+            "name": "FoxDot",
+            "description": "",
+            "tags": [
+                "live coding",
+                "audio",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Qirky/FoxDot"
+            ],
+            "dependsOn": [
+                "SuperCollider"
             ]
         },
         "GLSL": {
@@ -1480,16 +1517,6 @@
                 "https://en.wikipedia.org/wiki/WebGL"
             ]
         },
-        "VVVV": {
-            "name": "VVVV",
-            "tags": [
-                "node-based"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Vvvv",
-                "https://vvvv.org/"
-            ]
-        },
         "CircuitPython": {
             "name": "CircuitPython",
             "tags": [
@@ -1592,6 +1619,18 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/TouchDesigner"
+            ]
+        },
+        "SuperCollider": {
+            "name": "SuperCollider",
+            "tags": [
+                "application",
+                "opensource",
+                "audio",
+                "live coding"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SuperCollider"
             ]
         },
         "C": {
@@ -1891,6 +1930,20 @@
                 "Gif"
             ]
         },
+        "Overtone": {
+            "name": "Overtone",
+            "description": "open source audio environment designed to explore new musical ideas from synthesis and sampling to instrument building, live-coding and collaborative jamming.",
+            "tags": [
+                "live coding",
+                "audio",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://overtone.github.io/",
+                "https://github.com/overtone/overtone/"
+            ]
+        },
         "HLSL": {
             "name": "HLSL",
             "tags": [
@@ -1912,6 +1965,20 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+            ]
+        },
+        "TidalCycles": {
+            "name": "TidalCycles",
+            "description": "live coding language embedded in Haskell, ideal for rhythm-based music and pattern generation",
+            "tags": [
+                "live coding",
+                "audio",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://tidalcycles.org/",
+                "https://codeberg.org/uzu/tidal"
             ]
         },
         "Lwjgl": {
