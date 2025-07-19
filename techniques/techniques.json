@@ -211,8 +211,7 @@
         "GradientDescent": {
             "name": "Gradient descent",
             "tags": [
-                "simulation",
-                "optimization"
+                "simulation"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Gradient_descent"
@@ -236,7 +235,6 @@
         "Guilloche": {
             "name": "Guilloché patterns",
             "tags": [
-                "patterns",
                 "computer graphics"
             ],
             "references": [
@@ -304,9 +302,6 @@
         },
         "Clamp": {
             "name": "Clamp",
-            "tags": [
-                "functions"
-            ],
             "references": [
                 "https://en.wikipedia.org/wiki/Clamp_(function)"
             ]
@@ -720,8 +715,7 @@
         "Duotone": {
             "name": "Duotone",
             "tags": [
-                "print",
-                "halftone"
+                "print"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Duotone"
@@ -730,8 +724,7 @@
         "InfiniteImpulseResponse": {
             "name": "Finite impulse response",
             "tags": [
-                "signal processing",
-                "feedback"
+                "signal processing"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Finite_impulse_response"
@@ -765,8 +758,7 @@
         "VoronoiDiagram": {
             "name": "Voronoi diagram",
             "tags": [
-                "graph",
-                "tessellation"
+                "graph"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Voronoi_diagram"
@@ -882,8 +874,7 @@
         "CannyEdgeDetection": {
             "name": "Canny edge detection",
             "tags": [
-                "image processing",
-                "edge detection"
+                "image processing"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Canny_edge_detector"

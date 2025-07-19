@@ -61,7 +61,6 @@
             "name": "p5.mapper",
             "tags": [
                 "library",
-                "projection mapping",
                 "opensource"
             ],
             "references": [
@@ -142,8 +141,7 @@
             "name": "p5.sound",
             "description": "Adds sound synthesis and audio analysis capabilities to p5.js sketches.",
             "tags": [
-                "library",
-                "sound"
+                "library"
             ],
             "references": [
                 "https://p5js.org/reference/p5.sound/"
@@ -157,7 +155,6 @@
             "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
             "tags": [
                 "library",
-                "grids",
                 "opensource"
             ],
             "references": [
@@ -328,7 +325,6 @@
             "tags": [
                 "library",
                 "augmented reality",
-                "virtual reality",
                 "opensource"
             ],
             "references": [
@@ -1567,7 +1563,6 @@
         "ShaderToy": {
             "name": "ShaderToy",
             "tags": [
-                "software",
                 "platform",
                 "web",
                 "shaders"
@@ -1646,7 +1641,6 @@
             "name": "Figma",
             "tags": [
                 "application",
-                "saas",
                 "vector graphics",
                 "raster graphics"
             ],
@@ -2041,7 +2035,6 @@
             "tags": [
                 "library",
                 "geometry",
-                "gis",
                 "opensource"
             ],
             "references": [
@@ -2332,8 +2325,7 @@
             "name": "orx-text-on-contour",
             "tags": [
                 "library",
-                "opensource",
-                "typography"
+                "opensource"
             ],
             "references": [
                 "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
