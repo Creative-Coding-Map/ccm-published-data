@@ -3266,7 +3266,7 @@
         },
         "JavaCv": {
             "name": "JavaCV",
-            "description": "JavaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
+            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
             "tags": [
                 "library"
             ],

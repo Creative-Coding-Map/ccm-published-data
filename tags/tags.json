@@ -1,0 +1,224 @@
+{
+    "tiling": {
+        "description": "Tiling refers to the arrangement of shapes or patterns repeated without gaps or overlaps to cover a surface."
+    },
+    "parsing": {
+        "description": "Parsing refers to the process of analyzing a sequence of symbols or text to determine its grammatical structure according to a defined set of rules or a formal language grammar."
+    },
+    "curves": {
+        "description": "Curves refers to mathematical and algorithmic techniques used to create, manipulate, and analyze smooth and complex shapes or paths in visual and computational designs."
+    },
+    "shaders": {
+        "description": "Shaders are programs that run on the graphics processing unit to control the rendering of images by calculating color, lighting, and visual effects in real-time."
+    },
+    "image processing": {
+        "description": "Image processing involves techniques and algorithms applied to digital images to enhance, transform, analyze, or extract information from visual data."
+    },
+    "fantasy console": {
+        "description": "A fantasy console is a software platform that emulates the limitations and features of a fictional retro game console, enabling users to create and run pixel art games and programs within a controlled, nostalgic environment."
+    },
+    "software": {
+        "description": "Software refers to computer programs and applications."
+    },
+    "codes": {
+        "description": "Codes refers to systematic methods of representing, organizing, or transforming information, often used to create structured patterns or sequences in programming and computational design."
+    },
+    "hardware": {
+        "description": "Hardware refers to physical electronic devices and components used to capture, process, or output data in interactive and multimedia projects."
+    },
+    "projection mapping": {
+        "description": "Projection mapping refers to the technique of projecting visual content onto irregularly shaped surfaces to create dynamic and visually engaging displays."
+    },
+    "sound": {
+        "description": "Sound refers to the use, manipulation, and integration of audio elements such as tones, music, and effects in programming projects."
+    },
+    "web": {
+        "description": "Web refers to programming and technologies that enable creating interactive and visual content directly within web browsers using languages and tools such as JavaScript, HTML, WebGL, and related libraries and frameworks."
+    },
+    "halftone": {
+        "description": "Halftone refers to a visual technique that simulates gradients and shading through the use of dots of varying sizes or spacing to create an illusion of continuous tone."
+    },
+    "live coding": {
+        "description": "Live coding refers to the practice of writing and modifying code in real-time to generate music, visuals, or other digital art during a performance or presentation."
+    },
+    "device interface": {
+        "description": "A device interface refers to the protocols and methods used to connect and communicate between hardware devices and software applications for interactive control and data exchange."
+    },
+    "fractal": {
+        "description": "Fractal refers to complex geometric shapes or patterns that exhibit self-similarity and intricate detail at every scale, often generated through iterative mathematical processes."
+    },
+    "structured data": {
+        "description": "Organized information formatted in specific conventions that allows for efficient data storage, retrieval, and manipulation."
+    },
+    "library": {
+        "description": "A collection of pre-written code modules or tools designed to simplify and enhance the development of interactive graphics, multimedia, and data processing applications."
+    },
+    "vector graphics": {
+        "description": "Vector graphics refers to the creation and manipulation of images using geometric shapes such as points, lines, curves, and polygons, allowing for scalable and resolution-independent visual representations."
+    },
+    "grids": {
+        "description": "A collection of techniques and tools for creating structured arrangements of elements in rows and columns to organize visual compositions."
+    },
+    "data structure": {
+        "description": "Data structure refers to the organization and storage of data in a way that enables efficient access, modification, and management within computational processes."
+    },
+    "machine learning": {
+        "description": "Machine learning involves using algorithms and models to enable computers to learn from data and make predictions or decisions without being explicitly programmed."
+    },
+    "functions": {
+        "description": "Reusable blocks of code that perform specific tasks or calculations, such as mathematical or utility operations."
+    },
+    "optimization": {
+        "description": "Optimization refers to the process of improving an algorithm or system to achieve the best possible performance or results through methods such as gradient descent."
+    },
+    "typography": {
+        "description": "Typography refers to the art and technique of arranging and styling text elements to enhance visual communication and aesthetic appeal in digital projects."
+    },
+    "saas": {
+        "description": "SaaS refers to software applications delivered over the internet that provide tools for design, collaboration, and development without requiring local installation."
+    },
+    "game development": {
+        "description": "Game development involves the design, programming, and creation of interactive digital experiences using software tools."
+    },
+    "ide": {
+        "description": "An IDE is a software application that provides comprehensive tools for writing, editing, debugging, and managing code within a unified interface."
+    },
+    "animation": {
+        "description": "Animation refers to the technique of creating motion and change over time by smoothly transitioning values or properties using methods such as easing functions, keyframe interpolation, and envelopes."
+    },
+    "surfaces": {
+        "description": "Surfaces refers to two-dimensional shapes or forms defined mathematically or algorithmically, often used to create smooth, curved shapes in graphical representations."
+    },
+    "simulation": {
+        "description": "Simulation refers to the process of creating digital models that imitate real-world systems or natural phenomena through mathematical and algorithmic techniques."
+    },
+    "graphical projection": {
+        "description": "graphical projection: Graphical projection refers to the method of representing three-dimensional objects on a two-dimensional plane by systematically transforming their spatial coordinates."
+    },
+    "data science": {
+        "description": "Data science involves extracting insights and knowledge from data through programming, analysis, and the use of specialized libraries and tools."
+    },
+    "ui": {
+        "description": "UI refers to the design and implementation of graphical user interfaces that allow users to interact with software applications through visual components and controls."
+    },
+    "3d graphics": {
+        "description": "3d graphics involves creating manipulating, and rendering digital three-dimensional models and scenes using various software tools and file formats."
+    },
+    "node-based": {
+        "description": "Node-based refers to a visual programming approach where users create and manipulate elements as interconnected nodes to design and control multimedia projects."
+    },
+    "video": {
+        "description": "Tools, libraries, formats, and techniques used to create, manipulate, encode, decode, and export digital video content."
+    },
+    "binding": {
+        "description": "Binding refers to the process of connecting or linking software components, libraries, or resources to enable communication and functionality within a program."
+    },
+    "command-line": {
+        "description": "Software tools and techniques that operate through text-based interfaces to process and manipulate multimedia files efficiently."
+    },
+    "standard": {
+        "description": "Standard refers to established or widely accepted protocols and formats used for interoperability and consistency within digital communication and data exchange."
+    },
+    "file format": {
+        "description": "A file format defines the structure and encoding of data stored in a file, determining how information is organized, accessed, and interpreted by software applications."
+    },
+    "cellular automata": {
+        "description": "A cellular automata is a discrete model consisting of a grid of cells that evolve through simple, local rules over successive time steps to create complex patterns and behaviors."
+    },
+    "space partitioning": {
+        "description": "space partitioning: Space partitioning refers to methods for dividing a space into distinct regions to efficiently organize, search, and manage spatial data or objects."
+    },
+    "protocol": {
+        "description": "A protocol defines a set of rules and standards that enable devices or software to communicate and exchange data effectively."
+    },
+    "creative coding": {
+        "description": "A category for tools focused on using programming languages and tools to produce visually expressive and interactive digital art."
+    },
+    "edge detection": {
+        "description": "Edge detection refers to techniques and algorithms used to identify and highlight the boundaries or outlines within images by detecting changes in brightness or color intensity."
+    },
+    "gis": {
+        "description": "Geographic information systems, including spatial data processing, mapping, and analysis using tools."
+    },
+    "language": {
+        "description": "Language refers to the specific programming or markup system used to write code or scripts in various computing environments."
+    },
+    "compression": {
+        "description": "Compression refers to the process of reducing the size of data files by encoding information more efficiently to save storage space or improve transmission speed."
+    },
+    "platform": {
+        "description": "Platform refers to the online environment or software where users create, share, and explore interactive digital art and code projects."
+    },
+    "noise": {
+        "description": "Noise refers to a variety of mathematical functions and algorithms used to generate random or pseudo-random patterns and textures for visual or auditory effects."
+    },
+    "feedback": {
+        "description": "A mechanism for using output signals as input to influence or modify a system's behavior over time."
+    },
+    "audio": {
+        "description": "Audio refers to the representation, manipulation, synthesis, and analysis of sound signals and data in digital or computational environments."
+    },
+    "graph": {
+        "description": "A graph represents a collection of nodes connected by edges, used to model relationships and structures in data visualization and analysis."
+    },
+    "tesselation": {
+        "description": "Tessellation refers to the process of covering a surface with a pattern of shapes that fit together without gaps or overlaps."
+    },
+    "color": {
+        "description": "Topics related to defining, manipulating, and applying colors within programming libraries and tools."
+    },
+    "automomata": {
+        "description": "A system or model composed of discrete units or states that evolve according to a set of rules or patterns over time."
+    },
+    "text": {
+        "description": "Text refers to the representation, manipulation, and display of characters and strings in programming and digital applications."
+    },
+    "application": {
+        "description": "Software tools and platforms used for creating, editing, or managing digital content and multimedia projects."
+    },
+    "geometry": {
+        "description": "Geometry involves the study and implementation of shapes, spatial relationships, and algorithms to represent and manipulate visual forms in programming."
+    },
+    "virtual reality": {
+        "description": "Virtual reality involves creating immersive digital environments that simulate a three-dimensional space where users can interact through specialized hardware and software."
+    },
+    "graphics api": {
+        "description": "A graphics API is a software interface that allows developers to create and manage visual content by communicating with graphics hardware."
+    },
+    "microcontroller": {
+        "description": "A microcontroller is a compact integrated circuit designed to execute programmed instructions for controlling electronic devices and processing input and output signals."
+    },
+    "triangulation": {
+        "description": "Triangulation refers to the process of dividing a polygon or a set of points into triangles, often to facilitate rendering, analysis, or mesh generation."
+    },
+    "photography": {
+        "description": "Photography refers to the techniques and processes involved in capturing, manipulating, and rendering images through digital or computational methods."
+    },
+    "sensor": {
+        "description": "A sensor is a device that detects and measures physical properties or environmental conditions to provide data for digital processing."
+    },
+    "media technology": {
+        "description": "Media technology refers to devices and tools used to capture, process, display, or interact with audio, visual, and sensory data in digital and electronic projects."
+    },
+    "signal processing": {
+        "description": "Signal processing involves techniques and algorithms for analyzing, transforming, and interpreting signals such as audio, images, or data sequences to extract meaningful information or modify their characteristics."
+    },
+    "raster graphics": {
+        "description": "Raster graphics refers to digital images composed of a fixed grid of pixels, where each pixel contains color information that defines the overall picture."
+    },
+    "patterns": {
+        "description": "Patterns refers to the repetition or arrangement of shapes, lines, or colors in a structured and visually appealing manner to create intricate and often symmetrical designs."
+    },
+    "print": {
+        "description": "Print refers to the process or technique of producing physical images or designs on various surfaces using devices such as printers, pen plotters, or methods that create duotone effects."
+    },
+    "computer graphics": {
+        "description": "Computer graphics involves the creation, manipulation, and representation of visual content using mathematical models, algorithms, and computational techniques to generate images and animations."
+    },
+    "augmented reality": {
+        "description": "Augmented reality involves overlaying digital content onto the real world through interactive applications that blend virtual elements with physical environments."
+    },
+    "opensource": {
+        "description": "Software, libraries, and tools that are freely available with source code open for use, modification, and distribution."
+    }
+}
