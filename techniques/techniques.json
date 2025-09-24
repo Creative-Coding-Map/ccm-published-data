@@ -1,25 +1,282 @@
 {
     "techniques": {
-        "ValueNoise": {
-            "name": "Value noise",
+        "ConwaysGameOfLife": {
+            "name": "Conway's Game of Life",
+            "description": "Conway's Game of Life is a cellular automata technique that simulates the evolution of a grid of cells based on simple rules determining each cell's state over discrete time steps, illustrating complex patterns emerging from basic automata principles.",
             "tags": [
-                "noise"
+                "cellular automata",
+                "automata"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
+                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
             ]
         },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
+        "RegularExpressions": {
+            "name": "Regular expressions",
+            "description": "Regular expressions are sequences of characters that define search patterns within strings, based on formal language theory and automata, enabling efficient text processing and manipulation",
             "tags": [
-                "noise"
+                "automata",
+                "language"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
+                "https://en.wikipedia.org/wiki/Regular_expression"
+            ]
+        },
+        "CellularAutomata": {
+            "name": "Cellular automata",
+            "description": "Cellular automata are discrete, abstract computational systems that consist of a grid of cells, each of which changes its state simultaneously at each time step according to a fixed rule based on the states of its neighboring cells, enabling complex patterns and behaviors to emerge from simple local interactions.",
+            "tags": [
+                "cellular automata",
+                "automata"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cellular_automaton"
+            ]
+        },
+        "GrayCode": {
+            "name": "Gray code",
+            "description": "Gray code is a binary numeral system where two successive values differ in only one bit, minimizing errors in digital communication and useful for smoothly transitioning states in codes.",
+            "tags": [
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gray_code"
+            ]
+        },
+        "Halftoning": {
+            "name": "Halftoning",
+            "description": "Halftoning is an image processing technique that simulates continuous tone imagery through the use of varying sizes or spacing of dots to represent different shades of gray or color.",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "MonocularDepthEstimation": {
+            "name": "Monocular depth estimation",
+            "description": "Monocular depth estimation is an image processing technique that predicts the distance of objects from a single two-dimensional image by analyzing visual cues and spatial relationships.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/DepthAnything/Depth-Anything-V2"
+            ]
+        },
+        "PixelSorting": {
+            "name": "Pixel Sorting",
+            "description": "Pixel Sorting is an image processing technique that rearranges the pixels of an image based on specific criteria such as brightness or color values to create visually striking distortions.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://satyarth.me/articles/pixel-sorting/"
+            ]
+        },
+        "EdgeDetection": {
+            "name": "Edge detection",
+            "description": "Edge detection is an image processing technique that identifies and highlights the boundaries within images by detecting sharp changes in brightness or color, enabling the extraction of meaningful structural information.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edge_detection"
+            ]
+        },
+        "DistanceTransform": {
+            "name": "Distance transform",
+            "description": "istance transform is an image processing technique that converts a binary image into a representation where each pixel's value indicates the shortest distance to the nearest boundary or feature pixel.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Distance_transform"
+            ]
+        },
+        "PoissonFill": {
+            "name": "Poisson fill",
+            "description": "Poisson fill is a technique in image processing that solves the discrete Poisson equation to seamlessly blend and reconstruct image regions by diffusing pixel information from surrounding areas.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_Poisson_equation"
+            ]
+        },
+        "Dithering": {
+            "name": "Dithering",
+            "description": "Dithering is a technique in image processing that reduces color banding by strategically arranging pixels of different colors to simulate additional shades and gradients.",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "DCT": {
+            "name": "DCT (Discrete Cosine Transform)",
+            "description": "The Discrete Cosine Transform is a mathematical technique used in image processing to convert spatial data into frequency components, enabling efficient compression and analysis by representing a signal as a sum of cosine functions oscillating at different frequencies.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "CannyEdgeDetection": {
+            "name": "Canny edge detection",
+            "description": "Canny edge detection is an image processing technique that identifies sharp changes in intensity by smoothing the image with a Gaussian filter, computing gradient magnitude and direction, suppressing non-maximum pixels, and applying double thresholding with edge tracking to accurately detect edges.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Canny_edge_detector"
+            ]
+        },
+        "IDCT": {
+            "name": "Inverse DCT (Discrete Cosine Transform)",
+            "description": "Inverse DCT is a mathematical technique used in image processing to reconstruct spatial domain data from frequency domain coefficients by applying the inverse of the Discrete Cosine Transform, which expresses a finite sequence of data points as a sum of cosine functions oscillating at different frequencies.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "HistogramEqualization": {
+            "name": "Histogram equalization",
+            "description": "Histogram equalization is an image processing technique that enhances contrast by redistributing the intensity values of pixels to achieve a uniform histogram distribution, thereby improving the visibility of details across different brightness levels.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Histogram_equalization"
+            ]
+        },
+        "ImageQuantization": {
+            "name": "Image quantization",
+            "description": "Image quantization in image processing is a technique that reduces the number of distinct colors in an image by mapping continuous color values to a limited set of representative colors, thereby simplifying the image data while preserving visual similarity.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
+                "https://en.wikipedia.org/wiki/Color_quantization"
+            ]
+        },
+        "GaussianBlur": {
+            "name": "GaussianBlur",
+            "description": "GaussianBlur is an image processing technique that smooths an image by applying a Gaussian function to reduce detail and noise, resulting in a soft and blurred effect.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gaussian_blur"
+            ]
+        },
+        "Blur": {
+            "name": "Blur",
+            "description": "Blur in image processing involves smoothing an image by averaging the color values of neighboring pixels, as exemplified by the Box blur method which replaces each pixel with the average of pixels within a rectangular area around it",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Box_blur"
+            ]
+        },
+        "ForceDirectedGraphDrawing": {
+            "name": "Force-directed graph drawing",
+            "description": "Force-directed graph drawing is a computer graphics technique that positions the nodes of a graph by simulating physical forces such as attraction and repulsion to produce visually balanced layouts.",
+            "tags": [
+                "graph",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+            ]
+        },
+        "VoronoiDiagram": {
+            "name": "Voronoi diagram",
+            "description": "A Voronoi diagram is a graph-based tessellation method that partitions a plane into regions based on the distance to a specific set of points, where each region consists of all locations closer to one point than to any other.",
+            "tags": [
+                "graph"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Voronoi_diagram"
+            ]
+        },
+        "GraphSignalProcessing": {
+            "name": "Graph signal processing",
+            "description": "Graph signal processing is a method that analyzes and transforms data defined on the nodes of a graph to extract meaningful patterns and features using mathematical operations.",
+            "tags": [
+                "graph",
+                "signal processing"
+            ]
+        },
+        "Flocking": {
+            "name": "Flocking",
+            "description": "Flocking is a simulation technique that models the collective behavior of decentralized, self-organized agents following simple rules of alignment, cohesion, and separation to create realistic group movements.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Flocking"
+            ]
+        },
+        "FluidSimulation": {
+            "name": "Fluid simulation",
+            "description": "Fluid simulation is a computational technique that models the behavior and movement of liquids and gases using mathematical algorithms derived from computational fluid dynamics to create realistic animations and effects.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
+            ]
+        },
+        "DifferentialGrowth": {
+            "name": "Differential growth",
+            "description": "Differential growth is a simulation technique that models the expansion and interaction of connected elements by incrementally adjusting their positions based on local forces to create complex, organic patterns.",
+            "tags": [
+                "simulation"
+            ]
+        },
+        "GradientDescent": {
+            "name": "Gradient descent",
+            "description": "Gradient descent is an optimization algorithm used in simulation to iteratively adjust parameters by moving them in the direction of the steepest decrease of a function's gradient to find its minimum.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gradient_descent"
+            ]
+        },
+        "InverseKinematics": {
+            "name": "Inverse kinematics",
+            "description": "Inverse kinematics is a simulation technique used to calculate the joint parameters of a chain-like structure so that its end point reaches a desired position, enabling realistic and controlled movement.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inverse_kinematics"
+            ]
+        },
+        "ReactionDiffusion": {
+            "name": "Reaction Diffusion",
+            "description": "Reaction Diffusion is a simulation technique that models the process of chemicals spreading and interacting over time and space to form complex patterns based on the mathematical principles described in the referenced Wikipedia article.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
+            ]
+        },
+        "DiffusionLimitedAggregation": {
+            "name": "Diffusion limited aggregation",
+            "description": "Diffusion-limited aggregation is a simulation technique where particles undergoing random motion cluster together upon contact to form complex fractal patterns, modeling growth processes seen in natural systems.",
+            "tags": [
+                "simulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
             ]
         },
         "SimplexNoise": {
             "name": "Simplex Noise",
+            "description": "Simplex Noise is a gradient noise technique that generates smooth, continuous patterns efficiently across multiple dimensions, often used in procedural textures and animations for natural-looking variations.",
             "tags": [
                 "noise"
             ],
@@ -29,11 +286,22 @@
         },
         "WorleyNoise": {
             "name": "Worley noise",
+            "description": "Worley noise is a procedural texture generation technique that creates patterns by computing the distance to the nearest feature point within a spatial grid, producing natural-looking cellular structures often used in noise applications.",
             "tags": [
                 "noise"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Worley_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "description": "Fractal Brownian Motion noise is a method that combines multiple layers of noise, each with increasing frequency and decreasing amplitude, to produce a smooth and natural-looking pink noise texture.",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
             ]
         },
         "PerlinNoise": {
@@ -46,194 +314,19 @@
                 "https://en.wikipedia.org/wiki/Perlin_noise"
             ]
         },
-        "Attractor": {
-            "name": "Attractor",
+        "ValueNoise": {
+            "name": "Value noise",
+            "description": "Value noise is a procedural noise technique that generates smooth, continuous random values by interpolating randomly assigned values at grid points, often used to create natural-looking textures and patterns in graphics.",
             "tags": [
-                "fractal",
-                "computer graphics"
+                "noise"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Attractor"
-            ]
-        },
-        "CliffordAttractor": {
-            "name": "Clifford attractor",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/clifford/"
-            ]
-        },
-        "DeJongAttractor": {
-            "name": "De Jong Attractor",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/peterdejong/"
-            ]
-        },
-        "JuliaSet": {
-            "name": "Julia set",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Julia_set"
-            ]
-        },
-        "WangTiling": {
-            "name": "Wang tiling",
-            "tags": [
-                "tiling",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wang_tile"
-            ]
-        },
-        "SubstitutionTiling": {
-            "name": "Substitution tiling",
-            "tags": [
-                "tiling",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Substitution_tiling"
-            ]
-        },
-        "PinwheelTiling": {
-            "name": "Pinwheel tiling",
-            "tags": [
-                "tiling",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
-            ]
-        },
-        "PenroseTiling": {
-            "name": "Penrose tiling",
-            "tags": [
-                "tiling",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Penrose_tiling"
-            ]
-        },
-        "ConvexHull": {
-            "name": "Convex hull",
-            "tags": [
-                "geometry",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Convex_hull"
-            ]
-        },
-        "AlphaShape": {
-            "name": "Alpha shape",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Alpha_shape"
-            ]
-        },
-        "CircleInversion": {
-            "name": "Circle inversion",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inversive_geometry"
-            ]
-        },
-        "TurtleGraphics": {
-            "name": "Turtle graphics",
-            "tags": [
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
-            ]
-        },
-        "Flocking": {
-            "name": "Flocking",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Flocking"
-            ]
-        },
-        "ReactionDiffusion": {
-            "name": "Reaction Diffusion",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system"
-            ]
-        },
-        "DiffusionLimitedAggregation": {
-            "name": "Diffusion limited aggregation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
-            ]
-        },
-        "InverseKinematics": {
-            "name": "Inverse kinematics",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inverse_kinematics"
-            ]
-        },
-        "FluidSimulation": {
-            "name": "Fluid simulation",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Computational_fluid_dynamics"
-            ]
-        },
-        "GradientDescent": {
-            "name": "Gradient descent",
-            "tags": [
-                "simulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gradient_descent"
-            ]
-        },
-        "DifferentialGrowth": {
-            "name": "Differential growth",
-            "tags": [
-                "simulation"
-            ]
-        },
-        "GrayCode": {
-            "name": "Gray code",
-            "tags": [
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
+                "https://en.wikipedia.org/wiki/Value_noise"
             ]
         },
         "Guilloche": {
             "name": "Guilloché patterns",
+            "description": "Guilloché patterns are intricate, repetitive geometric designs generated through precise mathematical curves and loops, often created algorithmically to produce visually complex motifs used in computer graphics and patterns.",
             "tags": [
                 "computer graphics"
             ],
@@ -241,111 +334,29 @@
                 "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
             ]
         },
-        "BezierSurface": {
-            "name": "Bézier surface",
+        "Easing": {
+            "name": "Easing",
+            "description": "Easing is a technique in animation that gradually changes the speed of a motion to create smooth, natural transitions between key frames.",
             "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
+                "animation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
+                "https://easings.net/"
             ]
         },
-        "Nurbs": {
-            "name": "NURBS",
+        "KeyframeInterpolation": {
+            "name": "Keyframe interpolation",
+            "description": "Keyframe interpolation is a technique in animation where intermediate frames are automatically generated between specified keyframes to create smooth transitions.",
             "tags": [
-                "curves"
+                "animation"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
-            ]
-        },
-        "Smoothstep": {
-            "name": "Smoothstep function",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Smoothstep"
-            ]
-        },
-        "HilbertCurve": {
-            "name": "Hilbert Curve",
-            "tags": [
-                "curves",
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Hilbert_curve"
-            ]
-        },
-        "CatmullRomSpline": {
-            "name": "Catmull-Rom spline",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
-            ]
-        },
-        "BezierCurve": {
-            "name": "Bézier curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
-            ]
-        },
-        "Clamp": {
-            "name": "Clamp",
-            "references": [
-                "https://en.wikipedia.org/wiki/Clamp_(function)"
-            ]
-        },
-        "BezierTriangle": {
-            "name": "Bézier triangle",
-            "tags": [
-                "curves",
-                "surfaces",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
-            ]
-        },
-        "RoseCurves": {
-            "name": "Rose curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
-            ]
-        },
-        "ZOrderCurve": {
-            "name": "Z-order curve",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Z-order_curve"
-            ]
-        },
-        "LissajousCurves": {
-            "name": "Lissajous curves",
-            "tags": [
-                "curves"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Lissajous_curve"
+                "https://en.wikipedia.org/wiki/Key_frame"
             ]
         },
         "EditDistance": {
             "name": "Edit distance",
+            "description": "Edit distance is a measure of similarity between two text strings, defined as the minimum number of insertions, deletions, or substitutions required to transform one string into the other.",
             "tags": [
                 "text"
             ],
@@ -355,6 +366,7 @@
         },
         "LevenshteinDistance": {
             "name": "Levenshtein distance",
+            "description": "Levenshtein distance is a metric that measures the minimum number of single-character edits, including insertions, deletions, or substitutions, required to change one piece of text into another, enabling precise comparison and manipulation of string data.",
             "tags": [
                 "text"
             ],
@@ -362,71 +374,9 @@
                 "https://en.wikipedia.org/wiki/Levenshtein_distance"
             ]
         },
-        "Clustering": {
-            "name": "Clustering",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
-            ]
-        },
-        "PredictiveText": {
-            "name": "Predictive text",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "tags": [
-                "machine learning"
-            ]
-        },
-        "tSNE": {
-            "name": "t-SNE",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
-            ]
-        },
-        "CellularAutomata": {
-            "name": "Cellular automata",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cellular_automaton"
-            ]
-        },
-        "ConwaysGameOfLife": {
-            "name": "Conway's Game of Life",
-            "tags": [
-                "cellular automata",
-                "automata"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
-            ]
-        },
-        "RegularExpressions": {
-            "name": "Regular expressions",
-            "tags": [
-                "automata",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Regular_expression"
-            ]
-        },
         "Heightfield": {
             "name": "Heightfield",
+            "description": "In computer graphics, the heightfield technique represents a three-dimensional surface by using a two-dimensional heightmap, where each pixel's intensity corresponds to the elevation at that point, enabling efficient terrain modeling and rendering.",
             "tags": [
                 "computer graphics"
             ],
@@ -434,168 +384,9 @@
                 "https://en.wikipedia.org/wiki/Heightmap"
             ]
         },
-        "SphericalHarmonics": {
-            "name": "Spherical Harmonics",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Spherical_harmonics",
-                "https://paulbourke.net/geometry/sphericalh/"
-            ]
-        },
-        "FlowField": {
-            "name": "Flow field",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Vector_field"
-            ]
-        },
-        "PolygonClipping": {
-            "name": "Polygon clipping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Clipping_(computer_graphics)",
-                "https://en.wikipedia.org/wiki/Boolean_operations_on_polygons"
-            ]
-        },
-        "MarchingTetrahedra": {
-            "name": "Marching tetrahedra",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Marching_tetrahedra"
-            ]
-        },
-        "IsometricProjection": {
-            "name": "Isometric projection",
-            "tags": [
-                "computer graphics",
-                "graphical projection"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Isometric_projection"
-            ]
-        },
-        "Octree": {
-            "name": "Octree",
-            "tags": [
-                "computer graphics",
-                "space partitioning",
-                "data structure"
-            ]
-        },
-        "StereographicProjection": {
-            "name": "Stereographic Projection",
-            "tags": [
-                "computer graphics",
-                "graphical projection"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Stereographic_projection"
-            ]
-        },
-        "HobbyCurve": {
-            "name": "Hobby Curve",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://www.jakelow.com/blog/hobby-curves"
-            ]
-        },
-        "MarchingCubes": {
-            "name": "Marching cubes",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Marching_cubes"
-            ]
-        },
-        "OrthogonalProjection": {
-            "name": "Orthogonal projection",
-            "tags": [
-                "computer graphics",
-                "graphical projection"
-            ]
-        },
-        "PolygonTriangulation": {
-            "name": "Polygon triangulation",
-            "tags": [
-                "computer graphics",
-                "triangulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Polygon_triangulation"
-            ]
-        },
-        "PathTracing": {
-            "name": "Path Tracing",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Path_tracing"
-            ]
-        },
-        "RamerDouglasPeucker": {
-            "name": "Ramer-Douglas-Peucker Algorithm",
-            "tags": [
-                "curves",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
-            ]
-        },
-        "KDTree": {
-            "name": "Kd-tree",
-            "tags": [
-                "space partitioning",
-                "computer graphics",
-                "data structure"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/K-d_tree"
-            ]
-        },
-        "DomainWarping": {
-            "name": "Domain warping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://iquilezles.org/articles/warp/"
-            ]
-        },
-        "Turtle": {
-            "name": "Turtle graphics",
-            "tags": [
-                "computer graphics",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
-            ]
-        },
-        "BumpMapping": {
-            "name": "Bump mapping",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Bump_mapping"
-            ]
-        },
         "PerspectiveProjection": {
             "name": "Perspective projection",
+            "description": "Perspective projection is a graphical projection technique in computer graphics that simulates the way objects appear smaller as they get farther from the viewer, creating a sense of depth by mapping three-dimensional points onto a two-dimensional plane.",
             "tags": [
                 "computer graphics",
                 "graphical projection"
@@ -604,26 +395,41 @@
                 "https://en.wikipedia.org/wiki/Perspective_(graphical)"
             ]
         },
-        "GaussianSplatting": {
-            "name": "Gaussian splatting",
+        "RayTracing": {
+            "name": "Ray Tracing",
+            "description": "Ray Tracing is a computer graphics technique that simulates the way rays of light travel through a scene to produce highly realistic images by calculating color, shadows, reflections, and refractions along their paths.",
             "tags": [
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Heightmap"
+                "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
             ]
         },
-        "MarchingSquares": {
-            "name": "Marching squares",
+        "PolygonTriangulation": {
+            "name": "Polygon triangulation",
+            "description": "In computer graphics, polygon triangulation is the process of dividing a polygon into a set of non-overlapping triangles, enabling efficient rendering and mesh manipulation.",
+            "tags": [
+                "computer graphics",
+                "triangulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Polygon_triangulation"
+            ]
+        },
+        "SphericalHarmonics": {
+            "name": "Spherical Harmonics",
+            "description": "Spherical Harmonics are mathematical functions defined on the surface of a sphere used in computer graphics to efficiently represent and approximate complex lighting and shading by decomposing spherical signals into a series of basis functions",
             "tags": [
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Marching_squares"
+                "https://en.wikipedia.org/wiki/Spherical_harmonics",
+                "https://paulbourke.net/geometry/sphericalh/"
             ]
         },
         "QuadTree": {
             "name": "Quad tree",
+            "description": "A quadtree is a data structure used in computer graphics for space partitioning, which recursively divides a two-dimensional area into four quadrants or regions to efficiently manage and locate spatial information.",
             "tags": [
                 "computer graphics",
                 "space partitioning"
@@ -632,8 +438,201 @@
                 "https://en.wikipedia.org/wiki/Quadtree"
             ]
         },
+        "RamerDouglasPeucker": {
+            "name": "Ramer-Douglas-Peucker Algorithm",
+            "description": "The Ramer-Douglas-Peucker Algorithm is a method used in curves and computer graphics to reduce the number of points in a curve by recursively removing points that are within a specified distance threshold from a line segment connecting key points, preserving the overall shape while simplifying the data.",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm"
+            ]
+        },
+        "IsometricProjection": {
+            "name": "Isometric projection",
+            "description": "Isometric projection is a graphical projection technique in computer graphics that represents three-dimensional objects in two dimensions by equally foreshortening the axes at 120-degree angles, preserving scale without perspective distortion.",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Isometric_projection"
+            ]
+        },
+        "OrthogonalProjection": {
+            "name": "Orthogonal projection",
+            "description": "Orthogonal projection is a graphical projection technique in computer graphics that represents three-dimensional objects on a two-dimensional plane by projecting points along parallel lines perpendicular to the projection plane",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ]
+        },
+        "BumpMapping": {
+            "name": "Bump mapping",
+            "description": "Bump mapping is a computer graphics technique that simulates small surface details by altering the surface normals to create the illusion of texture and depth without changing the actual geometry.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Bump_mapping"
+            ]
+        },
+        "MarchingSquares": {
+            "name": "Marching squares",
+            "description": "Marching squares is a computer graphics algorithm that processes a two-dimensional scalar field by examining each square of four grid points to determine contour lines that represent constant values within the field, enabling efficient extraction of isocontours.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_squares"
+            ]
+        },
+        "LSystems": {
+            "name": "L-systems",
+            "description": "L-systems are a mathematical formalism consisting of an initial string and production rules that iteratively replace characters to generate complex patterns and structures, widely used in computer graphics for simulating plant growth and fractal-like forms.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/L-system"
+            ]
+        },
+        "FlowField": {
+            "name": "Flow field",
+            "description": "A flow field is a vector field that assigns a direction and magnitude to every point in a space, guiding the movement of particles or shapes to create dynamic, visually engaging patterns in computer graphics.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Vector_field"
+            ]
+        },
+        "Bloom": {
+            "name": "Bloom",
+            "description": "Bloom is a computer graphics technique that enhances bright areas of an image by creating a soft glow effect around them through the use of thresholding and blurring of intense light regions.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Bloom_(shader_effect)"
+            ]
+        },
+        "Octree": {
+            "name": "Octree",
+            "description": "An octree is a tree data structure used in computer graphics for efficient space partitioning by recursively dividing a three-dimensional space into eight octants to organize and manage spatial information.",
+            "tags": [
+                "computer graphics",
+                "space partitioning",
+                "data structure"
+            ]
+        },
+        "DomainWarping": {
+            "name": "Domain warping",
+            "description": "Domain warping is a technique in computer graphics where input coordinates of a function are distorted or transformed before evaluation, creating complex and visually rich patterns.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://iquilezles.org/articles/warp/"
+            ]
+        },
+        "MarchingCubes": {
+            "name": "Marching cubes",
+            "description": "Marching cubes is a computer graphics algorithm that generates a polygonal mesh of an isosurface from three-dimensional scalar field data by iteratively evaluating and triangulating cube-shaped regions within the data volume.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_cubes"
+            ]
+        },
+        "Duotone": {
+            "name": "Duotone",
+            "description": "Duotone is a print technique that enhances an image by combining two halftone screens of different colors to create depth and tonal complexity.",
+            "tags": [
+                "print"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Duotone"
+            ]
+        },
+        "StereographicProjection": {
+            "name": "Stereographic Projection",
+            "description": "Stereographic projection is a graphical projection technique in computer graphics that maps points from a sphere onto a plane by projecting them from a point on the sphere opposite the plane, preserving angles but not areas",
+            "tags": [
+                "computer graphics",
+                "graphical projection"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Stereographic_projection"
+            ]
+        },
+        "DelaunayTriangulation": {
+            "name": "Delaunay triangulation",
+            "description": "Delaunay triangulation is a computer graphics technique that constructs a network of triangles from a set of points such that no point lies inside the circumcircle of any triangle, optimizing for triangles with large minimum angles to avoid skinny shapes in triangulation.",
+            "tags": [
+                "computer graphics",
+                "triangulation"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Delaunay_triangulation"
+            ]
+        },
+        "Turtle": {
+            "name": "Turtle graphics",
+            "description": "Turtle graphics is a method in computer graphics that uses a cursor, controlled by simple commands to move and draw lines on a two-dimensional vector graphics plane, allowing the creation of complex images through iterative instructions.",
+            "tags": [
+                "computer graphics",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
+            ]
+        },
+        "PathTracing": {
+            "name": "Path Tracing",
+            "description": "Path tracing is a computer graphics technique that simulates the way light travels and interacts with surfaces by tracing random paths of light rays to produce highly realistic images through global illumination effects.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Path_tracing"
+            ]
+        },
+        "CirclePacking": {
+            "name": "Circle packing",
+            "description": "Filling regions with non-overlapping circles",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Circle_packing"
+            ]
+        },
+        "ChromaticAberration": {
+            "name": "Chromatic aberration",
+            "description": "Chromatic aberration in computer graphics is a visual effect that simulates the dispersion of light into separate color components by slightly shifting the red, green, and blue channels to create a distorted, color-fringed image, mimicking optical phenomena.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Chromatic_aberration"
+            ]
+        },
+        "MarchingTetrahedra": {
+            "name": "Marching tetrahedra",
+            "description": "Marching tetrahedra is a computer graphics algorithm that generates a polygonal mesh by dividing a scalar field into tetrahedral cells and interpolating isosurfaces within each cell to create smooth, artifact-free 3D surfaces.",
+            "tags": [
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Marching_tetrahedra"
+            ]
+        },
         "SignedDistanceFunctions": {
             "name": "Signed Distance Functions",
+            "description": " A signed distance function is a mathematical function in computer graphics that returns the shortest distance from any point in space to the surface of a shape, with the distance value being negative inside the shape and positive outside.",
             "tags": [
                 "computer graphics"
             ],
@@ -643,32 +642,26 @@
         },
         "HalfEdgeMesh": {
             "name": "Half-edge mesh",
+            "description": "Half-edge mesh is a computer graphics data structure that represents polygonal surfaces by storing edges along with their adjacent vertices, faces, and opposite edges, enabling efficient traversal and manipulation of mesh geometry.",
             "tags": [
                 "computer graphics",
                 "data structure"
             ]
         },
-        "DelaunayTriangulation": {
-            "name": "Delaunay triangulation",
+        "HobbyCurve": {
+            "name": "Hobby Curve",
+            "description": "Hobby Curve is a mathematical method for generating smooth, visually appealing curves by calculating control points that ensure continuous curvature and minimal bending in curves used in computer graphics.",
             "tags": [
-                "computer graphics",
-                "triangulation"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Delaunay_triangulation"
-            ]
-        },
-        "CirclePacking": {
-            "name": "Circle packing",
-            "tags": [
+                "curves",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Circle_packing"
+                "https://www.jakelow.com/blog/hobby-curves"
             ]
         },
         "RayMarching": {
             "name": "Ray Marching",
+            "description": "Ray Marching is a computer graphics technique that renders scenes by iteratively advancing along a ray in small steps determined by the minimum distance to objects, allowing complex implicit surfaces and volumes to be efficiently visualized.",
             "tags": [
                 "computer graphics"
             ],
@@ -676,49 +669,47 @@
                 "https://en.wikipedia.org/wiki/Ray_marching"
             ]
         },
-        "Bloom": {
-            "name": "Bloom",
+        "KDTree": {
+            "name": "Kd-tree",
+            "description": "Kd-tree is a space partitioning data structure used in computer graphics to organize points in a k-dimensional space for efficient querying and retrieval.",
+            "tags": [
+                "space partitioning",
+                "computer graphics",
+                "data structure"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/K-d_tree"
+            ]
+        },
+        "PolygonClipping": {
+            "name": "Polygon clipping",
+            "description": "Polygon clipping is a computer graphics technique that involves cutting or combining polygons by applying Boolean operations to restrict rendering to specific regions within a viewport.",
             "tags": [
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Bloom_(shader_effect)"
+                "https://en.wikipedia.org/wiki/Clipping_(computer_graphics)",
+                "https://en.wikipedia.org/wiki/Boolean_operations_on_polygons"
             ]
         },
-        "LSystems": {
-            "name": "L-systems",
+        "GaussianSplatting": {
+            "name": "Gaussian splatting",
+            "description": "Gaussian splatting is a computer graphics technique that renders smooth surfaces by representing heightmap data as overlapping Gaussian functions, allowing efficient and visually appealing interpolation of elevation values.",
             "tags": [
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/L-system"
+                "https://en.wikipedia.org/wiki/Heightmap"
             ]
         },
-        "ChromaticAberration": {
-            "name": "Chromatic aberration",
+        "FFT": {
+            "name": "Fast fourier transform",
+            "description": "The Fast Fourier Transform is an efficient algorithm that quickly computes the discrete Fourier transform and its inverse, enabling advanced signal processing by decomposing complex data into its frequency components.",
             "tags": [
-                "computer graphics"
+                "signal processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Chromatic_aberration"
-            ]
-        },
-        "RayTracing": {
-            "name": "Ray Trarching",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"
-            ]
-        },
-        "Duotone": {
-            "name": "Duotone",
-            "tags": [
-                "print"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Duotone"
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
             ]
         },
         "InfiniteImpulseResponse": {
@@ -732,6 +723,7 @@
         },
         "FiniteImpulseResponse": {
             "name": "Finite impulse response",
+            "description": "Finite impulse response is a signal processing technique that computes each output value as a weighted sum of current and past input values without using feedback, ensuring stability and a finite duration response.",
             "tags": [
                 "signal processing"
             ],
@@ -739,182 +731,300 @@
                 "https://en.wikipedia.org/wiki/Finite_impulse_response"
             ]
         },
-        "FFT": {
-            "name": "Fast fourier transform",
+        "SubstitutionTiling": {
+            "name": "Substitution tiling",
+            "description": "Substitution tiling is a method in computer graphics that generates complex, non-periodic patterns by recursively replacing shapes with arrangements of smaller shapes according to specific rules, as detailed on Wikipedia's Substitution tiling page.",
             "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
-            ]
-        },
-        "GraphSignalProcessing": {
-            "name": "Graph signal processing",
-            "tags": [
-                "graph",
-                "signal processing"
-            ]
-        },
-        "VoronoiDiagram": {
-            "name": "Voronoi diagram",
-            "tags": [
-                "graph"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Voronoi_diagram"
-            ]
-        },
-        "ForceDirectedGraphDrawing": {
-            "name": "Force-directed graph drawing",
-            "tags": [
-                "graph",
+                "tiling",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+                "https://en.wikipedia.org/wiki/Substitution_tiling"
             ]
         },
-        "Easing": {
-            "name": "Easing",
+        "WangTiling": {
+            "name": "Wang tiling",
+            "description": "Wang tiling is a method in computer graphics where square tiles with colored edges are arranged on a grid so that adjacent tiles share matching edge colors, enabling the creation of complex, non-repetitive patterns for efficient texture generation and procedural content design.",
             "tags": [
-                "animation"
+                "tiling",
+                "computer graphics"
             ],
             "references": [
-                "https://easings.net/"
+                "https://en.wikipedia.org/wiki/Wang_tile"
             ]
         },
-        "KeyframeInterpolation": {
-            "name": "Keyframe interpolation",
+        "PinwheelTiling": {
+            "name": "Pinwheel tiling",
+            "description": "Pinwheel tiling is a non-periodic method of covering a plane with right triangles of varying orientations generated through recursive subdivision, creating visually complex patterns useful in tiling and computer graphics.",
             "tags": [
-                "animation"
+                "tiling",
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Key_frame"
+                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
             ]
         },
-        "HistogramEqualization": {
-            "name": "Histogram equalization",
+        "PenroseTiling": {
+            "name": "Penrose tiling",
+            "description": "Penrose tiling is a method of covering a plane with a set of non-periodic shapes called kites and darts that fit together without gaps or overlaps, producing an aperiodic pattern used in tiling and computer graphics.",
             "tags": [
+                "tiling",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Penrose_tiling"
+            ]
+        },
+        "DeJongAttractor": {
+            "name": "De Jong Attractor",
+            "description": "The De Jong Attractor is a mathematical system that generates complex, non-repeating patterns by iterating simple trigonometric equations, resulting in visually intricate fractal structures commonly explored in computer graphics.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/peterdejong/"
+            ]
+        },
+        "JuliaSet": {
+            "name": "Julia set",
+            "description": "The Julia set is a fractal generated in computer graphics by iterating a complex function and classifying points based on their behavior under repeated application, producing intricate and self-similar patterns.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Julia_set"
+            ]
+        },
+        "Attractor": {
+            "name": "Attractor",
+            "description": "An attractor is a set of numerical values toward which a system tends to evolve over time in fractal patterns, often visualized in computer graphics to represent the long-term behavior of dynamic systems.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Attractor"
+            ]
+        },
+        "CliffordAttractor": {
+            "name": "Clifford attractor",
+            "description": "The Clifford attractor is a mathematical formula that generates complex, fractal patterns through iterative calculations, commonly used in computer graphics to create visually intricate and dynamic structures.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/clifford/"
+            ]
+        },
+        "Smoothstep": {
+            "name": "Smoothstep function",
+            "description": "The smoothstep function is a mathematical interpolation technique that produces a gradual, curve-shaped transition between two edges, ensuring smooth changes without abrupt jumps or sharp corners.",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Smoothstep"
+            ]
+        },
+        "RoseCurves": {
+            "name": "Rose curves",
+            "description": "Rose curves are mathematical plane curves defined by the polar equation r equals a times cosine k theta or sine k theta, producing symmetrical petal-like patterns whose number and shape depend on the value of k.",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Rose_(mathematics)"
+            ]
+        },
+        "BezierCurve": {
+            "name": "Bézier curve",
+            "description": "A Bézier curve is a mathematically defined curve frequently used in computer graphics to model smooth and scalable curves through a set of control points, enabling precise control over the shape of the curve.",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_curve"
+            ]
+        },
+        "Nurbs": {
+            "name": "NURBS",
+            "description": "NURBS is a mathematical model that represents complex curves by using weighted control points and non-uniform parameterization to accurately define smooth and flexible shapes within the tag curves.",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline"
+            ]
+        },
+        "BezierTriangle": {
+            "name": "Bézier triangle",
+            "description": "A Bézier triangle is a mathematical representation used in computer graphics to create smooth curved surfaces by blending control points within a triangular domain, extending the concept of Bézier curves to two-dimensional surfaces.",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_triangle"
+            ]
+        },
+        "LissajousCurves": {
+            "name": "Lissajous curves",
+            "description": "Lissajous curves are complex graphs formed by the parametric equations involving sine functions with varying frequencies and phase differences, creating intricate and smooth periodic curves often used to explore harmonic motion in the plane, as detailed on the referenced Wikipedia page.",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Lissajous_curve"
+            ]
+        },
+        "HilbertCurve": {
+            "name": "Hilbert Curve",
+            "description": "The Hilbert Curve is a continuous fractal space-filling curve that recursively maps a one-dimensional line onto a two-dimensional plane, preserving locality and exhibiting self-similarity, often implemented in codes to generate intricate curves with practical applications in data indexing and image processing.",
+            "tags": [
+                "curves",
+                "codes"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Hilbert_curve"
+            ]
+        },
+        "CatmullRomSpline": {
+            "name": "Catmull-Rom spline",
+            "description": "Catmull-Rom spline is a type of cubic Hermite spline used in curves and computer graphics that generates smooth interpolating curves passing through a given set of control points by automatically calculating tangents based on neighboring points.",
+            "tags": [
+                "curves",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull%E2%80%93Rom_spline"
+            ]
+        },
+        "ZOrderCurve": {
+            "name": "Z-order curve",
+            "description": "Z-order curve is a space-filling curve that maps multi-dimensional data to one dimension while preserving spatial locality by interleaving the binary representations of coordinate values, often used in graphics and data indexing for efficient spatial querying, under the broader category of curves.",
+            "tags": [
+                "curves"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Z-order_curve"
+            ]
+        },
+        "Clamp": {
+            "name": "Clamp",
+            "description": "The clamp function restricts a value to lie within a specified minimum and maximum range by returning the minimum if the value is below it, the maximum if the value is above it, or the value itself if it is within the range.",
+            "references": [
+                "https://en.wikipedia.org/wiki/Clamp_(function)"
+            ]
+        },
+        "BezierSurface": {
+            "name": "Bézier surface",
+            "description": "A Bézier surface is a parametric surface defined by a set of control points that use weighted combinations of curves to create smooth and flexible shapes commonly employed in computer graphics for modeling complex surfaces.",
+            "tags": [
+                "curves",
+                "surfaces",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
+            ]
+        },
+        "tSNE": {
+            "name": "t-SNE",
+            "description": "T-SNE is a machine learning technique that reduces the dimensionality of complex datasets by modeling high-dimensional similarities with probabilities and then optimizing a low-dimensional representation to preserve these probabilities.",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "Umap": {
+            "name": "UMAP",
+            "description": "UMAP is a machine learning technique that reduces high-dimensional data into a lower-dimensional space while preserving the essential structure, enabling clearer visualization and analysis.",
+            "tags": [
+                "machine learning"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "description": "Predictive text is a technique that uses machine learning algorithms to analyze input patterns and suggest or complete words or phrases, enhancing the efficiency of text entry by anticipating the user's intended message based on learned data.",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
+            ]
+        },
+        "Clustering": {
+            "name": "Clustering",
+            "description": "Clustering is a machine learning technique that involves grouping a set of objects so that those within the same group have higher similarity to each other than to those in other groups, as described in cluster analysis.",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
+        "CircleInversion": {
+            "name": "Circle inversion",
+            "description": "Circle inversion is a geometric transformation that maps each point in the plane to a new point along the line connecting it to a fixed center, such that the product of their distances from this center equals the square of a given radius, effectively transforming shapes while preserving angles and producing visually striking patterns.",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inversive_geometry"
+            ]
+        },
+        "AlphaShape": {
+            "name": "Alpha shape",
+            "description": "Alpha shape is a geometry technique that generalizes the concept of the convex hull by capturing the intuitive shape of a discrete point set based on a parameter alpha, controlling the level of detail in the resulting shape.",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Alpha_shape"
+            ]
+        },
+        "ConvexHull": {
+            "name": "Convex hull",
+            "description": "The convex hull is a fundamental geometry technique in computer graphics that constructs the smallest convex polygon enclosing a given set of points.",
+            "tags": [
+                "geometry",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Convex_hull"
+            ]
+        },
+        "TurtleGraphics": {
+            "name": "Turtle graphics",
+            "description": "Turtle graphics is a vector graphics technique that uses a cursor, or \"turtle,\" to draw lines and shapes by moving it across the screen according to specific commands for direction and distance, allowing precise control of graphical output.",
+            "tags": [
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
+            ]
+        },
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "description": "Tone mapping is a technique in photography and image processing that converts high dynamic range images into a format with lower dynamic range while preserving important visual details and contrast.",
+            "tags": [
+                "photography",
                 "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Histogram_equalization"
-            ]
-        },
-        "DCT": {
-            "name": "DCT (Discrete Cosine Transform)",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "EdgeDetection": {
-            "name": "Edge detection",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Edge_detection"
-            ]
-        },
-        "Halftoning": {
-            "name": "Halftoning",
-            "tags": [
-                "image processing"
-            ]
-        },
-        "GaussianBlur": {
-            "name": "GaussianBlur",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gaussian_blur"
-            ]
-        },
-        "ImageQuantization": {
-            "name": "Image quantization",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
-                "https://en.wikipedia.org/wiki/Color_quantization"
-            ]
-        },
-        "PixelSorting": {
-            "name": "Pixel Sorting",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://satyarth.me/articles/pixel-sorting/"
-            ]
-        },
-        "IDCT": {
-            "name": "Inverse DCT (Discrete Cosine Transform)",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "DistanceTransform": {
-            "name": "Distance transform",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Distance_transform"
-            ]
-        },
-        "CannyEdgeDetection": {
-            "name": "Canny edge detection",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Canny_edge_detector"
-            ]
-        },
-        "Blur": {
-            "name": "Blur",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Box_blur"
-            ]
-        },
-        "MonocularDepthEstimation": {
-            "name": "Monocular depth estimation",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/DepthAnything/Depth-Anything-V2"
-            ]
-        },
-        "Dithering": {
-            "name": "Dithering",
-            "tags": [
-                "image processing"
-            ]
-        },
-        "PoissonFill": {
-            "name": "Poisson fill",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_Poisson_equation"
+                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         },
         "Photogrammetry": {
             "name": "Photogrammetry",
+            "description": "Photogrammetry is a technique that uses multiple photographs to measure and reconstruct the exact shapes and spatial positions of objects, enabling the creation of accurate 3D models in photography and computer graphics.",
             "tags": [
                 "photography",
                 "computer graphics"
@@ -925,21 +1035,12 @@
         },
         "SlitScanning": {
             "name": "Slit-scanning",
+            "description": "Slit-scanning is a photography technique that captures a scene by recording a narrow slit of the image over time to create a continuous, time-based transformation of the subject.",
             "tags": [
                 "photography"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Slit-scan_photography"
-            ]
-        },
-        "ToneMapping": {
-            "name": "Tone mapping",
-            "tags": [
-                "photography",
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         }
     }
