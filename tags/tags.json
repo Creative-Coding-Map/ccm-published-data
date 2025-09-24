@@ -137,6 +137,9 @@
     "edge detection": {
         "description": "Edge detection refers to techniques and algorithms used to identify and highlight the boundaries or outlines within images by detecting changes in brightness or color intensity."
     },
+    "automata": {
+        "description": "A system or model composed of discrete units or states that evolve according to a set of rules or patterns over time."
+    },
     "gis": {
         "description": "Geographic information systems, including spatial data processing, mapping, and analysis using tools."
     },
@@ -166,9 +169,6 @@
     },
     "color": {
         "description": "Topics related to defining, manipulating, and applying colors within programming libraries and tools."
-    },
-    "automomata": {
-        "description": "A system or model composed of discrete units or states that evolve according to a set of rules or patterns over time."
     },
     "text": {
         "description": "Text refers to the representation, manipulation, and display of characters and strings in programming and digital applications."
