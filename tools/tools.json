@@ -1,27 +1,96 @@
 {
     "tools": {
-        "Ply": {
-            "name": "PLY",
+        "Zip": {
+            "name": "zip",
+            "description": "Zip is a file format that uses compression to reduce the size of one or more files, making storage and transfer more efficient.",
             "tags": [
                 "file format",
-                "3d graphics"
+                "compression"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/PLY_(file_format)"
+                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
             ]
         },
-        "Gltf": {
-            "name": "GLTF",
+        "Mp4": {
+            "name": "MP4",
+            "description": "MP4 is a file format designed for storing digital video and audio streams efficiently, supporting features such as multiple tracks and metadata for versatile multimedia applications.",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Fbx": {
+            "name": "Filmbox",
+            "description": "Filmbox is a file format designed for 3D graphics that enables the exchange and storage of complex animated models and scenes between different software applications.",
             "tags": [
                 "file format",
                 "3d graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Obj": {
+            "name": "Wavefront OBJ",
+            "description": "The Wavefront OBJ file format is a widely used standard in 3D graphics that stores geometric data such as vertices, faces, and textures to represent three-dimensional models for use in various digital applications.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Ogg": {
+            "name": "OGG",
+            "description": "Ogg is a free, open file format designed for efficient streaming and manipulation of high-quality audio data.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Mov": {
+            "name": "Quicktime MOV",
+            "description": "he QuickTime MOV file format is a multimedia container developed by Apple that supports storing video, audio, and text tracks in a single file, enabling flexible editing and playback.",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Html": {
+            "name": "HTML",
+            "description": "HTML is a file format used to structure and present content on the web, providing a standard way to create and organize elements such as text, images, and multimedia.",
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Collada": {
+            "name": "Collada",
+            "description": "Collada is an open standard file format used to store and exchange 3D graphics data, enabling interoperability between different software tools and platforms.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
             ]
         },
         "Usd": {
             "name": "USD",
+            "description": "USD is an open-source file format developed by Pixar for 3D graphics that enables the efficient interchange, composition, and collaboration of complex digital content across different software tools.",
             "tags": [
                 "file format",
                 "3d graphics"
@@ -30,54 +99,26 @@
                 "https://en.wikipedia.org/wiki/Universal_Scene_Description"
             ]
         },
-        "Gzip": {
-            "name": "gzip",
+        "Svg": {
+            "name": "SVG",
+            "description": "SVG is a file format that uses vector graphics to create and manipulate scalable, resolution-independent images through a structured XML-based language.",
             "tags": [
                 "file format",
-                "compression"
+                "vector graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Gzip"
+                "https://en.wikipedia.org/wiki/SVG"
             ]
         },
         "Css": {
             "name": "CSS",
+            "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language, typically saved in a file format that defines the look and formatting of text and other elements.",
             "tags": [
                 "file format",
                 "language"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Csv": {
-            "name": "CSV",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
-            ]
-        },
-        "Json": {
-            "name": "JSON",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
-        "Ogg": {
-            "name": "OGG",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
             ]
         },
         "Yaml": {
@@ -90,128 +131,9 @@
                 "https://en.wikipedia.org/wiki/YAML"
             ]
         },
-        "Stl": {
-            "name": "STL",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
-            ]
-        },
-        "Collada": {
-            "name": "Collada",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Jpg": {
-            "name": "JPEG",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
-            ]
-        },
-        "Obj": {
-            "name": "Wavefront OBJ",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Mp3": {
-            "name": "MP3",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Mov": {
-            "name": "Quicktime MOV",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Gif": {
-            "name": "GIF",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
-        "Html": {
-            "name": "HTML",
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Opus": {
-            "name": "Opus",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
-        "Svg": {
-            "name": "SVG",
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Fbx": {
-            "name": "Filmbox",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Wav": {
-            "name": "WAV",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
         "Xml": {
             "name": "XML",
+            "description": "XML is a file format designed to store and transport structured data in a readable and self-descriptive way, as detailed on Wikipedia.",
             "tags": [
                 "file format",
                 "structured data"
@@ -220,28 +142,42 @@
                 "https://en.wikipedia.org/wiki/XML"
             ]
         },
-        "Zip": {
-            "name": "zip",
+        "Csv": {
+            "name": "CSV",
+            "description": "The CSV file format is a simple and widely used method for storing structured data in plain text, where each line represents a data record and fields are separated by commas.",
             "tags": [
                 "file format",
-                "compression"
+                "structured data"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
             ]
         },
-        "Mp4": {
-            "name": "MP4",
+        "Opus": {
+            "name": "Opus",
+            "description": "Opus is an open, royalty-free audio file format designed for high-quality and low-latency audio compression, suitable for interactive applications and real-time communication.",
             "tags": [
                 "file format",
-                "video"
+                "audio"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Png": {
+            "name": "PNG",
+            "description": "PNG is a file format for raster graphics that supports lossless compression and transparency, widely used for creating high-quality images in various digital projects.",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
             ]
         },
         "Onnx": {
             "name": "ONNX",
+            "description": "ONNX is an open file format and standard for representing machine learning models, enabling interoperability between different frameworks.",
             "tags": [
                 "file format",
                 "standard",
@@ -252,14 +188,103 @@
                 "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
             ]
         },
-        "Png": {
-            "name": "PNG",
+        "Jpg": {
+            "name": "JPEG",
+            "description": "JPEG is a widely used file format for compressing raster graphics images by reducing their file size through lossy compression techniques.",
             "tags": [
                 "file format",
                 "raster graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/PNG"
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Ply": {
+            "name": "PLY",
+            "description": "PLY is a file format used in 3D graphics to store three-dimensional data, supporting detailed descriptions of the geometry and properties of objects",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PLY_(file_format)"
+            ]
+        },
+        "Gif": {
+            "name": "GIF",
+            "description": "The GIF is a file format that supports raster graphics and enables simple animations by displaying a sequence of images within a single file.",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Json": {
+            "name": "JSON",
+            "description": "JSON is a file format used to represent structured data in a readable and organized way, enabling efficient data exchange and manipulation.",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Wav": {
+            "name": "WAV",
+            "description": "WAV is a file format that stores uncompressed audio data, commonly used for high-quality sound representation and editing.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Gltf": {
+            "name": "GLTF",
+            "description": "GLTF is a file format designed for efficiently transmitting and loading 3D graphics models and scenes in applications requiring fast and interoperable rendering.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Mp3": {
+            "name": "MP3",
+            "description": "MP3 is a popular file format for audio that compresses sound data to reduce file size while maintaining quality, enabling efficient storage and playback.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Stl": {
+            "name": "STL",
+            "description": "The STL file format is a widely used standard in 3D graphics for representing the surface geometry of three-dimensional objects through a collection of triangular facets.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Gzip": {
+            "name": "gzip",
+            "description": "Gzip is a file format and compression tool used to reduce the size of files by encoding data more efficiently, enabling faster storage and transfer.",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gzip"
             ]
         },
         "TensorflowJs": {
@@ -1119,15 +1144,28 @@
                 "Csv"
             ]
         },
-        "VideoExport": {
-            "name": "VideoExport",
-            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
             "tags": [
-                "library",
-                "video"
+                "library"
+            ],
+            "references": [
+                "https://tramontana.xyz/"
             ],
             "dependsOn": [
                 "Processing"
+            ]
+        },
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/jjeongin/creative-machine"
             ]
         },
         "Geomerative": {
@@ -1137,33 +1175,25 @@
                 "library",
                 "vector graphics"
             ],
+            "references": [
+                "https://www.ricardmarxer.com/geomerative/"
+            ],
             "dependsOn": [
                 "Processing"
             ]
         },
-        "ProcessingGeometrySuite": {
-            "name": "Processing Geometry Suite",
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
             "tags": [
                 "library",
-                "geometry"
+                "ui"
             ],
-            "dependsOn": [
-                "Processing",
-                "Jts"
-            ]
-        },
-        "Ani": {
-            "name": "Ani",
-            "description": "A library for animating parameters in sketches.",
-            "tags": [
-                "library",
-                "animation"
+            "references": [
+                "https://www.sojamo.de/libraries/controlP5/"
             ],
             "dependsOn": [
                 "Processing"
-            ],
-            "techniques": [
-                "Easing"
             ]
         },
         "Queasycam": {
@@ -1175,16 +1205,6 @@
             ],
             "dependsOn": [
                 "Processing"
-            ]
-        },
-        "CreativeMachine": {
-            "name": "Creative Machine",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/jjeongin/creative-machine"
             ]
         },
         "Nub": {
@@ -1202,45 +1222,61 @@
                 "Processing"
             ]
         },
+        "Ani": {
+            "name": "Ani",
+            "description": "Ani is a Processing library that provides precise control over animation timing and easing functions to create smooth and customizable motion effects.",
+            "tags": [
+                "library",
+                "animation"
+            ],
+            "references": [
+                "https://benedikt-gross.de/projects/ani-an-animation-library-for-processing/",
+                "https://github.com/b-g/Ani"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "techniques": [
+                "Easing"
+            ]
+        },
         "ComputationalGeometry": {
             "name": "Computational Geometry",
             "tags": [
                 "library",
                 "geometry"
             ],
+            "references": [
+                "http://thecloudlab.org/processing/library.html"
+            ],
             "dependsOn": [
                 "Processing"
             ]
         },
-        "ControlP5": {
-            "name": "ControlP5",
-            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
             "tags": [
                 "library",
-                "ui"
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/micycle1/PGS"
             ],
             "dependsOn": [
-                "Processing"
+                "Processing",
+                "Jts"
             ]
         },
-        "GifAnimation": {
-            "name": "GifAnimation",
-            "description": "Enables exporting animated GIFs from sketches.",
+        "VideoExport": {
+            "name": "VideoExport",
+            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
             "tags": [
-                "library"
+                "library",
+                "video"
             ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "supports": [
-                "Gif"
-            ]
-        },
-        "Tramontana": {
-            "name": "Tramontana",
-            "description": "Provides access to phone sensors for AR/VR-like interactions.",
-            "tags": [
-                "library"
+            "references": [
+                "https://funprogramming.org/VideoExport-for-Processing/"
             ],
             "dependsOn": [
                 "Processing"
@@ -1286,6 +1322,22 @@
             ],
             "supports": [
                 "Osc"
+            ]
+        },
+        "GifAnimation": {
+            "name": "GifAnimation",
+            "description": "Enables exporting animated GIFs from sketches.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/extrapixel/gif-animation"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Gif"
             ]
         },
         "P5Palette": {
@@ -1942,6 +1994,7 @@
         },
         "Udp": {
             "name": "UDP",
+            "description": "UDP is a communication protocol that enables fast, connectionless transmission of data packets between devices with minimal overhead.",
             "tags": [
                 "protocol"
             ],
@@ -1951,6 +2004,7 @@
         },
         "Http": {
             "name": "HTTP",
+            "description": "HTTP is a protocol designed for transferring data efficiently and reliably between devices over a network, enabling the exchange of various types of content in creative coding projects.",
             "tags": [
                 "protocol"
             ],
@@ -1958,17 +2012,9 @@
                 "https://en.wikipedia.org/wiki/HTTP"
             ]
         },
-        "Tcp": {
-            "name": "TCP",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
         "Https": {
             "name": "HTTPS",
+            "description": "The HTTPS protocol is a secure communication tool that uses encryption to protect data exchanged between devices, ensuring privacy and integrity.",
             "tags": [
                 "protocol"
             ],
@@ -1978,6 +2024,7 @@
         },
         "ArtNet": {
             "name": "ArtNet",
+            "description": "ArtNet is a protocol designed to transmit lighting control data over Ethernet networks, enabling the seamless management of complex lighting systems in artistic and performance environments.",
             "tags": [
                 "protocol"
             ],
@@ -1991,8 +2038,29 @@
                 "DMX"
             ]
         },
+        "WebSocket": {
+            "name": "WebSocket",
+            "description": "WebSocket is a protocol that enables interactive, real-time communication between a client and a server by establishing a persistent, full-duplex connection.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "Tcp": {
+            "name": "TCP",
+            "description": "The Transmission Control Protocol (TCP) is a reliable communication protocol that ensures ordered and error-checked delivery of data between devices over a network, enabling stable and consistent data exchange.\"",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
         "OSC": {
             "name": "OSC",
+            "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
             "tags": [
                 "standard",
                 "device interface"
@@ -2002,15 +2070,6 @@
             ],
             "dependsOn": [
                 "Udp"
-            ]
-        },
-        "WebSocket": {
-            "name": "WebSocket",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
             ]
         },
         "CPP": {
@@ -3047,8 +3106,113 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
+        "DeepJavaLibrary": {
+            "name": "Deep Java Library",
+            "description": "Deep Java Library provides a collection of easy-to-use tools for building, training, and deploying machine learning models directly in Java, supporting frameworks like PyTorch and TensorFlow",
+            "references": [
+                "https://djl.ai/",
+                "https://github.com/deepjavalibrary/djl"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
+            "description": "JSerialComm is an open-source library available on GitHub that provides a simple and efficient binding for serial port communication in Java, enabling seamless interaction with hardware devices.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "description": "BoofCV is a library that provides advanced computer vision tools for image processing, feature detection, and real-time analysis, supporting developers in building interactive visual applications.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "Antlr": {
+            "name": "Antlr",
+            "description": "Antlr is an open-source library designed for parsing and processing structured text, enabling developers to efficiently generate parsers for interpreting complex languages and data formats.",
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaxSound": {
+            "name": "javax.sound",
+            "description": "The javax.sound library provides a set of tools for handling audio capture, processing, and playback, enabling precise control over sound input and output in Java applications.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "Jogl": {
+            "name": "JOGL",
+            "description": "JOGL is an open-source library that provides Java bindings to the OpenGL graphics API, enabling developers to create high-performance, hardware-accelerated 2D and 3D graphics applications.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Artnet4J": {
+            "name": "Artnet4J",
+            "description": "Artnet4J is an open-source Java library designed for sending and receiving Art-Net protocol data, enabling developers to control lighting systems and DMX devices efficiently.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
         "Lwjgl": {
             "name": "Lightweight Java Game library",
+            "description": "The Lightweight Java Game Library is an open-source library that provides Java bindings to low-level graphics, audio, and input APIs, enabling efficient development of interactive visual applications.",
             "tags": [
                 "library",
                 "binding",
@@ -3066,18 +3230,17 @@
                 "Vulkan"
             ]
         },
-        "TensorFlowJava": {
-            "name": "TensorFlow for Java",
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
+        "Java": {
+            "name": "Java",
+            "description": "Java is a versatile language that provides a rich set of libraries and frameworks, enabling the development of dynamic visual and interactive applications through its efficient and open-source tools.",
+            "tags": [
+                "language",
+                "opensource"
             ]
         },
         "Awt": {
             "name": "AWT",
+            "description": "The Abstract Window Toolkit library provides a set of user interface components and tools for creating graphical applications that manage windows, handle events, and draw graphics.",
             "tags": [
                 "library",
                 "ui"
@@ -3087,81 +3250,6 @@
             ],
             "dependsOn": [
                 "Java"
-            ]
-        },
-        "Swing": {
-            "name": "Swing",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jts": {
-            "name": "JTS Topology Suite",
-            "tags": [
-                "library",
-                "geometry",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Jogl": {
-            "name": "JOGL",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "DeepJavaLibrary": {
-            "name": "Deep Java Library",
-            "references": [
-                "https://djl.ai/",
-                "https://github.com/deepjavalibrary/djl"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Java": {
-            "name": "Java",
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "JavaOsc": {
-            "name": "JavaOsc",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/hoijui/JavaOSC"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
             ]
         },
         "JavaxMidi": {
@@ -3178,6 +3266,7 @@
         },
         "JavaCv": {
             "name": "JavaCV",
+            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
             "tags": [
                 "library"
             ],
@@ -3186,77 +3275,62 @@
                 "OpenCv"
             ]
         },
-        "JavaxSound": {
-            "name": "javax.sound",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "BoofCV": {
-            "name": "BoofCV",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://boofcv.org/"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Png",
-                "Jpg"
-            ]
-        },
-        "JSerialComm": {
-            "name": "JSerialComm",
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "description": "JTS Topology Suite is an open-source library that provides advanced geometry and GIS tools for spatial data processing and analysis.",
             "tags": [
                 "library",
-                "binding",
+                "geometry",
                 "opensource"
             ],
             "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "Antlr": {
-            "name": "Antlr",
-            "tags": [
-                "library",
-                "parsing",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
             ],
             "dependsOn": [
                 "Java"
             ]
         },
-        "Artnet4J": {
-            "name": "Artnet4J",
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "description": "TensorFlow for Java is a powerful library that enables developers to build and deploy machine learning models within Java applications, offering efficient tools for numerical computation and dataflow programming as detailed at the official GitHub repository tensorflow/java.",
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
+            ]
+        },
+        "Swing": {
+            "name": "Swing",
+            "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaOsc": {
+            "name": "JavaOsc",
+            "description": "JavaOsc is an open-source library available at github.com/hoijui/JavaOSC that provides a simple and efficient way to send and receive OSC messages within Java applications.",
             "tags": [
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
+                "https://github.com/hoijui/JavaOSC"
             ],
             "dependsOn": [
                 "Java"
             ],
             "supports": [
-                "ArtNet"
+                "Osc"
             ]
         },
         "PyTorch": {
@@ -3352,11 +3426,30 @@
         },
         "SDL": {
             "name": "SDL",
+            "description": "SDL is a library that provides low-level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D, enabling developers to create interactive multimedia applications across multiple platforms.",
             "tags": [
                 "library"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "Glfw": {
+            "name": "GLFW",
+            "description": "GLFW is a library designed to create and manage windows, handle inputs, and facilitate OpenGL context creation for developing interactive graphics applications.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GLFW"
             ],
             "dependsOn": [
                 "C"
@@ -3378,23 +3471,6 @@
             ],
             "dependsOn": [
                 "CPP"
-            ]
-        },
-        "Glfw": {
-            "name": "GLFW",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
             ]
         }
     }
