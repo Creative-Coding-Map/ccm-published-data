@@ -1,23 +1,11 @@
 {
     "tools": {
-        "TensorFlow": {
-            "name": "TensorFlow",
-            "description": "TensorFlow is an open-source library for machine learning available at https://github.com/tensorflow that provides powerful tools to develop, train, and deploy intelligent models.",
-            "tags": [
-                "library",
-                "machine learning",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/tensorflow"
-            ]
-        },
         "OnnxRuntime": {
             "name": "ONNX Runtime",
             "description": "ONNX Runtime is a fast and flexible library for executing machine learning models across different platforms, designed as an opensource tool to enhance performance and interoperability.",
             "tags": [
-                "library",
                 "machine learning",
+                "library",
                 "opensource"
             ],
             "supports": [
@@ -25,6 +13,18 @@
                 "Java",
                 "Python",
                 "C"
+            ]
+        },
+        "TensorFlow": {
+            "name": "TensorFlow",
+            "description": "TensorFlow is an open-source library for machine learning available at https://github.com/tensorflow that provides powerful tools to develop, train, and deploy intelligent models.",
+            "tags": [
+                "machine learning",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tensorflow"
             ]
         },
         "SDL": {
@@ -67,6 +67,7 @@
             "name": "Assimp",
             "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
             "tags": [
+                "3d graphics",
                 "library"
             ],
             "references": [
@@ -76,32 +77,30 @@
                 "CPP"
             ]
         },
-        "P5Palette": {
-            "name": "p5.palette",
-            "description": "The p5.palette library is a tool for managing and applying color palettes in p5.js projects",
+        "P5Sound": {
+            "name": "p5.sound",
+            "description": "The p5.sound library provides a set of tools for generating, manipulating, and analyzing sound, enabling interactive audio experiences within visual programming projects.",
             "tags": [
                 "library",
-                "color"
+                "opensource"
             ],
             "references": [
-                "https://www.remistura.com/p5.palette/",
-                "https://github.com/remistura/p5.palette"
+                "https://p5js.org/reference/p5.sound/"
             ],
             "dependsOn": [
                 "P5Js"
             ]
         },
-        "P5Xr": {
-            "name": "p5.xr",
-            "description": "p5.xr is an open-source library that enables augmented reality and virtual reality experiences within the p5.js framework",
+        "P5simpleAR": {
+            "name": "p5.simpleAR",
+            "description": "p5.simpleAR is a library designed to integrate augmented reality features into projects, offering simple tools for detecting markers and overlaying digital content.",
             "tags": [
-                "library",
                 "augmented reality",
+                "library",
                 "opensource"
             ],
             "references": [
-                "https://p5xr.org/",
-                "https://github.com/stalgiag/p5.xr"
+                "https://github.com/tetunori/p5.simpleAR"
             ],
             "dependsOn": [
                 "P5Js"
@@ -124,231 +123,16 @@
                 "Javascript"
             ]
         },
-        "P5VideoKit": {
-            "name": "p5videoKit",
-            "description": "p5videoKit is an open-source library designed to simplify the integration and manipulation of video elements within p5.js sketches",
-            "tags": [
-                "library",
-                "video",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/molab-itp/p5videoKit"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Bezier": {
-            "name": "p5.bezier",
-            "description": "The p5.bezier library is an open-source tool for creating and manipulating vector graphics through Bezier curves, enhancing the p5.js environment with precise control over complex shapes.",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/peilingjiang/p5.bezier"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Sound": {
-            "name": "p5.sound",
-            "description": "The p5.sound library provides a set of tools for generating, manipulating, and analyzing sound, enabling interactive audio experiences within visual programming projects.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://p5js.org/reference/p5.sound/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Brush": {
-            "name": "p5.brush",
-            "description": "Extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/acamposuribe/p5.brush"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGFX": {
-            "name": "TurtleGFX",
-            "description": "TurtleGFX is an open-source library that enables users to create vector graphics through programmable turtle graphics commands.",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/CodeGuppyPrograms/TurtleGFX"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Csg": {
-            "name": "p5.csg",
-            "description": "p5.csg is an open-source library for 3D graphics that enables the creation and manipulation of complex shapes through constructive solid geometry",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.csg"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FilterRenderer": {
-            "name": "p5.filterRenderer",
-            "description": "The library p5.filterRenderer provides tools for applying customizable filters to 3D graphics within the p5.js environment",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.filterRenderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TotalSerialism": {
-            "name": "Total Serialism",
-            "description": "Total Serialism is an open-source library available at github.com/tmhglnd/total-serialism that provides structured tools for algorithmic composition by systematically organizing musical parameters such as pitch, duration, dynamics, and timbre.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/tmhglnd/total-serialism"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "P5_5": {
-            "name": "p5.5",
-            "description": "p5.5 is an open source library that provides a user interface toolkit designed to simplify the creation and management of interactive graphical elements.",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/eltapir/p5.5"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Play": {
-            "name": "p5play",
-            "description": "p5play is a library that extends the p5.js framework with tools for creating interactive games and animations.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/quinton-ashley/p5play"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Anaglyph": {
-            "name": "p5.anaglyph",
-            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.anaglyph"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Warp": {
-            "name": "p5.warp",
-            "description": "The p5.warp library is an open-source tool available at github.com/davepagurek/p5.warp that enables dynamic manipulation of 3D graphics through warping effects within the p5.js environment",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.warp"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
         "P5TouchGui": {
             "name": "p5.touchgui",
             "description": "The p5.touchgui library is an open-source user interface tool designed to simplify the creation of interactive controls in p5.js projects.",
             "tags": [
-                "library",
                 "ui",
+                "library",
                 "opensource"
             ],
             "references": [
                 "https://github.com/L05/p5.touchgui"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ModButton": {
-            "name": "p5.ModButton",
-            "description": "p5.ModButton is an open-source library that provides customizable UI buttons for interactive projects, enhancing user input handling within the p5.js framework",
-            "tags": [
-                "library",
-                "ui",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/yetyeeter1337/p5.Modbuttons"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Numero": {
-            "name": "Número",
-            "description": "Número is an open-source library designed to simplify the generation and manipulation of numerical data in programming",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://mcintyre.io/numero/",
-                "https://github.com/nickmcintyre/numero"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Dom": {
-            "name": "p5.dom",
-            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
-            "tags": [
-                "library"
             ],
             "dependsOn": [
                 "P5Js"
@@ -368,30 +152,75 @@
                 "P5Js"
             ]
         },
-        "P5UiRenderer": {
-            "name": "P5UIRenderer",
-            "description": "P5UIRenderer is an open-source library that provides a set of tools for creating and managing user interface elements in p5.js, enabling developers to design interactive visual components efficiently.",
+        "P5Xr": {
+            "name": "p5.xr",
+            "description": "p5.xr is an open-source library that enables augmented reality and virtual reality experiences within the p5.js framework",
             "tags": [
+                "augmented reality",
                 "library",
-                "ui",
                 "opensource"
             ],
             "references": [
-                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+                "https://p5xr.org/",
+                "https://github.com/stalgiag/p5.xr"
             ],
             "dependsOn": [
                 "P5Js"
             ]
         },
-        "P5Grid": {
-            "name": "p5Grid",
-            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
+        "P5Dom": {
+            "name": "p5.dom",
+            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
             "tags": [
+                "web",
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Csg": {
+            "name": "p5.csg",
+            "description": "p5.csg is an open-source library for 3D graphics that enables the creation and manipulation of complex shapes through constructive solid geometry",
+            "tags": [
+                "3d graphics",
+                "geometry",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/aahdee/p5grid"
+                "https://github.com/davepagurek/p5.csg"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5_5": {
+            "name": "p5.5",
+            "description": "p5.5 is an open source library that provides a user interface toolkit designed to simplify the creation and management of interactive graphical elements.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/eltapir/p5.5"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Warp": {
+            "name": "p5.warp",
+            "description": "The p5.warp library is an open-source tool available at github.com/davepagurek/p5.warp that enables dynamic manipulation of 3D graphics through warping effects within the p5.js environment",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.warp"
             ],
             "dependsOn": [
                 "P5Js"
@@ -401,8 +230,8 @@
             "name": "CanvasGUI",
             "description": "CanvasGUI is an open-source library that provides a flexible and customizable user interface for graphical applications.",
             "tags": [
-                "library",
                 "ui",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -417,6 +246,7 @@
             "name": "c2.js",
             "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
             "tags": [
+                "simulation",
                 "library",
                 "opensource"
             ],
@@ -428,12 +258,87 @@
                 "P5Js"
             ]
         },
+        "P5VideoKit": {
+            "name": "p5videoKit",
+            "description": "p5videoKit is an open-source library designed to simplify the integration and manipulation of video elements within p5.js sketches",
+            "tags": [
+                "video",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/molab-itp/p5videoKit"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FilterRenderer": {
+            "name": "p5.filterRenderer",
+            "description": "The library p5.filterRenderer provides tools for applying customizable filters to 3D graphics within the p5.js environment",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.filterRenderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ModButton": {
+            "name": "p5.ModButton",
+            "description": "p5.ModButton is an open-source library that provides customizable UI buttons for interactive projects, enhancing user input handling within the p5.js framework",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/yetyeeter1337/p5.Modbuttons"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grain": {
+            "name": "p5.grain",
+            "description": "The p5.grain library is an open-source tool designed to add noise and granular textures to visual projects using the p5.js framework, enhancing detail and atmosphere.",
+            "tags": [
+                "noise",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/meezwhite/p5.grain"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Brush": {
+            "name": "p5.brush",
+            "description": "Extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/acamposuribe/p5.brush"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
         "P5Transparency": {
             "name": "p5.transparency",
             "description": "p5.transparency is an open-source library that enhances 3D graphics in p5.js by providing advanced tools for handling transparency and rendering overlapping transparent objects accurately.",
             "tags": [
-                "library",
                 "3d graphics",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -443,42 +348,12 @@
                 "P5Js"
             ]
         },
-        "P5CMyK": {
-            "name": "p5.cmyk.js",
-            "description": "The p5.cmyk.js library is an open-source tool that extends color capabilities in p5.js by enabling the use of CMYK color models for more advanced and precise color manipulation",
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/p5.cmyk.js"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ColorGenerator": {
-            "name": "p5.colorGenerator",
-            "tags": [
-                "library",
-                "color",
-                "opensource"
-            ],
-            "references": [
-                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
-                "https://github.com/alexandru-postolache/p5.colorGenerator"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
         "TurtleGraphicsP5Js": {
             "name": "turtle-graphics",
             "description": "The turtle-graphics library is an open-source tool for creating vector graphics programmatically",
             "tags": [
-                "library",
                 "vector graphics",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -489,16 +364,16 @@
                 "P5Js"
             ]
         },
-        "P5Marching": {
-            "name": "p5.marching",
-            "description": "marching squares for p5.js",
+        "P5Polar": {
+            "name": "p5.polar",
+            "description": "p5.polar is an open-source library that extends vector graphics capabilities by providing tools for creating and manipulating polar coordinate-based shapes and animations",
             "tags": [
-                "library",
                 "vector graphics",
+                "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/jtnimoy/marching"
+                "https://github.com/liz-peng/p5.Polar"
             ],
             "dependsOn": [
                 "P5Js"
@@ -508,6 +383,7 @@
             "name": "p5.quadrille.js",
             "description": "p5.quadrille.js is an open-source library that provides tools for creating and manipulating grid-based layouts and data structures within the p5.js environment.",
             "tags": [
+                "grids",
                 "library",
                 "opensource"
             ],
@@ -518,16 +394,199 @@
                 "P5Js"
             ]
         },
-        "P5Polar": {
-            "name": "p5.polar",
-            "description": "p5.polar is an open-source library that extends vector graphics capabilities by providing tools for creating and manipulating polar coordinate-based shapes and animations",
+        "Numero": {
+            "name": "Número",
+            "description": "Número is an open-source library designed to simplify the generation and manipulation of numerical data in programming",
             "tags": [
+                "functions",
                 "library",
-                "vector graphics",
                 "opensource"
             ],
             "references": [
-                "https://github.com/liz-peng/p5.Polar"
+                "https://mcintyre.io/numero/",
+                "https://github.com/nickmcintyre/numero"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5ColorGenerator": {
+            "name": "p5.colorGenerator",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
+                "https://github.com/alexandru-postolache/p5.colorGenerator"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5UiRenderer": {
+            "name": "P5UIRenderer",
+            "description": "P5UIRenderer is an open-source library that provides a set of tools for creating and managing user interface elements in p5.js, enabling developers to design interactive visual components efficiently.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Play": {
+            "name": "p5play",
+            "description": "p5play is a library that extends the p5.js framework with tools for creating interactive games and animations.",
+            "tags": [
+                "game development",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/quinton-ashley/p5play"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TurtleGFX": {
+            "name": "TurtleGFX",
+            "description": "TurtleGFX is an open-source library that enables users to create vector graphics through programmable turtle graphics commands.",
+            "tags": [
+                "vector graphics",
+                "language",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/CodeGuppyPrograms/TurtleGFX"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Bezier": {
+            "name": "p5.bezier",
+            "description": "The p5.bezier library is an open-source tool for creating and manipulating vector graphics through Bezier curves, enhancing the p5.js environment with precise control over complex shapes.",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/peilingjiang/p5.bezier"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "TotalSerialism": {
+            "name": "Total Serialism",
+            "description": "Total Serialism is an open-source library available at github.com/tmhglnd/total-serialism that provides structured tools for algorithmic composition by systematically organizing musical parameters such as pitch, duration, dynamics, and timbre.",
+            "tags": [
+                "audio",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tmhglnd/total-serialism"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Marching": {
+            "name": "p5.marching",
+            "description": "marching squares for p5.js",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/marching"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Grid": {
+            "name": "p5Grid",
+            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
+            "tags": [
+                "grids",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/aahdee/p5grid"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Palette": {
+            "name": "p5.palette",
+            "description": "The p5.palette library is a tool for managing and applying color palettes in p5.js projects",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://www.remistura.com/p5.palette/",
+                "https://github.com/remistura/p5.palette"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5FillGradient": {
+            "name": "p5.fillGradient",
+            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
+            "tags": [
+                "computer graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/alterebro/p5.fillGradient"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5CMyK": {
+            "name": "p5.cmyk.js",
+            "description": "The p5.cmyk.js library is an open-source tool that extends color capabilities in p5.js by enabling the use of CMYK color models for more advanced and precise color manipulation",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/p5.cmyk.js"
+            ],
+            "dependsOn": [
+                "P5Js"
+            ]
+        },
+        "P5Anaglyph": {
+            "name": "p5.anaglyph",
+            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.anaglyph"
             ],
             "dependsOn": [
                 "P5Js"
@@ -548,56 +607,125 @@
                 "P5Js"
             ]
         },
-        "P5FillGradient": {
-            "name": "p5.fillGradient",
-            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
+        "OrxHashGrid": {
+            "name": "orx-hash-grid",
+            "description": "2D space partitioning for fast point queries.",
             "tags": [
+                "space partitioning",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxEasing": {
+            "name": "orx-easing",
+            "description": "Easing functions for smooth animation or non-linear interpolation.",
+            "tags": [
+                "animation",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/alterebro/p5.fillGradient"
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "P5Js"
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "Easing"
             ]
         },
-        "P5Grain": {
-            "name": "p5.grain",
-            "description": "The p5.grain library is an open-source tool designed to add noise and granular textures to visual projects using the p5.js framework, enhancing detail and atmosphere.",
+        "OrxPoissonFill": {
+            "name": "orx-poisson-fill",
+            "description": "Post processing effect that fills transparent parts of the image interpolating the edge pixel colors.",
             "tags": [
+                "computer graphics",
+                "image processing",
                 "library",
-                "noise",
                 "opensource"
             ],
             "references": [
-                "https://github.com/meezwhite/p5.grain"
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "P5Js"
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PoissonFill"
             ]
         },
-        "P5simpleAR": {
-            "name": "p5.simpleAR",
-            "description": "p5.simpleAR is a library designed to integrate augmented reality features into projects, offering simple tools for detecting markers and overlaying digital content.",
+        "OrxTextOnContour": {
+            "name": "orx-text-on-contour",
+            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
             "tags": [
+                "typography",
                 "library",
-                "augmented reality"
+                "opensource"
             ],
             "references": [
-                "https://github.com/tetunori/p5.simpleAR"
+                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+            ],
+            "partOf": [
+                "OPENRNDR"
             ],
             "dependsOn": [
-                "P5Js"
+                "OPENRNDR"
+            ]
+        },
+        "OrxFft": {
+            "name": "orx-fft",
+            "description": "Simple forward and inverse FFT routines",
+            "tags": [
+                "signal processing",
+                "library"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "FFT"
+            ]
+        },
+        "OrxMesh": {
+            "name": "orx-mesh",
+            "description": "3D-mesh datastructures",
+            "tags": [
+                "3d graphics",
+                "data structure",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "OrxOlive": {
             "name": "orx-olive",
             "description": "Provides live coding functionality: updates a running OPENRNDR program when you save your changes.",
             "tags": [
+                "live coding",
                 "library",
-                "opensource",
-                "live coding"
+                "opensource"
             ],
             "references": [
                 "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
@@ -609,286 +737,11 @@
                 "OPENRNDR"
             ]
         },
-        "OrxSvg": {
-            "name": "orx-svg",
-            "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-svg"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "OrxObjLoader": {
-            "name": "orx-obj-loader",
-            "description": "Simple loader and saver for Wavefront .obj 3D mesh files.",
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Obj"
-            ]
-        },
-        "OrxTemporalBlur": {
-            "name": "orx-temporal-blur",
-            "description": "Post-processing temporal-blur video effect.",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxIntervalTree": {
-            "name": "orx-interval-tree",
-            "description": "Efficient data structures for managing and querying intervals.",
-            "tags": [
-                "library",
-                "opensource",
-                "data structure"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTurtle": {
-            "name": "orx-turtle",
-            "description": "Bezier backed turtle graphics for OPENRNDR programs.",
-            "tags": [
-                "library",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-turtle"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "TurtleGraphics"
-            ]
-        },
-        "OrxKdtree": {
-            "name": "orx-kdtree",
-            "description": "Fast search of points closest to the queried point in a data set. 2D, 3D and 4D.",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "KDTree"
-            ]
-        },
-        "OrxExpressionEvaluator": {
-            "name": "orx-expression-evaluator",
-            "description": "Tools to evaluate strings containing mathematical expressions.",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "AntlrKotlin"
-            ]
-        },
-        "OrxPalette": {
-            "name": "orx-palette",
-            "description": "Collections of color palettes and tools for interacting with them.",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-palette"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextWriter": {
-            "name": "orx-text-writer",
-            "description": "Provide OPENRNDR programs with functionality to write text in layouts.",
-            "tags": [
-                "library",
-                "opensource",
-                "typography"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "name": "orx-fx",
-            "description": "Ready-to-use GPU-based visual effects and filters.",
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GaussianBlur",
-                "CannyEdgeDetection",
-                "Halftoning",
-                "Dithering",
-                "EdgeDetection",
-                "Blur",
-                "ImageQuantization"
-            ]
-        },
-        "OrxMarchingSquares": {
-            "name": "orx-marching-squares",
-            "description": "Tools for extracting contours from images and functions",
-            "tags": [
-                "library",
-                "geometry",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "MarchingSquares"
-            ]
-        },
-        "OrxQuadTree": {
-            "name": "orx-quadtree",
-            "description": "Implementation of the quadtree structure and tools for querying points.",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxShadeStyles": {
-            "name": "orx-shade-styles",
-            "description": "Shader based fills and strokes, including various types of gradient fills.",
-            "tags": [
-                "library",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxHashGrid": {
-            "name": "orx-hash-grid",
-            "description": "2D space partitioning for fast point queries.",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxGradientDescent": {
-            "name": "orx-gradient-descent",
-            "description": "Finds equation inputs that output a minimum value: easy to use gradient descent based minimizer.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GradientDescent"
-            ]
-        },
         "OrxBoofCv": {
             "name": "orx-boofcv",
             "description": "Orx-boofcv is an open-source library that integrates BoofCV's computer vision capabilities with the ORX framework for JVM-based projects.",
             "tags": [
+                "image processing",
                 "library",
                 "opensource"
             ],
@@ -903,16 +756,50 @@
                 "BoofCV"
             ]
         },
-        "OrxColor": {
-            "name": "orx-color",
-            "description": "Provides OPENRNDR programs with color spaces, palettes, histograms, and named colors.",
+        "OrxQuadTree": {
+            "name": "orx-quadtree",
+            "description": "Implementation of the quadtree structure and tools for querying points.",
             "tags": [
+                "space partitioning",
                 "library",
-                "opensource",
-                "color"
+                "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-color"
+                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshNoise": {
+            "name": "orx-mesh-noise",
+            "description": "Generate random samples on the surface of a mesh",
+            "tags": [
+                "3d graphics",
+                "noise",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxImageFit": {
+            "name": "orx-image-fit",
+            "description": "Draws an image ensuring it fits or covers the specified Rectangle.",
+            "tags": [
+                "computer graphics",
+                "library",
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -942,75 +829,56 @@
                 "Osc"
             ]
         },
-        "OrxFcurve": {
-            "name": "orx-fcurve",
-            "description": "Advanced keyframing tools based on 1-dimensional Bezier curves",
+        "OrxCamera": {
+            "name": "orx-camera",
+            "description": "Provides OPENRNDR programs with 2D and 3D cameras controllable via mouse and keyboard.",
             "tags": [
+                "computer graphics",
                 "library",
-                "opensource",
-                "animation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "OrxExpressionEvaluator"
-            ],
-            "techniques": [
-                "KeyframeInterpolation",
-                "RegularExpressions"
-            ]
-        },
-        "OrxPoissonFill": {
-            "name": "orx-poisson-fill",
-            "description": "Post processing effect that fills transparent parts of the image interpolating the edge pixel colors.",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "PoissonFill"
-            ]
-        },
-        "OrxTriangulation": {
-            "name": "orx-triangulation",
-            "description": "Delaunay triangulation and Voronoi diagrams for OPENRNDR programs",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxShaderPhrases": {
-            "name": "orx-shader-phrases",
-            "description": "A library of shader phrases that can be composed into shaders",
-            "tags": [
-                "library",
-                "shaders",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
+                "https://github.com/openrndr/orx/tree/master/orx-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "OrthogonalProjection",
+                "PerspectiveProjection"
+            ]
+        },
+        "OrxComposition": {
+            "name": "orx-composition",
+            "description": "Shape composition library for OPENRNDR",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-composition"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShadeStyles": {
+            "name": "orx-shade-styles",
+            "description": "Shader based fills and strokes, including various types of gradient fills.",
+            "tags": [
+                "shaders",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1022,32 +890,13 @@
                 "GLSL"
             ]
         },
-        "OrxMeshNoise": {
-            "name": "orx-mesh-noise",
-            "description": "Generate random samples on the surface of a mesh",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics",
-                "noise"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
         "OrxShapes": {
             "name": "orx-shapes",
             "description": "Collection of 2D shape generators and modifiers.",
             "tags": [
+                "geometry",
                 "library",
-                "opensource",
-                "geometry"
+                "opensource"
             ],
             "references": [
                 "https://github.com/openrndr/orx/tree/master/orx-shapes"
@@ -1064,10 +913,11 @@
                 "AlphaShape"
             ]
         },
-        "OrxImageFit": {
-            "name": "orx-image-fit",
-            "description": "Draws an image ensuring it fits or covers the specified Rectangle.",
+        "OrxIntegralImage": {
+            "name": "orx-integral-image",
+            "description": "CPU and GPU-based implementation for integral images (summed area tables)",
             "tags": [
+                "image processing",
                 "library",
                 "opensource"
             ],
@@ -1078,13 +928,13 @@
                 "OPENRNDR"
             ]
         },
-        "OrxJumpflood": {
-            "name": "orx-jumpflood",
-            "description": "Calculates distance or direction fields from an image. GPU accelerated, 2D.",
+        "OrxFx": {
+            "name": "orx-fx",
+            "description": "Ready-to-use GPU-based visual effects and filters.",
             "tags": [
-                "library",
-                "opensource",
-                "image processing"
+                "computer graphics",
+                "shaders",
+                "library"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1093,19 +943,47 @@
                 "OPENRNDR"
             ],
             "techniques": [
-                "DistanceTransform"
+                "GaussianBlur",
+                "CannyEdgeDetection",
+                "Halftoning",
+                "Dithering",
+                "EdgeDetection",
+                "Blur",
+                "ImageQuantization"
             ]
         },
-        "OrxCompositor": {
-            "name": "orx-compositor",
-            "description": "Toolkit to make composite (layered) images using blend modes and filters in OPENRNDR programs",
+        "OrxNoise": {
+            "name": "orx-noise",
+            "description": "Randomness for every type of person: Perlin, uniform, value, simplex, fractal and many other types of noise.",
             "tags": [
+                "noise",
                 "library",
-                "opensource",
-                "computer graphics"
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PerlinNoise",
+                "SimplexNoise",
+                "FBMNoise",
+                "WorleyNoise",
+                "ValueNoise"
+            ]
+        },
+        "OrxTemporalBlur": {
+            "name": "orx-temporal-blur",
+            "description": "Post-processing temporal-blur video effect.",
+            "tags": [
+                "image processing",
+                "library",
+                "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-compositor"
+                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1114,13 +992,104 @@
                 "OPENRNDR"
             ]
         },
+        "OrxExpressionEvaluator": {
+            "name": "orx-expression-evaluator",
+            "description": "Tools to evaluate strings containing mathematical expressions.",
+            "tags": [
+                "animation",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "AntlrKotlin"
+            ]
+        },
+        "OrxColor": {
+            "name": "orx-color",
+            "description": "Provides OPENRNDR programs with color spaces, palettes, histograms, and named colors.",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-color"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxKdtree": {
+            "name": "orx-kdtree",
+            "description": "Fast search of points closest to the queried point in a data set. 2D, 3D and 4D.",
+            "tags": [
+                "space partitioning",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "KDTree"
+            ]
+        },
+        "OrxEnvelopes": {
+            "name": "orx-envelopes",
+            "description": "Provides ADSR (Attack, Decay, Sustain, Release) envelopes and tools for OPENRNDR programs",
+            "tags": [
+                "animation",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "name": "orx-marching-squares",
+            "description": "Tools for extracting contours from images and functions",
+            "tags": [
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "MarchingSquares"
+            ]
+        },
         "OrxMeshGenerators": {
             "name": "orx-mesh-generators",
             "description": "3D-mesh generating functions and DSL.",
             "tags": [
+                "3d graphics",
                 "library",
-                "opensource",
-                "3d graphics"
+                "opensource"
             ],
             "references": [
                 "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
@@ -1136,6 +1105,7 @@
             "name": "orx-math",
             "description": "Mathematical utilities",
             "tags": [
+                "functions",
                 "library",
                 "opensource"
             ],
@@ -1146,16 +1116,16 @@
                 "OPENRNDR"
             ]
         },
-        "OrxComposition": {
-            "name": "orx-composition",
-            "description": "Shape composition library for OPENRNDR",
+        "OrxTriangulation": {
+            "name": "orx-triangulation",
+            "description": "Delaunay triangulation and Voronoi diagrams for OPENRNDR programs",
             "tags": [
+                "geometry",
                 "library",
-                "opensource",
-                "vector graphics"
+                "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-composition"
+                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1164,11 +1134,13 @@
                 "OPENRNDR"
             ]
         },
-        "OrxFft": {
-            "name": "orx-fft",
-            "description": "Simple forward and inverse FFT routines",
+        "OrxGradientDescent": {
+            "name": "orx-gradient-descent",
+            "description": "Finds equation inputs that output a minimum value: easy to use gradient descent based minimizer.",
             "tags": [
-                "library"
+                "machine learning",
+                "library",
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1177,7 +1149,86 @@
                 "OPENRNDR"
             ],
             "techniques": [
-                "FFT"
+                "GradientDescent"
+            ]
+        },
+        "OrxShaderPhrases": {
+            "name": "orx-shader-phrases",
+            "description": "A library of shader phrases that can be composed into shaders",
+            "tags": [
+                "shaders",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OrxPalette": {
+            "name": "orx-palette",
+            "description": "Collections of color palettes and tools for interacting with them.",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-palette"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTurtle": {
+            "name": "orx-turtle",
+            "description": "Bezier backed turtle graphics for OPENRNDR programs.",
+            "tags": [
+                "vector graphics",
+                "language",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-turtle"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "TurtleGraphics"
+            ]
+        },
+        "OrxCompositor": {
+            "name": "orx-compositor",
+            "description": "Toolkit to make composite (layered) images using blend modes and filters in OPENRNDR programs",
+            "tags": [
+                "computer graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-compositor"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
             ]
         },
         "OpenrndrVideo": {
@@ -1200,16 +1251,37 @@
                 "Mov"
             ]
         },
-        "OrxEnvelopes": {
-            "name": "orx-envelopes",
-            "description": "Provides ADSR (Attack, Decay, Sustain, Release) envelopes and tools for OPENRNDR programs",
+        "OrxSvg": {
+            "name": "orx-svg",
+            "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
             "tags": [
+                "vector graphics",
                 "library",
-                "opensource",
-                "animation"
+                "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
+                "https://github.com/openrndr/orx/tree/master/orx-svg"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "OrxTextWriter": {
+            "name": "orx-text-writer",
+            "description": "Provide OPENRNDR programs with functionality to write text in layouts.",
+            "tags": [
+                "typography",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1218,44 +1290,19 @@
                 "OPENRNDR"
             ]
         },
-        "OrxMesh": {
-            "name": "orx-mesh",
-            "description": "3D-mesh datastructures",
+        "OrxIntervalTree": {
+            "name": "orx-interval-tree",
+            "description": "Efficient data structures for managing and querying intervals.",
             "tags": [
+                "data structure",
                 "library",
-                "opensource",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
             "dependsOn": [
                 "OPENRNDR"
-            ]
-        },
-        "OrxCamera": {
-            "name": "orx-camera",
-            "description": "Provides OPENRNDR programs with 2D and 3D cameras controllable via mouse and keyboard.",
-            "tags": [
-                "library",
-                "opensource",
-                "computer graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-camera"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "OrthogonalProjection",
-                "PerspectiveProjection"
             ]
         },
         "OrxMidi": {
@@ -1297,10 +1344,11 @@
                 "Jpg"
             ]
         },
-        "OrxIntegralImage": {
-            "name": "orx-integral-image",
-            "description": "CPU and GPU-based implementation for integral images (summed area tables)",
+        "OrxJumpflood": {
+            "name": "orx-jumpflood",
+            "description": "Calculates distance or direction fields from an image. GPU accelerated, 2D.",
             "tags": [
+                "image processing",
                 "library",
                 "opensource"
             ],
@@ -1309,54 +1357,41 @@
             ],
             "dependsOn": [
                 "OPENRNDR"
-            ]
-        },
-        "OrxTextOnContour": {
-            "name": "orx-text-on-contour",
-            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
-            "tags": [
-                "library",
-                "opensource",
-                "typography"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxEasing": {
-            "name": "orx-easing",
-            "description": "Easing functions for smooth animation or non-linear interpolation.",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-easing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
             ],
             "techniques": [
-                "Easing"
+                "DistanceTransform"
             ]
         },
-        "OrxNoise": {
-            "name": "orx-noise",
-            "description": "Randomness for every type of person: Perlin, uniform, value, simplex, fractal and many other types of noise.",
+        "OrxFcurve": {
+            "name": "orx-fcurve",
+            "description": "Advanced keyframing tools based on 1-dimensional Bezier curves",
             "tags": [
+                "animation",
                 "library",
-                "opensource",
-                "noise"
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "OrxExpressionEvaluator"
+            ],
+            "techniques": [
+                "KeyframeInterpolation",
+                "RegularExpressions"
+            ]
+        },
+        "OrxObjLoader": {
+            "name": "orx-obj-loader",
+            "description": "Simple loader and saver for Wavefront .obj 3D mesh files.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1364,21 +1399,17 @@
             "dependsOn": [
                 "OPENRNDR"
             ],
-            "techniques": [
-                "PerlinNoise",
-                "SimplexNoise",
-                "FBMNoise",
-                "WorleyNoise",
-                "ValueNoise"
+            "supports": [
+                "Obj"
             ]
         },
         "AntlrKotlin": {
             "name": "antlr-kotlin",
             "description": "Antlr-kotlin is an open-source library designed for parsing that enables developers to generate parsers in Kotlin, facilitating the interpretation and transformation of complex text inputs.",
             "tags": [
+                "parsing",
                 "library",
-                "opensource",
-                "parsing"
+                "opensource"
             ],
             "references": [
                 "https://github.com/Strumenta/antlr-kotlin"
@@ -1411,6 +1442,7 @@
             "name": "kotlin-csv",
             "description": "The kotlin-csv library is an open-source tool designed to efficiently read and write CSV files in Kotlin, facilitating seamless data manipulation and integration in various programming projects.",
             "tags": [
+                "structured data",
                 "library",
                 "opensource"
             ],
@@ -1428,8 +1460,8 @@
             "name": "tensorflow.js",
             "description": "TensorFlow.js is an open-source library that enables machine learning directly in JavaScript environments, allowing developers to create intelligent, interactive applications with ease.",
             "tags": [
-                "library",
                 "machine learning",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -1447,8 +1479,8 @@
             "name": "ml5.js",
             "description": "Ml5.js is an open-source library that provides accessible machine learning tools for artists and developers, enabling easy integration of advanced models into interactive projects.",
             "tags": [
-                "library",
                 "machine learning",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -1456,9 +1488,30 @@
                 "https://github.com/ml5js/ml5-next-gen"
             ]
         },
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "description": "JTS Topology Suite is an open-source library that provides advanced geometry and GIS tools for spatial data processing and analysis.",
+            "tags": [
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
         "DeepJavaLibrary": {
             "name": "Deep Java Library",
             "description": "Deep Java Library provides a collection of easy-to-use tools for building, training, and deploying machine learning models directly in Java, supporting frameworks like PyTorch and TensorFlow",
+            "tags": [
+                "machine learning",
+                "library",
+                "opensource"
+            ],
             "references": [
                 "https://djl.ai/",
                 "https://github.com/deepjavalibrary/djl"
@@ -1467,44 +1520,12 @@
                 "Java"
             ]
         },
-        "JSerialComm": {
-            "name": "JSerialComm",
-            "description": "JSerialComm is an open-source library available on GitHub that provides a simple and efficient binding for serial port communication in Java, enabling seamless interaction with hardware devices.",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "BoofCV": {
-            "name": "BoofCV",
-            "description": "BoofCV is a library that provides advanced computer vision tools for image processing, feature detection, and real-time analysis, supporting developers in building interactive visual applications.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://boofcv.org/"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Png",
-                "Jpg"
-            ]
-        },
         "Antlr": {
             "name": "Antlr",
             "description": "Antlr is an open-source library designed for parsing and processing structured text, enabling developers to efficiently generate parsers for interpreting complex languages and data formats.",
             "tags": [
-                "library",
                 "parsing",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -1518,6 +1539,7 @@
             "name": "javax.sound",
             "description": "The javax.sound library provides a set of tools for handling audio capture, processing, and playback, enabling precise control over sound input and output in Java applications.",
             "tags": [
+                "audio",
                 "library"
             ],
             "dependsOn": [
@@ -1527,19 +1549,51 @@
                 "Wav"
             ]
         },
-        "Jogl": {
-            "name": "JOGL",
-            "description": "JOGL is an open-source library that provides Java bindings to the OpenGL graphics API, enabling developers to create high-performance, hardware-accelerated 2D and 3D graphics applications.",
+        "JavaxMidi": {
+            "name": "javax.midi",
             "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
+                "audio",
+                "library"
             ],
             "dependsOn": [
                 "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "description": "BoofCV is a library that provides advanced computer vision tools for image processing, feature detection, and real-time analysis, supporting developers in building interactive visual applications.",
+            "tags": [
+                "image processing",
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Png",
+                "Jpg"
+            ]
+        },
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "description": "TensorFlow for Java is a powerful library that enables developers to build and deploy machine learning models within Java applications, offering efficient tools for numerical computation and dataflow programming as detailed at the official GitHub repository tensorflow/java.",
+            "tags": [
+                "machine learning",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
             ]
         },
         "Artnet4J": {
@@ -1558,6 +1612,35 @@
             ],
             "supports": [
                 "ArtNet"
+            ]
+        },
+        "Swing": {
+            "name": "Swing",
+            "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
+            "tags": [
+                "ui",
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
+            "description": "JSerialComm is an open-source library available on GitHub that provides a simple and efficient binding for serial port communication in Java, enabling seamless interaction with hardware devices.",
+            "tags": [
+                "binding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
             ]
         },
         "Lwjgl": {
@@ -1588,12 +1671,24 @@
                 "opensource"
             ]
         },
+        "JavaCv": {
+            "name": "JavaCV",
+            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
+            "tags": [
+                "image processing",
+                "library"
+            ],
+            "dependsOn": [
+                "Java",
+                "OpenCv"
+            ]
+        },
         "Awt": {
             "name": "AWT",
             "description": "The Abstract Window Toolkit library provides a set of user interface components and tools for creating graphical applications that manage windows, handle events, and draw graphics.",
             "tags": [
-                "library",
-                "ui"
+                "ui",
+                "library"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
@@ -1602,65 +1697,16 @@
                 "Java"
             ]
         },
-        "JavaxMidi": {
-            "name": "javax.midi",
+        "Jogl": {
+            "name": "JOGL",
+            "description": "JOGL is an open-source library that provides Java bindings to the OpenGL graphics API, enabling developers to create high-performance, hardware-accelerated 2D and 3D graphics applications.",
             "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "JavaCv": {
-            "name": "JavaCV",
-            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "Jts": {
-            "name": "JTS Topology Suite",
-            "description": "JTS Topology Suite is an open-source library that provides advanced geometry and GIS tools for spatial data processing and analysis.",
-            "tags": [
+                "binding",
                 "library",
-                "geometry",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "TensorFlowJava": {
-            "name": "TensorFlow for Java",
-            "description": "TensorFlow for Java is a powerful library that enables developers to build and deploy machine learning models within Java applications, offering efficient tools for numerical computation and dataflow programming as detailed at the official GitHub repository tensorflow/java.",
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
-            ]
-        },
-        "Swing": {
-            "name": "Swing",
-            "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
             ],
             "dependsOn": [
                 "Java"
@@ -1683,291 +1729,293 @@
                 "Osc"
             ]
         },
-        "Zip": {
-            "name": "zip",
-            "description": "Zip is a file format that uses compression to reduce the size of one or more files, making storage and transfer more efficient.",
+        "Csv": {
+            "name": "CSV",
+            "description": "The CSV file format is a simple and widely used method for storing structured data in plain text, where each line represents a data record and fields are separated by commas.",
             "tags": [
-                "file format",
-                "compression"
+                "structured data",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
-            ]
-        },
-        "Mp4": {
-            "name": "MP4",
-            "description": "MP4 is a file format designed for storing digital video and audio streams efficiently, supporting features such as multiple tracks and metadata for versatile multimedia applications.",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
-        "Fbx": {
-            "name": "Filmbox",
-            "description": "Filmbox is a file format designed for 3D graphics that enables the exchange and storage of complex animated models and scenes between different software applications.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Obj": {
-            "name": "Wavefront OBJ",
-            "description": "The Wavefront OBJ file format is a widely used standard in 3D graphics that stores geometric data such as vertices, faces, and textures to represent three-dimensional models for use in various digital applications.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Ogg": {
-            "name": "OGG",
-            "description": "Ogg is a free, open file format designed for efficient streaming and manipulation of high-quality audio data.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Mov": {
-            "name": "Quicktime MOV",
-            "description": "he QuickTime MOV file format is a multimedia container developed by Apple that supports storing video, audio, and text tracks in a single file, enabling flexible editing and playback.",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Html": {
-            "name": "HTML",
-            "description": "HTML is a file format used to structure and present content on the web, providing a standard way to create and organize elements such as text, images, and multimedia.",
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Collada": {
-            "name": "Collada",
-            "description": "Collada is an open standard file format used to store and exchange 3D graphics data, enabling interoperability between different software tools and platforms.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Usd": {
-            "name": "USD",
-            "description": "USD is an open-source file format developed by Pixar for 3D graphics that enables the efficient interchange, composition, and collaboration of complex digital content across different software tools.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
-            ]
-        },
-        "Svg": {
-            "name": "SVG",
-            "description": "SVG is a file format that uses vector graphics to create and manipulate scalable, resolution-independent images through a structured XML-based language.",
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Css": {
-            "name": "CSS",
-            "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language, typically saved in a file format that defines the look and formatting of text and other elements.",
-            "tags": [
-                "file format",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Yaml": {
-            "name": "YAML",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
             ]
         },
         "Xml": {
             "name": "XML",
             "description": "XML is a file format designed to store and transport structured data in a readable and self-descriptive way, as detailed on Wikipedia.",
             "tags": [
-                "file format",
-                "structured data"
+                "structured data",
+                "file format"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/XML"
             ]
         },
-        "Csv": {
-            "name": "CSV",
-            "description": "The CSV file format is a simple and widely used method for storing structured data in plain text, where each line represents a data record and fields are separated by commas.",
+        "Usd": {
+            "name": "USD",
+            "description": "USD is an open-source file format developed by Pixar for 3D graphics that enables the efficient interchange, composition, and collaboration of complex digital content across different software tools.",
             "tags": [
-                "file format",
-                "structured data"
+                "3d graphics",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
+                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
             ]
         },
-        "Opus": {
-            "name": "Opus",
-            "description": "Opus is an open, royalty-free audio file format designed for high-quality and low-latency audio compression, suitable for interactive applications and real-time communication.",
+        "Zip": {
+            "name": "zip",
+            "description": "Zip is a file format that uses compression to reduce the size of one or more files, making storage and transfer more efficient.",
             "tags": [
-                "file format",
-                "audio"
+                "compression",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
             ]
         },
-        "Png": {
-            "name": "PNG",
-            "description": "PNG is a file format for raster graphics that supports lossless compression and transparency, widely used for creating high-quality images in various digital projects.",
+        "Ogg": {
+            "name": "OGG",
+            "description": "Ogg is a free, open file format designed for efficient streaming and manipulation of high-quality audio data.",
             "tags": [
-                "file format",
-                "raster graphics"
+                "audio",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "Onnx": {
-            "name": "ONNX",
-            "description": "ONNX is an open file format and standard for representing machine learning models, enabling interoperability between different frameworks.",
-            "tags": [
-                "file format",
-                "standard",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/onnx/onnx",
-                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
-            ]
-        },
-        "Jpg": {
-            "name": "JPEG",
-            "description": "JPEG is a widely used file format for compressing raster graphics images by reducing their file size through lossy compression techniques.",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
+                "https://en.wikipedia.org/wiki/Ogg"
             ]
         },
         "Ply": {
             "name": "PLY",
             "description": "PLY is a file format used in 3D graphics to store three-dimensional data, supporting detailed descriptions of the geometry and properties of objects",
             "tags": [
-                "file format",
-                "3d graphics"
+                "3d graphics",
+                "geometry",
+                "file format"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/PLY_(file_format)"
             ]
         },
-        "Gif": {
-            "name": "GIF",
-            "description": "The GIF is a file format that supports raster graphics and enables simple animations by displaying a sequence of images within a single file.",
+        "Mp4": {
+            "name": "MP4",
+            "description": "MP4 is a file format designed for storing digital video and audio streams efficiently, supporting features such as multiple tracks and metadata for versatile multimedia applications.",
             "tags": [
-                "file format",
-                "raster graphics"
+                "video",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/GIF"
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Yaml": {
+            "name": "YAML",
+            "tags": [
+                "structured data",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Collada": {
+            "name": "Collada",
+            "description": "Collada is an open standard file format used to store and exchange 3D graphics data, enabling interoperability between different software tools and platforms.",
+            "tags": [
+                "3d graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Fbx": {
+            "name": "Filmbox",
+            "description": "Filmbox is a file format designed for 3D graphics that enables the exchange and storage of complex animated models and scenes between different software applications.",
+            "tags": [
+                "3d graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Css": {
+            "name": "CSS",
+            "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language, typically saved in a file format that defines the look and formatting of text and other elements.",
+            "tags": [
+                "language",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
             ]
         },
         "Json": {
             "name": "JSON",
             "description": "JSON is a file format used to represent structured data in a readable and organized way, enabling efficient data exchange and manipulation.",
             "tags": [
-                "file format",
-                "structured data"
+                "structured data",
+                "file format"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/JSON"
             ]
         },
-        "Wav": {
-            "name": "WAV",
-            "description": "WAV is a file format that stores uncompressed audio data, commonly used for high-quality sound representation and editing.",
+        "Jpg": {
+            "name": "JPEG",
+            "description": "JPEG is a widely used file format for compressing raster graphics images by reducing their file size through lossy compression techniques.",
             "tags": [
-                "file format",
-                "audio"
+                "raster graphics",
+                "file format"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
-        "Gltf": {
-            "name": "GLTF",
-            "description": "GLTF is a file format designed for efficiently transmitting and loading 3D graphics models and scenes in applications requiring fast and interoperable rendering.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
-            ]
-        },
-        "Mp3": {
-            "name": "MP3",
-            "description": "MP3 is a popular file format for audio that compresses sound data to reduce file size while maintaining quality, enabling efficient storage and playback.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Stl": {
-            "name": "STL",
-            "description": "The STL file format is a widely used standard in 3D graphics for representing the surface geometry of three-dimensional objects through a collection of triangular facets.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
+                "https://en.wikipedia.org/wiki/JPEG"
             ]
         },
         "Gzip": {
             "name": "gzip",
             "description": "Gzip is a file format and compression tool used to reduce the size of files by encoding data more efficiently, enabling faster storage and transfer.",
             "tags": [
-                "file format",
-                "compression"
+                "compression",
+                "file format"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Gzip"
+            ]
+        },
+        "Gltf": {
+            "name": "GLTF",
+            "description": "GLTF is a file format designed for efficiently transmitting and loading 3D graphics models and scenes in applications requiring fast and interoperable rendering.",
+            "tags": [
+                "3d graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Opus": {
+            "name": "Opus",
+            "description": "Opus is an open, royalty-free audio file format designed for high-quality and low-latency audio compression, suitable for interactive applications and real-time communication.",
+            "tags": [
+                "audio",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Wav": {
+            "name": "WAV",
+            "description": "WAV is a file format that stores uncompressed audio data, commonly used for high-quality sound representation and editing.",
+            "tags": [
+                "audio",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Obj": {
+            "name": "Wavefront OBJ",
+            "description": "The Wavefront OBJ file format is a widely used standard in 3D graphics that stores geometric data such as vertices, faces, and textures to represent three-dimensional models for use in various digital applications.",
+            "tags": [
+                "3d graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Png": {
+            "name": "PNG",
+            "description": "PNG is a file format for raster graphics that supports lossless compression and transparency, widely used for creating high-quality images in various digital projects.",
+            "tags": [
+                "raster graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "Stl": {
+            "name": "STL",
+            "description": "The STL file format is a widely used standard in 3D graphics for representing the surface geometry of three-dimensional objects through a collection of triangular facets.",
+            "tags": [
+                "3d graphics",
+                "geometry",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Mov": {
+            "name": "Quicktime MOV",
+            "description": "he QuickTime MOV file format is a multimedia container developed by Apple that supports storing video, audio, and text tracks in a single file, enabling flexible editing and playback.",
+            "tags": [
+                "video",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Mp3": {
+            "name": "MP3",
+            "description": "MP3 is a popular file format for audio that compresses sound data to reduce file size while maintaining quality, enabling efficient storage and playback.",
+            "tags": [
+                "audio",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Onnx": {
+            "name": "ONNX",
+            "description": "ONNX is an open file format and standard for representing machine learning models, enabling interoperability between different frameworks.",
+            "tags": [
+                "machine learning",
+                "file format",
+                "standard"
+            ],
+            "references": [
+                "https://github.com/onnx/onnx",
+                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
+            ]
+        },
+        "Svg": {
+            "name": "SVG",
+            "description": "SVG is a file format that uses vector graphics to create and manipulate scalable, resolution-independent images through a structured XML-based language.",
+            "tags": [
+                "vector graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Html": {
+            "name": "HTML",
+            "description": "HTML is a file format used to structure and present content on the web, providing a standard way to create and organize elements such as text, images, and multimedia.",
+            "tags": [
+                "web",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Gif": {
+            "name": "GIF",
+            "description": "The GIF is a file format that supports raster graphics and enables simple animations by displaying a sequence of images within a single file.",
+            "tags": [
+                "raster graphics",
+                "file format"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
             ]
         },
         "Udp": {
@@ -2040,6 +2088,7 @@
             "name": "OSC",
             "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
             "tags": [
+                "protocol",
                 "standard",
                 "device interface"
             ],
@@ -2050,62 +2099,27 @@
                 "Udp"
             ]
         },
-        "Tramontana": {
-            "name": "Tramontana",
-            "description": "Provides access to phone sensors for AR/VR-like interactions.",
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
             "tags": [
-                "library"
+                "geometry",
+                "library",
+                "opensource"
             ],
             "references": [
-                "https://tramontana.xyz/"
+                "https://github.com/micycle1/PGS"
             ],
             "dependsOn": [
-                "Processing"
-            ]
-        },
-        "CreativeMachine": {
-            "name": "Creative Machine",
-            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/jjeongin/creative-machine"
-            ]
-        },
-        "Geomerative": {
-            "name": "Geomerative",
-            "description": "Accesses vertex points of vector graphics or text for manipulation.",
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://www.ricardmarxer.com/geomerative/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ControlP5": {
-            "name": "ControlP5",
-            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://www.sojamo.de/libraries/controlP5/"
-            ],
-            "dependsOn": [
-                "Processing"
+                "Processing",
+                "Jts"
             ]
         },
         "Queasycam": {
             "name": "Queasycame",
             "description": "Provides first-person camera controls in 3D spaces.",
             "tags": [
+                "3d graphics",
                 "library",
                 "opensource"
             ],
@@ -2117,8 +2131,8 @@
             "name": "nub",
             "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
             "tags": [
-                "library",
                 "3d graphics",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -2128,12 +2142,52 @@
                 "Processing"
             ]
         },
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
+            "tags": [
+                "ui",
+                "library"
+            ],
+            "references": [
+                "https://www.sojamo.de/libraries/controlP5/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ComputationalGeometry": {
+            "name": "Computational Geometry",
+            "tags": [
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://thecloudlab.org/processing/library.html"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
+            "tags": [
+                "machine learning",
+                "library"
+            ],
+            "references": [
+                "https://github.com/jjeongin/creative-machine"
+            ]
+        },
         "Ani": {
             "name": "Ani",
             "description": "Ani is a Processing library that provides precise control over animation timing and easing functions to create smooth and customizable motion effects.",
             "tags": [
+                "animation",
                 "library",
-                "animation"
+                "opensource"
             ],
             "references": [
                 "https://benedikt-gross.de/projects/ani-an-animation-library-for-processing/",
@@ -2146,40 +2200,61 @@
                 "Easing"
             ]
         },
-        "ComputationalGeometry": {
-            "name": "Computational Geometry",
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
             "tags": [
+                "sensor",
                 "library",
-                "geometry"
+                "opensource"
             ],
             "references": [
-                "http://thecloudlab.org/processing/library.html"
+                "https://tramontana.xyz/"
             ],
             "dependsOn": [
                 "Processing"
             ]
         },
-        "ProcessingGeometrySuite": {
-            "name": "Processing Geometry Suite",
-            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
+        "Geomerative": {
+            "name": "Geomerative",
+            "description": "Accesses vertex points of vector graphics or text for manipulation.",
             "tags": [
+                "vector graphics",
                 "library",
-                "geometry"
+                "opensource"
             ],
             "references": [
-                "https://github.com/micycle1/PGS"
+                "https://www.ricardmarxer.com/geomerative/"
             ],
             "dependsOn": [
-                "Processing",
-                "Jts"
+                "Processing"
+            ]
+        },
+        "GifAnimation": {
+            "name": "GifAnimation",
+            "description": "Enables exporting animated GIFs from sketches.",
+            "tags": [
+                "animation",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/extrapixel/gif-animation"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Gif"
             ]
         },
         "VideoExport": {
             "name": "VideoExport",
             "description": "Allows exporting videos from Processing sketches using FFMPEG.",
             "tags": [
+                "video",
                 "library",
-                "video"
+                "opensource"
             ],
             "references": [
                 "https://funprogramming.org/VideoExport-for-Processing/"
@@ -2192,7 +2267,8 @@
             "name": "OscP5",
             "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
             "tags": [
-                "library"
+                "library",
+                "opensource"
             ],
             "references": [
                 "https://www.sojamo.de/libraries/oscP5/"
@@ -2202,22 +2278,6 @@
             ],
             "supports": [
                 "Osc"
-            ]
-        },
-        "GifAnimation": {
-            "name": "GifAnimation",
-            "description": "Enables exporting animated GIFs from sketches.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/extrapixel/gif-animation"
-            ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "supports": [
-                "Gif"
             ]
         },
         "Processing": {
@@ -2247,60 +2307,12 @@
                 "Jpg"
             ]
         },
-        "D3Contour": {
-            "name": "d3-contour",
-            "description": "D3-contour is an open-source library that generates geometric contour lines from gridded data to visualize continuous fields",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/d3/d3-contour"
-            ],
-            "partOf": [
-                "D3JS"
-            ],
-            "dependsOn": [
-                "D3JS"
-            ],
-            "techniques": [
-                "MarchingSquares"
-            ]
-        },
-        "D3Color": {
-            "name": "d3-color",
-            "description": "The d3-color library is an open-source tool that provides robust methods for color manipulation and conversion, enabling precise control over color spaces and transformations in digital projects.",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/d3/d3-color"
-            ],
-            "partOf": [
-                "D3JS"
-            ],
-            "dependsOn": [
-                "D3JS"
-            ]
-        },
-        "D3Ease": {
-            "name": "d3-ease",
-            "description": "The d3-ease library is an open-source tool that provides a collection of mathematical easing functions to create smooth and visually appealing animations.",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ]
-        },
         "D3JS": {
             "name": "d3",
             "description": "D3 is an open-source library for web that enables efficient manipulation of documents based on data to create dynamic, interactive visualizations.",
             "tags": [
-                "library",
                 "web",
+                "library",
                 "opensource"
             ],
             "references": [
@@ -2315,13 +2327,61 @@
                 "Svg"
             ]
         },
+        "D3Force": {
+            "name": "d3-force",
+            "description": "D3-force is an open-source library that provides a flexible simulation framework for modeling physical forces on nodes and links, enabling dynamic and interactive visualizations.",
+            "tags": [
+                "simulation",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/d3/d3-force"
+            ],
+            "partOf": [
+                "D3JS"
+            ],
+            "dependsOn": [
+                "D3JS"
+            ],
+            "techniques": [
+                "ForceDirectedGraphDrawing"
+            ]
+        },
+        "D3Ease": {
+            "name": "d3-ease",
+            "description": "The d3-ease library is an open-source tool that provides a collection of mathematical easing functions to create smooth and visually appealing animations.",
+            "tags": [
+                "animation",
+                "library",
+                "opensource"
+            ]
+        },
+        "D3Color": {
+            "name": "d3-color",
+            "description": "The d3-color library is an open-source tool that provides robust methods for color manipulation and conversion, enabling precise control over color spaces and transformations in digital projects.",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/d3/d3-color"
+            ],
+            "partOf": [
+                "D3JS"
+            ],
+            "dependsOn": [
+                "D3JS"
+            ]
+        },
         "D3QuadTree": {
             "name": "d3-quadtree",
             "description": "The d3-quadtree library is an open source tool for efficient space partitioning that enables fast searching, insertion, and retrieval of two-dimensional points, complementing other data visualization tools like d3-contour.",
             "tags": [
+                "space partitioning",
                 "library",
-                "opensource",
-                "space partitioning"
+                "opensource"
             ],
             "references": [
                 "https://github.com/d3/d3-contour"
@@ -2336,16 +2396,16 @@
                 "QuadTree"
             ]
         },
-        "D3Force": {
-            "name": "d3-force",
-            "description": "D3-force is an open-source library that provides a flexible simulation framework for modeling physical forces on nodes and links, enabling dynamic and interactive visualizations.",
+        "D3Contour": {
+            "name": "d3-contour",
+            "description": "D3-contour is an open-source library that generates geometric contour lines from gridded data to visualize continuous fields",
             "tags": [
+                "geometry",
                 "library",
-                "opensource",
-                "simulation"
+                "opensource"
             ],
             "references": [
-                "https://github.com/d3/d3-force"
+                "https://github.com/d3/d3-contour"
             ],
             "partOf": [
                 "D3JS"
@@ -2354,7 +2414,7 @@
                 "D3JS"
             ],
             "techniques": [
-                "ForceDirectedGraphDrawing"
+                "MarchingSquares"
             ]
         },
         "CPP": {
@@ -3391,53 +3451,21 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
-        "PyTorch": {
-            "name": "PyTorch",
-            "description": "PyTorch is a library for machine learning that provides flexible tools for building and training neural networks with dynamic computation graphs and efficient tensor operations.",
+        "Transformers": {
+            "name": "Transformers",
+            "description": "The Transformers library is an open-source machine learning library that provides pre-trained models and tools for natural language processing and other tasks.",
             "tags": [
-                "library",
-                "machine learning"
+                "machine learning",
+                "library"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/PyTorch"
-            ],
-            "dependsOn": [
-                "Python",
-                "CPP"
-            ]
-        },
-        "Pandas": {
-            "name": "Pandas",
-            "description": "Pandas is a powerful library designed for data science that provides flexible and efficient tools to manipulate, analyze, and visualize structured data with ease.",
-            "tags": [
-                "library",
-                "data science",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pandas_(software)"
+                "https://github.com/huggingface/transformers"
             ],
             "dependsOn": [
                 "Python"
             ],
             "supports": [
-                "Json",
-                "Csv"
-            ]
-        },
-        "ScikitLearn": {
-            "name": "Scikit-learn",
-            "description": "Scikit-learn is a powerful library designed for data science and machine learning that provides efficient tools for data analysis, model building, and validation.",
-            "tags": [
-                "library",
-                "data science",
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Scikit-learn"
-            ],
-            "dependsOn": [
-                "Python"
+                "PyTorch"
             ]
         },
         "Python": {
@@ -3452,31 +3480,65 @@
                 "https://en.wikipedia.org/wiki/Python_(programming_language)"
             ]
         },
-        "Transformers": {
-            "name": "Transformers",
-            "description": "The Transformers library is an open-source machine learning library that provides pre-trained models and tools for natural language processing and other tasks.",
+        "Pandas": {
+            "name": "Pandas",
+            "description": "Pandas is a powerful library designed for data science that provides flexible and efficient tools to manipulate, analyze, and visualize structured data with ease.",
             "tags": [
-                "library",
-                "machine learning"
+                "data science",
+                "structured data",
+                "library"
             ],
             "references": [
-                "https://github.com/huggingface/transformers"
+                "https://en.wikipedia.org/wiki/Pandas_(software)"
             ],
             "dependsOn": [
                 "Python"
             ],
             "supports": [
-                "PyTorch"
+                "Json",
+                "Csv"
+            ]
+        },
+        "PyTorch": {
+            "name": "PyTorch",
+            "description": "PyTorch is a library for machine learning that provides flexible tools for building and training neural networks with dynamic computation graphs and efficient tensor operations.",
+            "tags": [
+                "machine learning",
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PyTorch"
+            ],
+            "dependsOn": [
+                "Python",
+                "CPP"
             ]
         },
         "NumPy": {
             "name": "NumPy",
             "description": "NumPy is a powerful library that provides efficient numerical computing tools and multi-dimensional array objects essential for data manipulation and mathematical operations.",
             "tags": [
-                "library"
+                "functions",
+                "library",
+                "opensource"
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/NumPy"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "ScikitLearn": {
+            "name": "Scikit-learn",
+            "description": "Scikit-learn is a powerful library designed for data science and machine learning that provides efficient tools for data analysis, model building, and validation.",
+            "tags": [
+                "machine learning",
+                "data science",
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Scikit-learn"
             ],
             "dependsOn": [
                 "Python"

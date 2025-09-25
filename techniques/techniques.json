@@ -983,6 +983,9 @@
         "Clamp": {
             "name": "Clamp",
             "description": "The clamp function restricts a value to lie within a specified minimum and maximum range by returning the minimum if the value is below it, the maximum if the value is above it, or the value itself if it is within the range.",
+            "tags": [
+                "functions"
+            ],
             "references": [
                 "https://en.wikipedia.org/wiki/Clamp_(function)"
             ]
