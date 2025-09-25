@@ -609,27 +609,6 @@
                 "OPENRNDR"
             ]
         },
-        "OrxEasing": {
-            "name": "orx-easing",
-            "description": "Easing functions for smooth animation or non-linear interpolation.",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-easing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "easing"
-            ]
-        },
         "OrxSvg": {
             "name": "orx-svg",
             "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
@@ -1348,6 +1327,27 @@
             ],
             "dependsOn": [
                 "OPENRNDR"
+            ]
+        },
+        "OrxEasing": {
+            "name": "orx-easing",
+            "description": "Easing functions for smooth animation or non-linear interpolation.",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "Easing"
             ]
         },
         "OrxNoise": {
