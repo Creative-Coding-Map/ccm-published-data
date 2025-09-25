@@ -1,1343 +1,79 @@
 {
     "tools": {
-        "Zip": {
-            "name": "zip",
-            "description": "Zip is a file format that uses compression to reduce the size of one or more files, making storage and transfer more efficient.",
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
-            ]
-        },
-        "Mp4": {
-            "name": "MP4",
-            "description": "MP4 is a file format designed for storing digital video and audio streams efficiently, supporting features such as multiple tracks and metadata for versatile multimedia applications.",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP4_file_format"
-            ]
-        },
-        "Fbx": {
-            "name": "Filmbox",
-            "description": "Filmbox is a file format designed for 3D graphics that enables the exchange and storage of complex animated models and scenes between different software applications.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FBX"
-            ]
-        },
-        "Obj": {
-            "name": "Wavefront OBJ",
-            "description": "The Wavefront OBJ file format is a widely used standard in 3D graphics that stores geometric data such as vertices, faces, and textures to represent three-dimensional models for use in various digital applications.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-            ]
-        },
-        "Ogg": {
-            "name": "OGG",
-            "description": "Ogg is a free, open file format designed for efficient streaming and manipulation of high-quality audio data.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Ogg"
-            ]
-        },
-        "Mov": {
-            "name": "Quicktime MOV",
-            "description": "he QuickTime MOV file format is a multimedia container developed by Apple that supports storing video, audio, and text tracks in a single file, enabling flexible editing and playback.",
-            "tags": [
-                "file format",
-                "video"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
-            ]
-        },
-        "Html": {
-            "name": "HTML",
-            "description": "HTML is a file format used to structure and present content on the web, providing a standard way to create and organize elements such as text, images, and multimedia.",
-            "tags": [
-                "file format",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTML"
-            ]
-        },
-        "Collada": {
-            "name": "Collada",
-            "description": "Collada is an open standard file format used to store and exchange 3D graphics data, enabling interoperability between different software tools and platforms.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/COLLADA"
-            ]
-        },
-        "Usd": {
-            "name": "USD",
-            "description": "USD is an open-source file format developed by Pixar for 3D graphics that enables the efficient interchange, composition, and collaboration of complex digital content across different software tools.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
-            ]
-        },
-        "Svg": {
-            "name": "SVG",
-            "description": "SVG is a file format that uses vector graphics to create and manipulate scalable, resolution-independent images through a structured XML-based language.",
-            "tags": [
-                "file format",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/SVG"
-            ]
-        },
-        "Css": {
-            "name": "CSS",
-            "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language, typically saved in a file format that defines the look and formatting of text and other elements.",
-            "tags": [
-                "file format",
-                "language"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CSS"
-            ]
-        },
-        "Yaml": {
-            "name": "YAML",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/YAML"
-            ]
-        },
-        "Xml": {
-            "name": "XML",
-            "description": "XML is a file format designed to store and transport structured data in a readable and self-descriptive way, as detailed on Wikipedia.",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/XML"
-            ]
-        },
-        "Csv": {
-            "name": "CSV",
-            "description": "The CSV file format is a simple and widely used method for storing structured data in plain text, where each line represents a data record and fields are separated by commas.",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Comma-separated_values"
-            ]
-        },
-        "Opus": {
-            "name": "Opus",
-            "description": "Opus is an open, royalty-free audio file format designed for high-quality and low-latency audio compression, suitable for interactive applications and real-time communication.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
-            ]
-        },
-        "Png": {
-            "name": "PNG",
-            "description": "PNG is a file format for raster graphics that supports lossless compression and transparency, widely used for creating high-quality images in various digital projects.",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PNG"
-            ]
-        },
-        "Onnx": {
-            "name": "ONNX",
-            "description": "ONNX is an open file format and standard for representing machine learning models, enabling interoperability between different frameworks.",
-            "tags": [
-                "file format",
-                "standard",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/onnx/onnx",
-                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
-            ]
-        },
-        "Jpg": {
-            "name": "JPEG",
-            "description": "JPEG is a widely used file format for compressing raster graphics images by reducing their file size through lossy compression techniques.",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JPEG"
-            ]
-        },
-        "Ply": {
-            "name": "PLY",
-            "description": "PLY is a file format used in 3D graphics to store three-dimensional data, supporting detailed descriptions of the geometry and properties of objects",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/PLY_(file_format)"
-            ]
-        },
-        "Gif": {
-            "name": "GIF",
-            "description": "The GIF is a file format that supports raster graphics and enables simple animations by displaying a sequence of images within a single file.",
-            "tags": [
-                "file format",
-                "raster graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GIF"
-            ]
-        },
-        "Json": {
-            "name": "JSON",
-            "description": "JSON is a file format used to represent structured data in a readable and organized way, enabling efficient data exchange and manipulation.",
-            "tags": [
-                "file format",
-                "structured data"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JSON"
-            ]
-        },
-        "Wav": {
-            "name": "WAV",
-            "description": "WAV is a file format that stores uncompressed audio data, commonly used for high-quality sound representation and editing.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WAV"
-            ]
-        },
-        "Gltf": {
-            "name": "GLTF",
-            "description": "GLTF is a file format designed for efficiently transmitting and loading 3D graphics models and scenes in applications requiring fast and interoperable rendering.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GlTF"
-            ]
-        },
-        "Mp3": {
-            "name": "MP3",
-            "description": "MP3 is a popular file format for audio that compresses sound data to reduce file size while maintaining quality, enabling efficient storage and playback.",
-            "tags": [
-                "file format",
-                "audio"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MP3"
-            ]
-        },
-        "Stl": {
-            "name": "STL",
-            "description": "The STL file format is a widely used standard in 3D graphics for representing the surface geometry of three-dimensional objects through a collection of triangular facets.",
-            "tags": [
-                "file format",
-                "3d graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/STL_(file_format)"
-            ]
-        },
-        "Gzip": {
-            "name": "gzip",
-            "description": "Gzip is a file format and compression tool used to reduce the size of files by encoding data more efficiently, enabling faster storage and transfer.",
-            "tags": [
-                "file format",
-                "compression"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gzip"
-            ]
-        },
-        "TensorflowJs": {
-            "name": "tensorflow.js",
-            "description": "TensorFlow.js is an open-source library that enables machine learning directly in JavaScript environments, allowing developers to create intelligent, interactive applications with ease.",
+        "TensorFlow": {
+            "name": "TensorFlow",
+            "description": "TensorFlow is an open-source library for machine learning available at https://github.com/tensorflow that provides powerful tools to develop, train, and deploy intelligent models.",
             "tags": [
                 "library",
                 "machine learning",
                 "opensource"
             ],
             "references": [
-                "https://github.com/tensorflow/tfjs"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "WebGL"
-            ],
-            "supports": [
-                "Browser"
+                "https://github.com/tensorflow"
             ]
         },
-        "Ml5Js": {
-            "name": "ml5.js",
-            "description": "Ml5.js is an open-source library that provides accessible machine learning tools for artists and developers, enabling easy integration of advanced models into interactive projects.",
+        "OnnxRuntime": {
+            "name": "ONNX Runtime",
+            "description": "ONNX Runtime is a fast and flexible library for executing machine learning models across different platforms, designed as an opensource tool to enhance performance and interoperability.",
             "tags": [
                 "library",
                 "machine learning",
                 "opensource"
             ],
-            "references": [
-                "https://ml5js.org/",
-                "https://github.com/ml5js/ml5-next-gen"
-            ]
-        },
-        "OrxPalette": {
-            "name": "orx-palette",
-            "description": "Orx-palette is an open source library that provides tools for generating and managing color palettes in digital projects.",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-palette"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMidi": {
-            "name": "orx-midi",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaxMidi"
-            ],
             "supports": [
-                "Midi"
-            ]
-        },
-        "OrxMesh": {
-            "name": "orx-mesh",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxGradientDescent": {
-            "name": "orx-gradient-descent",
-            "description": "orx-gradient-descent is an open-source library that provides efficient algorithms for optimizing parameters in interactive visual projects through gradient descent methods.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GradientDescent"
-            ]
-        },
-        "OrxDnky": {
-            "name": "orx-dnky",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL",
-                "Gltf"
-            ]
-        },
-        "OrxMath": {
-            "name": "orx-math",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxComposition": {
-            "name": "orx-composition",
-            "tags": [
-                "library",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-composition"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxIntegralImage": {
-            "name": "orx-integral-image",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxNoise": {
-            "name": "orx-noise",
-            "tags": [
-                "library",
-                "opensource",
-                "noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "PerlinNoise",
-                "SimplexNoise",
-                "FBMNoise",
-                "WorleyNoise",
-                "ValueNoise"
-            ]
-        },
-        "OrxBoofCv": {
-            "name": "orx-boofcv",
-            "description": "Orx-boofcv is an open-source library that integrates BoofCV's computer vision capabilities with the ORX framework for JVM-based projects.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "BoofCV"
-            ]
-        },
-        "OrxJumpflood": {
-            "name": "orx-jumpflood",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "DistanceTransform"
-            ]
-        },
-        "OrxEnvelopes": {
-            "name": "orx-envelopes",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMarchingSquares": {
-            "name": "orx-marching-squares",
-            "tags": [
-                "library",
-                "geometry",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxKdtree": {
-            "name": "orx-kdtree",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "KDTree"
-            ]
-        },
-        "OrxShadeStyles": {
-            "name": "orx-shade-styles",
-            "tags": [
-                "library",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxTurtle": {
-            "name": "orx-turtle",
-            "description": "rx-turtle is an open-source library available on GitHub that provides tools for generating vector graphics through procedural drawing techniques.",
-            "tags": [
-                "library",
-                "opensource",
-                "vector graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-turtle"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "TurtleGraphics"
-            ]
-        },
-        "OrxFcurve": {
-            "name": "orx-fcurve",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "OrxExpressionEvaluator"
-            ],
-            "techniques": [
-                "KeyframeInterpolation",
-                "RegularExpressions"
-            ]
-        },
-        "OrxQuadTree": {
-            "name": "orx-quadtree",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxDepthCamera": {
-            "name": "orx-depth-camera",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-depth-camera"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxSvg": {
-            "name": "orx-svg",
-            "tags": [
-                "library",
-                "vector graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-svg"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Svg"
-            ]
-        },
-        "OrxMeshGenerators": {
-            "name": "orx-mesh-generators",
-            "description": "The orx-mesh-generators library provides a collection of tools for creating and manipulating 3D graphics meshes programmatically",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxOsc": {
-            "name": "orx-osc",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-osc"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaOsc"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
-        "OrxImageFit": {
-            "name": "orx-image-fit",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTemporalBlur": {
-            "name": "orx-temporal-blur",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OpenrndrVideo": {
-            "name": "openrndr-video",
-            "tags": [
-                "library",
-                "video",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "Ffmpeg"
-            ],
-            "supports": [
-                "Mp4",
-                "Mov"
-            ]
-        },
-        "OrxCamera": {
-            "name": "orx-camera",
-            "description": "Orx-camera is an open-source library for computer graphics that provides flexible and easy-to-use camera controls, enabling smooth navigation and dynamic perspectives in graphical applications.",
-            "tags": [
-                "library",
-                "opensource",
-                "computer graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-camera"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "OrthogonalProjection",
-                "PerspectiveProjection"
-            ]
-        },
-        "OrxTextWriter": {
-            "name": "orx-text-writer",
-            "description": "The orx-text-writer library is an open-source tool that enables dynamic and customizable text rendering within graphical applications",
-            "tags": [
-                "library",
-                "text",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxShapes": {
-            "name": "orx-shapes",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shapes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "HobbyCurve",
-                "DelaunayTriangulation",
-                "AlphaShape"
-            ]
-        },
-        "OrxHashGrid": {
-            "name": "orx-hash-grid",
-            "tags": [
-                "library",
-                "opensource",
-                "space partitioning"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxObjLoader": {
-            "name": "orx-obj-loader",
-            "description": "he orx-obj-loader is an open-source tool from the OpenRNDR extensions collection that enables easy loading and parsing of 3D OBJ model files for use in visual programming projects.",
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Obj"
-            ]
-        },
-        "OrxCompositor": {
-            "name": "orx-compositor",
-            "tags": [
-                "library",
-                "opensource",
-                "computer graphics"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-compositor"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTriangulation": {
-            "name": "orx-triangulation",
-            "tags": [
-                "library",
-                "opensource",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OPENRNDR": {
-            "name": "OPENRNDR",
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://openrndr.org"
-            ],
-            "dependsOn": [
-                "Kotlin",
-                "Lwjgl"
-            ],
-            "supports": [
-                "Png",
-                "Svg",
-                "Jpg"
-            ]
-        },
-        "OrxFx": {
-            "name": "orx-fx",
-            "tags": [
-                "library",
-                "shaders"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GaussianBlur",
-                "CannyEdgeDetection",
-                "Halftoning",
-                "Dithering",
-                "EdgeDetection",
-                "Blur",
-                "ImageQuantization"
-            ]
-        },
-        "OrxOlive": {
-            "name": "orx-olive",
-            "tags": [
-                "library",
-                "opensource",
-                "live coding"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxPoissonFill": {
-            "name": "orx-poisson-fill",
-            "tags": [
-                "library",
-                "opensource",
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxIntervalTree": {
-            "name": "orx-interval-tree",
-            "description": "Orx-interval-tree is an opensource library that provides an efficient data structure for managing and querying intervals, enabling precise control over timing and spatial relationships in dynamic visual and interactive projects.",
-            "tags": [
-                "library",
-                "opensource",
-                "data structure"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxExpressionEvaluator": {
-            "name": "orx-expression-evaluator",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "AntlrKotlin"
-            ]
-        },
-        "OrxColor": {
-            "name": "orx-color",
-            "description": "The orx-color library is an open-source tool available on GitHub that provides comprehensive utilities for color manipulation and conversion in programming projects",
-            "tags": [
-                "library",
-                "opensource",
-                "color"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-color"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTextOnContour": {
-            "name": "orx-text-on-contour",
-            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMeshNoise": {
-            "name": "orx-mesh-noise",
-            "tags": [
-                "library",
-                "opensource",
-                "3d graphics",
-                "noise"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFft": {
-            "name": "orx-fft",
-            "tags": [
-                "library"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "FFT"
-            ]
-        },
-        "OrxShaderPhrases": {
-            "name": "orx-shader-phrases",
-            "tags": [
-                "library",
-                "shaders",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxEasing": {
-            "name": "orx-easing",
-            "tags": [
-                "library",
-                "opensource",
-                "animation"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-easing"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "AntlrKotlin": {
-            "name": "antlr-kotlin",
-            "description": "Antlr-kotlin is an open-source library designed for parsing that enables developers to generate parsers in Kotlin, facilitating the interpretation and transformation of complex text inputs.",
-            "tags": [
-                "library",
-                "opensource",
-                "parsing"
-            ],
-            "references": [
-                "https://github.com/Strumenta/antlr-kotlin"
-            ],
-            "dependsOn": [
-                "Kotlin",
-                "Antlr"
-            ]
-        },
-        "KotlinxSerialization": {
-            "name": "kotlinx.serialization",
-            "description": "The library kotlinx.serialization is an open-source tool that enables efficient encoding and decoding of data structures in Kotlin, facilitating smooth data handling and interchange.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Kotlin/kotlinx.serialization"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Json",
-                "Yaml",
-                "Xml"
-            ]
-        },
-        "KotlinCsv": {
-            "name": "kotlin-csv",
-            "description": "The kotlin-csv library is an open-source tool designed to efficiently read and write CSV files in Kotlin, facilitating seamless data manipulation and integration in various programming projects.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jsoizo/kotlin-csv"
-            ],
-            "dependsOn": [
-                "Kotlin"
-            ],
-            "supports": [
-                "Csv"
-            ]
-        },
-        "Tramontana": {
-            "name": "Tramontana",
-            "description": "Provides access to phone sensors for AR/VR-like interactions.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://tramontana.xyz/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "CreativeMachine": {
-            "name": "Creative Machine",
-            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
-            "tags": [
-                "library",
-                "machine learning"
-            ],
-            "references": [
-                "https://github.com/jjeongin/creative-machine"
-            ]
-        },
-        "Geomerative": {
-            "name": "Geomerative",
-            "description": "Accesses vertex points of vector graphics or text for manipulation.",
-            "tags": [
-                "library",
-                "vector graphics"
-            ],
-            "references": [
-                "https://www.ricardmarxer.com/geomerative/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ControlP5": {
-            "name": "ControlP5",
-            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://www.sojamo.de/libraries/controlP5/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Queasycam": {
-            "name": "Queasycame",
-            "description": "Provides first-person camera controls in 3D spaces.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Nub": {
-            "name": "nub",
-            "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
-            "tags": [
-                "library",
-                "3d graphics",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/VisualComputing/nub"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Ani": {
-            "name": "Ani",
-            "description": "Ani is a Processing library that provides precise control over animation timing and easing functions to create smooth and customizable motion effects.",
-            "tags": [
-                "library",
-                "animation"
-            ],
-            "references": [
-                "https://benedikt-gross.de/projects/ani-an-animation-library-for-processing/",
-                "https://github.com/b-g/Ani"
-            ],
-            "dependsOn": [
-                "Processing"
-            ],
-            "techniques": [
-                "Easing"
-            ]
-        },
-        "ComputationalGeometry": {
-            "name": "Computational Geometry",
-            "tags": [
-                "library",
-                "geometry"
-            ],
-            "references": [
-                "http://thecloudlab.org/processing/library.html"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ProcessingGeometrySuite": {
-            "name": "Processing Geometry Suite",
-            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
-            "tags": [
-                "library",
-                "geometry"
-            ],
-            "references": [
-                "https://github.com/micycle1/PGS"
-            ],
-            "dependsOn": [
-                "Processing",
-                "Jts"
-            ]
-        },
-        "VideoExport": {
-            "name": "VideoExport",
-            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
-            "tags": [
-                "library",
-                "video"
-            ],
-            "references": [
-                "https://funprogramming.org/VideoExport-for-Processing/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Processing": {
-            "name": "Processing",
-            "tags": [
-                "creative coding",
-                "application",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Processing",
-                "https://processing.org/",
-                "https://github.com/processing/processing4"
-            ],
-            "dependsOn": [
+                "Onnx",
                 "Java",
-                "Jogl",
-                "Antlr",
-                "Swing"
-            ],
-            "supports": [
-                "Json",
-                "Csv",
-                "Png",
-                "Jpg"
+                "Python",
+                "C"
             ]
         },
-        "OscP5": {
-            "name": "OscP5",
-            "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
+        "SDL": {
+            "name": "SDL",
+            "description": "SDL is a library that provides low-level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D, enabling developers to create interactive multimedia applications across multiple platforms.",
             "tags": [
                 "library"
             ],
             "references": [
-                "https://www.sojamo.de/libraries/oscP5/"
+                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
             ],
             "dependsOn": [
-                "Processing"
+                "C"
             ],
             "supports": [
-                "Osc"
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
             ]
         },
-        "GifAnimation": {
-            "name": "GifAnimation",
-            "description": "Enables exporting animated GIFs from sketches.",
+        "Glfw": {
+            "name": "GLFW",
+            "description": "GLFW is a library designed to create and manage windows, handle inputs, and facilitate OpenGL context creation for developing interactive graphics applications.",
             "tags": [
                 "library"
             ],
             "references": [
-                "https://github.com/extrapixel/gif-animation"
+                "https://en.wikipedia.org/wiki/GLFW"
             ],
             "dependsOn": [
-                "Processing"
+                "C"
             ],
             "supports": [
-                "Gif"
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES"
+            ]
+        },
+        "Assimp": {
+            "name": "Assimp",
+            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/assimp/assimp"
+            ],
+            "dependsOn": [
+                "CPP"
             ]
         },
         "P5Palette": {
@@ -1855,31 +591,1660 @@
                 "P5Js"
             ]
         },
-        "TensorFlow": {
-            "name": "TensorFlow",
-            "description": "TensorFlow is an open-source library for machine learning available at https://github.com/tensorflow that provides powerful tools to develop, train, and deploy intelligent models.",
+        "OrxOlive": {
+            "name": "orx-olive",
+            "description": "Provides live coding functionality: updates a running OPENRNDR program when you save your changes.",
+            "tags": [
+                "library",
+                "opensource",
+                "live coding"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-olive"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxEasing": {
+            "name": "orx-easing",
+            "description": "Easing functions for smooth animation or non-linear interpolation.",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "easing"
+            ]
+        },
+        "OrxSvg": {
+            "name": "orx-svg",
+            "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
+            "tags": [
+                "library",
+                "vector graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-svg"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Svg"
+            ]
+        },
+        "OrxObjLoader": {
+            "name": "orx-obj-loader",
+            "description": "Simple loader and saver for Wavefront .obj 3D mesh files.",
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Obj"
+            ]
+        },
+        "OrxTemporalBlur": {
+            "name": "orx-temporal-blur",
+            "description": "Post-processing temporal-blur video effect.",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxIntervalTree": {
+            "name": "orx-interval-tree",
+            "description": "Efficient data structures for managing and querying intervals.",
+            "tags": [
+                "library",
+                "opensource",
+                "data structure"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTurtle": {
+            "name": "orx-turtle",
+            "description": "Bezier backed turtle graphics for OPENRNDR programs.",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-turtle"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "TurtleGraphics"
+            ]
+        },
+        "OrxKdtree": {
+            "name": "orx-kdtree",
+            "description": "Fast search of points closest to the queried point in a data set. 2D, 3D and 4D.",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "KDTree"
+            ]
+        },
+        "OrxExpressionEvaluator": {
+            "name": "orx-expression-evaluator",
+            "description": "Tools to evaluate strings containing mathematical expressions.",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-expression-evaluator"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "AntlrKotlin"
+            ]
+        },
+        "OrxPalette": {
+            "name": "orx-palette",
+            "description": "Collections of color palettes and tools for interacting with them.",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-palette"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextWriter": {
+            "name": "orx-text-writer",
+            "description": "Provide OPENRNDR programs with functionality to write text in layouts.",
+            "tags": [
+                "library",
+                "opensource",
+                "typography"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFx": {
+            "name": "orx-fx",
+            "description": "Ready-to-use GPU-based visual effects and filters.",
+            "tags": [
+                "library",
+                "shaders"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GaussianBlur",
+                "CannyEdgeDetection",
+                "Halftoning",
+                "Dithering",
+                "EdgeDetection",
+                "Blur",
+                "ImageQuantization"
+            ]
+        },
+        "OrxMarchingSquares": {
+            "name": "orx-marching-squares",
+            "description": "Tools for extracting contours from images and functions",
+            "tags": [
+                "library",
+                "geometry",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "MarchingSquares"
+            ]
+        },
+        "OrxQuadTree": {
+            "name": "orx-quadtree",
+            "description": "Implementation of the quadtree structure and tools for querying points.",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShadeStyles": {
+            "name": "orx-shade-styles",
+            "description": "Shader based fills and strokes, including various types of gradient fills.",
+            "tags": [
+                "library",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OrxHashGrid": {
+            "name": "orx-hash-grid",
+            "description": "2D space partitioning for fast point queries.",
+            "tags": [
+                "library",
+                "opensource",
+                "space partitioning"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxGradientDescent": {
+            "name": "orx-gradient-descent",
+            "description": "Finds equation inputs that output a minimum value: easy to use gradient descent based minimizer.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GradientDescent"
+            ]
+        },
+        "OrxBoofCv": {
+            "name": "orx-boofcv",
+            "description": "Orx-boofcv is an open-source library that integrates BoofCV's computer vision capabilities with the ORX framework for JVM-based projects.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "BoofCV"
+            ]
+        },
+        "OrxColor": {
+            "name": "orx-color",
+            "description": "Provides OPENRNDR programs with color spaces, palettes, histograms, and named colors.",
+            "tags": [
+                "library",
+                "opensource",
+                "color"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-color"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxOsc": {
+            "name": "orx-osc",
+            "description": "Provides OSC support for OPENRNDR programs.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-osc"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaOsc"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "OrxFcurve": {
+            "name": "orx-fcurve",
+            "description": "Advanced keyframing tools based on 1-dimensional Bezier curves",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "OrxExpressionEvaluator"
+            ],
+            "techniques": [
+                "KeyframeInterpolation",
+                "RegularExpressions"
+            ]
+        },
+        "OrxPoissonFill": {
+            "name": "orx-poisson-fill",
+            "description": "Post processing effect that fills transparent parts of the image interpolating the edge pixel colors.",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-poisson-fill"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PoissonFill"
+            ]
+        },
+        "OrxTriangulation": {
+            "name": "orx-triangulation",
+            "description": "Delaunay triangulation and Voronoi diagrams for OPENRNDR programs",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShaderPhrases": {
+            "name": "orx-shader-phrases",
+            "description": "A library of shader phrases that can be composed into shaders",
+            "tags": [
+                "library",
+                "shaders",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shader-phrases"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
+        "OrxMeshNoise": {
+            "name": "orx-mesh-noise",
+            "description": "Generate random samples on the surface of a mesh",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics",
+                "noise"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShapes": {
+            "name": "orx-shapes",
+            "description": "Collection of 2D shape generators and modifiers.",
+            "tags": [
+                "library",
+                "opensource",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shapes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "HobbyCurve",
+                "DelaunayTriangulation",
+                "AlphaShape"
+            ]
+        },
+        "OrxImageFit": {
+            "name": "orx-image-fit",
+            "description": "Draws an image ensuring it fits or covers the specified Rectangle.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxJumpflood": {
+            "name": "orx-jumpflood",
+            "description": "Calculates distance or direction fields from an image. GPU accelerated, 2D.",
+            "tags": [
+                "library",
+                "opensource",
+                "image processing"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "DistanceTransform"
+            ]
+        },
+        "OrxCompositor": {
+            "name": "orx-compositor",
+            "description": "Toolkit to make composite (layered) images using blend modes and filters in OPENRNDR programs",
+            "tags": [
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-compositor"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMeshGenerators": {
+            "name": "orx-mesh-generators",
+            "description": "3D-mesh generating functions and DSL.",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMath": {
+            "name": "orx-math",
+            "description": "Mathematical utilities",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxComposition": {
+            "name": "orx-composition",
+            "description": "Shape composition library for OPENRNDR",
+            "tags": [
+                "library",
+                "opensource",
+                "vector graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-composition"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFft": {
+            "name": "orx-fft",
+            "description": "Simple forward and inverse FFT routines",
+            "tags": [
+                "library"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "FFT"
+            ]
+        },
+        "OpenrndrVideo": {
+            "name": "openrndr-ffmpeg",
+            "description": "FFMPEG based video playback for OPENRNDR programs",
+            "tags": [
+                "video",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "Ffmpeg"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov"
+            ]
+        },
+        "OrxEnvelopes": {
+            "name": "orx-envelopes",
+            "description": "Provides ADSR (Attack, Decay, Sustain, Release) envelopes and tools for OPENRNDR programs",
+            "tags": [
+                "library",
+                "opensource",
+                "animation"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxMesh": {
+            "name": "orx-mesh",
+            "description": "3D-mesh datastructures",
+            "tags": [
+                "library",
+                "opensource",
+                "3d graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxCamera": {
+            "name": "orx-camera",
+            "description": "Provides OPENRNDR programs with 2D and 3D cameras controllable via mouse and keyboard.",
+            "tags": [
+                "library",
+                "opensource",
+                "computer graphics"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-camera"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "OrthogonalProjection",
+                "PerspectiveProjection"
+            ]
+        },
+        "OrxMidi": {
+            "name": "orx-midi",
+            "description": "MIDI support for keyboards and controllers. Send and receive note and control change events. Bind inputs to variables.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR",
+                "JavaxMidi"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "OPENRNDR": {
+            "name": "OPENRNDR",
+            "description": "OPENRNDR is an open-source library designed to facilitate expressive visual programming and interactive graphics development with ease and flexibility in creative coding.",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://openrndr.org"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Lwjgl"
+            ],
+            "supports": [
+                "Png",
+                "Svg",
+                "Jpg"
+            ]
+        },
+        "OrxIntegralImage": {
+            "name": "orx-integral-image",
+            "description": "CPU and GPU-based implementation for integral images (summed area tables)",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxTextOnContour": {
+            "name": "orx-text-on-contour",
+            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
+            "tags": [
+                "library",
+                "opensource",
+                "typography"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxNoise": {
+            "name": "orx-noise",
+            "description": "Randomness for every type of person: Perlin, uniform, value, simplex, fractal and many other types of noise.",
+            "tags": [
+                "library",
+                "opensource",
+                "noise"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "PerlinNoise",
+                "SimplexNoise",
+                "FBMNoise",
+                "WorleyNoise",
+                "ValueNoise"
+            ]
+        },
+        "AntlrKotlin": {
+            "name": "antlr-kotlin",
+            "description": "Antlr-kotlin is an open-source library designed for parsing that enables developers to generate parsers in Kotlin, facilitating the interpretation and transformation of complex text inputs.",
+            "tags": [
+                "library",
+                "opensource",
+                "parsing"
+            ],
+            "references": [
+                "https://github.com/Strumenta/antlr-kotlin"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Antlr"
+            ]
+        },
+        "KotlinxSerialization": {
+            "name": "kotlinx.serialization",
+            "description": "The library kotlinx.serialization is an open-source tool that enables efficient encoding and decoding of data structures in Kotlin, facilitating smooth data handling and interchange.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Kotlin/kotlinx.serialization"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Json",
+                "Yaml",
+                "Xml"
+            ]
+        },
+        "KotlinCsv": {
+            "name": "kotlin-csv",
+            "description": "The kotlin-csv library is an open-source tool designed to efficiently read and write CSV files in Kotlin, facilitating seamless data manipulation and integration in various programming projects.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jsoizo/kotlin-csv"
+            ],
+            "dependsOn": [
+                "Kotlin"
+            ],
+            "supports": [
+                "Csv"
+            ]
+        },
+        "TensorflowJs": {
+            "name": "tensorflow.js",
+            "description": "TensorFlow.js is an open-source library that enables machine learning directly in JavaScript environments, allowing developers to create intelligent, interactive applications with ease.",
             "tags": [
                 "library",
                 "machine learning",
                 "opensource"
             ],
             "references": [
-                "https://github.com/tensorflow"
+                "https://github.com/tensorflow/tfjs"
+            ],
+            "dependsOn": [
+                "Javascript",
+                "WebGL"
+            ],
+            "supports": [
+                "Browser"
             ]
         },
-        "OnnxRuntime": {
-            "name": "ONNX Runtime",
-            "description": "ONNX Runtime is a fast and flexible library for executing machine learning models across different platforms, designed as an opensource tool to enhance performance and interoperability.",
+        "Ml5Js": {
+            "name": "ml5.js",
+            "description": "Ml5.js is an open-source library that provides accessible machine learning tools for artists and developers, enabling easy integration of advanced models into interactive projects.",
             "tags": [
                 "library",
                 "machine learning",
                 "opensource"
             ],
+            "references": [
+                "https://ml5js.org/",
+                "https://github.com/ml5js/ml5-next-gen"
+            ]
+        },
+        "DeepJavaLibrary": {
+            "name": "Deep Java Library",
+            "description": "Deep Java Library provides a collection of easy-to-use tools for building, training, and deploying machine learning models directly in Java, supporting frameworks like PyTorch and TensorFlow",
+            "references": [
+                "https://djl.ai/",
+                "https://github.com/deepjavalibrary/djl"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JSerialComm": {
+            "name": "JSerialComm",
+            "description": "JSerialComm is an open-source library available on GitHub that provides a simple and efficient binding for serial port communication in Java, enabling seamless interaction with hardware devices.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/Fazecast/jSerialComm"
+            ],
+            "dependsOn": [
+                "java"
+            ]
+        },
+        "BoofCV": {
+            "name": "BoofCV",
+            "description": "BoofCV is a library that provides advanced computer vision tools for image processing, feature detection, and real-time analysis, supporting developers in building interactive visual applications.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://boofcv.org/"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
             "supports": [
-                "Onnx",
+                "Png",
+                "Jpg"
+            ]
+        },
+        "Antlr": {
+            "name": "Antlr",
+            "description": "Antlr is an open-source library designed for parsing and processing structured text, enabling developers to efficiently generate parsers for interpreting complex languages and data formats.",
+            "tags": [
+                "library",
+                "parsing",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ANTLR"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaxSound": {
+            "name": "javax.sound",
+            "description": "The javax.sound library provides a set of tools for handling audio capture, processing, and playback, enabling precise control over sound input and output in Java applications.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Wav"
+            ]
+        },
+        "Jogl": {
+            "name": "JOGL",
+            "description": "JOGL is an open-source library that provides Java bindings to the OpenGL graphics API, enabling developers to create high-performance, hardware-accelerated 2D and 3D graphics applications.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Java_OpenGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "Artnet4J": {
+            "name": "Artnet4J",
+            "description": "Artnet4J is an open-source Java library designed for sending and receiving Art-Net protocol data, enabling developers to control lighting systems and DMX devices efficiently.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://code.google.com/archive/p/artnet4j/",
+                "https://github.com/cansik/artnet4j"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "ArtNet"
+            ]
+        },
+        "Lwjgl": {
+            "name": "Lightweight Java Game library",
+            "description": "The Lightweight Java Game Library is an open-source library that provides Java bindings to low-level graphics, audio, and input APIs, enabling efficient development of interactive visual applications.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Glfw",
+                "Sdl",
+                "Vulkan"
+            ]
+        },
+        "Java": {
+            "name": "Java",
+            "description": "Java is a versatile language that provides a rich set of libraries and frameworks, enabling the development of dynamic visual and interactive applications through its efficient and open-source tools.",
+            "tags": [
+                "language",
+                "opensource"
+            ]
+        },
+        "Awt": {
+            "name": "AWT",
+            "description": "The Abstract Window Toolkit library provides a set of user interface components and tools for creating graphical applications that manage windows, handle events, and draw graphics.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaxMidi": {
+            "name": "javax.midi",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "JavaCv": {
+            "name": "JavaCV",
+            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
+            "tags": [
+                "library"
+            ],
+            "dependsOn": [
                 "Java",
-                "Python",
-                "C"
+                "OpenCv"
+            ]
+        },
+        "Jts": {
+            "name": "JTS Topology Suite",
+            "description": "JTS Topology Suite is an open-source library that provides advanced geometry and GIS tools for spatial data processing and analysis.",
+            "tags": [
+                "library",
+                "geometry",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
+                "https://github.com/locationtech/jts"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "TensorFlowJava": {
+            "name": "TensorFlow for Java",
+            "description": "TensorFlow for Java is a powerful library that enables developers to build and deploy machine learning models within Java applications, offering efficient tools for numerical computation and dataflow programming as detailed at the official GitHub repository tensorflow/java.",
+            "references": [
+                "https://github.com/tensorflow/java"
+            ],
+            "dependsOn": [
+                "Java",
+                "TensorFlow"
+            ]
+        },
+        "Swing": {
+            "name": "Swing",
+            "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Swing_(Java)"
+            ],
+            "dependsOn": [
+                "Java"
+            ]
+        },
+        "JavaOsc": {
+            "name": "JavaOsc",
+            "description": "JavaOsc is an open-source library available at github.com/hoijui/JavaOSC that provides a simple and efficient way to send and receive OSC messages within Java applications.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/hoijui/JavaOSC"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "Zip": {
+            "name": "zip",
+            "description": "Zip is a file format that uses compression to reduce the size of one or more files, making storage and transfer more efficient.",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ZIP_(file_format)"
+            ]
+        },
+        "Mp4": {
+            "name": "MP4",
+            "description": "MP4 is a file format designed for storing digital video and audio streams efficiently, supporting features such as multiple tracks and metadata for versatile multimedia applications.",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP4_file_format"
+            ]
+        },
+        "Fbx": {
+            "name": "Filmbox",
+            "description": "Filmbox is a file format designed for 3D graphics that enables the exchange and storage of complex animated models and scenes between different software applications.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FBX"
+            ]
+        },
+        "Obj": {
+            "name": "Wavefront OBJ",
+            "description": "The Wavefront OBJ file format is a widely used standard in 3D graphics that stores geometric data such as vertices, faces, and textures to represent three-dimensional models for use in various digital applications.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+            ]
+        },
+        "Ogg": {
+            "name": "OGG",
+            "description": "Ogg is a free, open file format designed for efficient streaming and manipulation of high-quality audio data.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Ogg"
+            ]
+        },
+        "Mov": {
+            "name": "Quicktime MOV",
+            "description": "he QuickTime MOV file format is a multimedia container developed by Apple that supports storing video, audio, and text tracks in a single file, enabling flexible editing and playback.",
+            "tags": [
+                "file format",
+                "video"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+            ]
+        },
+        "Html": {
+            "name": "HTML",
+            "description": "HTML is a file format used to structure and present content on the web, providing a standard way to create and organize elements such as text, images, and multimedia.",
+            "tags": [
+                "file format",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTML"
+            ]
+        },
+        "Collada": {
+            "name": "Collada",
+            "description": "Collada is an open standard file format used to store and exchange 3D graphics data, enabling interoperability between different software tools and platforms.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/COLLADA"
+            ]
+        },
+        "Usd": {
+            "name": "USD",
+            "description": "USD is an open-source file format developed by Pixar for 3D graphics that enables the efficient interchange, composition, and collaboration of complex digital content across different software tools.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Universal_Scene_Description"
+            ]
+        },
+        "Svg": {
+            "name": "SVG",
+            "description": "SVG is a file format that uses vector graphics to create and manipulate scalable, resolution-independent images through a structured XML-based language.",
+            "tags": [
+                "file format",
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/SVG"
+            ]
+        },
+        "Css": {
+            "name": "CSS",
+            "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language, typically saved in a file format that defines the look and formatting of text and other elements.",
+            "tags": [
+                "file format",
+                "language"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CSS"
+            ]
+        },
+        "Yaml": {
+            "name": "YAML",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/YAML"
+            ]
+        },
+        "Xml": {
+            "name": "XML",
+            "description": "XML is a file format designed to store and transport structured data in a readable and self-descriptive way, as detailed on Wikipedia.",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/XML"
+            ]
+        },
+        "Csv": {
+            "name": "CSV",
+            "description": "The CSV file format is a simple and widely used method for storing structured data in plain text, where each line represents a data record and fields are separated by commas.",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Comma-separated_values"
+            ]
+        },
+        "Opus": {
+            "name": "Opus",
+            "description": "Opus is an open, royalty-free audio file format designed for high-quality and low-latency audio compression, suitable for interactive applications and real-time communication.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Opus_(audio_format)"
+            ]
+        },
+        "Png": {
+            "name": "PNG",
+            "description": "PNG is a file format for raster graphics that supports lossless compression and transparency, widely used for creating high-quality images in various digital projects.",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PNG"
+            ]
+        },
+        "Onnx": {
+            "name": "ONNX",
+            "description": "ONNX is an open file format and standard for representing machine learning models, enabling interoperability between different frameworks.",
+            "tags": [
+                "file format",
+                "standard",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/onnx/onnx",
+                "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange"
+            ]
+        },
+        "Jpg": {
+            "name": "JPEG",
+            "description": "JPEG is a widely used file format for compressing raster graphics images by reducing their file size through lossy compression techniques.",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JPEG"
+            ]
+        },
+        "Ply": {
+            "name": "PLY",
+            "description": "PLY is a file format used in 3D graphics to store three-dimensional data, supporting detailed descriptions of the geometry and properties of objects",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/PLY_(file_format)"
+            ]
+        },
+        "Gif": {
+            "name": "GIF",
+            "description": "The GIF is a file format that supports raster graphics and enables simple animations by displaying a sequence of images within a single file.",
+            "tags": [
+                "file format",
+                "raster graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GIF"
+            ]
+        },
+        "Json": {
+            "name": "JSON",
+            "description": "JSON is a file format used to represent structured data in a readable and organized way, enabling efficient data exchange and manipulation.",
+            "tags": [
+                "file format",
+                "structured data"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/JSON"
+            ]
+        },
+        "Wav": {
+            "name": "WAV",
+            "description": "WAV is a file format that stores uncompressed audio data, commonly used for high-quality sound representation and editing.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WAV"
+            ]
+        },
+        "Gltf": {
+            "name": "GLTF",
+            "description": "GLTF is a file format designed for efficiently transmitting and loading 3D graphics models and scenes in applications requiring fast and interoperable rendering.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GlTF"
+            ]
+        },
+        "Mp3": {
+            "name": "MP3",
+            "description": "MP3 is a popular file format for audio that compresses sound data to reduce file size while maintaining quality, enabling efficient storage and playback.",
+            "tags": [
+                "file format",
+                "audio"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MP3"
+            ]
+        },
+        "Stl": {
+            "name": "STL",
+            "description": "The STL file format is a widely used standard in 3D graphics for representing the surface geometry of three-dimensional objects through a collection of triangular facets.",
+            "tags": [
+                "file format",
+                "3d graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/STL_(file_format)"
+            ]
+        },
+        "Gzip": {
+            "name": "gzip",
+            "description": "Gzip is a file format and compression tool used to reduce the size of files by encoding data more efficiently, enabling faster storage and transfer.",
+            "tags": [
+                "file format",
+                "compression"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gzip"
+            ]
+        },
+        "Udp": {
+            "name": "UDP",
+            "description": "UDP is a communication protocol that enables fast, connectionless transmission of data packets between devices with minimal overhead.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ]
+        },
+        "Http": {
+            "name": "HTTP",
+            "description": "HTTP is a protocol designed for transferring data efficiently and reliably between devices over a network, enabling the exchange of various types of content in creative coding projects.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTP"
+            ]
+        },
+        "Https": {
+            "name": "HTTPS",
+            "description": "The HTTPS protocol is a secure communication tool that uses encryption to protect data exchanged between devices, ensuring privacy and integrity.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/HTTPS"
+            ]
+        },
+        "ArtNet": {
+            "name": "ArtNet",
+            "description": "ArtNet is a protocol designed to transmit lighting control data over Ethernet networks, enabling the seamless management of complex lighting systems in artistic and performance environments.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Art-Net"
+            ],
+            "dependsOn": [
+                "Udp"
+            ],
+            "supports": [
+                "DMX"
+            ]
+        },
+        "WebSocket": {
+            "name": "WebSocket",
+            "description": "WebSocket is a protocol that enables interactive, real-time communication between a client and a server by establishing a persistent, full-duplex connection.",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebSocket"
+            ]
+        },
+        "Tcp": {
+            "name": "TCP",
+            "description": "The Transmission Control Protocol (TCP) is a reliable communication protocol that ensures ordered and error-checked delivery of data between devices over a network, enabling stable and consistent data exchange.\"",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            ]
+        },
+        "OSC": {
+            "name": "OSC",
+            "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
+            "tags": [
+                "standard",
+                "device interface"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Open_Sound_Control"
+            ],
+            "dependsOn": [
+                "Udp"
+            ]
+        },
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://tramontana.xyz/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
+            "tags": [
+                "library",
+                "machine learning"
+            ],
+            "references": [
+                "https://github.com/jjeongin/creative-machine"
+            ]
+        },
+        "Geomerative": {
+            "name": "Geomerative",
+            "description": "Accesses vertex points of vector graphics or text for manipulation.",
+            "tags": [
+                "library",
+                "vector graphics"
+            ],
+            "references": [
+                "https://www.ricardmarxer.com/geomerative/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
+            "tags": [
+                "library",
+                "ui"
+            ],
+            "references": [
+                "https://www.sojamo.de/libraries/controlP5/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Queasycam": {
+            "name": "Queasycame",
+            "description": "Provides first-person camera controls in 3D spaces.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Nub": {
+            "name": "nub",
+            "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
+            "tags": [
+                "library",
+                "3d graphics",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/VisualComputing/nub"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "Ani": {
+            "name": "Ani",
+            "description": "Ani is a Processing library that provides precise control over animation timing and easing functions to create smooth and customizable motion effects.",
+            "tags": [
+                "library",
+                "animation"
+            ],
+            "references": [
+                "https://benedikt-gross.de/projects/ani-an-animation-library-for-processing/",
+                "https://github.com/b-g/Ani"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "techniques": [
+                "Easing"
+            ]
+        },
+        "ComputationalGeometry": {
+            "name": "Computational Geometry",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "references": [
+                "http://thecloudlab.org/processing/library.html"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
+            "tags": [
+                "library",
+                "geometry"
+            ],
+            "references": [
+                "https://github.com/micycle1/PGS"
+            ],
+            "dependsOn": [
+                "Processing",
+                "Jts"
+            ]
+        },
+        "VideoExport": {
+            "name": "VideoExport",
+            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
+            "tags": [
+                "library",
+                "video"
+            ],
+            "references": [
+                "https://funprogramming.org/VideoExport-for-Processing/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ]
+        },
+        "OscP5": {
+            "name": "OscP5",
+            "description": "Facilitates Open Sound Control (OSC) communication with external devices.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://www.sojamo.de/libraries/oscP5/"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Osc"
+            ]
+        },
+        "GifAnimation": {
+            "name": "GifAnimation",
+            "description": "Enables exporting animated GIFs from sketches.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/extrapixel/gif-animation"
+            ],
+            "dependsOn": [
+                "Processing"
+            ],
+            "supports": [
+                "Gif"
+            ]
+        },
+        "Processing": {
+            "name": "Processing",
+            "description": "Processing is an open-source application and library designed for creative coding that provides a flexible software sketchbook and a development environment for visual arts and interactive media.",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing",
+                "https://processing.org/",
+                "https://github.com/processing/processing4"
+            ],
+            "dependsOn": [
+                "Java",
+                "Jogl",
+                "Antlr",
+                "Swing"
+            ],
+            "supports": [
+                "Json",
+                "Csv",
+                "Png",
+                "Jpg"
             ]
         },
         "D3Contour": {
@@ -1990,86 +2355,6 @@
             ],
             "techniques": [
                 "ForceDirectedGraphDrawing"
-            ]
-        },
-        "Udp": {
-            "name": "UDP",
-            "description": "UDP is a communication protocol that enables fast, connectionless transmission of data packets between devices with minimal overhead.",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
-            ]
-        },
-        "Http": {
-            "name": "HTTP",
-            "description": "HTTP is a protocol designed for transferring data efficiently and reliably between devices over a network, enabling the exchange of various types of content in creative coding projects.",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTP"
-            ]
-        },
-        "Https": {
-            "name": "HTTPS",
-            "description": "The HTTPS protocol is a secure communication tool that uses encryption to protect data exchanged between devices, ensuring privacy and integrity.",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/HTTPS"
-            ]
-        },
-        "ArtNet": {
-            "name": "ArtNet",
-            "description": "ArtNet is a protocol designed to transmit lighting control data over Ethernet networks, enabling the seamless management of complex lighting systems in artistic and performance environments.",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Art-Net"
-            ],
-            "dependsOn": [
-                "Udp"
-            ],
-            "supports": [
-                "DMX"
-            ]
-        },
-        "WebSocket": {
-            "name": "WebSocket",
-            "description": "WebSocket is a protocol that enables interactive, real-time communication between a client and a server by establishing a persistent, full-duplex connection.",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebSocket"
-            ]
-        },
-        "Tcp": {
-            "name": "TCP",
-            "description": "The Transmission Control Protocol (TCP) is a reliable communication protocol that ensures ordered and error-checked delivery of data between devices over a network, enabling stable and consistent data exchange.\"",
-            "tags": [
-                "protocol"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-            ]
-        },
-        "OSC": {
-            "name": "OSC",
-            "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
-            "tags": [
-                "standard",
-                "device interface"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Open_Sound_Control"
-            ],
-            "dependsOn": [
-                "Udp"
             ]
         },
         "CPP": {
@@ -3106,233 +3391,6 @@
                 "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
-        "DeepJavaLibrary": {
-            "name": "Deep Java Library",
-            "description": "Deep Java Library provides a collection of easy-to-use tools for building, training, and deploying machine learning models directly in Java, supporting frameworks like PyTorch and TensorFlow",
-            "references": [
-                "https://djl.ai/",
-                "https://github.com/deepjavalibrary/djl"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JSerialComm": {
-            "name": "JSerialComm",
-            "description": "JSerialComm is an open-source library available on GitHub that provides a simple and efficient binding for serial port communication in Java, enabling seamless interaction with hardware devices.",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/Fazecast/jSerialComm"
-            ],
-            "dependsOn": [
-                "java"
-            ]
-        },
-        "BoofCV": {
-            "name": "BoofCV",
-            "description": "BoofCV is a library that provides advanced computer vision tools for image processing, feature detection, and real-time analysis, supporting developers in building interactive visual applications.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://boofcv.org/"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Png",
-                "Jpg"
-            ]
-        },
-        "Antlr": {
-            "name": "Antlr",
-            "description": "Antlr is an open-source library designed for parsing and processing structured text, enabling developers to efficiently generate parsers for interpreting complex languages and data formats.",
-            "tags": [
-                "library",
-                "parsing",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ANTLR"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JavaxSound": {
-            "name": "javax.sound",
-            "description": "The javax.sound library provides a set of tools for handling audio capture, processing, and playback, enabling precise control over sound input and output in Java applications.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Wav"
-            ]
-        },
-        "Jogl": {
-            "name": "JOGL",
-            "description": "JOGL is an open-source library that provides Java bindings to the OpenGL graphics API, enabling developers to create high-performance, hardware-accelerated 2D and 3D graphics applications.",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Java_OpenGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "Artnet4J": {
-            "name": "Artnet4J",
-            "description": "Artnet4J is an open-source Java library designed for sending and receiving Art-Net protocol data, enabling developers to control lighting systems and DMX devices efficiently.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://code.google.com/archive/p/artnet4j/",
-                "https://github.com/cansik/artnet4j"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "ArtNet"
-            ]
-        },
-        "Lwjgl": {
-            "name": "Lightweight Java Game library",
-            "description": "The Lightweight Java Game Library is an open-source library that provides Java bindings to low-level graphics, audio, and input APIs, enabling efficient development of interactive visual applications.",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl",
-                "Vulkan"
-            ]
-        },
-        "Java": {
-            "name": "Java",
-            "description": "Java is a versatile language that provides a rich set of libraries and frameworks, enabling the development of dynamic visual and interactive applications through its efficient and open-source tools.",
-            "tags": [
-                "language",
-                "opensource"
-            ]
-        },
-        "Awt": {
-            "name": "AWT",
-            "description": "The Abstract Window Toolkit library provides a set of user interface components and tools for creating graphical applications that manage windows, handle events, and draw graphics.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Abstract_Window_Toolkit"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JavaxMidi": {
-            "name": "javax.midi",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Midi"
-            ]
-        },
-        "JavaCv": {
-            "name": "JavaCV",
-            "description": "avaCV is a library that provides a comprehensive set of computer vision and image processing tools for Java applications.",
-            "tags": [
-                "library"
-            ],
-            "dependsOn": [
-                "Java",
-                "OpenCv"
-            ]
-        },
-        "Jts": {
-            "name": "JTS Topology Suite",
-            "description": "JTS Topology Suite is an open-source library that provides advanced geometry and GIS tools for spatial data processing and analysis.",
-            "tags": [
-                "library",
-                "geometry",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/JTS_Topology_Suite",
-                "https://github.com/locationtech/jts"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "TensorFlowJava": {
-            "name": "TensorFlow for Java",
-            "description": "TensorFlow for Java is a powerful library that enables developers to build and deploy machine learning models within Java applications, offering efficient tools for numerical computation and dataflow programming as detailed at the official GitHub repository tensorflow/java.",
-            "references": [
-                "https://github.com/tensorflow/java"
-            ],
-            "dependsOn": [
-                "Java",
-                "TensorFlow"
-            ]
-        },
-        "Swing": {
-            "name": "Swing",
-            "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
-            "tags": [
-                "library",
-                "ui"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Swing_(Java)"
-            ],
-            "dependsOn": [
-                "Java"
-            ]
-        },
-        "JavaOsc": {
-            "name": "JavaOsc",
-            "description": "JavaOsc is an open-source library available at github.com/hoijui/JavaOSC that provides a simple and efficient way to send and receive OSC messages within Java applications.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/hoijui/JavaOSC"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Osc"
-            ]
-        },
         "PyTorch": {
             "name": "PyTorch",
             "description": "PyTorch is a library for machine learning that provides flexible tools for building and training neural networks with dynamic computation graphs and efficient tensor operations.",
@@ -3422,55 +3480,6 @@
             ],
             "dependsOn": [
                 "Python"
-            ]
-        },
-        "SDL": {
-            "name": "SDL",
-            "description": "SDL is a library that provides low-level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D, enabling developers to create interactive multimedia applications across multiple platforms.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Glfw": {
-            "name": "GLFW",
-            "description": "GLFW is a library designed to create and manage windows, handle inputs, and facilitate OpenGL context creation for developing interactive graphics applications.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Assimp": {
-            "name": "Assimp",
-            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://github.com/assimp/assimp"
-            ],
-            "dependsOn": [
-                "CPP"
             ]
         }
     }

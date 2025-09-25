@@ -1,5 +1,127 @@
 {
     "techniques": {
+        "FFT": {
+            "name": "Fast fourier transform",
+            "description": "The Fast Fourier Transform is an efficient algorithm that quickly computes the discrete Fourier transform and its inverse, enabling advanced signal processing by decomposing complex data into its frequency components.",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            ]
+        },
+        "InfiniteImpulseResponse": {
+            "name": "Finite impulse response",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Finite_impulse_response"
+            ]
+        },
+        "FiniteImpulseResponse": {
+            "name": "Finite impulse response",
+            "description": "Finite impulse response is a signal processing technique that computes each output value as a weighted sum of current and past input values without using feedback, ensuring stability and a finite duration response.",
+            "tags": [
+                "signal processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Finite_impulse_response"
+            ]
+        },
+        "ForceDirectedGraphDrawing": {
+            "name": "Force-directed graph drawing",
+            "description": "Force-directed graph drawing is a computer graphics technique that positions the nodes of a graph by simulating physical forces such as attraction and repulsion to produce visually balanced layouts.",
+            "tags": [
+                "graph",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+            ]
+        },
+        "VoronoiDiagram": {
+            "name": "Voronoi diagram",
+            "description": "A Voronoi diagram is a graph-based tessellation method that partitions a plane into regions based on the distance to a specific set of points, where each region consists of all locations closer to one point than to any other.",
+            "tags": [
+                "graph"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Voronoi_diagram"
+            ]
+        },
+        "GraphSignalProcessing": {
+            "name": "Graph signal processing",
+            "description": "Graph signal processing is a method that analyzes and transforms data defined on the nodes of a graph to extract meaningful patterns and features using mathematical operations.",
+            "tags": [
+                "graph",
+                "signal processing"
+            ]
+        },
+        "DeJongAttractor": {
+            "name": "De Jong Attractor",
+            "description": "The De Jong Attractor is a mathematical system that generates complex, non-repeating patterns by iterating simple trigonometric equations, resulting in visually intricate fractal structures commonly explored in computer graphics.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/peterdejong/"
+            ]
+        },
+        "JuliaSet": {
+            "name": "Julia set",
+            "description": "The Julia set is a fractal generated in computer graphics by iterating a complex function and classifying points based on their behavior under repeated application, producing intricate and self-similar patterns.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Julia_set"
+            ]
+        },
+        "Attractor": {
+            "name": "Attractor",
+            "description": "An attractor is a set of numerical values toward which a system tends to evolve over time in fractal patterns, often visualized in computer graphics to represent the long-term behavior of dynamic systems.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Attractor"
+            ]
+        },
+        "CliffordAttractor": {
+            "name": "Clifford attractor",
+            "description": "The Clifford attractor is a mathematical formula that generates complex, fractal patterns through iterative calculations, commonly used in computer graphics to create visually intricate and dynamic structures.",
+            "tags": [
+                "fractal",
+                "computer graphics"
+            ],
+            "references": [
+                "https://paulbourke.net/fractals/clifford/"
+            ]
+        },
+        "EditDistance": {
+            "name": "Edit distance",
+            "description": "Edit distance is a measure of similarity between two text strings, defined as the minimum number of insertions, deletions, or substitutions required to transform one string into the other.",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edit_distance"
+            ]
+        },
+        "LevenshteinDistance": {
+            "name": "Levenshtein distance",
+            "description": "Levenshtein distance is a metric that measures the minimum number of single-character edits, including insertions, deletions, or substitutions, required to change one piece of text into another, enabling precise comparison and manipulation of string data.",
+            "tags": [
+                "text"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Levenshtein_distance"
+            ]
+        },
         "ConwaysGameOfLife": {
             "name": "Conway's Game of Life",
             "description": "Conway's Game of Life is a cellular automata technique that simulates the evolution of a grid of cells based on simple rules determining each cell's state over discrete time steps, illustrating complex patterns emerging from basic automata principles.",
@@ -33,178 +155,14 @@
                 "https://en.wikipedia.org/wiki/Cellular_automaton"
             ]
         },
-        "GrayCode": {
-            "name": "Gray code",
-            "description": "Gray code is a binary numeral system where two successive values differ in only one bit, minimizing errors in digital communication and useful for smoothly transitioning states in codes.",
+        "Guilloche": {
+            "name": "Guilloché patterns",
+            "description": "Guilloché patterns are intricate, repetitive geometric designs generated through precise mathematical curves and loops, often created algorithmically to produce visually complex motifs used in computer graphics and patterns.",
             "tags": [
-                "codes"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gray_code"
-            ]
-        },
-        "Halftoning": {
-            "name": "Halftoning",
-            "description": "Halftoning is an image processing technique that simulates continuous tone imagery through the use of varying sizes or spacing of dots to represent different shades of gray or color.",
-            "tags": [
-                "image processing"
-            ]
-        },
-        "MonocularDepthEstimation": {
-            "name": "Monocular depth estimation",
-            "description": "Monocular depth estimation is an image processing technique that predicts the distance of objects from a single two-dimensional image by analyzing visual cues and spatial relationships.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://github.com/DepthAnything/Depth-Anything-V2"
-            ]
-        },
-        "PixelSorting": {
-            "name": "Pixel Sorting",
-            "description": "Pixel Sorting is an image processing technique that rearranges the pixels of an image based on specific criteria such as brightness or color values to create visually striking distortions.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://satyarth.me/articles/pixel-sorting/"
-            ]
-        },
-        "EdgeDetection": {
-            "name": "Edge detection",
-            "description": "Edge detection is an image processing technique that identifies and highlights the boundaries within images by detecting sharp changes in brightness or color, enabling the extraction of meaningful structural information.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Edge_detection"
-            ]
-        },
-        "DistanceTransform": {
-            "name": "Distance transform",
-            "description": "istance transform is an image processing technique that converts a binary image into a representation where each pixel's value indicates the shortest distance to the nearest boundary or feature pixel.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Distance_transform"
-            ]
-        },
-        "PoissonFill": {
-            "name": "Poisson fill",
-            "description": "Poisson fill is a technique in image processing that solves the discrete Poisson equation to seamlessly blend and reconstruct image regions by diffusing pixel information from surrounding areas.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_Poisson_equation"
-            ]
-        },
-        "Dithering": {
-            "name": "Dithering",
-            "description": "Dithering is a technique in image processing that reduces color banding by strategically arranging pixels of different colors to simulate additional shades and gradients.",
-            "tags": [
-                "image processing"
-            ]
-        },
-        "DCT": {
-            "name": "DCT (Discrete Cosine Transform)",
-            "description": "The Discrete Cosine Transform is a mathematical technique used in image processing to convert spatial data into frequency components, enabling efficient compression and analysis by representing a signal as a sum of cosine functions oscillating at different frequencies.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "CannyEdgeDetection": {
-            "name": "Canny edge detection",
-            "description": "Canny edge detection is an image processing technique that identifies sharp changes in intensity by smoothing the image with a Gaussian filter, computing gradient magnitude and direction, suppressing non-maximum pixels, and applying double thresholding with edge tracking to accurately detect edges.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Canny_edge_detector"
-            ]
-        },
-        "IDCT": {
-            "name": "Inverse DCT (Discrete Cosine Transform)",
-            "description": "Inverse DCT is a mathematical technique used in image processing to reconstruct spatial domain data from frequency domain coefficients by applying the inverse of the Discrete Cosine Transform, which expresses a finite sequence of data points as a sum of cosine functions oscillating at different frequencies.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
-            ]
-        },
-        "HistogramEqualization": {
-            "name": "Histogram equalization",
-            "description": "Histogram equalization is an image processing technique that enhances contrast by redistributing the intensity values of pixels to achieve a uniform histogram distribution, thereby improving the visibility of details across different brightness levels.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Histogram_equalization"
-            ]
-        },
-        "ImageQuantization": {
-            "name": "Image quantization",
-            "description": "Image quantization in image processing is a technique that reduces the number of distinct colors in an image by mapping continuous color values to a limited set of representative colors, thereby simplifying the image data while preserving visual similarity.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
-                "https://en.wikipedia.org/wiki/Color_quantization"
-            ]
-        },
-        "GaussianBlur": {
-            "name": "GaussianBlur",
-            "description": "GaussianBlur is an image processing technique that smooths an image by applying a Gaussian function to reduce detail and noise, resulting in a soft and blurred effect.",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Gaussian_blur"
-            ]
-        },
-        "Blur": {
-            "name": "Blur",
-            "description": "Blur in image processing involves smoothing an image by averaging the color values of neighboring pixels, as exemplified by the Box blur method which replaces each pixel with the average of pixels within a rectangular area around it",
-            "tags": [
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Box_blur"
-            ]
-        },
-        "ForceDirectedGraphDrawing": {
-            "name": "Force-directed graph drawing",
-            "description": "Force-directed graph drawing is a computer graphics technique that positions the nodes of a graph by simulating physical forces such as attraction and repulsion to produce visually balanced layouts.",
-            "tags": [
-                "graph",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
-            ]
-        },
-        "VoronoiDiagram": {
-            "name": "Voronoi diagram",
-            "description": "A Voronoi diagram is a graph-based tessellation method that partitions a plane into regions based on the distance to a specific set of points, where each region consists of all locations closer to one point than to any other.",
-            "tags": [
-                "graph"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Voronoi_diagram"
-            ]
-        },
-        "GraphSignalProcessing": {
-            "name": "Graph signal processing",
-            "description": "Graph signal processing is a method that analyzes and transforms data defined on the nodes of a graph to extract meaningful patterns and features using mathematical operations.",
-            "tags": [
-                "graph",
-                "signal processing"
+                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
             ]
         },
         "Flocking": {
@@ -274,66 +232,6 @@
                 "https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"
             ]
         },
-        "SimplexNoise": {
-            "name": "Simplex Noise",
-            "description": "Simplex Noise is a gradient noise technique that generates smooth, continuous patterns efficiently across multiple dimensions, often used in procedural textures and animations for natural-looking variations.",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Simplex_noise"
-            ]
-        },
-        "WorleyNoise": {
-            "name": "Worley noise",
-            "description": "Worley noise is a procedural texture generation technique that creates patterns by computing the distance to the nearest feature point within a spatial grid, producing natural-looking cellular structures often used in noise applications.",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Worley_noise"
-            ]
-        },
-        "FBMNoise": {
-            "name": "Fractal Brownian Motion noise",
-            "description": "Fractal Brownian Motion noise is a method that combines multiple layers of noise, each with increasing frequency and decreasing amplitude, to produce a smooth and natural-looking pink noise texture.",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Pink_noise"
-            ]
-        },
-        "PerlinNoise": {
-            "name": "Perlin noise",
-            "tags": [
-                "noise",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Perlin_noise"
-            ]
-        },
-        "ValueNoise": {
-            "name": "Value noise",
-            "description": "Value noise is a procedural noise technique that generates smooth, continuous random values by interpolating randomly assigned values at grid points, often used to create natural-looking textures and patterns in graphics.",
-            "tags": [
-                "noise"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Value_noise"
-            ]
-        },
-        "Guilloche": {
-            "name": "Guilloché patterns",
-            "description": "Guilloché patterns are intricate, repetitive geometric designs generated through precise mathematical curves and loops, often created algorithmically to produce visually complex motifs used in computer graphics and patterns.",
-            "tags": [
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Guilloch%C3%A9"
-            ]
-        },
         "Easing": {
             "name": "Easing",
             "description": "Easing is a technique in animation that gradually changes the speed of a motion to create smooth, natural transitions between key frames.",
@@ -354,24 +252,92 @@
                 "https://en.wikipedia.org/wiki/Key_frame"
             ]
         },
-        "EditDistance": {
-            "name": "Edit distance",
-            "description": "Edit distance is a measure of similarity between two text strings, defined as the minimum number of insertions, deletions, or substitutions required to transform one string into the other.",
+        "GrayCode": {
+            "name": "Gray code",
+            "description": "Gray code is a binary numeral system where two successive values differ in only one bit, minimizing errors in digital communication and useful for smoothly transitioning states in codes.",
             "tags": [
-                "text"
+                "codes"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Edit_distance"
+                "https://en.wikipedia.org/wiki/Gray_code"
             ]
         },
-        "LevenshteinDistance": {
-            "name": "Levenshtein distance",
-            "description": "Levenshtein distance is a metric that measures the minimum number of single-character edits, including insertions, deletions, or substitutions, required to change one piece of text into another, enabling precise comparison and manipulation of string data.",
+        "tSNE": {
+            "name": "t-SNE",
+            "description": "T-SNE is a machine learning technique that reduces the dimensionality of complex datasets by modeling high-dimensional similarities with probabilities and then optimizing a low-dimensional representation to preserve these probabilities.",
             "tags": [
-                "text"
+                "machine learning"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Levenshtein_distance"
+                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
+            ]
+        },
+        "Umap": {
+            "name": "UMAP",
+            "description": "UMAP is a machine learning technique that reduces high-dimensional data into a lower-dimensional space while preserving the essential structure, enabling clearer visualization and analysis.",
+            "tags": [
+                "machine learning"
+            ]
+        },
+        "PredictiveText": {
+            "name": "Predictive text",
+            "description": "Predictive text is a technique that uses machine learning algorithms to analyze input patterns and suggest or complete words or phrases, enhancing the efficiency of text entry by anticipating the user's intended message based on learned data.",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Predictive_text"
+            ]
+        },
+        "Clustering": {
+            "name": "Clustering",
+            "description": "Clustering is a machine learning technique that involves grouping a set of objects so that those within the same group have higher similarity to each other than to those in other groups, as described in cluster analysis.",
+            "tags": [
+                "machine learning"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cluster_analysis"
+            ]
+        },
+        "CircleInversion": {
+            "name": "Circle inversion",
+            "description": "Circle inversion is a geometric transformation that maps each point in the plane to a new point along the line connecting it to a fixed center, such that the product of their distances from this center equals the square of a given radius, effectively transforming shapes while preserving angles and producing visually striking patterns.",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inversive_geometry"
+            ]
+        },
+        "AlphaShape": {
+            "name": "Alpha shape",
+            "description": "Alpha shape is a geometry technique that generalizes the concept of the convex hull by capturing the intuitive shape of a discrete point set based on a parameter alpha, controlling the level of detail in the resulting shape.",
+            "tags": [
+                "geometry"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Alpha_shape"
+            ]
+        },
+        "ConvexHull": {
+            "name": "Convex hull",
+            "description": "The convex hull is a fundamental geometry technique in computer graphics that constructs the smallest convex polygon enclosing a given set of points.",
+            "tags": [
+                "geometry",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Convex_hull"
+            ]
+        },
+        "TurtleGraphics": {
+            "name": "Turtle graphics",
+            "description": "Turtle graphics is a vector graphics technique that uses a cursor, or \"turtle,\" to draw lines and shapes by moving it across the screen according to specific commands for direction and distance, allowing precise control of graphical output.",
+            "tags": [
+                "vector graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Turtle_graphics"
             ]
         },
         "Heightfield": {
@@ -702,121 +668,221 @@
                 "https://en.wikipedia.org/wiki/Heightmap"
             ]
         },
-        "FFT": {
-            "name": "Fast fourier transform",
-            "description": "The Fast Fourier Transform is an efficient algorithm that quickly computes the discrete Fourier transform and its inverse, enabling advanced signal processing by decomposing complex data into its frequency components.",
+        "ToneMapping": {
+            "name": "Tone mapping",
+            "description": "Tone mapping is a technique in photography and image processing that converts high dynamic range images into a format with lower dynamic range while preserving important visual details and contrast.",
             "tags": [
-                "signal processing"
+                "photography",
+                "image processing"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+                "https://en.wikipedia.org/wiki/Tone_mapping"
             ]
         },
-        "InfiniteImpulseResponse": {
-            "name": "Finite impulse response",
+        "Photogrammetry": {
+            "name": "Photogrammetry",
+            "description": "Photogrammetry is a technique that uses multiple photographs to measure and reconstruct the exact shapes and spatial positions of objects, enabling the creation of accurate 3D models in photography and computer graphics.",
             "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Finite_impulse_response"
-            ]
-        },
-        "FiniteImpulseResponse": {
-            "name": "Finite impulse response",
-            "description": "Finite impulse response is a signal processing technique that computes each output value as a weighted sum of current and past input values without using feedback, ensuring stability and a finite duration response.",
-            "tags": [
-                "signal processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Finite_impulse_response"
-            ]
-        },
-        "SubstitutionTiling": {
-            "name": "Substitution tiling",
-            "description": "Substitution tiling is a method in computer graphics that generates complex, non-periodic patterns by recursively replacing shapes with arrangements of smaller shapes according to specific rules, as detailed on Wikipedia's Substitution tiling page.",
-            "tags": [
-                "tiling",
+                "photography",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Substitution_tiling"
+                "https://en.wikipedia.org/wiki/Photogrammetry"
             ]
         },
-        "WangTiling": {
-            "name": "Wang tiling",
-            "description": "Wang tiling is a method in computer graphics where square tiles with colored edges are arranged on a grid so that adjacent tiles share matching edge colors, enabling the creation of complex, non-repetitive patterns for efficient texture generation and procedural content design.",
+        "SlitScanning": {
+            "name": "Slit-scanning",
+            "description": "Slit-scanning is a photography technique that captures a scene by recording a narrow slit of the image over time to create a continuous, time-based transformation of the subject.",
             "tags": [
-                "tiling",
+                "photography"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+            ]
+        },
+        "Halftoning": {
+            "name": "Halftoning",
+            "description": "Halftoning is an image processing technique that simulates continuous tone imagery through the use of varying sizes or spacing of dots to represent different shades of gray or color.",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "MonocularDepthEstimation": {
+            "name": "Monocular depth estimation",
+            "description": "Monocular depth estimation is an image processing technique that predicts the distance of objects from a single two-dimensional image by analyzing visual cues and spatial relationships.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://github.com/DepthAnything/Depth-Anything-V2"
+            ]
+        },
+        "PixelSorting": {
+            "name": "Pixel Sorting",
+            "description": "Pixel Sorting is an image processing technique that rearranges the pixels of an image based on specific criteria such as brightness or color values to create visually striking distortions.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://satyarth.me/articles/pixel-sorting/"
+            ]
+        },
+        "EdgeDetection": {
+            "name": "Edge detection",
+            "description": "Edge detection is an image processing technique that identifies and highlights the boundaries within images by detecting sharp changes in brightness or color, enabling the extraction of meaningful structural information.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Edge_detection"
+            ]
+        },
+        "DistanceTransform": {
+            "name": "Distance transform",
+            "description": "istance transform is an image processing technique that converts a binary image into a representation where each pixel's value indicates the shortest distance to the nearest boundary or feature pixel.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Distance_transform"
+            ]
+        },
+        "PoissonFill": {
+            "name": "Poisson fill",
+            "description": "Poisson fill is a technique in image processing that solves the discrete Poisson equation to seamlessly blend and reconstruct image regions by diffusing pixel information from surrounding areas.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_Poisson_equation"
+            ]
+        },
+        "Dithering": {
+            "name": "Dithering",
+            "description": "Dithering is a technique in image processing that reduces color banding by strategically arranging pixels of different colors to simulate additional shades and gradients.",
+            "tags": [
+                "image processing"
+            ]
+        },
+        "DCT": {
+            "name": "DCT (Discrete Cosine Transform)",
+            "description": "The Discrete Cosine Transform is a mathematical technique used in image processing to convert spatial data into frequency components, enabling efficient compression and analysis by representing a signal as a sum of cosine functions oscillating at different frequencies.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "CannyEdgeDetection": {
+            "name": "Canny edge detection",
+            "description": "Canny edge detection is an image processing technique that identifies sharp changes in intensity by smoothing the image with a Gaussian filter, computing gradient magnitude and direction, suppressing non-maximum pixels, and applying double thresholding with edge tracking to accurately detect edges.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Canny_edge_detector"
+            ]
+        },
+        "IDCT": {
+            "name": "Inverse DCT (Discrete Cosine Transform)",
+            "description": "Inverse DCT is a mathematical technique used in image processing to reconstruct spatial domain data from frequency domain coefficients by applying the inverse of the Discrete Cosine Transform, which expresses a finite sequence of data points as a sum of cosine functions oscillating at different frequencies.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Discrete_cosine_transform"
+            ]
+        },
+        "HistogramEqualization": {
+            "name": "Histogram equalization",
+            "description": "Histogram equalization is an image processing technique that enhances contrast by redistributing the intensity values of pixels to achieve a uniform histogram distribution, thereby improving the visibility of details across different brightness levels.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Histogram_equalization"
+            ]
+        },
+        "ImageQuantization": {
+            "name": "Image quantization",
+            "description": "Image quantization in image processing is a technique that reduces the number of distinct colors in an image by mapping continuous color values to a limited set of representative colors, thereby simplifying the image data while preserving visual similarity.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Quantization_(image_processing)",
+                "https://en.wikipedia.org/wiki/Color_quantization"
+            ]
+        },
+        "GaussianBlur": {
+            "name": "GaussianBlur",
+            "description": "GaussianBlur is an image processing technique that smooths an image by applying a Gaussian function to reduce detail and noise, resulting in a soft and blurred effect.",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gaussian_blur"
+            ]
+        },
+        "Blur": {
+            "name": "Blur",
+            "description": "Blur in image processing involves smoothing an image by averaging the color values of neighboring pixels, as exemplified by the Box blur method which replaces each pixel with the average of pixels within a rectangular area around it",
+            "tags": [
+                "image processing"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Box_blur"
+            ]
+        },
+        "SimplexNoise": {
+            "name": "Simplex Noise",
+            "description": "Simplex Noise is a gradient noise technique that generates smooth, continuous patterns efficiently across multiple dimensions, often used in procedural textures and animations for natural-looking variations.",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Simplex_noise"
+            ]
+        },
+        "WorleyNoise": {
+            "name": "Worley noise",
+            "description": "Worley noise is a procedural texture generation technique that creates patterns by computing the distance to the nearest feature point within a spatial grid, producing natural-looking cellular structures often used in noise applications.",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Worley_noise"
+            ]
+        },
+        "FBMNoise": {
+            "name": "Fractal Brownian Motion noise",
+            "description": "Fractal Brownian Motion noise is a method that combines multiple layers of noise, each with increasing frequency and decreasing amplitude, to produce a smooth and natural-looking pink noise texture.",
+            "tags": [
+                "noise"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Pink_noise"
+            ]
+        },
+        "PerlinNoise": {
+            "name": "Perlin noise",
+            "tags": [
+                "noise",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Wang_tile"
+                "https://en.wikipedia.org/wiki/Perlin_noise"
             ]
         },
-        "PinwheelTiling": {
-            "name": "Pinwheel tiling",
-            "description": "Pinwheel tiling is a non-periodic method of covering a plane with right triangles of varying orientations generated through recursive subdivision, creating visually complex patterns useful in tiling and computer graphics.",
+        "ValueNoise": {
+            "name": "Value noise",
+            "description": "Value noise is a procedural noise technique that generates smooth, continuous random values by interpolating randomly assigned values at grid points, often used to create natural-looking textures and patterns in graphics.",
             "tags": [
-                "tiling",
-                "computer graphics"
+                "noise"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
-            ]
-        },
-        "PenroseTiling": {
-            "name": "Penrose tiling",
-            "description": "Penrose tiling is a method of covering a plane with a set of non-periodic shapes called kites and darts that fit together without gaps or overlaps, producing an aperiodic pattern used in tiling and computer graphics.",
-            "tags": [
-                "tiling",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Penrose_tiling"
-            ]
-        },
-        "DeJongAttractor": {
-            "name": "De Jong Attractor",
-            "description": "The De Jong Attractor is a mathematical system that generates complex, non-repeating patterns by iterating simple trigonometric equations, resulting in visually intricate fractal structures commonly explored in computer graphics.",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/peterdejong/"
-            ]
-        },
-        "JuliaSet": {
-            "name": "Julia set",
-            "description": "The Julia set is a fractal generated in computer graphics by iterating a complex function and classifying points based on their behavior under repeated application, producing intricate and self-similar patterns.",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Julia_set"
-            ]
-        },
-        "Attractor": {
-            "name": "Attractor",
-            "description": "An attractor is a set of numerical values toward which a system tends to evolve over time in fractal patterns, often visualized in computer graphics to represent the long-term behavior of dynamic systems.",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Attractor"
-            ]
-        },
-        "CliffordAttractor": {
-            "name": "Clifford attractor",
-            "description": "The Clifford attractor is a mathematical formula that generates complex, fractal patterns through iterative calculations, commonly used in computer graphics to create visually intricate and dynamic structures.",
-            "tags": [
-                "fractal",
-                "computer graphics"
-            ],
-            "references": [
-                "https://paulbourke.net/fractals/clifford/"
+                "https://en.wikipedia.org/wiki/Value_noise"
             ]
         },
         "Smoothstep": {
@@ -933,114 +999,48 @@
                 "https://en.wikipedia.org/wiki/B%C3%A9zier_surface"
             ]
         },
-        "tSNE": {
-            "name": "t-SNE",
-            "description": "T-SNE is a machine learning technique that reduces the dimensionality of complex datasets by modeling high-dimensional similarities with probabilities and then optimizing a low-dimensional representation to preserve these probabilities.",
+        "SubstitutionTiling": {
+            "name": "Substitution tiling",
+            "description": "Substitution tiling is a method in computer graphics that generates complex, non-periodic patterns by recursively replacing shapes with arrangements of smaller shapes according to specific rules, as detailed on Wikipedia's Substitution tiling page.",
             "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"
-            ]
-        },
-        "Umap": {
-            "name": "UMAP",
-            "description": "UMAP is a machine learning technique that reduces high-dimensional data into a lower-dimensional space while preserving the essential structure, enabling clearer visualization and analysis.",
-            "tags": [
-                "machine learning"
-            ]
-        },
-        "PredictiveText": {
-            "name": "Predictive text",
-            "description": "Predictive text is a technique that uses machine learning algorithms to analyze input patterns and suggest or complete words or phrases, enhancing the efficiency of text entry by anticipating the user's intended message based on learned data.",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Predictive_text"
-            ]
-        },
-        "Clustering": {
-            "name": "Clustering",
-            "description": "Clustering is a machine learning technique that involves grouping a set of objects so that those within the same group have higher similarity to each other than to those in other groups, as described in cluster analysis.",
-            "tags": [
-                "machine learning"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Cluster_analysis"
-            ]
-        },
-        "CircleInversion": {
-            "name": "Circle inversion",
-            "description": "Circle inversion is a geometric transformation that maps each point in the plane to a new point along the line connecting it to a fixed center, such that the product of their distances from this center equals the square of a given radius, effectively transforming shapes while preserving angles and producing visually striking patterns.",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Inversive_geometry"
-            ]
-        },
-        "AlphaShape": {
-            "name": "Alpha shape",
-            "description": "Alpha shape is a geometry technique that generalizes the concept of the convex hull by capturing the intuitive shape of a discrete point set based on a parameter alpha, controlling the level of detail in the resulting shape.",
-            "tags": [
-                "geometry"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Alpha_shape"
-            ]
-        },
-        "ConvexHull": {
-            "name": "Convex hull",
-            "description": "The convex hull is a fundamental geometry technique in computer graphics that constructs the smallest convex polygon enclosing a given set of points.",
-            "tags": [
-                "geometry",
+                "tiling",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Convex_hull"
+                "https://en.wikipedia.org/wiki/Substitution_tiling"
             ]
         },
-        "TurtleGraphics": {
-            "name": "Turtle graphics",
-            "description": "Turtle graphics is a vector graphics technique that uses a cursor, or \"turtle,\" to draw lines and shapes by moving it across the screen according to specific commands for direction and distance, allowing precise control of graphical output.",
+        "WangTiling": {
+            "name": "Wang tiling",
+            "description": "Wang tiling is a method in computer graphics where square tiles with colored edges are arranged on a grid so that adjacent tiles share matching edge colors, enabling the creation of complex, non-repetitive patterns for efficient texture generation and procedural content design.",
             "tags": [
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
-            ]
-        },
-        "ToneMapping": {
-            "name": "Tone mapping",
-            "description": "Tone mapping is a technique in photography and image processing that converts high dynamic range images into a format with lower dynamic range while preserving important visual details and contrast.",
-            "tags": [
-                "photography",
-                "image processing"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Tone_mapping"
-            ]
-        },
-        "Photogrammetry": {
-            "name": "Photogrammetry",
-            "description": "Photogrammetry is a technique that uses multiple photographs to measure and reconstruct the exact shapes and spatial positions of objects, enabling the creation of accurate 3D models in photography and computer graphics.",
-            "tags": [
-                "photography",
+                "tiling",
                 "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Photogrammetry"
+                "https://en.wikipedia.org/wiki/Wang_tile"
             ]
         },
-        "SlitScanning": {
-            "name": "Slit-scanning",
-            "description": "Slit-scanning is a photography technique that captures a scene by recording a narrow slit of the image over time to create a continuous, time-based transformation of the subject.",
+        "PinwheelTiling": {
+            "name": "Pinwheel tiling",
+            "description": "Pinwheel tiling is a non-periodic method of covering a plane with right triangles of varying orientations generated through recursive subdivision, creating visually complex patterns useful in tiling and computer graphics.",
             "tags": [
-                "photography"
+                "tiling",
+                "computer graphics"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Slit-scan_photography"
+                "https://en.wikipedia.org/wiki/Pinwheel_tiling"
+            ]
+        },
+        "PenroseTiling": {
+            "name": "Penrose tiling",
+            "description": "Penrose tiling is a method of covering a plane with a set of non-periodic shapes called kites and darts that fit together without gaps or overlaps, producing an aperiodic pattern used in tiling and computer graphics.",
+            "tags": [
+                "tiling",
+                "computer graphics"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Penrose_tiling"
             ]
         }
     }
