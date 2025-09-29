@@ -2479,17 +2479,6 @@
                 "https://en.wikipedia.org/wiki/JavaScript"
             ]
         },
-        "LaserLightingDisplay": {
-            "name": "Laser lighting display",
-            "description": "Laser lighting displays are media technology hardware systems that use laser beams to create dynamic visual patterns and effects by precisely controlling light emission and direction.",
-            "tags": [
-                "media technology",
-                "hardware"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Laser_lighting_display"
-            ]
-        },
         "SonicPi": {
             "name": "Sonic Pi",
             "description": "Sonic Pi is an open-source application designed for live coding that enables users to create and manipulate audio through programming.",
@@ -2569,6 +2558,21 @@
                 "Mp4"
             ]
         },
+        "WebGL": {
+            "name": "WebGL",
+            "description": "WebGL is a graphics API library that enables the rendering of interactive 3D and 2D graphics within web environments using hardware-accelerated capabilities",
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGL"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
         "Unity": {
             "name": "Unity",
             "description": "Unity is a versatile game development platform that provides a comprehensive set of tools for designing, programming, and deploying interactive 2D and 3D content across multiple devices and operating systems.",
@@ -2598,15 +2602,15 @@
                 "Svg"
             ]
         },
-        "OpenGL": {
-            "name": "OpenGL",
-            "description": " OpenGL is a library and graphics API that provides a standardized interface for rendering 2D and 3D vector graphics efficiently on various hardware platforms.",
+        "LaserLightingDisplay": {
+            "name": "Laser lighting display",
+            "description": "Laser lighting displays are media technology hardware systems that use laser beams to create dynamic visual patterns and effects by precisely controlling light emission and direction.",
             "tags": [
-                "library",
-                "graphics api"
+                "media technology",
+                "hardware"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/OpenGL"
+                "https://en.wikipedia.org/wiki/Laser_lighting_display"
             ]
         },
         "Metal": {
@@ -2634,6 +2638,21 @@
                 "Javascript"
             ]
         },
+        "WebGPU": {
+            "name": "WebGPU",
+            "description": "WebGPU is a modern graphics API library designed to provide high-performance, low-level access to GPU capabilities for advanced rendering and computation within the web environment.",
+            "tags": [
+                "library",
+                "graphics api",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGPU"
+            ],
+            "supports": [
+                "WGSL"
+            ]
+        },
         "Ffmpeg": {
             "name": "FFmpeg",
             "description": "FFmpeg is an open-source command-line application and library that enables the processing, conversion, and streaming of video and audio files.",
@@ -2658,29 +2677,6 @@
                 "Wav",
                 "Jpg",
                 "Gif"
-            ]
-        },
-        "WebGPU": {
-            "name": "WebGPU",
-            "description": "WebGPU is a modern graphics API library designed to provide high-performance, low-level access to GPU capabilities for advanced rendering and computation within the web environment.",
-            "tags": [
-                "library",
-                "graphics api",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebGPU"
-            ]
-        },
-        "OpenGL_ES": {
-            "name": "OpenGL ES",
-            "description": "OpenGL ES is a lightweight graphics API library designed for rendering 2D and 3D graphics efficiently on embedded systems and mobile devices, enabling developers to create visually interactive applications.",
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_ES"
             ]
         },
         "Microphone": {
@@ -2732,20 +2728,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-            ]
-        },
-        "HLSL": {
-            "name": "HLSL",
-            "description": "HLSL is a language used to write shaders that control the rendering of graphics by defining how light and color interact with 3D models on the GPU.",
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
-            ],
-            "dependsOn": [
-                "Direct3D"
             ]
         },
         "TouchDesigner": {
@@ -2881,20 +2863,6 @@
                 "https://en.wikipedia.org/wiki/DMX"
             ]
         },
-        "GLSL": {
-            "name": "GLSL",
-            "description": "GLSL is a language designed for writing shaders, which are programs that run on graphics hardware to control the rendering of images, enabling developers to create dynamic visual effects and complex graphics.",
-            "tags": [
-                "language",
-                "shaders"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
-            ],
-            "dependsOn": [
-                "OpenGL"
-            ]
-        },
         "OpenFrameworks": {
             "name": "OpenFrameworks",
             "description": "OpenFrameworks is an open-source C++ toolkit designed to facilitate creative coding by providing a simple and efficient framework for multimedia applications involving graphics, audio, and interaction.",
@@ -2960,18 +2928,6 @@
                 "P5Js"
             ]
         },
-        "WebGL": {
-            "name": "WebGL",
-            "description": "WebGL is a graphics API library that enables the rendering of interactive 3D and 2D graphics within web environments using hardware-accelerated capabilities",
-            "tags": [
-                "library",
-                "graphics api",
-                "web"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/WebGL"
-            ]
-        },
         "Sox": {
             "name": "Sox",
             "description": "SoX is an open-source command-line application designed for audio processing, allowing users to convert, filter, and manipulate sound files efficiently.",
@@ -2988,6 +2944,47 @@
                 "Mp3",
                 "Ogg",
                 "Wav"
+            ]
+        },
+        "GLSL": {
+            "name": "GLSL",
+            "description": "GLSL is a language designed for writing shaders, which are programs that run on graphics hardware to control the rendering of images, enabling developers to create dynamic visual effects and complex graphics.",
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+            ]
+        },
+        "MicroPython": {
+            "name": "MicroPython",
+            "description": "MicroPython is an open-source language designed to run efficiently on microcontrollers, enabling developers to write compact, high-level code for hardware interaction and experimental digital projects.",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MicroPython"
+            ],
+            "supports": [
+                "Esp32"
+            ]
+        },
+        "CircuitPython": {
+            "name": "CircuitPython",
+            "description": "CircuitPython is an open-source language designed for microcontrollers that enables interactive and accessible programming for artistic and educational projects.",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CircuitPython"
+            ],
+            "supports": [
+                "Esp32"
             ]
         },
         "Cinema4D": {
@@ -3093,6 +3090,20 @@
                 "https://en.wikipedia.org/wiki/Visual_Studio_Code"
             ]
         },
+        "OpenGL": {
+            "name": "OpenGL",
+            "description": " OpenGL is a library and graphics API that provides a standardized interface for rendering 2D and 3D vector graphics efficiently on various hardware platforms.",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL"
+            ],
+            "supports": [
+                "GLSL"
+            ]
+        },
         "ShaderToy": {
             "name": "ShaderToy",
             "description": "ShaderToy is a web platform and software that enables users to create, share, and explore real-time shaders through an interactive environment designed for developing and visualizing graphical effects.",
@@ -3141,12 +3152,48 @@
                 "https://codeberg.org/uzu/tidal"
             ]
         },
+        "HLSL": {
+            "name": "HLSL",
+            "description": "HLSL is a language used to write shaders that control the rendering of graphics by defining how light and color interact with 3D models on the GPU.",
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
+            ]
+        },
         "MediaPlayer": {
             "name": "Media player",
             "description": "The Media Player tool integrates media technology and hardware to enable seamless playback, control, and manipulation of audio and video files within interactive digital projects.",
             "tags": [
                 "media technology",
                 "hardware"
+            ]
+        },
+        "WGSL": {
+            "name": "WGSL",
+            "description": "WebGPU Shading Language",
+            "tags": [
+                "language",
+                "shaders"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/WebGPU_Shading_Language"
+            ]
+        },
+        "OpenGL_ES": {
+            "name": "OpenGL ES",
+            "description": "OpenGL ES is a lightweight graphics API library designed for rendering 2D and 3D graphics efficiently on embedded systems and mobile devices, enabling developers to create visually interactive applications.",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenGL_ES"
+            ],
+            "supports": [
+                "GLSL"
             ]
         },
         "ImageMagick": {
@@ -3318,6 +3365,35 @@
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
+        "AxiDraw": {
+            "name": "AxiDraw",
+            "description": "The AxiDraw is a simple, modern, precise, and versatile pen plotter, capable of writing or drawing on almost any flat surface.",
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "references": [
+                "https://wiki.evilmadscientist.com/AxiDraw"
+            ],
+            "isA": [
+                "PenPlotter"
+            ]
+        },
+        "Direct3D": {
+            "name": "Direct3D",
+            "description": "Direct3D is a graphics API and library developed by Microsoft that enables developers to create and manage high-performance 3D graphics rendering within applications.",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Direct3D"
+            ],
+            "supports": [
+                "HLSL"
+            ]
+        },
         "Godot": {
             "name": "Godot",
             "description": "Godot is an open-source game development engine that provides a comprehensive set of tools for designing, coding, and deploying 2D and 3D interactive projects efficiently.",
@@ -3383,36 +3459,6 @@
                 "https://en.wikipedia.org/wiki/MIDI"
             ]
         },
-        "MicroPython": {
-            "name": "MicroPython",
-            "description": "MicroPython is an open-source language designed to run efficiently on microcontrollers, enabling developers to write compact, high-level code for hardware interaction and experimental digital projects.",
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MicroPython"
-            ],
-            "supports": [
-                "ESP32"
-            ]
-        },
-        "CircuitPython": {
-            "name": "CircuitPython",
-            "description": "CircuitPython is an open-source language designed for microcontrollers that enables interactive and accessible programming for artistic and educational projects.",
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CircuitPython"
-            ],
-            "supports": [
-                "ESP32"
-            ]
-        },
         "SonicVisualiser": {
             "name": "Sonic Visualizer",
             "description": "Sonic Visualiser is an open-source application designed for viewing and analyzing audio recordings, providing tools to examine sound waveforms, spectrograms, and annotations in detail.",
@@ -3429,17 +3475,6 @@
                 "Ogg",
                 "Wav",
                 "csv"
-            ]
-        },
-        "Direct3D": {
-            "name": "Direct3D",
-            "description": "Direct3D is a graphics API and library developed by Microsoft that enables developers to create and manage high-performance 3D graphics rendering within applications.",
-            "tags": [
-                "library",
-                "graphics api"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Direct3D"
             ]
         },
         "Transformers": {
