@@ -2819,21 +2819,6 @@
                 "https://en.wikipedia.org/wiki/Max_(software)"
             ]
         },
-        "Nannou": {
-            "name": "Nannou",
-            "description": "Nannou is an open-source library designed to provide simple, expressive, and powerful tools for creative coding in Rust, enabling artists and developers to build interactive graphics, audio, and multimedia applications.",
-            "tags": [
-                "creative coding",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://nannou.cc/"
-            ],
-            "dependsOn": [
-                "Rust"
-            ]
-        },
         "IntelliJ": {
             "name": "IntelliJ IDEA",
             "description": "IntelliJ IDEA is an application and integrated development environment that provides advanced coding assistance, debugging, and project management features to enhance the development of innovative and expressive software projects.",
@@ -3333,30 +3318,6 @@
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
-        "MicroPython": {
-            "name": "MicroPython",
-            "description": "MicroPython is an open-source language designed to run efficiently on microcontrollers, enabling developers to write compact, high-level code for hardware interaction and experimental digital projects.",
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/MicroPython"
-            ]
-        },
-        "CircuitPython": {
-            "name": "CircuitPython",
-            "description": "CircuitPython is an open-source language designed for microcontrollers that enables interactive and accessible programming for artistic and educational projects.",
-            "tags": [
-                "language",
-                "microcontroller",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/CircuitPython"
-            ]
-        },
         "Godot": {
             "name": "Godot",
             "description": "Godot is an open-source game development engine that provides a comprehensive set of tools for designing, coding, and deploying 2D and 3D interactive projects efficiently.",
@@ -3420,6 +3381,36 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/MIDI"
+            ]
+        },
+        "MicroPython": {
+            "name": "MicroPython",
+            "description": "MicroPython is an open-source language designed to run efficiently on microcontrollers, enabling developers to write compact, high-level code for hardware interaction and experimental digital projects.",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/MicroPython"
+            ],
+            "supports": [
+                "ESP32"
+            ]
+        },
+        "CircuitPython": {
+            "name": "CircuitPython",
+            "description": "CircuitPython is an open-source language designed for microcontrollers that enables interactive and accessible programming for artistic and educational projects.",
+            "tags": [
+                "language",
+                "microcontroller",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/CircuitPython"
+            ],
+            "supports": [
+                "ESP32"
             ]
         },
         "SonicVisualiser": {
