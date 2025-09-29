@@ -27,6 +27,37 @@
                 "https://github.com/tensorflow"
             ]
         },
+        "Assimp": {
+            "name": "Assimp",
+            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
+            "tags": [
+                "3d graphics",
+                "library"
+            ],
+            "references": [
+                "https://github.com/assimp/assimp"
+            ],
+            "input": [
+                "Gltf",
+                "Obj",
+                "Ply",
+                "Usd",
+                "Stl"
+            ],
+            "dependsOn": [
+                "CPP"
+            ]
+        },
+        "OfxAssimpModelLoader": {
+            "name": "ofxAssimpModelLoader",
+            "description": "ofxAssimpModelLoader addon permits loading to memory and processing 3D models in a convenient and unified format.",
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "dependsOn": [
+                "Assimp"
+            ]
+        },
         "SDL": {
             "name": "SDL",
             "description": "SDL is a library that provides low-level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D, enabling developers to create interactive multimedia applications across multiple platforms.",
@@ -63,18 +94,21 @@
                 "OpenGL_ES"
             ]
         },
-        "Assimp": {
-            "name": "Assimp",
-            "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
+        "LwjglAssimp": {
+            "name": "lwjgl-assimp",
             "tags": [
                 "3d graphics",
-                "library"
+                "library",
+                "binding"
             ],
-            "references": [
-                "https://github.com/assimp/assimp"
+            "partOf": [
+                "Lwjgl"
             ],
             "dependsOn": [
-                "CPP"
+                "Assimp"
+            ],
+            "supports": [
+                "Java"
             ]
         },
         "P5Sound": {
