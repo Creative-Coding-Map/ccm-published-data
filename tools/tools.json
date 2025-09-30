@@ -144,16 +144,6 @@
                 "CPP"
             ]
         },
-        "OfxAssimpModelLoader": {
-            "name": "ofxAssimpModelLoader",
-            "description": "ofxAssimpModelLoader addon permits loading to memory and processing 3D models in a convenient and unified format.",
-            "partOf": [
-                "OpenFrameworks"
-            ],
-            "dependsOn": [
-                "Assimp"
-            ]
-        },
         "SDL": {
             "name": "SDL",
             "description": "SDL is a library that provides low-level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D, enabling developers to create interactive multimedia applications across multiple platforms.",
@@ -175,6 +165,235 @@
                 "Linux"
             ]
         },
+        "P5Brush": {
+            "name": "p5.brush",
+            "description": "Extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/acamposuribe/p5.brush"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5CMyK": {
+            "name": "p5.cmyk.js",
+            "description": "The p5.cmyk.js library is an open-source tool that extends color capabilities in p5.js by enabling the use of CMYK color models for more advanced and precise color manipulation",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/p5.cmyk.js"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "XYScopeJs": {
+            "name": "XYScope.js",
+            "description": "XYscope.js converts the coordinates of primitive shapes to audio waveforms which are sent to an analog display in XY-mode (such as an oscilloscope), revealing their vector graphic forms.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://teddavis.org/xyscopejs/",
+                "https://github.com/ffd8/xyscopejs"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "Numero": {
+            "name": "Número",
+            "description": "Número is an open-source library designed to simplify the generation and manipulation of numerical data in programming",
+            "tags": [
+                "functions",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://mcintyre.io/numero/",
+                "https://github.com/nickmcintyre/numero"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Quadrille": {
+            "name": "p5.quadrille.js",
+            "description": "p5.quadrille.js is an open-source library that provides tools for creating and manipulating grid-based layouts and data structures within the p5.js environment.",
+            "tags": [
+                "grids",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://objetos.github.io/p5.quadrille.js/"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5UiRenderer": {
+            "name": "P5UIRenderer",
+            "description": "P5UIRenderer is an open-source library that provides a set of tools for creating and managing user interface elements in p5.js, enabling developers to design interactive visual components efficiently.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "canvasGUI": {
+            "name": "CanvasGUI",
+            "description": "CanvasGUI is an open-source library that provides a flexible and customizable user interface for graphical applications.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/canvasgui/index.html",
+                "https://github.com/quarks/canvasGUI"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5_5": {
+            "name": "p5.5",
+            "description": "p5.5 is an open source library that provides a user interface toolkit designed to simplify the creation and management of interactive graphical elements.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/eltapir/p5.5"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "TurtleGFX": {
+            "name": "TurtleGFX",
+            "description": "TurtleGFX is an open-source library that enables users to create vector graphics through programmable turtle graphics commands.",
+            "tags": [
+                "vector graphics",
+                "language",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/CodeGuppyPrograms/TurtleGFX"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Palette": {
+            "name": "p5.palette",
+            "description": "The p5.palette library is a tool for managing and applying color palettes in p5.js projects",
+            "tags": [
+                "color",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://www.remistura.com/p5.palette/",
+                "https://github.com/remistura/p5.palette"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Marching": {
+            "name": "p5.marching",
+            "description": "marching squares for p5.js",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jtnimoy/marching"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Grid": {
+            "name": "p5Grid",
+            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
+            "tags": [
+                "grids",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/aahdee/p5grid"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5ModButton": {
+            "name": "p5.ModButton",
+            "description": "p5.ModButton is an open-source library that provides customizable UI buttons for interactive projects, enhancing user input handling within the p5.js framework",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/yetyeeter1337/p5.Modbuttons"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5VideoKit": {
+            "name": "p5videoKit",
+            "description": "p5videoKit is an open-source library designed to simplify the integration and manipulation of video elements within p5.js sketches",
+            "tags": [
+                "video",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/molab-itp/p5videoKit"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Anaglyph": {
+            "name": "p5.anaglyph",
+            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.anaglyph"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
         "P5Sound": {
             "name": "p5.sound",
             "description": "The p5.sound library provides a set of tools for generating, manipulating, and analyzing sound, enabling interactive audio experiences within visual programming projects.",
@@ -185,22 +404,204 @@
             "references": [
                 "https://p5js.org/reference/p5.sound/"
             ],
-            "dependsOn": [
+            "partOf": [
                 "P5Js"
             ]
         },
-        "P5simpleAR": {
-            "name": "p5.simpleAR",
-            "description": "p5.simpleAR is a library designed to integrate augmented reality features into projects, offering simple tools for detecting markers and overlaying digital content.",
+        "P5TouchGui": {
+            "name": "p5.touchgui",
+            "description": "The p5.touchgui library is an open-source user interface tool designed to simplify the creation of interactive controls in p5.js projects.",
             "tags": [
-                "augmented reality",
+                "ui",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/tetunori/p5.simpleAR"
+                "https://github.com/L05/p5.touchgui"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Grain": {
+            "name": "p5.grain",
+            "description": "The p5.grain library is an open-source tool designed to add noise and granular textures to visual projects using the p5.js framework, enhancing detail and atmosphere.",
+            "tags": [
+                "noise",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/meezwhite/p5.grain"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Polar": {
+            "name": "p5.polar",
+            "description": "p5.polar is an open-source library that extends vector graphics capabilities by providing tools for creating and manipulating polar coordinate-based shapes and animations",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/liz-peng/p5.Polar"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "C2Js": {
+            "name": "c2.js",
+            "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
+            "tags": [
+                "simulation",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "P5Js"
             ],
             "dependsOn": [
+                "Javascript",
+                "e"
+            ]
+        },
+        "P5Dom": {
+            "name": "p5.dom",
+            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
+            "tags": [
+                "web",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5FillGradient": {
+            "name": "p5.fillGradient",
+            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
+            "tags": [
+                "computer graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/alterebro/p5.fillGradient"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Csg": {
+            "name": "p5.csg",
+            "description": "p5.csg is an open-source library for 3D graphics that enables the creation and manipulation of complex shapes through constructive solid geometry",
+            "tags": [
+                "3d graphics",
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.csg"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Transparency": {
+            "name": "p5.transparency",
+            "description": "p5.transparency is an open-source library that enhances 3D graphics in p5.js by providing advanced tools for handling transparency and rendering overlapping transparent objects accurately.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.transparency"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "TurtleGraphicsP5Js": {
+            "name": "turtle-graphics",
+            "description": "The turtle-graphics library is an open-source tool for creating vector graphics programmatically",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "http://www.lagers.org.uk/tg/index.html",
+                "https://github.com/quarks/turtle-graphics/"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5Mapper": {
+            "name": "p5.mapper",
+            "description": "The p5.mapper library is an open-source tool designed for projection mapping that allows users to easily create and manipulate geometric shapes and surfaces within the p5.js environment.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/jdeboi/p5.mapper"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5FilterRenderer": {
+            "name": "p5.filterRenderer",
+            "description": "The library p5.filterRenderer provides tools for applying customizable filters to 3D graphics within the p5.js environment",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/davepagurek/p5.filterRenderer"
+            ],
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "TotalSerialism": {
+            "name": "Total Serialism",
+            "description": "Total Serialism is an open-source library available at github.com/tmhglnd/total-serialism that provides structured tools for algorithmic composition by systematically organizing musical parameters such as pitch, duration, dynamics, and timbre.",
+            "tags": [
+                "audio",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tmhglnd/total-serialism"
+            ],
+            "partOf": [
+                "P5Js"
+            ],
+            "dependsOn": [
+                "Javascript"
+            ]
+        },
+        "P5Bezier": {
+            "name": "p5.bezier",
+            "description": "The p5.bezier library is an open-source tool for creating and manipulating vector graphics through Bezier curves, enhancing the p5.js environment with precise control over complex shapes.",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/peilingjiang/p5.bezier"
+            ],
+            "partOf": [
                 "P5Js"
             ]
         },
@@ -218,35 +619,52 @@
                 "https://en.wikipedia.org/wiki/Processing#p5.js"
             ],
             "dependsOn": [
-                "Javascript"
+                "Javascript",
+                "Browser"
             ]
         },
-        "P5TouchGui": {
-            "name": "p5.touchgui",
-            "description": "The p5.touchgui library is an open-source user interface tool designed to simplify the creation of interactive controls in p5.js projects.",
+        "P5ColorGenerator": {
+            "name": "p5.colorGenerator",
             "tags": [
-                "ui",
+                "color",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/L05/p5.touchgui"
+                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
+                "https://github.com/alexandru-postolache/p5.colorGenerator"
             ],
-            "dependsOn": [
+            "partOf": [
                 "P5Js"
             ]
         },
-        "P5Mapper": {
-            "name": "p5.mapper",
-            "description": "The p5.mapper library is an open-source tool designed for projection mapping that allows users to easily create and manipulate geometric shapes and surfaces within the p5.js environment.",
+        "P5Warp": {
+            "name": "p5.warp",
+            "description": "The p5.warp library is an open-source tool available at github.com/davepagurek/p5.warp that enables dynamic manipulation of 3D graphics through warping effects within the p5.js environment",
             "tags": [
+                "3d graphics",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/jdeboi/p5.mapper"
+                "https://github.com/davepagurek/p5.warp"
             ],
-            "dependsOn": [
+            "partOf": [
+                "P5Js"
+            ]
+        },
+        "P5simpleAR": {
+            "name": "p5.simpleAR",
+            "description": "p5.simpleAR is a library designed to integrate augmented reality features into projects, offering simple tools for detecting markers and overlaying digital content.",
+            "tags": [
+                "augmented reality",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/tetunori/p5.simpleAR"
+            ],
+            "partOf": [
                 "P5Js"
             ]
         },
@@ -262,279 +680,7 @@
                 "https://p5xr.org/",
                 "https://github.com/stalgiag/p5.xr"
             ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Dom": {
-            "name": "p5.dom",
-            "description": "Provides tools to interact with HTML elements like sliders, buttons, and inputs within p5.js sketches.",
-            "tags": [
-                "web",
-                "library",
-                "opensource"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Csg": {
-            "name": "p5.csg",
-            "description": "p5.csg is an open-source library for 3D graphics that enables the creation and manipulation of complex shapes through constructive solid geometry",
-            "tags": [
-                "3d graphics",
-                "geometry",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.csg"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5_5": {
-            "name": "p5.5",
-            "description": "p5.5 is an open source library that provides a user interface toolkit designed to simplify the creation and management of interactive graphical elements.",
-            "tags": [
-                "ui",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/eltapir/p5.5"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Warp": {
-            "name": "p5.warp",
-            "description": "The p5.warp library is an open-source tool available at github.com/davepagurek/p5.warp that enables dynamic manipulation of 3D graphics through warping effects within the p5.js environment",
-            "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.warp"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "canvasGUI": {
-            "name": "CanvasGUI",
-            "description": "CanvasGUI is an open-source library that provides a flexible and customizable user interface for graphical applications.",
-            "tags": [
-                "ui",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/canvasgui/index.html",
-                "https://github.com/quarks/canvasGUI"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "C2Js": {
-            "name": "c2.js",
-            "description": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithms, and other modules.",
-            "tags": [
-                "simulation",
-                "library",
-                "opensource"
-            ],
-            "dependsOn": [
-                "Javascript",
-                "e"
-            ],
-            "supports": [
-                "P5Js"
-            ]
-        },
-        "P5VideoKit": {
-            "name": "p5videoKit",
-            "description": "p5videoKit is an open-source library designed to simplify the integration and manipulation of video elements within p5.js sketches",
-            "tags": [
-                "video",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/molab-itp/p5videoKit"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FilterRenderer": {
-            "name": "p5.filterRenderer",
-            "description": "The library p5.filterRenderer provides tools for applying customizable filters to 3D graphics within the p5.js environment",
-            "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.filterRenderer"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ModButton": {
-            "name": "p5.ModButton",
-            "description": "p5.ModButton is an open-source library that provides customizable UI buttons for interactive projects, enhancing user input handling within the p5.js framework",
-            "tags": [
-                "ui",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/yetyeeter1337/p5.Modbuttons"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grain": {
-            "name": "p5.grain",
-            "description": "The p5.grain library is an open-source tool designed to add noise and granular textures to visual projects using the p5.js framework, enhancing detail and atmosphere.",
-            "tags": [
-                "noise",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/meezwhite/p5.grain"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Brush": {
-            "name": "p5.brush",
-            "description": "Extend the drawing capabilities of p5.js by introducing a rich set of tools that allow for the creation of dynamic and customizable brushes, vector-fields, and fill modes",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/acamposuribe/p5.brush"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Transparency": {
-            "name": "p5.transparency",
-            "description": "p5.transparency is an open-source library that enhances 3D graphics in p5.js by providing advanced tools for handling transparency and rendering overlapping transparent objects accurately.",
-            "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/davepagurek/p5.transparency"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGraphicsP5Js": {
-            "name": "turtle-graphics",
-            "description": "The turtle-graphics library is an open-source tool for creating vector graphics programmatically",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "http://www.lagers.org.uk/tg/index.html",
-                "https://github.com/quarks/turtle-graphics/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Polar": {
-            "name": "p5.polar",
-            "description": "p5.polar is an open-source library that extends vector graphics capabilities by providing tools for creating and manipulating polar coordinate-based shapes and animations",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/liz-peng/p5.Polar"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Quadrille": {
-            "name": "p5.quadrille.js",
-            "description": "p5.quadrille.js is an open-source library that provides tools for creating and manipulating grid-based layouts and data structures within the p5.js environment.",
-            "tags": [
-                "grids",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://objetos.github.io/p5.quadrille.js/"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "Numero": {
-            "name": "Número",
-            "description": "Número is an open-source library designed to simplify the generation and manipulation of numerical data in programming",
-            "tags": [
-                "functions",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://mcintyre.io/numero/",
-                "https://github.com/nickmcintyre/numero"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5ColorGenerator": {
-            "name": "p5.colorGenerator",
-            "tags": [
-                "color",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://alexandru-postolache.github.io/p5.colorGenerator/demo/",
-                "https://github.com/alexandru-postolache/p5.colorGenerator"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5UiRenderer": {
-            "name": "P5UIRenderer",
-            "description": "P5UIRenderer is an open-source library that provides a set of tools for creating and managing user interface elements in p5.js, enabling developers to design interactive visual components efficiently.",
-            "tags": [
-                "ui",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/amitSah121/p5.js-libraries/tree/main/renderer"
-            ],
-            "dependsOn": [
+            "partOf": [
                 "P5Js"
             ]
         },
@@ -549,159 +695,7 @@
             "references": [
                 "https://github.com/quinton-ashley/p5play"
             ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TurtleGFX": {
-            "name": "TurtleGFX",
-            "description": "TurtleGFX is an open-source library that enables users to create vector graphics through programmable turtle graphics commands.",
-            "tags": [
-                "vector graphics",
-                "language",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/CodeGuppyPrograms/TurtleGFX"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Bezier": {
-            "name": "p5.bezier",
-            "description": "The p5.bezier library is an open-source tool for creating and manipulating vector graphics through Bezier curves, enhancing the p5.js environment with precise control over complex shapes.",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/peilingjiang/p5.bezier"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "TotalSerialism": {
-            "name": "Total Serialism",
-            "description": "Total Serialism is an open-source library available at github.com/tmhglnd/total-serialism that provides structured tools for algorithmic composition by systematically organizing musical parameters such as pitch, duration, dynamics, and timbre.",
-            "tags": [
-                "audio",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/tmhglnd/total-serialism"
-            ],
-            "dependsOn": [
-                "Javascript"
-            ]
-        },
-        "P5Marching": {
-            "name": "p5.marching",
-            "description": "marching squares for p5.js",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/marching"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Grid": {
-            "name": "p5Grid",
-            "description": "An implementation of highly flexible triangle, square, hexagon, and octagon girds for p5.js.",
-            "tags": [
-                "grids",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/aahdee/p5grid"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Palette": {
-            "name": "p5.palette",
-            "description": "The p5.palette library is a tool for managing and applying color palettes in p5.js projects",
-            "tags": [
-                "color",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://www.remistura.com/p5.palette/",
-                "https://github.com/remistura/p5.palette"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5FillGradient": {
-            "name": "p5.fillGradient",
-            "description": "Fill shapes in p5.js with Linear, Radial and Conic Gradients. p5.fillGradient enables shape filling with Linear, Radial and Conic Gradients instead of plain colours in your p5.js sketch.",
-            "tags": [
-                "computer graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/alterebro/p5.fillGradient"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5CMyK": {
-            "name": "p5.cmyk.js",
-            "description": "The p5.cmyk.js library is an open-source tool that extends color capabilities in p5.js by enabling the use of CMYK color models for more advanced and precise color manipulation",
-            "tags": [
-                "color",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jtnimoy/p5.cmyk.js"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "P5Anaglyph": {
-            "name": "p5.anaglyph",
-            "description": "Library for creating 3D (anaglyph) scenes and images using red/cyan glasses. Uses Dubois anaglyph algorithm & color matrices.",
-            "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/jdeboi/p5.anaglyph"
-            ],
-            "dependsOn": [
-                "P5Js"
-            ]
-        },
-        "XYScopeJs": {
-            "name": "XYScope.js",
-            "description": "XYscope.js converts the coordinates of primitive shapes to audio waveforms which are sent to an analog display in XY-mode (such as an oscilloscope), revealing their vector graphic forms.",
-            "tags": [
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://teddavis.org/xyscopejs/",
-                "https://github.com/ffd8/xyscopejs"
-            ],
-            "dependsOn": [
+            "partOf": [
                 "P5Js"
             ]
         },
@@ -2196,7 +2190,7 @@
                 "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
             ]
         },
-        "OSC": {
+        "Osc": {
             "name": "OSC",
             "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
             "tags": [
@@ -2211,20 +2205,19 @@
                 "Udp"
             ]
         },
-        "ProcessingGeometrySuite": {
-            "name": "Processing Geometry Suite",
-            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
+        "VideoExport": {
+            "name": "VideoExport",
+            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
             "tags": [
-                "geometry",
+                "video",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/micycle1/PGS"
+                "https://funprogramming.org/VideoExport-for-Processing/"
             ],
-            "dependsOn": [
-                "Processing",
-                "Jts"
+            "partOf": [
+                "Processing"
             ]
         },
         "Queasycam": {
@@ -2235,22 +2228,21 @@
                 "library",
                 "opensource"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ]
         },
-        "Nub": {
-            "name": "nub",
-            "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
+        "ControlP5": {
+            "name": "ControlP5",
+            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
             "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
+                "ui",
+                "library"
             ],
             "references": [
-                "https://github.com/VisualComputing/nub"
+                "https://www.sojamo.de/libraries/controlP5/"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ]
         },
@@ -2284,43 +2276,52 @@
                 "Linux"
             ]
         },
-        "ControlP5": {
-            "name": "ControlP5",
-            "description": "A versatile UI library for creating buttons, sliders, and knobs.",
-            "tags": [
-                "ui",
-                "library"
-            ],
-            "references": [
-                "https://www.sojamo.de/libraries/controlP5/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "ComputationalGeometry": {
-            "name": "Computational Geometry",
+        "ProcessingGeometrySuite": {
+            "name": "Processing Geometry Suite",
+            "description": "The Processing Geometry Suite is a library that provides a collection of geometry tools for creating, manipulating, and analyzing shapes and spatial structures efficiently.",
             "tags": [
                 "geometry",
                 "library",
                 "opensource"
             ],
             "references": [
-                "http://thecloudlab.org/processing/library.html"
+                "https://github.com/micycle1/PGS"
+            ],
+            "partOf": [
+                "Processing"
             ],
             "dependsOn": [
+                "Jts"
+            ]
+        },
+        "Tramontana": {
+            "name": "Tramontana",
+            "description": "Provides access to phone sensors for AR/VR-like interactions.",
+            "tags": [
+                "sensor",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://tramontana.xyz/"
+            ],
+            "partOf": [
                 "Processing"
             ]
         },
-        "CreativeMachine": {
-            "name": "Creative Machine",
-            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
+        "Nub": {
+            "name": "nub",
+            "description": "a simple, expressive, language-agnostic, and extensible visual computing library, featuring interaction, visualization and animation frameworks and supporting advanced (onscreen/offscreen) rendering techniques",
             "tags": [
-                "machine learning",
-                "library"
+                "3d graphics",
+                "library",
+                "opensource"
             ],
             "references": [
-                "https://github.com/jjeongin/creative-machine"
+                "https://github.com/VisualComputing/nub"
+            ],
+            "partOf": [
+                "Processing"
             ]
         },
         "Ani": {
@@ -2335,41 +2336,11 @@
                 "https://benedikt-gross.de/projects/ani-an-animation-library-for-processing/",
                 "https://github.com/b-g/Ani"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ],
             "techniques": [
                 "Easing"
-            ]
-        },
-        "Tramontana": {
-            "name": "Tramontana",
-            "description": "Provides access to phone sensors for AR/VR-like interactions.",
-            "tags": [
-                "sensor",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://tramontana.xyz/"
-            ],
-            "dependsOn": [
-                "Processing"
-            ]
-        },
-        "Geomerative": {
-            "name": "Geomerative",
-            "description": "Accesses vertex points of vector graphics or text for manipulation.",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://www.ricardmarxer.com/geomerative/"
-            ],
-            "dependsOn": [
-                "Processing"
             ]
         },
         "GifAnimation": {
@@ -2383,25 +2354,38 @@
             "references": [
                 "https://github.com/extrapixel/gif-animation"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ],
             "supports": [
                 "Gif"
             ]
         },
-        "VideoExport": {
-            "name": "VideoExport",
-            "description": "Allows exporting videos from Processing sketches using FFMPEG.",
+        "CreativeMachine": {
+            "name": "Creative Machine",
+            "description": "Creative Machine is a library that utilizes machine learning techniques to generate and manipulate digital content programmatically",
             "tags": [
-                "video",
+                "machine learning",
+                "library"
+            ],
+            "references": [
+                "https://github.com/jjeongin/creative-machine"
+            ],
+            "partOf": [
+                "Processing"
+            ]
+        },
+        "ComputationalGeometry": {
+            "name": "Computational Geometry",
+            "tags": [
+                "geometry",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://funprogramming.org/VideoExport-for-Processing/"
+                "http://thecloudlab.org/processing/library.html"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ]
         },
@@ -2415,27 +2399,59 @@
             "references": [
                 "https://www.sojamo.de/libraries/oscP5/"
             ],
-            "dependsOn": [
+            "partOf": [
                 "Processing"
             ],
             "supports": [
                 "Osc"
             ]
         },
-        "OperatingSystem": {
-            "name": "Operating System",
+        "Geomerative": {
+            "name": "Geomerative",
+            "description": "Accesses vertex points of vector graphics or text for manipulation.",
             "tags": [
-                "application"
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://www.ricardmarxer.com/geomerative/"
+            ],
+            "partOf": [
+                "Processing"
+            ]
+        },
+        "Usb": {
+            "name": "USB",
+            "description": "Universal Serial Bus (USB) is an industry standard, developed by USB Implementers Forum (USB-IF), for digital data transmission and power delivery between many types of electronics.",
+            "tags": [
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/USB"
+            ]
+        },
+        "Wifi": {
+            "name": "Wi-Fi",
+            "description": "Wi-Fi is a family of wireless network protocols based on the IEEE 802.11 family of standards, which are commonly used for local area networking of devices and Internet access, allowing nearby digital devices to exchange data by radio waves.",
+            "tags": [
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Wi-Fi"
             ]
         },
         "MacOS": {
             "name": "macOS",
             "description": "Apple macOS operating system.",
-            "tags": [
-                "opensource"
-            ],
             "isA": [
                 "OperatingSystem"
+            ]
+        },
+        "OperatingSystem": {
+            "name": "Operating System",
+            "tags": [
+                "application"
             ]
         },
         "Linux": {
@@ -2604,17 +2620,6 @@
                 "https://github.com/overtone/overtone/"
             ]
         },
-        "Esp32": {
-            "name": "ESP32",
-            "description": "The ESP32 is a versatile hardware microcontroller known for its integrated Wi-Fi and Bluetooth capabilities, enabling innovative interactive projects that combine computing power with real-world sensor data.",
-            "tags": [
-                "hardware",
-                "microcontroller"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/ESP32"
-            ]
-        },
         "Javascript": {
             "name": "Javascript",
             "description": "JavaScript is a versatile, open-source programming language widely used in web environments to create interactive visual and multimedia experiences.",
@@ -2666,6 +2671,41 @@
                 "Vulkan",
                 "Direct3D",
                 "OpenGL"
+            ]
+        },
+        "Cinder": {
+            "name": "Cinder",
+            "description": "Cinder is an open-source library designed to provide a powerful and intuitive framework for artists and developers to create visually rich and interactive applications in creative coding.",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Cinder_(programming_library)"
+            ],
+            "dependsOn": [
+                "CPP"
+            ],
+            "supports": [
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
+        "Esp32": {
+            "name": "ESP32",
+            "description": "The ESP32 is a versatile hardware microcontroller known for its integrated Wi-Fi and Bluetooth capabilities, enabling innovative interactive projects that combine computing power with real-world sensor data.",
+            "tags": [
+                "hardware",
+                "microcontroller"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/ESP32"
+            ],
+            "supports": [
+                "WiFi",
+                "USB"
             ]
         },
         "DepthSensor": {
@@ -2855,19 +2895,22 @@
                 "https://en.wikipedia.org/wiki/Microphone"
             ]
         },
-        "Cinder": {
-            "name": "Cinder",
-            "description": "Cinder is an open-source library designed to provide a powerful and intuitive framework for artists and developers to create visually rich and interactive applications in creative coding.",
+        "SonicVisualiser": {
+            "name": "Sonic Visualizer",
+            "description": "Sonic Visualiser is an open-source application designed for viewing and analyzing audio recordings, providing tools to examine sound waveforms, spectrograms, and annotations in detail.",
             "tags": [
-                "creative coding",
-                "library",
+                "application",
+                "audio",
                 "opensource"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Cinder_(programming_library)"
+                "https://en.wikipedia.org/wiki/Sonic_Visualiser"
             ],
-            "dependsOn": [
-                "CPP"
+            "supports": [
+                "Mp3",
+                "Ogg",
+                "Wav",
+                "Csv"
             ]
         },
         "Kotlin": {
@@ -2893,25 +2936,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-            ]
-        },
-        "OpenFrameworks": {
-            "name": "OpenFrameworks",
-            "description": "OpenFrameworks is an open-source C++ toolkit designed to facilitate creative coding by providing a simple and efficient framework for multimedia applications involving graphics, audio, and interaction.",
-            "tags": [
-                "creative coding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenFrameworks"
-            ],
-            "dependsOn": [
-                "CPP"
-            ],
-            "supports": [
-                "MacOS",
-                "Windows",
-                "Linux"
             ]
         },
         "TouchDesigner": {
@@ -3121,6 +3145,23 @@
                 "Wav"
             ]
         },
+        "Arduino": {
+            "name": "Arduino",
+            "description": "Arduino is an open-source hardware platform featuring a microcontroller that enables users to develop interactive applications through programmable electronic components.",
+            "tags": [
+                "hardware",
+                "microcontroller",
+                "application",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Arduino",
+                "https://www.arduino.cc/"
+            ],
+            "supports": [
+                "USB"
+            ]
+        },
         "GLSL": {
             "name": "GLSL",
             "description": "GLSL is a language designed for writing shaders, which are programs that run on graphics hardware to control the rendering of images, enabling developers to create dynamic visual effects and complex graphics.",
@@ -3326,6 +3367,24 @@
                 "https://en.wikipedia.org/wiki/High-Level_Shader_Language"
             ]
         },
+        "AxiDraw": {
+            "name": "AxiDraw",
+            "description": "The AxiDraw is a simple, modern, precise, and versatile pen plotter, capable of writing or drawing on almost any flat surface.",
+            "tags": [
+                "media technology",
+                "hardware",
+                "print"
+            ],
+            "references": [
+                "https://wiki.evilmadscientist.com/AxiDraw"
+            ],
+            "isA": [
+                "PenPlotter"
+            ],
+            "dependsOn": [
+                "USB"
+            ]
+        },
         "MediaPlayer": {
             "name": "Media player",
             "description": "The Media Player tool integrates media technology and hardware to enable seamless playback, control, and manipulation of audio and video files within interactive digital projects.",
@@ -3393,20 +3452,6 @@
             ],
             "dependsOn": [
                 "Browser"
-            ]
-        },
-        "Arduino": {
-            "name": "Arduino",
-            "description": "Arduino is an open-source hardware platform featuring a microcontroller that enables users to develop interactive applications through programmable electronic components.",
-            "tags": [
-                "hardware",
-                "microcontroller",
-                "application",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Arduino",
-                "https://www.arduino.cc/"
             ]
         },
         "Lua": {
@@ -3547,21 +3592,6 @@
                 "Windows"
             ]
         },
-        "AxiDraw": {
-            "name": "AxiDraw",
-            "description": "The AxiDraw is a simple, modern, precise, and versatile pen plotter, capable of writing or drawing on almost any flat surface.",
-            "tags": [
-                "media technology",
-                "hardware",
-                "print"
-            ],
-            "references": [
-                "https://wiki.evilmadscientist.com/AxiDraw"
-            ],
-            "isA": [
-                "PenPlotter"
-            ]
-        },
         "Direct3D": {
             "name": "Direct3D",
             "description": "Direct3D is a graphics API and library developed by Microsoft that enables developers to create and manage high-performance 3D graphics rendering within applications.",
@@ -3625,24 +3655,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/MIDI"
-            ]
-        },
-        "SonicVisualiser": {
-            "name": "Sonic Visualizer",
-            "description": "Sonic Visualiser is an open-source application designed for viewing and analyzing audio recordings, providing tools to examine sound waveforms, spectrograms, and annotations in detail.",
-            "tags": [
-                "application",
-                "audio",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Sonic_Visualiser"
-            ],
-            "supports": [
-                "Mp3",
-                "Ogg",
-                "Wav",
-                "csv"
             ]
         },
         "Transformers": {
@@ -3841,6 +3853,121 @@
             "dependsOn": [
                 "Nannou",
                 "CPAL"
+            ]
+        },
+        "OfxLaser": {
+            "name": "ofxLaser",
+            "description": "An openFrameworks addon for controlling multiple lasers.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://github.com/sebleedelisle/ofxLaser"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ]
+        },
+        "OfxPd": {
+            "name": "ofxPd",
+            "description": "ofxPd is an Open Frameworks addon for running an instance of the Pure Data audio environment within an openFrameworks application.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/danomatika/ofxPd"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "supports": [
+                "PureData"
+            ]
+        },
+        "OpenFrameworks": {
+            "name": "OpenFrameworks",
+            "description": "OpenFrameworks is an open-source C++ toolkit designed to facilitate creative coding by providing a simple and efficient framework for multimedia applications involving graphics, audio, and interaction.",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenFrameworks"
+            ],
+            "dependsOn": [
+                "CPP"
+            ],
+            "supports": [
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
+        "OfxLua": {
+            "name": "ofxLua",
+            "description": "ofxLua is an openFrameworks addon for running a Lua embedded scripting interpreter within an openFrameworks application. ",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/danomatika/ofxLua"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "supports": [
+                "Lua"
+            ]
+        },
+        "OfxAssimpModelLoader": {
+            "name": "ofxAssimpModelLoader",
+            "description": "ofxAssimpModelLoader addon permits loading to memory and processing 3D models in a convenient and unified format.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "dependsOn": [
+                "Assimp"
+            ]
+        },
+        "OfxMidi": {
+            "name": "ofxMidi",
+            "description": "MIDI input and output addon for openFrameworks",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/danomatika/ofxMidi"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "supports": [
+                "Midi"
+            ]
+        },
+        "OfxFft": {
+            "name": "ofxFft",
+            "description": "FFT addon for openFrameworks that wrapps FFTW and KissFFT.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/kylemcdonald/ofxFft"
+            ],
+            "partOf": [
+                "OpenFrameworks"
+            ],
+            "techniques": [
+                "FFT"
             ]
         }
     }
