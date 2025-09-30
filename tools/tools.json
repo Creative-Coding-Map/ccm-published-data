@@ -27,6 +27,50 @@
                 "https://github.com/tensorflow"
             ]
         },
+        "IMU": {
+            "name": "IMU",
+            "description": "An inertial measurement unit (IMU) is an electronic device that measures and reports a body's specific force, angular rate, and sometimes the orientation of the body, using a combination of accelerometers, gyroscopes, and sometimes magnetometers.",
+            "tags": [
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Inertial_measurement_unit"
+            ]
+        },
+        "Gyroscope": {
+            "name": "Gyroscope",
+            "description": "A gyroscope is a device used for measuring or maintaining orientation and angular velocity.[1][2] It is a spinning wheel or disc in which the axis of rotation (spin axis) is free to assume any orientation by itself. When rotating, the orientation of this axis is unaffected by tilting or rotation of the mounting, due to the conservation of angular momentum.",
+            "tags": [
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Gyroscope"
+            ]
+        },
+        "Accelerometer": {
+            "name": "Accelerometer",
+            "description": "An accelerometer is a device that measures the proper acceleration of an object.",
+            "tags": [
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Accelerometer"
+            ]
+        },
+        "Compass": {
+            "name": "Compass",
+            "description": "A magnetometer is a device that measures magnetic field or magnetic dipole moment. Different types of magnetometers measure the direction, strength, or relative change of a magnetic field at a particular location. A compass is one such device, one that measures the direction of an ambient magnetic field, in this case, the Earth's magnetic field.",
+            "tags": [
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Magnetometer"
+            ]
+        },
         "OpenType": {
             "name": "OpenType",
             "description": "OpenType is a format for scalable computer fonts. Derived from TrueType, it retains TrueType's basic structure but adds many intricate data structures for describing typographic behavior.",
@@ -2190,6 +2234,19 @@
                 "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
             ]
         },
+        "Mqtt": {
+            "name": "MQTT",
+            "description": "MQTT is a lightweight, publish–subscribe, machine-to-machine network protocol for message queue/message queuing service. It is designed for connections with remote locations that have devices with resource constraints or limited network bandwidth, such as in the Internet of things (IoT).",
+            "tags": [
+                "protocol"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+            ],
+            "dependsOn": [
+                "Tcp"
+            ]
+        },
         "Osc": {
             "name": "OSC",
             "description": "Open Sound Control (OSC) is a standard network protocol used as a device interface to communicate and control multimedia systems with high precision and flexibility.",
@@ -2421,6 +2478,26 @@
                 "Processing"
             ]
         },
+        "Nfc": {
+            "name": "NFC",
+            "description": "Near-field communication (NFC) is a set of communication protocols that enables communication between two electronic devices over a distance of 4 cm or less.",
+            "tags": [
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Near-field_communication"
+            ]
+        },
+        "Lora": {
+            "name": "LoRa",
+            "description": "LoRa (from \"long range\", sometimes abbreviated as \"LR\") is a physical proprietary radio communication technique.",
+            "tags": [
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LoRa"
+            ]
+        },
         "Usb": {
             "name": "USB",
             "description": "Universal Serial Bus (USB) is an industry standard, developed by USB Implementers Forum (USB-IF), for digital data transmission and power delivery between many types of electronics.",
@@ -2439,6 +2516,27 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Wi-Fi"
+            ]
+        },
+        "Bluetooth": {
+            "name": "Bluetooth",
+            "description": "Bluetooth is a short-range wireless technology standard that is used for exchanging data between fixed and mobile devices over short distances and building personal area networks (PANs)",
+            "tags": [
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Bluetooth"
+            ]
+        },
+        "Zigbee": {
+            "name": "Zigbee",
+            "description": "Zigbee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection. Hence, Zigbee is a low-power, low-data-rate, and close proximity (i.e., personal area) wireless ad hoc network.",
+            "tags": [
+                "protocol",
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Zigbee"
             ]
         },
         "MacOS": {
@@ -2890,32 +2988,6 @@
                 "WGSL"
             ]
         },
-        "Ffmpeg": {
-            "name": "FFmpeg",
-            "description": "FFmpeg is an open-source command-line application and library that enables the processing, conversion, and streaming of video and audio files.",
-            "tags": [
-                "application",
-                "library",
-                "video",
-                "command-line",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/FFmpeg"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "Mp4",
-                "Mov",
-                "Mp3",
-                "Ogg",
-                "Wav",
-                "Jpg",
-                "Gif"
-            ]
-        },
         "Microphone": {
             "name": "Microphone",
             "description": " A microphone is a hardware device in media technology that converts sound waves into electrical signals for audio input and processing.",
@@ -3030,6 +3102,18 @@
                 "https://en.wikipedia.org/wiki/Display_device"
             ]
         },
+        "Webcam": {
+            "name": "Webcam",
+            "description": "A webcam is a video camera which is designed to record or stream to a computer or computer network.",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Webcam"
+            ]
+        },
         "Max": {
             "name": "Max",
             "description": "Max is a node-based application designed for music and multimedia creation that allows users to visually program interactive audio, video, and graphical projects.",
@@ -3083,6 +3167,33 @@
             ],
             "isA": [
                 "DepthSensor"
+            ]
+        },
+        "Ffmpeg": {
+            "name": "FFmpeg",
+            "description": "FFmpeg is an open-source command-line application and library that enables the processing, conversion, and streaming of video and audio files.",
+            "tags": [
+                "application",
+                "library",
+                "video",
+                "command-line",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/FFmpeg"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "Mp4",
+                "Mov",
+                "Mp3",
+                "Ogg",
+                "Wav",
+                "Jpg",
+                "Gif",
+                "Webcam"
             ]
         },
         "Camera": {
