@@ -27,6 +27,102 @@
                 "https://github.com/tensorflow"
             ]
         },
+        "OpenType": {
+            "name": "OpenType",
+            "description": "OpenType is a format for scalable computer fonts. Derived from TrueType, it retains TrueType's basic structure but adds many intricate data structures for describing typographic behavior.",
+            "tags": [
+                "typography",
+                "file format",
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenType"
+            ]
+        },
+        "UnifiedFontObject": {
+            "name": "Unified Font Object",
+            "description": "The Unified Font Object (UFO) is an XML-based source file format for digital fonts.",
+            "tags": [
+                "typography",
+                "file format"
+            ],
+            "references": [
+                "https://unifiedfontobject.org/",
+                "https://en.wikipedia.org/wiki/Unified_Font_Object"
+            ]
+        },
+        "FreeType": {
+            "name": "FreeType",
+            "description": "FreeType is a freely available software library to render fonts. It is written in C, designed to be small, efficient, highly customizable, and portable.",
+            "tags": [
+                "typography",
+                "library"
+            ],
+            "references": [
+                "https://freetype.org/",
+                "https://en.wikipedia.org/wiki/FreeType"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "TrueType",
+                "OpenType"
+            ]
+        },
+        "Msdfgen": {
+            "name": "Msdfgen",
+            "description": "This is a utility for generating signed distance fields from vector shapes and font glyphs, which serve as a texture representation that can be used in real-time graphics to efficiently reproduce said shapes.",
+            "tags": [
+                "typography",
+                "library"
+            ],
+            "dependsOn": [
+                "CPP",
+                "FreeType"
+            ],
+            "supports": [
+                "TrueType",
+                "OpenType"
+            ],
+            "techniques": [
+                "DistanceTransform",
+                "SignedDistanceFunctions"
+            ]
+        },
+        "TrueType": {
+            "name": "TrueType",
+            "description": "TrueType is an outline font standard developed by Apple in the late 1980s as a competitor to Adobe's Type 1 fonts used in PostScript.",
+            "tags": [
+                "typography",
+                "file format",
+                "standard"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/TrueType"
+            ]
+        },
+        "Glfw": {
+            "name": "GLFW",
+            "description": "GLFW is a library designed to create and manage windows, handle inputs, and facilitate OpenGL context creation for developing interactive graphics applications.",
+            "tags": [
+                "library"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/GLFW"
+            ],
+            "dependsOn": [
+                "C"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan",
+                "OpenGL_ES",
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
         "Assimp": {
             "name": "Assimp",
             "description": "Loads 40+ 3D-file-formats into one unified and clean data structure.",
@@ -73,42 +169,10 @@
             "supports": [
                 "OpenGL",
                 "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "Glfw": {
-            "name": "GLFW",
-            "description": "GLFW is a library designed to create and manage windows, handle inputs, and facilitate OpenGL context creation for developing interactive graphics applications.",
-            "tags": [
-                "library"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/GLFW"
-            ],
-            "dependsOn": [
-                "C"
-            ],
-            "supports": [
-                "OpenGL",
-                "Vulkan",
-                "OpenGL_ES"
-            ]
-        },
-        "LwjglAssimp": {
-            "name": "lwjgl-assimp",
-            "tags": [
-                "3d graphics",
-                "library",
-                "binding"
-            ],
-            "partOf": [
-                "Lwjgl"
-            ],
-            "dependsOn": [
-                "Assimp"
-            ],
-            "supports": [
-                "Java"
+                "OpenGL_ES",
+                "MacOS",
+                "Windows",
+                "Linux"
             ]
         },
         "P5Sound": {
@@ -641,40 +705,74 @@
                 "P5Js"
             ]
         },
-        "OrxHashGrid": {
-            "name": "orx-hash-grid",
-            "description": "2D space partitioning for fast point queries.",
+        "OrxTriangulation": {
+            "name": "orx-triangulation",
+            "description": "Delaunay triangulation and Voronoi diagrams for OPENRNDR programs",
             "tags": [
-                "space partitioning",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxEasing": {
-            "name": "orx-easing",
-            "description": "Easing functions for smooth animation or non-linear interpolation.",
-            "tags": [
-                "animation",
+                "geometry",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-easing"
+                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "DelaunayTriangulation",
+                "VoronoiDiagram"
+            ]
+        },
+        "OrxBoofCv": {
+            "name": "orx-boofcv",
+            "description": "Orx-boofcv is an open-source library that integrates BoofCV's computer vision capabilities with the ORX framework for JVM-based projects.",
+            "tags": [
+                "image processing",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
             "dependsOn": [
+                "BoofCV"
+            ]
+        },
+        "OrxMeshGenerators": {
+            "name": "orx-mesh-generators",
+            "description": "3D-mesh generating functions and DSL.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxShadeStyles": {
+            "name": "orx-shade-styles",
+            "description": "Shader based fills and strokes, including various types of gradient fills.",
+            "tags": [
+                "shaders",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
+            ],
+            "partOf": [
                 "OPENRNDR"
             ],
-            "techniques": [
-                "Easing"
+            "supports": [
+                "GLSL"
             ]
         },
         "OrxPoissonFill": {
@@ -699,57 +797,49 @@
                 "PoissonFill"
             ]
         },
-        "OrxTextOnContour": {
-            "name": "orx-text-on-contour",
-            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
+        "OrxCompositor": {
+            "name": "orx-compositor",
+            "description": "Toolkit to make composite (layered) images using blend modes and filters in OPENRNDR programs",
             "tags": [
-                "typography",
+                "computer graphics",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+                "https://github.com/openrndr/orx/tree/master/orx-compositor"
             ],
             "partOf": [
                 "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
             ]
         },
-        "OrxFft": {
-            "name": "orx-fft",
-            "description": "Simple forward and inverse FFT routines",
+        "OrxTemporalBlur": {
+            "name": "orx-temporal-blur",
+            "description": "Post-processing temporal-blur video effect.",
             "tags": [
-                "signal processing",
-                "library"
+                "image processing",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
             ],
             "partOf": [
                 "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "FFT"
             ]
         },
-        "OrxMesh": {
-            "name": "orx-mesh",
-            "description": "3D-mesh datastructures",
+        "OrxMeshNoise": {
+            "name": "orx-mesh-noise",
+            "description": "Generate random samples on the surface of a mesh",
             "tags": [
                 "3d graphics",
-                "data structure",
+                "noise",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh"
+                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
             ],
             "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
                 "OPENRNDR"
             ]
         },
@@ -771,75 +861,86 @@
                 "OPENRNDR"
             ]
         },
-        "OrxBoofCv": {
-            "name": "orx-boofcv",
-            "description": "Orx-boofcv is an open-source library that integrates BoofCV's computer vision capabilities with the ORX framework for JVM-based projects.",
+        "OrxMarchingSquares": {
+            "name": "orx-marching-squares",
+            "description": "Tools for extracting contours from images and functions",
             "tags": [
-                "image processing",
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "dependsOn": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "MarchingSquares"
+            ]
+        },
+        "OrxColor": {
+            "name": "orx-color",
+            "description": "Provides OPENRNDR programs with color spaces, palettes, histograms, and named colors.",
+            "tags": [
+                "color",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-jvm/orx-boofcv"
+                "https://github.com/openrndr/orx/tree/master/orx-color"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxGradientDescent": {
+            "name": "orx-gradient-descent",
+            "description": "Finds equation inputs that output a minimum value: easy to use gradient descent based minimizer.",
+            "tags": [
+                "machine learning",
+                "library",
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
-                "OPENRNDR",
-                "BoofCV"
+            "techniques": [
+                "GradientDescent"
             ]
         },
-        "OrxQuadTree": {
-            "name": "orx-quadtree",
-            "description": "Implementation of the quadtree structure and tools for querying points.",
+        "OrxSvg": {
+            "name": "orx-svg",
+            "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
             "tags": [
-                "space partitioning",
+                "vector graphics",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
+                "https://github.com/openrndr/orx/tree/master/orx-svg"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
-                "OPENRNDR"
+            "supports": [
+                "Svg"
             ]
         },
-        "OrxMeshNoise": {
-            "name": "orx-mesh-noise",
-            "description": "Generate random samples on the surface of a mesh",
-            "tags": [
-                "3d graphics",
-                "noise",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-noise"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxImageFit": {
-            "name": "orx-image-fit",
-            "description": "Draws an image ensuring it fits or covers the specified Rectangle.",
+        "OrxCamera": {
+            "name": "orx-camera",
+            "description": "Provides OPENRNDR programs with 2D and 3D cameras controllable via mouse and keyboard.",
             "tags": [
                 "computer graphics",
                 "library",
                 "opensource"
             ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-camera"
+            ],
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
-                "OPENRNDR"
+            "techniques": [
+                "OrthogonalProjection",
+                "PerspectiveProjection"
             ]
         },
         "OrxOsc": {
@@ -863,167 +964,21 @@
                 "Osc"
             ]
         },
-        "OrxCamera": {
-            "name": "orx-camera",
-            "description": "Provides OPENRNDR programs with 2D and 3D cameras controllable via mouse and keyboard.",
+        "OrxMidi": {
+            "name": "orx-midi",
+            "description": "MIDI support for keyboards and controllers. Send and receive note and control change events. Bind inputs to variables.",
             "tags": [
-                "computer graphics",
                 "library",
                 "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-camera"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
             "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "OrthogonalProjection",
-                "PerspectiveProjection"
-            ]
-        },
-        "OrxComposition": {
-            "name": "orx-composition",
-            "description": "Shape composition library for OPENRNDR",
-            "tags": [
-                "vector graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-composition"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxShadeStyles": {
-            "name": "orx-shade-styles",
-            "description": "Shader based fills and strokes, including various types of gradient fills.",
-            "tags": [
-                "shaders",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shade-styles"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
+                "JavaxMidi"
             ],
             "supports": [
-                "GLSL"
-            ]
-        },
-        "OrxShapes": {
-            "name": "orx-shapes",
-            "description": "Collection of 2D shape generators and modifiers.",
-            "tags": [
-                "geometry",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-shapes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "HobbyCurve",
-                "DelaunayTriangulation",
-                "AlphaShape"
-            ]
-        },
-        "OrxIntegralImage": {
-            "name": "orx-integral-image",
-            "description": "CPU and GPU-based implementation for integral images (summed area tables)",
-            "tags": [
-                "image processing",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxFx": {
-            "name": "orx-fx",
-            "description": "Ready-to-use GPU-based visual effects and filters.",
-            "tags": [
-                "computer graphics",
-                "shaders",
-                "library"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GaussianBlur",
-                "CannyEdgeDetection",
-                "Halftoning",
-                "Dithering",
-                "EdgeDetection",
-                "Blur",
-                "ImageQuantization"
-            ]
-        },
-        "OrxNoise": {
-            "name": "orx-noise",
-            "description": "Randomness for every type of person: Perlin, uniform, value, simplex, fractal and many other types of noise.",
-            "tags": [
-                "noise",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "PerlinNoise",
-                "SimplexNoise",
-                "FBMNoise",
-                "WorleyNoise",
-                "ValueNoise"
-            ]
-        },
-        "OrxTemporalBlur": {
-            "name": "orx-temporal-blur",
-            "description": "Post-processing temporal-blur video effect.",
-            "tags": [
-                "image processing",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-temporal-blur"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
+                "Midi"
             ]
         },
         "OrxExpressionEvaluator": {
@@ -1041,20 +996,111 @@
                 "OPENRNDR"
             ],
             "dependsOn": [
-                "OPENRNDR",
                 "AntlrKotlin"
             ]
         },
-        "OrxColor": {
-            "name": "orx-color",
-            "description": "Provides OPENRNDR programs with color spaces, palettes, histograms, and named colors.",
+        "OrxTextWriter": {
+            "name": "orx-text-writer",
+            "description": "Provide OPENRNDR programs with functionality to write text in layouts.",
+            "tags": [
+                "typography",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxPalette": {
+            "name": "orx-palette",
+            "description": "Collections of color palettes and tools for interacting with them.",
             "tags": [
                 "color",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-color"
+                "https://github.com/openrndr/orx/tree/master/orx-palette"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxComposition": {
+            "name": "orx-composition",
+            "description": "Shape composition library for OPENRNDR",
+            "tags": [
+                "vector graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-composition"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxHashGrid": {
+            "name": "orx-hash-grid",
+            "description": "2D space partitioning for fast point queries.",
+            "tags": [
+                "space partitioning",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxObjLoader": {
+            "name": "orx-obj-loader",
+            "description": "Simple loader and saver for Wavefront .obj 3D mesh files.",
+            "tags": [
+                "3d graphics",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "supports": [
+                "Obj"
+            ]
+        },
+        "OrxShapes": {
+            "name": "orx-shapes",
+            "description": "Collection of 2D shape generators and modifiers.",
+            "tags": [
+                "geometry",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-shapes"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "HobbyCurve",
+                "DelaunayTriangulation",
+                "AlphaShape"
+            ]
+        },
+        "OrxMath": {
+            "name": "orx-math",
+            "description": "Mathematical utilities",
+            "tags": [
+                "functions",
+                "library",
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
@@ -1074,116 +1120,8 @@
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
             "techniques": [
                 "KDTree"
-            ]
-        },
-        "OrxEnvelopes": {
-            "name": "orx-envelopes",
-            "description": "Provides ADSR (Attack, Decay, Sustain, Release) envelopes and tools for OPENRNDR programs",
-            "tags": [
-                "animation",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMarchingSquares": {
-            "name": "orx-marching-squares",
-            "description": "Tools for extracting contours from images and functions",
-            "tags": [
-                "geometry",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "MarchingSquares"
-            ]
-        },
-        "OrxMeshGenerators": {
-            "name": "orx-mesh-generators",
-            "description": "3D-mesh generating functions and DSL.",
-            "tags": [
-                "3d graphics",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-mesh-generators"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMath": {
-            "name": "orx-math",
-            "description": "Mathematical utilities",
-            "tags": [
-                "functions",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxTriangulation": {
-            "name": "orx-triangulation",
-            "description": "Delaunay triangulation and Voronoi diagrams for OPENRNDR programs",
-            "tags": [
-                "geometry",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-triangulation"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxGradientDescent": {
-            "name": "orx-gradient-descent",
-            "description": "Finds equation inputs that output a minimum value: easy to use gradient descent based minimizer.",
-            "tags": [
-                "machine learning",
-                "library",
-                "opensource"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "GradientDescent"
             ]
         },
         "OrxShaderPhrases": {
@@ -1201,27 +1139,70 @@
                 "OPENRNDR"
             ],
             "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
                 "GLSL"
             ]
         },
-        "OrxPalette": {
-            "name": "orx-palette",
-            "description": "Collections of color palettes and tools for interacting with them.",
+        "OPENRNDR": {
+            "name": "OPENRNDR",
+            "description": "OPENRNDR is an open-source library designed to facilitate expressive visual programming and interactive graphics development with ease and flexibility in creative coding.",
             "tags": [
-                "color",
+                "creative coding",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-palette"
+                "https://openrndr.org"
+            ],
+            "input": [
+                "Png",
+                "Svg",
+                "Jpg",
+                "Mp4"
+            ],
+            "output": [
+                "Png",
+                "Svg",
+                "Jpg",
+                "Mp4"
+            ],
+            "dependsOn": [
+                "Kotlin",
+                "Lwjgl"
+            ],
+            "supports": [
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
+        "OrxNoise": {
+            "name": "orx-noise",
+            "description": "Randomness for every type of person: Perlin, uniform, value, simplex, fractal and many other types of noise.",
+            "tags": [
+                "noise",
+                "library",
+                "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
+            "techniques": [
+                "PerlinNoise",
+                "SimplexNoise",
+                "FBMNoise",
+                "WorleyNoise",
+                "ValueNoise"
+            ]
+        },
+        "OrxIntervalTree": {
+            "name": "orx-interval-tree",
+            "description": "Efficient data structures for managing and querying intervals.",
+            "tags": [
+                "data structure",
+                "library",
+                "opensource"
+            ],
+            "partOf": [
                 "OPENRNDR"
             ]
         },
@@ -1240,29 +1221,91 @@
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
             "techniques": [
                 "TurtleGraphics"
             ]
         },
-        "OrxCompositor": {
-            "name": "orx-compositor",
-            "description": "Toolkit to make composite (layered) images using blend modes and filters in OPENRNDR programs",
+        "OrxJumpflood": {
+            "name": "orx-jumpflood",
+            "description": "Calculates distance or direction fields from an image. GPU accelerated, 2D.",
             "tags": [
-                "computer graphics",
+                "image processing",
                 "library",
                 "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-compositor"
             ],
             "partOf": [
                 "OPENRNDR"
             ],
-            "dependsOn": [
+            "techniques": [
+                "DistanceTransform"
+            ]
+        },
+        "OrxEasing": {
+            "name": "orx-easing",
+            "description": "Easing functions for smooth animation or non-linear interpolation.",
+            "tags": [
+                "animation",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-easing"
+            ],
+            "partOf": [
                 "OPENRNDR"
+            ],
+            "techniques": [
+                "Easing"
+            ]
+        },
+        "OrxTextOnContour": {
+            "name": "orx-text-on-contour",
+            "description": "The orx-text-on-contour library is an opensource tool that enables precise rendering of typography along custom paths, enhancing graphical compositions with dynamic text alignment.",
+            "tags": [
+                "typography",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-text-on-contour"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ]
+        },
+        "OrxFx": {
+            "name": "orx-fx",
+            "description": "Ready-to-use GPU-based visual effects and filters.",
+            "tags": [
+                "computer graphics",
+                "shaders",
+                "library"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "GaussianBlur",
+                "CannyEdgeDetection",
+                "Halftoning",
+                "Dithering",
+                "EdgeDetection",
+                "Blur",
+                "ImageQuantization"
+            ]
+        },
+        "OrxFft": {
+            "name": "orx-fft",
+            "description": "Simple forward and inverse FFT routines",
+            "tags": [
+                "signal processing",
+                "library"
+            ],
+            "partOf": [
+                "OPENRNDR"
+            ],
+            "techniques": [
+                "FFT"
             ]
         },
         "OpenrndrVideo": {
@@ -1285,115 +1328,62 @@
                 "Mov"
             ]
         },
-        "OrxSvg": {
-            "name": "orx-svg",
-            "description": "Provides OPENRNDR programs with the functionality to read and write SVG files",
+        "OrxEnvelopes": {
+            "name": "orx-envelopes",
+            "description": "Provides ADSR (Attack, Decay, Sustain, Release) envelopes and tools for OPENRNDR programs",
             "tags": [
-                "vector graphics",
+                "animation",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-svg"
+                "https://github.com/openrndr/orx/tree/master/orx-envelopes"
             ],
             "partOf": [
                 "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "supports": [
-                "Svg"
             ]
         },
-        "OrxTextWriter": {
-            "name": "orx-text-writer",
-            "description": "Provide OPENRNDR programs with functionality to write text in layouts.",
+        "OrxMesh": {
+            "name": "orx-mesh",
+            "description": "3D-mesh datastructures",
             "tags": [
-                "typography",
-                "library",
-                "opensource"
-            ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-text-writer"
-            ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxIntervalTree": {
-            "name": "orx-interval-tree",
-            "description": "Efficient data structures for managing and querying intervals.",
-            "tags": [
+                "3d graphics",
                 "data structure",
                 "library",
                 "opensource"
             ],
-            "partOf": [
-                "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ]
-        },
-        "OrxMidi": {
-            "name": "orx-midi",
-            "description": "MIDI support for keyboards and controllers. Send and receive note and control change events. Bind inputs to variables.",
-            "tags": [
-                "library",
-                "opensource"
+            "references": [
+                "https://github.com/openrndr/orx/tree/master/orx-mesh"
             ],
             "partOf": [
                 "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR",
-                "JavaxMidi"
-            ],
-            "supports": [
-                "Midi"
             ]
         },
-        "OPENRNDR": {
-            "name": "OPENRNDR",
-            "description": "OPENRNDR is an open-source library designed to facilitate expressive visual programming and interactive graphics development with ease and flexibility in creative coding.",
+        "OrxQuadTree": {
+            "name": "orx-quadtree",
+            "description": "Implementation of the quadtree structure and tools for querying points.",
             "tags": [
-                "creative coding",
+                "space partitioning",
                 "library",
                 "opensource"
             ],
             "references": [
-                "https://openrndr.org"
+                "https://github.com/openrndr/orx/tree/master/orx-quadtree"
             ],
-            "dependsOn": [
-                "Kotlin",
-                "Lwjgl"
-            ],
-            "supports": [
-                "Png",
-                "Svg",
-                "Jpg"
+            "partOf": [
+                "OPENRNDR"
             ]
         },
-        "OrxJumpflood": {
-            "name": "orx-jumpflood",
-            "description": "Calculates distance or direction fields from an image. GPU accelerated, 2D.",
+        "OrxImageFit": {
+            "name": "orx-image-fit",
+            "description": "Draws an image ensuring it fits or covers the specified Rectangle.",
             "tags": [
-                "image processing",
+                "computer graphics",
                 "library",
                 "opensource"
             ],
             "partOf": [
                 "OPENRNDR"
-            ],
-            "dependsOn": [
-                "OPENRNDR"
-            ],
-            "techniques": [
-                "DistanceTransform"
             ]
         },
         "OrxFcurve": {
@@ -1416,25 +1406,82 @@
                 "RegularExpressions"
             ]
         },
-        "OrxObjLoader": {
-            "name": "orx-obj-loader",
-            "description": "Simple loader and saver for Wavefront .obj 3D mesh files.",
+        "OrxIntegralImage": {
+            "name": "orx-integral-image",
+            "description": "CPU and GPU-based implementation for integral images (summed area tables)",
             "tags": [
-                "3d graphics",
+                "image processing",
                 "library",
                 "opensource"
             ],
-            "references": [
-                "https://github.com/openrndr/orx/tree/master/orx-obj-loader"
-            ],
             "partOf": [
                 "OPENRNDR"
+            ]
+        },
+        "GoogleChrome": {
+            "name": "Google Chrome",
+            "description": "Google Chrome is a cross-platform web browser developed by Google.",
+            "tags": [
+                "application",
+                "web"
             ],
-            "dependsOn": [
-                "OPENRNDR"
+            "references": [
+                "https://en.wikipedia.org/wiki/Google_Chrome"
+            ],
+            "isA": [
+                "Browser"
             ],
             "supports": [
-                "Obj"
+                "MacOS",
+                "Linux",
+                "Windows"
+            ]
+        },
+        "Safari": {
+            "name": "Safari",
+            "description": "Safari is a web browser developed by Apple.",
+            "tags": [
+                "application",
+                "web"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Safari_(web_browser)"
+            ],
+            "isA": [
+                "Browser"
+            ],
+            "supports": [
+                "MacOS"
+            ]
+        },
+        "Firefox": {
+            "name": "Firefox",
+            "description": "Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation.",
+            "tags": [
+                "application",
+                "web",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Firefox"
+            ],
+            "isA": [
+                "Browser"
+            ],
+            "supports": [
+                "MacOS",
+                "Linux",
+                "Windows"
+            ]
+        },
+        "WebMidi": {
+            "name": "Web MIDI",
+            "description": "The Web MIDI API connects to and interacts with Musical Instrument Digital Interface (MIDI) Devices.",
+            "partOf": [
+                "Browser"
+            ],
+            "supports": [
+                "Midi"
             ]
         },
         "AntlrKotlin": {
@@ -1569,6 +1616,24 @@
                 "Java"
             ]
         },
+        "LwjglAssimp": {
+            "name": "lwjgl-assimp",
+            "description": "Assimp bindings for Java",
+            "tags": [
+                "3d graphics",
+                "library",
+                "binding"
+            ],
+            "partOf": [
+                "Lwjgl"
+            ],
+            "dependsOn": [
+                "Assimp"
+            ],
+            "supports": [
+                "Java"
+            ]
+        },
         "JavaxSound": {
             "name": "javax.sound",
             "description": "The javax.sound library provides a set of tools for handling audio capture, processing, and playback, enabling precise control over sound input and output in Java applications.",
@@ -1648,6 +1713,39 @@
                 "ArtNet"
             ]
         },
+        "LwjglGlfw": {
+            "name": "lwjgl-glfw",
+            "description": "GLFW bindings for Java",
+            "tags": [
+                "binding",
+                "library"
+            ],
+            "dependsOn": [
+                "Glfw"
+            ],
+            "supports": [
+                "Java"
+            ]
+        },
+        "Lwjgl": {
+            "name": "Lightweight Java Game library",
+            "description": "The Lightweight Java Game Library is an open-source library that provides Java bindings to low-level graphics, audio, and input APIs, enabling efficient development of interactive visual applications.",
+            "tags": [
+                "library",
+                "binding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/LWJGL"
+            ],
+            "dependsOn": [
+                "Java"
+            ],
+            "supports": [
+                "OpenGL",
+                "Vulkan"
+            ]
+        },
         "Swing": {
             "name": "Swing",
             "description": "Swing is a library in Java that provides a set of ui components for building graphical user interfaces with customizable features and a consistent look across platforms.",
@@ -1675,26 +1773,6 @@
             ],
             "dependsOn": [
                 "java"
-            ]
-        },
-        "Lwjgl": {
-            "name": "Lightweight Java Game library",
-            "description": "The Lightweight Java Game Library is an open-source library that provides Java bindings to low-level graphics, audio, and input APIs, enabling efficient development of interactive visual applications.",
-            "tags": [
-                "library",
-                "binding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/LWJGL"
-            ],
-            "dependsOn": [
-                "Java"
-            ],
-            "supports": [
-                "Glfw",
-                "Sdl",
-                "Vulkan"
             ]
         },
         "Java": {
@@ -2176,6 +2254,36 @@
                 "Processing"
             ]
         },
+        "Processing": {
+            "name": "Processing",
+            "description": "Processing is an open-source application and library designed for creative coding that provides a flexible software sketchbook and a development environment for visual arts and interactive media.",
+            "tags": [
+                "creative coding",
+                "application",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Processing",
+                "https://processing.org/",
+                "https://github.com/processing/processing4"
+            ],
+            "dependsOn": [
+                "Java",
+                "Jogl",
+                "Antlr",
+                "Swing"
+            ],
+            "supports": [
+                "Json",
+                "Csv",
+                "Png",
+                "Jpg",
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
         "ControlP5": {
             "name": "ControlP5",
             "description": "A versatile UI library for creating buttons, sliders, and knobs.",
@@ -2314,31 +2422,37 @@
                 "Osc"
             ]
         },
-        "Processing": {
-            "name": "Processing",
-            "description": "Processing is an open-source application and library designed for creative coding that provides a flexible software sketchbook and a development environment for visual arts and interactive media.",
+        "OperatingSystem": {
+            "name": "Operating System",
             "tags": [
-                "creative coding",
-                "application",
-                "library",
+                "application"
+            ]
+        },
+        "MacOS": {
+            "name": "macOS",
+            "description": "Apple macOS operating system.",
+            "tags": [
                 "opensource"
             ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Processing",
-                "https://processing.org/",
-                "https://github.com/processing/processing4"
+            "isA": [
+                "OperatingSystem"
+            ]
+        },
+        "Linux": {
+            "name": "Linux",
+            "description": "Linux operating system.",
+            "tags": [
+                "opensource"
             ],
-            "dependsOn": [
-                "Java",
-                "Jogl",
-                "Antlr",
-                "Swing"
-            ],
-            "supports": [
-                "Json",
-                "Csv",
-                "Png",
-                "Jpg"
+            "isA": [
+                "OperatingSystem"
+            ]
+        },
+        "Windows": {
+            "name": "Windows",
+            "description": "Microsoft Windows operating system.",
+            "isA": [
+                "OperatingSystem"
             ]
         },
         "D3JS": {
@@ -2566,6 +2680,23 @@
                 "https://en.wikipedia.org/wiki/Range_imaging"
             ]
         },
+        "VSCode": {
+            "name": "Visual Studio Code",
+            "description": "Visual Studio Code is an open-source application and integrated development environment that provides a versatile platform with extensive language support and customizable features, enabling efficient coding and project management.",
+            "tags": [
+                "application",
+                "ide",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+            ],
+            "supports": [
+                "MacOS",
+                "Linux",
+                "Windows"
+            ]
+        },
         "Browser": {
             "name": "Browser",
             "description": "An application designed to retrieve, present, and navigate web content, enabling users to interact with various online resources seamlessly.",
@@ -2764,6 +2895,25 @@
                 "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
             ]
         },
+        "OpenFrameworks": {
+            "name": "OpenFrameworks",
+            "description": "OpenFrameworks is an open-source C++ toolkit designed to facilitate creative coding by providing a simple and efficient framework for multimedia applications involving graphics, audio, and interaction.",
+            "tags": [
+                "creative coding",
+                "opensource"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/OpenFrameworks"
+            ],
+            "dependsOn": [
+                "CPP"
+            ],
+            "supports": [
+                "MacOS",
+                "Windows",
+                "Linux"
+            ]
+        },
         "TouchDesigner": {
             "name": "TouchDesigner",
             "description": "TouchDesigner is a node-based application used for real-time interactive multimedia content creation and visual programming.",
@@ -2835,17 +2985,6 @@
                 "https://en.wikipedia.org/wiki/Max_(software)"
             ]
         },
-        "IntelliJ": {
-            "name": "IntelliJ IDEA",
-            "description": "IntelliJ IDEA is an application and integrated development environment that provides advanced coding assistance, debugging, and project management features to enhance the development of innovative and expressive software projects.",
-            "tags": [
-                "application",
-                "ide"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
-            ]
-        },
         "Illustrator": {
             "name": "Adobe Illustrator",
             "description": "Adobe Illustrator is an application used for creating and editing vector graphics with precision and scalability, enabling artists and designers to produce detailed digital artwork.",
@@ -2858,6 +2997,22 @@
             ],
             "supports": [
                 "Svg"
+            ]
+        },
+        "IntelliJ": {
+            "name": "IntelliJ IDEA",
+            "description": "IntelliJ IDEA is an application and integrated development environment that provides advanced coding assistance, debugging, and project management features to enhance the development of innovative and expressive software projects.",
+            "tags": [
+                "application",
+                "ide"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
+            ],
+            "supports": [
+                "MacOS",
+                "Linux",
+                "Windows"
             ]
         },
         "Camera": {
@@ -2895,20 +3050,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/DMX"
-            ]
-        },
-        "OpenFrameworks": {
-            "name": "OpenFrameworks",
-            "description": "OpenFrameworks is an open-source C++ toolkit designed to facilitate creative coding by providing a simple and efficient framework for multimedia applications involving graphics, audio, and interaction.",
-            "tags": [
-                "creative coding",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/OpenFrameworks"
-            ],
-            "dependsOn": [
-                "CPP"
             ]
         },
         "Tic80": {
@@ -3110,18 +3251,6 @@
             ],
             "references": [
                 "https://en.wikipedia.org/wiki/Pure_Data"
-            ]
-        },
-        "VSCode": {
-            "name": "Visual Studio Code",
-            "description": "Visual Studio Code is an open-source application and integrated development environment that provides a versatile platform with extensive language support and customizable features, enabling efficient coding and project management.",
-            "tags": [
-                "application",
-                "ide",
-                "opensource"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Visual_Studio_Code"
             ]
         },
         "OpenGL": {
@@ -3399,6 +3528,25 @@
                 "https://en.wikipedia.org/wiki/Rust_(programming_language)"
             ]
         },
+        "Godot": {
+            "name": "Godot",
+            "description": "Godot is an open-source game development engine that provides a comprehensive set of tools for designing, coding, and deploying 2D and 3D interactive projects efficiently.",
+            "tags": [
+                "game development"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+            ],
+            "dependsOn": [
+                "CSharp",
+                "CPP"
+            ],
+            "supports": [
+                "MacOS",
+                "Linux",
+                "Windows"
+            ]
+        },
         "AxiDraw": {
             "name": "AxiDraw",
             "description": "The AxiDraw is a simple, modern, precise, and versatile pen plotter, capable of writing or drawing on almost any flat surface.",
@@ -3426,20 +3574,6 @@
             ],
             "supports": [
                 "HLSL"
-            ]
-        },
-        "Godot": {
-            "name": "Godot",
-            "description": "Godot is an open-source game development engine that provides a comprehensive set of tools for designing, coding, and deploying 2D and 3D interactive projects efficiently.",
-            "tags": [
-                "game development"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Godot_(game_engine)"
-            ],
-            "dependsOn": [
-                "CSharp",
-                "CPP"
             ]
         },
         "MidiController": {
@@ -3602,6 +3736,111 @@
             ],
             "dependsOn": [
                 "Python"
+            ]
+        },
+        "Egui": {
+            "name": "egui",
+            "description": "A simple, fast, and highly portable immediate mode GUI library for Rust.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/emilk/egui"
+            ],
+            "dependsOn": [
+                "Rust"
+            ]
+        },
+        "NannouLaser": {
+            "name": "nannou_laser",
+            "description": "LASER devices, streams and path optimisation in Nannou apps.",
+            "tags": [
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/nannou-org/nannou/blob/master/nannou_laser"
+            ],
+            "partOf": [
+                "Nannou"
+            ],
+            "dependsOn": [
+                "Nannou"
+            ]
+        },
+        "CPAL": {
+            "name": "Cpal",
+            "description": "Low-level library for audio input and output in pure Rust.",
+            "tags": [
+                "audio",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/RustAudio/cpal"
+            ],
+            "dependsOn": [
+                "Rust"
+            ]
+        },
+        "Nannou": {
+            "name": "Nannou",
+            "description": "Nannou is an open-source library designed to provide simple, expressive, and powerful tools for creative coding in Rust, enabling artists and developers to build interactive graphics, audio, and multimedia applications.",
+            "tags": [
+                "creative coding",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://nannou.cc/"
+            ],
+            "dependsOn": [
+                "Rust"
+            ],
+            "supports": [
+                "Linux",
+                "Windows",
+                "MacOS"
+            ]
+        },
+        "NannouEgui": {
+            "name": "nannou_egui",
+            "description": "For creating egui UIs in Nannou apps.",
+            "tags": [
+                "ui",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/nannou-org/nannou/blob/master/nannou_egui"
+            ],
+            "partOf": [
+                "Nannou"
+            ],
+            "dependsOn": [
+                "Nannou",
+                "Egui"
+            ]
+        },
+        "NannouAudio": {
+            "name": "nannou_audio",
+            "description": "Audio hosts, devices and streams in Nannou apps.",
+            "tags": [
+                "audio",
+                "library",
+                "opensource"
+            ],
+            "references": [
+                "https://github.com/nannou-org/nannou/blob/master/nannou_audio"
+            ],
+            "partOf": [
+                "Nannou"
+            ],
+            "dependsOn": [
+                "Nannou",
+                "CPAL"
             ]
         }
     }
