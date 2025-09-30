@@ -2792,6 +2792,20 @@
                 "CPP"
             ]
         },
+        "RealSense": {
+            "name": "Intel RealSesnse",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/RealSense"
+            ],
+            "isA": [
+                "DepthSensor"
+            ]
+        },
         "Inkscape": {
             "name": "Inkscape",
             "description": "Inkscape is an open-source application for creating and editing vector graphics, offering a variety of tools for drawing, shaping, and manipulating paths and objects with precision.",
@@ -2818,14 +2832,32 @@
                 "https://en.wikipedia.org/wiki/Laser_lighting_display"
             ]
         },
-        "Metal": {
-            "name": "Metal",
+        "Kinect": {
+            "name": "Kinect",
             "tags": [
-                "library",
-                "graphics api"
+                "media technology",
+                "sensor",
+                "hardware"
             ],
             "references": [
-                "https://en.wikipedia.org/wiki/Metal_(API)"
+                "https://en.wikipedia.org/wiki/Kinect"
+            ],
+            "isA": [
+                "DepthSensor"
+            ]
+        },
+        "KinectV2": {
+            "name": "KinectV2",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Kinect"
+            ],
+            "isA": [
+                "DepthSensor"
             ]
         },
         "PaperJs": {
@@ -3037,6 +3069,20 @@
                 "MacOS",
                 "Linux",
                 "Windows"
+            ]
+        },
+        "AzureKinect": {
+            "name": "Azure Kinect",
+            "tags": [
+                "media technology",
+                "sensor",
+                "hardware"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Azure_Kinect"
+            ],
+            "isA": [
+                "DepthSensor"
             ]
         },
         "Camera": {
@@ -3657,6 +3703,19 @@
                 "https://en.wikipedia.org/wiki/MIDI"
             ]
         },
+        "Metal": {
+            "name": "Metal",
+            "tags": [
+                "library",
+                "graphics api"
+            ],
+            "references": [
+                "https://en.wikipedia.org/wiki/Metal_(API)"
+            ],
+            "dependsOn": [
+                "MacOS"
+            ]
+        },
         "Transformers": {
             "name": "Transformers",
             "description": "The Transformers library is an open-source machine learning library that provides pre-trained models and tools for natural language processing and other tasks.",
@@ -3672,6 +3731,61 @@
             ],
             "supports": [
                 "PyTorch"
+            ]
+        },
+        "Py5": {
+            "name": "Py5",
+            "description": "py5 is a new version of Processing for Python. The goal of py5 is to create a version of Processing that is integrated into the Python ecosystem.",
+            "tags": [
+                "creative coding",
+                "library"
+            ],
+            "references": [
+                "https://github.com/py5coding/py5"
+            ],
+            "dependsOn": [
+                "Python"
+            ]
+        },
+        "Pygame": {
+            "name": "Pygame",
+            "description": "Pygame is a Free and Open Source python programming language library for making multimedia applications like games built on top of the excellent SDL library. C, Python, Native, OpenGL.",
+            "tags": [
+                "game development",
+                "library"
+            ],
+            "references": [
+                "https://github.com/pygame/pygame"
+            ],
+            "dependsOn": [
+                "Python",
+                "SDL"
+            ]
+        },
+        "Trimesh": {
+            "name": "Trimesh",
+            "description": "Trimesh is a pure Python 3.8+ library for loading and using triangular meshes with an emphasis on watertight surfaces.",
+            "tags": [
+                "3d graphics",
+                "geometry",
+                "library"
+            ],
+            "references": [
+                "https://trimesh.org/",
+                "https://github.com/mikedh/trimesh"
+            ],
+            "partOf": [
+                "Python"
+            ],
+            "input": [
+                "Gltf",
+                "Obj",
+                "Ply",
+                "Usd",
+                "Stl"
+            ],
+            "techniques": [
+                "ConvexHull"
             ]
         },
         "Python": {
@@ -3733,6 +3847,21 @@
             ],
             "dependsOn": [
                 "Python"
+            ]
+        },
+        "Pillow": {
+            "name": "Pillow",
+            "description": "Python Imaging Library",
+            "references": [
+                "https://github.com/python-pillow/Pillow"
+            ],
+            "partOf": [
+                "Python"
+            ],
+            "supports": [
+                "Png",
+                "Jpg",
+                "Gif"
             ]
         },
         "ScikitLearn": {
