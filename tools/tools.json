@@ -2773,7 +2773,7 @@
         },
         "Cinder": {
             "name": "Cinder",
-            "description": "Cinder is an open-source library designed to provide a powerful and intuitive framework for artists and developers to create visually rich and interactive applications in creative coding.",
+            "description": "Cinder is an open-source C++ library designed to provide a powerful and intuitive framework for artists and developers to create visually rich and interactive applications in creative coding, including graphics, audio, video, computational geometry, and image processing.",
             "tags": [
                 "creative coding",
                 "library",
