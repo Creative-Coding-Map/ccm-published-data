@@ -545,17 +545,6 @@
                 "https://en.wikipedia.org/wiki/Delaunay_triangulation"
             ]
         },
-        "Turtle": {
-            "name": "Turtle graphics",
-            "description": "Turtle graphics is a method in computer graphics that uses a cursor, controlled by simple commands to move and draw lines on a two-dimensional vector graphics plane, allowing the creation of complex images through iterative instructions.",
-            "tags": [
-                "computer graphics",
-                "vector graphics"
-            ],
-            "references": [
-                "https://en.wikipedia.org/wiki/Turtle_graphics"
-            ]
-        },
         "PathTracing": {
             "name": "Path Tracing",
             "description": "Path tracing is a computer graphics technique that simulates the way light travels and interacts with surfaces by tracing random paths of light rays to produce highly realistic images through global illumination effects.",
